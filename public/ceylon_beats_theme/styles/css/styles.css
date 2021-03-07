@@ -775,6 +775,7 @@ footer p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -785,7 +786,7 @@ footer p {
   position: absolute;
   opacity: 1;
   width: 100%;
-  height: 80vh;
+  height: 100%;
 }
 
 #diffrence .container {
@@ -2278,7 +2279,7 @@ footer p {
 }
 
 #about-section .bottum-content-all .our-team .container h1 {
-  font: normal normal bold 55px/113px Poppins;
+  font: normal normal bold 45px/113px Poppins;
   letter-spacing: 0px;
   color: #ffffff;
   text-align: center;
@@ -2369,5 +2370,169 @@ footer p {
   padding: 5px;
   -webkit-box-shadow: 10px 10px 32px 0px rgba(0, 0, 0, 0.85);
           box-shadow: 10px 10px 32px 0px rgba(0, 0, 0, 0.85);
+}
+
+#about-section .bottum-content-all #equipments .container {
+  display: inline;
+}
+
+#about-section .bottum-content-all #equipments .container h1 {
+  font: normal normal bold 45px/113px Poppins;
+  padding-top: 33px 0;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-align: center;
+  margin: auto;
+}
+
+#about-section .bottum-content-all #equipments .container .swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#about-section .bottum-content-all #equipments .container .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 500px;
+  height: 300px;
+}
+
+#about-section .bottum-content-all #equipments .container .instrument-name {
+  width: 100%;
+  height: 70px;
+  background: #e9ba1f;
+  bottom: 0;
+  position: absolute;
+}
+
+#about-section .bottum-content-all #equipments .container .instrument-name p {
+  padding: 35px;
+  text-align: center;
+  position: relative;
+  height: 100%;
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 0;
+}
+
+.modal-content {
+  border-radius: 0 !important;
+  background: #e0e0e0;
+  background: linear-gradient(149deg, #e0e0e0 0%, #a1a1a1 0%, #505050 57%);
+  text-align: center;
+}
+
+.modal-content h1 {
+  margin-top: 20px;
+  font: normal normal bold 24px/30px Poppins;
+  color: #fff;
+}
+
+.modal-content .form-control {
+  max-width: 280px;
+  margin: auto;
+  background: transparent !important;
+  color: #fff;
+}
+
+.modal-content .form-control option {
+  color: #000;
+}
+
+.modal-content .modal-body {
+  margin-top: 40px;
+  background-color: rgba(255, 255, 255, 0.397);
+}
+
+.modal-content .modal-body .play-button i {
+  background: #e9ba1f 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  width: 88px;
+  height: 88px;
+  font-size: 33px;
+  color: #fff;
+  padding: 28px 0;
+  margin: auto;
+  text-align: center;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  cursor: pointer;
+}
+
+.modal-content .modal-body .play-button i:hover {
+  background: #ffc400;
+}
+
+.modal-content .modal-body h6 {
+  font-family: lora;
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-align: left;
+}
+
+.modal-content .modal-body h5 {
+  font-family: lora;
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: #ffffffa1;
+  text-align: left;
+}
+
+.modal-content .modal-body h4 {
+  font-family: lora;
+  font-size: 12px;
+  letter-spacing: 0px;
+  color: #ffffffa1;
+  text-align: left;
+}
+
+.modal-content .modal-body h4 span {
+  color: #ffc400;
+}
+
+.modal-content .modal-body h2 {
+  font: normal normal 600 22px/55px Poppins;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-align: left;
+  line-height: 1;
+}
+
+.modal-content .modal-body .col-md-6 {
+  padding: 0;
+}
+
+.modal-content .modal-footer {
+  border-top: transparent;
+  margin: auto;
+}
+
+.modal-content .btn-cancel-modal {
+  border: 1px solid #fff !important;
+  padding: 10px 30px;
+  background: transparent;
+  font: normal normal 600 16px/55px Poppins;
+  line-height: 1;
+  color: #fff;
+}
+
+.modal-content .btn-cancel-modal:hover {
+  text-decoration: none;
+}
+
+.modal-content .btn-cart-modal {
+  line-height: 1 !important;
+  border: 1px solid #ffc400 !important;
+  font: normal normal 600 16px/55px Poppins;
+  padding: 10px 30px;
+  background: #ffc400;
+  color: #fff;
+}
+
+.modal-content .btn-cart-modal:hover {
+  text-decoration: none;
 }
 /*# sourceMappingURL=styles.css.map */

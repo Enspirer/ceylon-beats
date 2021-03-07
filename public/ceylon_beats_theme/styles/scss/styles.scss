@@ -130,13 +130,13 @@ body {
     .cart {
       .row {
         float: right;
-        #ex{
+        #ex {
           position: relative;
           padding-top: 6px;
         }
-        .ex-icon-group{
+        .ex-icon-group {
           padding: 0 6px;
-          span{
+          span {
             position: absolute;
             top: -4px;
             width: 17px;
@@ -180,7 +180,7 @@ body {
       }
       // ----------------------------- cart----------------------------------
 
-      #ex4{
+      #ex4 {
         margin-top: 30px;
         padding-top: 66px;
       }
@@ -203,10 +203,9 @@ body {
       //   // min-width: 1em;
       //   // text-align: left;
       //   // font-weight:bold;
-      // }      
+      // }
 
-
-      // ----------------- 
+      // -----------------
       $primary-color: #00c0cb;
       $second-color: #f8770c;
       $light-text: #abb0be;
@@ -735,6 +734,7 @@ footer p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
   // background-size: 100% 100%;
   object-fit: cover;
   .black-layer {
@@ -743,7 +743,8 @@ footer p {
     position: absolute;
     opacity: 1;
     width: 100%;
-    height: 80vh;
+    height: 100%;
+    // height: 80vh;
   }
   .container {
     z-index: 99;
@@ -1569,7 +1570,7 @@ footer p {
       // background: transparent
       //   linear-gradient(180deg, #3f2222 0%, #000000 100%) 0% 0% no-repeat
       //   padding-box;
-        opacity: 1;
+      opacity: 1;
       // backdrop-filter: blur(40px);
       #player {
         #waveform {
@@ -1590,7 +1591,7 @@ footer p {
                 i {
                   color: #fff;
                   font-size: 33px;
-                  &:hover{
+                  &:hover {
                     color: #ffc400;
                   }
                 }
@@ -1651,11 +1652,11 @@ footer p {
                       font-size: 31px;
                       padding: 30px 12px;
                       color: #b9b9b9;
-                      &:hover{
+                      &:hover {
                         color: #ffc400;
                       }
                     }
-                    .material-icons{
+                    .material-icons {
                       font-size: 44px;
                       margin-top: -8px;
                     }
@@ -1669,7 +1670,7 @@ footer p {
     }
     .media-player.sticky {
       display: inline;
-      box-shadow: -2px -8px 25px -9px rgba(0,0,0,0.75);
+      box-shadow: -2px -8px 25px -9px rgba(0, 0, 0, 0.75);
       animation-name: animationFade;
       animation-duration: 0.5s;
       animation-fill-mode: both;
@@ -2016,7 +2017,7 @@ footer p {
       padding: 124px 0 42px 0;
       .container {
         h1 {
-          font: normal normal bold 55px/113px Poppins;
+          font: normal normal bold 45px/113px Poppins;
           letter-spacing: 0px;
           color: #ffffff;
           text-align: center;
@@ -2098,6 +2099,153 @@ footer p {
           }
         }
       }
+    }
+    #equipments {
+      .container {
+        display: inline;
+        h1 {
+          font: normal normal bold 45px/113px Poppins;
+          padding-top: 33px 0;
+          letter-spacing: 0px;
+          color: #ffffff;
+          text-align: center;
+          margin: auto;
+        }
+        .swiper-container {
+          width: 100%;
+          padding-top: 50px;
+          padding-bottom: 50px;
+        }
+
+        .swiper-slide {
+          background-position: center;
+          background-size: cover;
+          width: 500px;
+          height: 300px;
+        }
+        .instrument-name {
+          width: 100%;
+          height: 70px;
+          background: #e9ba1f;
+          bottom: 0;
+          position: absolute;
+          p {
+            padding: 35px;
+            text-align: center;
+            position: relative;
+            height: 100%;
+            font-family: Poppins;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 0;
+          }
+        }
+      }
+    }
+  }
+}
+// ---------------- License Modal -----------------------
+.modal-content {
+  border-radius: 0 !important;
+  background: rgb(224,224,224);
+  background: linear-gradient(149deg, rgba(224,224,224,1) 0%, rgba(161,161,161,1) 0%, rgba(80,80,80,1) 57%);
+  text-align: center;
+  h1 {
+    margin-top: 20px;
+    font: normal normal bold 24px/30px Poppins;
+    color: #fff;
+  }
+  .form-control{
+    max-width: 280px;
+    margin: auto;
+
+      background: transparent !important;
+    color: #fff;
+    option{
+      color: #000;
+    }
+  }
+  .modal-body{
+    margin-top: 40px;
+    background-color: rgba(255, 255, 255, 0.397);
+    .play-button {
+      i {
+        background: #e9ba1f 0% 0% no-repeat padding-box;
+        border-radius: 8px;
+        width: 88px;
+        height: 88px;
+        font-size: 33px;
+        color: #fff;
+        padding: 28px 0;
+        margin: auto;
+        text-align: center;
+        transition: all 0.6s;
+        cursor: pointer;
+        &:hover {
+          background: #ffc400;
+        }
+      }
+    }
+    h6 {
+      font-family: lora;
+      font-size: 16px;
+      letter-spacing: 0px;
+      color: #ffffff;
+      text-align: left;
+    }
+    h5 {
+      font-family: lora;
+      font-size: 16px;
+      letter-spacing: 0px;
+      color: #ffffffa1;
+      text-align: left;
+    }
+    h4{
+      font-family: lora;
+      font-size: 12px;
+      letter-spacing: 0px;
+      color: #ffffffa1;
+      text-align: left;
+      span{
+        color: #ffc400;
+      }
+    }
+    h2{
+      font: normal normal 600 22px/55px Poppins;
+      letter-spacing: 0px;
+      color: #ffffff;
+      text-align: left;
+      line-height: 1;
+    }
+    .col-md-6{
+      padding: 0;
+    }
+    
+  }
+  .modal-footer{
+    border-top: transparent;
+    margin: auto;
+  }
+  .btn-cancel-modal{
+    border: 1px solid #fff !important;
+    padding: 10px 30px;
+    background: transparent;
+    font: normal normal 600 16px/55px Poppins;
+    line-height: 1;
+    color: #fff;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  .btn-cart-modal{
+    line-height: 1 !important;
+    border: 1px solid #ffc400 !important;
+    font: normal normal 600 16px/55px Poppins;
+    padding: 10px 30px;
+    background: #ffc400;
+    color: #fff;
+    &:hover{
+      text-decoration: none;
     }
   }
 }
