@@ -7,8 +7,8 @@
     </div>
     <div class="col col-md-3">
         <div class="text-group-one">
-            <h6>Ready for This</h6>
-            <p>R&B</p>
+            <h6>{{$soundItem->music_name}}</h6>
+            <p>{{$soundItem->author_name}}</p>
         </div>
     </div>
     <div class="col col-md-2">
@@ -16,12 +16,12 @@
             <div class="duration">
                 <div class="row">
                     <p>Duration</p>
-                    <h6>4 . 24</h6>
+                    <h6>{{$soundItem->duration}}</h6>
                 </div>
             </div>
             <div class="duration">
                 <div class="row">
-                    <p>BPM</p>
+                    <p>{{$soundItem->genres_id}}</p>
                     <h6>128</h6>
                 </div>
             </div>
