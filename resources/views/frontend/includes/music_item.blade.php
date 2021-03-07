@@ -81,9 +81,63 @@
     <div class="col-md-3">
         <div class="text-group-four">
             <h1>299.50 LKR</h1>
-            <a href="#"
-            ><i class="fas fa-shopping-cart"></i> ADD TO CART</a
-            >
+            <a href="#" data-toggle="modal" data-target="#exampleModalCenter"><i class="fas fa-shopping-cart"></i> ADD TO CART</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <h1>Select Your Licenses</h1>
+
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>Music Broadcast</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="play-button">
+                                <i class="fa fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6>Ready for This</h6>
+
+                                </div>
+                                <div class="col-md-6">
+                                    <h2>$299.50</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5>R&amp;B</h5>
+
+                                </div>
+                                <div class="col-md-6">
+                                    <h4>Licence <br> <span>Music Broadcast (1 Milion)</span></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn-cancel-modal" data-dismiss="modal">Cancel</a>
+                <a href="#" class="btn-cart-modal">Add to Cart</a>
+                <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
         </div>
     </div>
 </div>

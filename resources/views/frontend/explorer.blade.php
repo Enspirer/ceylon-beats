@@ -52,7 +52,7 @@
 
 
 
-            <div class="col-sm-2">
+            <div class="col-sm-2" style="display: none">
                             <span id="play">
                                 <i class="glyphicon glyphicon-play"></i>
                                 Play

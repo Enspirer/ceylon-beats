@@ -374,7 +374,7 @@
                 });
 
                 // Load the first track
-                setCurrentSong(currentTrack);
+//                setCurrentSong(currentTrack);
             });
         </script>
 
