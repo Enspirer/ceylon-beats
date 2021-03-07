@@ -193,8 +193,7 @@
         <script
                 src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
                 integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-                crossorigin="anonymous"
-        ></script>
+                crossorigin="anonymous"></script>
         <script
                 src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
                 integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -211,6 +210,7 @@
         <script src="{{url('ceylon_beats_theme/plugin/AnimTrap/js/anim-scroll.js')}}"></script>
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
         <script src="{{url('ceylon_beats_theme/js/main.js')}}"></script>
+
         <script>
             var swiper = new Swiper(".col-swiper-container", {
                 slidesPerView: 4,
@@ -386,7 +386,27 @@
 
 
         @stack('after-scripts')
-
+        <script>
+            (function () {
+                $(".shopping-cart").each(function () {
+                    var delay = $(this).index() * 50 + "ms";
+                    $(this).css({
+                        "-webkit-transition-delay": delay,
+                        "-moz-transition-delay": delay,
+                        "-o-transition-delay": delay,
+                        "transition-delay": delay,
+                    });
+                });
+                $("#cart, .shopping-cart").hover(
+                    function (e) {
+                        $(".shopping-cart").addClass("active");
+                    },
+                    function () {
+                        $(".shopping-cart").removeClass("active");
+                    }
+                );
+            })();
+        </script>
         @include('includes.partials.ga')
     </body>
 </html>
