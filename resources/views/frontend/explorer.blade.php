@@ -40,11 +40,10 @@
                                 </div>
                             </div>
                         </div>
-                        @include('frontend.includes.music_player')
                     </div>
+                    @include('frontend.includes.music_player')
                 </div>
             </section>
-
         </div>
 
     </body>

@@ -333,13 +333,12 @@
 
                         e.preventDefault();
                         if (wavesurfer.isPlaying()){
-x
 
-                            iconselctor.className = "fa fa-stop";
                             iconselctor.className  = "fa fa-play";
                            console.log(iconselctor);
                             wavesurfer.stop();
                         }else{
+                            $(".fa-stop").attr('class', 'fa fa-play');
                             iconselctor.className = "fa fa-stop";
                             setCurrentSong(index);
 
@@ -348,8 +347,9 @@ x
 
                     });
 
-                    wavesurfer.on('finish', function(link) {
 
+                    wavesurfer.on('finish', function(link) {
+                        var iconselctor =  document.querySelector('#'+link.id+' i');
                         link.addEventListener('click', function(e) {
                             wavesurfer.play();
                             iconselctor.className = "fa fa-play";

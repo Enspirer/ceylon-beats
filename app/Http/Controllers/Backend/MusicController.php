@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
 use App\Models\MusicProducts;
+use App\Moduels\License;
 use Illuminate\Http\Request;
 use DataTables;
 class MusicController extends Controller
@@ -15,6 +16,23 @@ class MusicController extends Controller
 
     public function store(Request $request)
     {
+
+
+        $priceArray = [];
+
+        foreach ($request->price as $index =>$price_list)
+        {
+            $outarray = [
+                'price' => $price_list,
+                'license_name' => $request->licese_name[$index],
+                'licese_id' => $request->licese_id[$index]
+            ];
+            array_push($priceArray,$outarray);
+        }
+        $encodeJosnPackagePrice = json_encode($priceArray);
+
+
+
         $musicDetails = new MusicProducts;
         if($request->file('preview_file'))
         {
@@ -39,7 +57,7 @@ class MusicController extends Controller
 
         $musicDetails->music_name = $request->music_name;
         $musicDetails->description = $request->description;
-        $musicDetails->price = $request->price;
+        $musicDetails->price = $encodeJosnPackagePrice;
         $musicDetails->genres_id = $request->genres;
         $musicDetails->tags = $request->tag;
         $musicDetails->duration = $request->duration;
@@ -68,7 +86,11 @@ class MusicController extends Controller
 
     public function create()
     {
-        return view('backend.music.creator');
+        $licenseDetails =  License::where('status',1)->get();
+
+        return view('backend.music.creator',[
+            'liceseDetails' => $licenseDetails
+        ]);
     }
 
 }
