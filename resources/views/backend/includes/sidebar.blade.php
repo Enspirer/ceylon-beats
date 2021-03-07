@@ -5,11 +5,16 @@
                 @lang('menus.backend.sidebar.general')
             </li>
             <li class="nav-item">
-                <a class="nav-link {{
-                    active_class(Route::is('admin/dashboard'))
-                }}" href="{{ route('admin.dashboard') }}">
+                <a class="nav-link {{ active_class(Route::is('admin/dashboard'))}}" href="{{ route('admin.dashboard') }}">
                     <i class="nav-icon fas fa-tachometer-alt"></i>
                     @lang('menus.backend.sidebar.dashboard')
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link {{ active_class(Route::is('admin/music'))}}" href="{{ route('admin.music') }}">
+                    <i class="nav-icon fas fa-music"></i>
+                    Music
                 </a>
             </li>
 
