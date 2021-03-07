@@ -19,7 +19,7 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link {{ active_class(Route::is('admin/music'))}}" href="{{ route('admin.music') }}">
+                <a class="nav-link {{ active_class(Route::is('admin/license'))}}" href="{{ route('admin.license') }}">
                     <i class="nav-icon fas fa-paperclip"></i>
                     License
                 </a>
