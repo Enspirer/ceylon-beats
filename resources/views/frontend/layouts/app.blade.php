@@ -333,9 +333,7 @@
 
                         e.preventDefault();
                         if (wavesurfer.isPlaying()){
-                            $(".fa-stop").attr('class', 'fa fa-play');
-
-                            document.getElementById("fa-stop").className = 'fa-play';
+x
 
                             iconselctor.className = "fa fa-stop";
                             iconselctor.className  = "fa fa-play";

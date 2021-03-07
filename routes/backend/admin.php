@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Backend\DashboardController;
 use App\Http\Controllers\Backend\MusicController;
+use App\Http\Controllers\Backend\LicenseController;
 // All route names are prefixed with 'admin.'.
 Route::redirect('/', '/admin/dashboard', 301);
 Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
@@ -13,4 +14,6 @@ Route::get('music/getdetails', [MusicController::class, 'getTableDetails'])->nam
 Route::get('music/create', [MusicController::class, 'create'])->name('music.create');
 Route::post('music/store', [MusicController::class, 'store'])->name('music.store');
 
-
+Route::get('license', [LicenseController::class, 'index'])->name('license');
+Route::get('license/getdetails', [LicenseController::class, 'getTableDetails'])->name('license.get_table_details');
+Route::get('license/create', [LicenseController::class, 'create'])->name('license.create');

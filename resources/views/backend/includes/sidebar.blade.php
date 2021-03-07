@@ -18,6 +18,13 @@
                 </a>
             </li>
 
+            <li class="nav-item">
+                <a class="nav-link {{ active_class(Route::is('admin/music'))}}" href="{{ route('admin.music') }}">
+                    <i class="nav-icon fas fa-paperclip"></i>
+                    License
+                </a>
+            </li>
+
             @if ($logged_in_user->isAdmin())
                 <li class="nav-title">
                     @lang('menus.backend.sidebar.system')
