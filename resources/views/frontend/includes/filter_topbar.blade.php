@@ -1,6 +1,9 @@
 <div class="top-row row d-flex">
     <div class="search-bar">
-        <form>
+
+        <form action="{{route('frontend.search_query.index')}}" method="post">
+            {{csrf_field()}}
+
             <div class="input-group">
                 <i
                 ><svg
@@ -42,8 +45,11 @@
                 <input
                         type="text"
                         class="form-control"
+                        name="search"
                         placeholder="e.g. Hip-Hop music"
                 />
+                <input class="submit" type="submit" value="Search" style="display: none">
+
             </div>
         </form>
     </div>

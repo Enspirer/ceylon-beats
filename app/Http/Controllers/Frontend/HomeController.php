@@ -25,7 +25,11 @@ class HomeController extends Controller
 
     public function search_query(Request $request)
     {
-        return redirect()->route('frontend.explorer',['null','null','null','null','null']);
+        if($request->search){
+            return redirect()->route('frontend.explorer',['null','null','null','null',$request->search]);
+        }else{
+            return redirect()->route('frontend.explorer',['null','null','null','null','null']);
+        }
     }
 
     public function addCart(Request $request)
