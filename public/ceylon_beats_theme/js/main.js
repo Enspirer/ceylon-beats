@@ -11,7 +11,7 @@ $(document).ready(function () {
 		$(".default-logo").removeClass("d-none");
 	  }
 	});
-  
+
 	// $(window).scroll(function () {
 	//   if ($(this).scrollTop() > 50) {
 	// 	$('#back-to-top').fadeIn();
@@ -25,7 +25,7 @@ $(document).ready(function () {
 	// 	scrollTop: 0
 	//   }, 400);
 	//   return false;
-	// });   
+	// });
 
 	$( "#img1" ).click(function() {
 		$("#blur-image").attr("src","assets/Mask Group 30@2x.png");
@@ -70,10 +70,15 @@ $(document).ready(function () {
 
 
 
-	//   media Player ---------------------- 
+	//   media Player ----------------------
 
+    window.onclick = function () {
+        document.getElementById("menu-container").classList.remove("active");
+    };
 
-  });
+});
 
-
-  
+function myFunction2(event) {
+    event.stopPropagation();
+    document.getElementById("menu-container").classList.toggle("active");
+}
