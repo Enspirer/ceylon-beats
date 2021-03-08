@@ -97,6 +97,7 @@
             <h1>Select Your Licenses</h1>
 
             <select class="form-control" name="license_name" id="licesensect{{$soundItem->id}}" onchange="selectPackage('{{$soundItem->id}}','licesensect{{$soundItem->id}}','inpack_price{{$soundItem->id}}')">
+                    <option selected>Select License</option>
                 @foreach(json_decode($soundItem->price) as  $pricerange)
                     <option value="{{$pricerange->license_name}}">{{$pricerange->license_name}}</option>
                 @endforeach
