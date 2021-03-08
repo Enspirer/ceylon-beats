@@ -382,11 +382,7 @@
         <script>
             function selectPackage(music_id,secltor_id,price_id) {
                 console.log(price_id);
-
                var selelect_element =  $('#'+secltor_id).val();
-
-
-
                 $.get("{{url('/api/music_price')}}/"+ music_id +"/" + selelect_element, function(data, status){
                     var obj = JSON.parse(data);
 //                    alert("Data: " + obj.price + "\nStatus: " + status);

@@ -134,7 +134,13 @@
                     @endforeach
                 </ul>
 
-                <a href="#" class="button">Checkout <i class="fa fa-chevron-right"></i></a>
+                @auth
+                    <a href="{{route('frontend.user.my_cart')}}" class="button">Checkout <i class="fa fa-chevron-right"></i></a>
+
+                @else
+                    <a href="{{route('frontend.auth.login')}}" class="button">Checkout <i class="fa fa-chevron-right"></i></a>
+                @endauth
+
             </div>
             <!--end shopping-cart -->
             <!-- ----------------------- cart ------------------------  -->

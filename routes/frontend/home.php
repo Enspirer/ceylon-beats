@@ -6,6 +6,7 @@ use App\Http\Controllers\Frontend\User\AccountController;
 use App\Http\Controllers\Frontend\User\DashboardController;
 use App\Http\Controllers\Frontend\User\ProfileController;
 use App\Http\Controllers\Frontend\ExplorerController;
+use App\Http\Controllers\Frontend\MyCartController;
 
 /*
  * Frontend Controllers
@@ -32,6 +33,7 @@ Route::group(['middleware' => ['auth', 'password_expires']], function () {
     Route::group(['namespace' => 'User', 'as' => 'user.'], function () {
         // User Dashboard Specific
         Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
+        Route::get('my_cart', [MyCartController::class, 'index'])->name('my_cart');
 
         // User Account Specific
         Route::get('account', [AccountController::class, 'index'])->name('account');

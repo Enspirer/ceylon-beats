@@ -26,19 +26,6 @@
                                     @endforeach
                                 </div>
                             </div>
-
-                            <div class="pagination-explore">
-                                <div class="pagination d-flex justify-content-center flex-wrap">
-                                    <a href="#"><i class="fa fa-angle-left"></i></a>
-                                    <a href="#">1</a>
-                                    <a href="#">2</a>
-                                    <a href="#" class="active">3</a>
-                                    <a href="#">4</a>
-                                    <a href="#">5</a>
-                                    <a href="#">6</a>
-                                    <a href="#"><i class="fa fa-angle-right"></i></a>
-                                </div>
-                            </div>
                         </div>
                     </div>
                     @include('frontend.includes.music_player')
