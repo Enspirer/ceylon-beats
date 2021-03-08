@@ -65,8 +65,7 @@
                                     <div class="profile-highlight">
                                         <img src="https://images.unsplash.com/photo-1578976563986-fb8769ab695e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" alt="profile-img" width=36 height=36>
                                         <div class="details">
-                                            <div id="profile-name">Kenny Lee</div>
-                                            <div id="profile-footer">Team Hallaway</div>
+                                            <div id="profile-name">{{auth()->user()->first_name}} {{auth()->user()->last_name}}</div>
                                         </div>
                                     </div>
                                     <li class="user-menu__item">
@@ -88,22 +87,22 @@
                                         </a>
                                     </li>
                                     <div class="footer">
-                                        <li class="user-menu__item"><a class="user-menu-link" href="#" style="color: #F44336;">Logout</a></li>
-                                        <li class="user-menu__item"><a class="user-menu-link" href="#">Settings</a></li>
+                                        <li class="user-menu__item"><a class="user-menu-link" href="{{route('frontend.auth.logout')}}" style="color: #F44336;">Logout</a></li>
+                                        <li class="user-menu__item"><a class="user-menu-link" href="{{route('frontend.user.account')}}">Settings</a></li>
                                     </div>
                                 </ul>
                             </div>
                         </div>
 
                 @else
-                    <a href="#">
+                    <a href="{{route('frontend.auth.login')}}">
                         <div id="ex" class="ex-icon-group">
                             <!-- <span class="p1 fa-stack has-badge" data-count="10"> -->
                             <i class="fa fa-user" aria-hidden="true"></i>
 
                         </div>
                     </a>
-                    <a href="#" type="button" class="button-signup">Sign Up</a>
+                    <a href="{{route('frontend.auth.register')}}" type="button" class="button-signup">Sign Up</a>
                 @endauth
 
 
