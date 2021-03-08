@@ -209,6 +209,7 @@
         <script src="{{url('ceylon_beats_theme/plugin/AnimTrap/js/anim-trap.js')}}"></script>
         <script src="{{url('ceylon_beats_theme/plugin/AnimTrap/js/anim-scroll.js')}}"></script>
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
         <script src="{{url('ceylon_beats_theme/js/main.js')}}"></script>
 
         <script>
@@ -316,7 +317,6 @@
 
                 // Load a track by index and highlight the corresponding link
                 let setCurrentSong = function(index) {
-
                     links[currentTrack].classList.remove('active');
                     currentTrack = index;
                     links[currentTrack].classList.add('active');
@@ -327,10 +327,8 @@
 
                 // Load the track on click
                 Array.prototype.forEach.call(links, function(link, index) {
-
                     link.addEventListener('click', function(e) {
                         var iconselctor =  document.querySelector('#'+link.id+' i');
-
                         e.preventDefault();
                         if (wavesurfer.isPlaying()){
 
@@ -341,12 +339,8 @@
                             $(".fa-stop").attr('class', 'fa fa-play');
                             iconselctor.className = "fa fa-stop";
                             setCurrentSong(index);
-
                         }
-
-
                     });
-
 
                     wavesurfer.on('finish', function(link) {
                         var iconselctor =  document.querySelector('#'+link.id+' i');
@@ -356,7 +350,6 @@
                         });
 //                        $('#'+links[currentTrack].id).show();
                     });
-
                 });
 
                 // Play on audio load
@@ -386,6 +379,26 @@
 
 
         @stack('after-scripts')
+        <script>
+            function selectPackage(music_id,secltor_id,price_id) {
+                console.log(price_id);
+
+               var selelect_element =  $('#'+secltor_id).val();
+
+
+
+                $.get("{{url('/api/music_price')}}/"+ music_id +"/" + selelect_element, function(data, status){
+                    var obj = JSON.parse(data);
+//                    alert("Data: " + obj.price + "\nStatus: " + status);
+                    $('#'+price_id).text(obj.price);
+                    $('#pricedetails'+music_id).val(obj.price);
+                    $('#submit_cores'+music_id).attr("disabled",false);
+
+                });
+
+            }
+        </script>
+
         <script>
             (function () {
                 $(".shopping-cart").each(function () {

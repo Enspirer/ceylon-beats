@@ -2,7 +2,7 @@
     <div class="container">
         <div class="curency col-md-2">
             <div class="row">
-                <img src="assets/image/Image 15@2x.png" alt="" srcset="" />
+                <img src="{{url('/ceylon_beats_theme/assets/image/Image 15@2x.png')}}" alt="" srcset="" />
                 <select class="form-select" aria-label="Default select example">
                     <option selected>LKR</option>
                     <option value="1">One</option>
@@ -16,16 +16,16 @@
                 <div class="menu-item col-md-2">
                     <a href="{{url('/')}}" class="active">Home</a>
                 </div>
-                <div class="menu-item col-md-2"><a href="{{route('frontend.explorer',['null','null','null','null'])}}">Music</a></div>
+                <div class="menu-item col-md-2"><a href="{{route('frontend.explorer',['null','null','null','null','null'])}}">Music</a></div>
                 <div class="menu-item col-md-3">
                     <img
                             class="default-logo"
-                            src="assets/image/Group 57@2x.png"
+                            src="{{url('/ceylon_beats_theme/assets/image/Group 57@2x.png')}}"
                             alt=""
                     />
                     <img
                             class="sticky-logo d-none"
-                            src="assets/image/Group 57@2x.png"
+                            src="{{url('/ceylon_beats_theme/assets/image/Group 57@2x.png')}}"
                             alt=""
                     />
                 </div>
@@ -35,6 +35,10 @@
         </div>
         <div class="cart col-md-3">
             <div class="row">
+
+                @auth
+
+                @endauth
 
                 <a href="#" id="cart">
                     <div id="ex" class="ex-icon-group">
@@ -48,14 +52,21 @@
                     </div>
                 </a>
 
-                <a href="#">
-                    <div id="ex" class="ex-icon-group">
-                        <!-- <span class="p1 fa-stack has-badge" data-count="10"> -->
-                        <i class="fa fa-user" aria-hidden="true"></i>
+                @auth
 
-                    </div>
-                </a>
-                <a href="#" type="button" class="button-signup">Sign Up</a>
+
+                @else
+                    <a href="#">
+                        <div id="ex" class="ex-icon-group">
+                            <!-- <span class="p1 fa-stack has-badge" data-count="10"> -->
+                            <i class="fa fa-user" aria-hidden="true"></i>
+
+                        </div>
+                    </a>
+                    <a href="#" type="button" class="button-signup">Sign Up</a>
+                @endauth
+
+
             </div>
 
             <!-- ------------------- cart -------------------------------------  -->
@@ -64,19 +75,25 @@
                     <i class="fa fa-shopping-cart cart-icon"></i><span class="badge">{{count($cartDetails)}}</span>
                     <div class="shopping-cart-total">
                         <span class="lighter-text">Total:</span>
-                        <span class="main-color-text total">70€</span>
+                        <span class="main-color-text total">LKR {{number_format($cart_total,2)}}</span>
                     </div>
                 </div>
                 <!--end shopping-cart-header -->
 
                 <ul class="shopping-cart-items">
                     @foreach($cartDetails as $cartDetail)
-                        <li class="clearfix">
-                            <img src="https://www.qispackaging.com.au/getmetafile/fefe4afb-dd4d-495e-ad59-209f29b47052/XMREDTREE.aspx" alt="item1">
-                            <span class="item-name">XMREDTREE</span>
-                            <span class="item-detail">Pack 100</span>
-                            <span class="item-price">45€</span>
-                            <span class="item-quantity">Quantity: 01</span>
+                        <li class="clearfix" style="list-style-type: none;">
+                            <img src="{{url('ceylon_beats_theme/assets/dummy_music.png')}}" alt="item1">
+                            <span class="item-name">{{$cartDetail->name}}</span>
+                            @foreach($cartDetail->attributes as $liceseDetailsCart)
+                                <span class="item-detail">{{$liceseDetailsCart}}</span>
+                            @endforeach
+                            <span class="item-price">LKR {{number_format($cartDetail->price,2)}}</span>
+
+                            <span class="item-quantity">QTY: 1</span>
+                            <button class="btn btn-danger">
+                                <i class="fa fa-trash"></i>
+                            </button>
                         </li>
                     @endforeach
                 </ul>
