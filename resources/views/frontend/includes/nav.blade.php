@@ -121,9 +121,10 @@
                         <li class="clearfix" style="list-style-type: none;">
                             <img src="{{url('ceylon_beats_theme/assets/dummy_music.png')}}" alt="item1">
                             <span class="item-name">{{$cartDetail->name}}</span>
-                            @foreach($cartDetail->attributes as $liceseDetailsCart)
-                                <span class="item-detail">{{$liceseDetailsCart}}</span>
-                            @endforeach
+                            <span class="item-detail">
+                                {{$cartDetail->attributes->license_name}}
+                            </span>
+
                             <span class="item-price">LKR {{number_format($cartDetail->price,2)}}</span>
 
                             <span class="item-quantity">QTY: 1</span>

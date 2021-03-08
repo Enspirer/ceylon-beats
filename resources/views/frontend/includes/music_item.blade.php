@@ -109,6 +109,8 @@
                     <input type="hidden" name="price_details" value="" id="pricedetails{{$soundItem->id}}">
                     <input type="hidden" name="music_item_id" value="{{$soundItem->id}}">
                     <input type="hidden" name="music_name" value="{{$soundItem->music_name}}">
+                    <input type="hidden" name="preview_link" value="{{$soundItem->preview_link}}">
+                    <input type="hidden" name="author_name" value="{{$soundItem->author_name}}">
 
                     <div class="container">
                         <div class="row">
