@@ -42,6 +42,14 @@ body {
     padding: 23px;
 }
 
+.m-t-15 {
+    margin-top: 15px;
+}
+
+.space-double {
+    padding: 43px;
+}
+
 .btn-view-all {
     margin: 60px 0;
     display: -webkit-box;
@@ -602,6 +610,11 @@ footer p {
     width: 20px;
     height: 20px;
     text-align: center;
+}
+
+.mask-free {
+    background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(49%, #6c0034), to(black)) !important;
+    background: linear-gradient(0deg, black 0%, #6c0034 49%, black 100%) !important;
 }
 
 #head-section {
@@ -1649,6 +1662,68 @@ footer p {
     border: none;
 }
 
+#explore-music .mask .left-filter .container-dashboard {
+    padding: 0;
+}
+
+#explore-music .mask .left-filter .container-dashboard .profile-dashboard-row {
+    margin: 0;
+    padding: 0;
+    padding: 20px 40px;
+}
+
+#explore-music .mask .left-filter .container-dashboard .profile-dashboard-row img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    border: 3px solid #fff;
+}
+
+#explore-music .mask .left-filter .container-dashboard .profile-dashboard-row h6 {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+}
+
+#explore-music .mask .left-filter .container-dashboard .menu-item-dashboard .menu-item {
+    margin: 0;
+    padding: 20px 40px;
+    color: #b9b9b9;
+    font-family: Poppins;
+    font-size: 20px;
+    -webkit-transition: all ease-in-out 0.2s;
+    transition: all ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+#explore-music .mask .left-filter .container-dashboard .menu-item-dashboard .menu-item h5 {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    padding-top: 5px;
+    font-weight: 300;
+}
+
+#explore-music .mask .left-filter .container-dashboard .menu-item-dashboard .menu-item:hover {
+    color: #fff;
+}
+
+#explore-music .mask .left-filter .container-dashboard .menu-item-dashboard .menu-item:hover h5 {
+    font-weight: 500 !important;
+}
+
+#explore-music .mask .left-filter .container-dashboard .menu-item-dashboard .active-menu {
+    color: #fff !important;
+}
+
+#explore-music .mask .left-filter .container-dashboard .menu-item-dashboard .active-menu h5 {
+    font-weight: 500 !important;
+}
+
 #explore-music .mask .right-result {
     width: calc(100% - 396px);
     height: 100px;
@@ -1866,6 +1941,65 @@ footer p {
 
 #explore-music .mask .right-result .container .list-item .row .text-group-four a:hover {
     background: #ffc400;
+}
+
+#explore-music .mask .right-result .container h2 {
+    margin-top: 50px;
+    font: normal normal 800 42px/27px Poppins;
+    color: #fff;
+}
+
+#explore-music .mask .right-result .fa-trash {
+    font-size: 22px;
+    color: #fff !important;
+}
+
+#explore-music .mask .right-result .my-cart-bottum {
+    padding: 0;
+    margin: 0;
+}
+
+#explore-music .mask .right-result .my-cart-bottum p {
+    color: #b9b9b9;
+    font-family: Poppins;
+}
+
+#explore-music .mask .right-result .my-cart-bottum h3 {
+    text-align: right;
+    font-family: Poppins;
+    line-height: 1;
+    font-weight: 600;
+    color: #b9b9b9;
+}
+
+#explore-music .mask .right-result .my-cart-bottum .col {
+    margin: 0;
+    padding: 0 !important;
+}
+
+#explore-music .mask .right-result .my-cart-bottum .bottum-button {
+    float: right;
+}
+
+#explore-music .mask .right-result .my-cart-bottum .btn-continue {
+    margin: 0 10px;
+    padding: 8px 20px;
+    border: 1px solid #b9b9b9;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+    font-family: Poppins;
+}
+
+#explore-music .mask .right-result .my-cart-bottum .btn-checkout {
+    margin: 0 10px;
+    padding: 8px 20px;
+    border: 1px solid #E9BA1F;
+    font-weight: 300;
+    background: #E9BA1F;
+    text-decoration: none;
+    color: #fff;
+    font-family: Poppins;
 }
 
 #explore-music .mask .media-player {
