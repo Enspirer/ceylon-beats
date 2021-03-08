@@ -1726,9 +1726,8 @@ footer p {
 
 #explore-music .mask .right-result {
     width: calc(100% - 396px);
-    height: 100px;
     margin-top: 30px;
-    padding: 0 60px 0 24px;
+    padding: 0 60px 50px 24px;
 }
 
 #explore-music .mask .right-result .container .top-row {
@@ -2000,6 +1999,66 @@ footer p {
     text-decoration: none;
     color: #fff;
     font-family: Poppins;
+}
+
+#explore-music .mask .right-result .row-select-option .curency {
+    margin-top: 10px;
+    margin-left: 53px;
+}
+
+#explore-music .mask .right-result .row-select-option .curency p {
+    text-align: left;
+    font: normal normal normal 18px/30px Poppins;
+    letter-spacing: 0px;
+    color: #b9b9b9;
+    line-height: 0;
+    margin-top: 10px;
+    margin-right: 12px;
+}
+
+#explore-music .mask .right-result .row-select-option .curency img {
+    height: 15px;
+    margin-top: 4px;
+    margin-right: 10px;
+}
+
+#explore-music .mask .right-result .row-select-option .curency select {
+    margin-top: -5px;
+    background: transparent;
+    border: transparent;
+    color: #fff;
+    font: normal normal 400 16px/27px Poppins;
+    letter-spacing: 0px;
+}
+
+#explore-music .mask .right-result .row-select-option .curency select option {
+    background: #fff;
+    color: #000;
+}
+
+#explore-music .mask .right-result .row-select-option .search-bar form .input-group i {
+    position: absolute;
+    z-index: 22;
+    left: 12px;
+    top: 6px;
+}
+
+#explore-music .mask .right-result .row-select-option .search-bar form .input-group input {
+    padding-left: 42px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 24px;
+    border: transparent;
+    width: 328px;
+    text-align: left;
+    font: normal normal normal 18px/30px Poppins;
+    letter-spacing: 0px;
+    color: #b9b9b9;
+}
+
+#explore-music .mask .right-result .row-select-option .search-bar form .input-group input:focus {
+    border: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 #explore-music .mask .media-player {
