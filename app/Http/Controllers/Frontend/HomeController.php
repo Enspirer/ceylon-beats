@@ -4,7 +4,8 @@ namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
 use App\Models\MusicProducts;
-
+use Illuminate\Http\Request;
+use Cart;
 /**
  * Class HomeController.
  */
@@ -20,5 +21,40 @@ class HomeController extends Controller
         return view('frontend.index',[
             'feature_music' => $infatore
         ]);
+    }
+
+    public function search_query(Request $request)
+    {
+        return redirect()->route('frontend.explorer',['null','null','null','null','null']);
+    }
+
+    public function addCart(Request $request)
+    {
+        Cart::add($request->music_item_id, $request->music_name, $request->price_details, 1, [
+            'license_name' => $request->license_name
+        ]);
+        return back();
+    }
+
+    public function removeCart(Request $request)
+    {
+
+    }
+
+    public function getJsonData($itemID,$price_package)
+    {
+        $getMusicDetails = MusicProducts::where('id',$itemID)->first();
+        $priceDetails = json_decode($getMusicDetails->price);
+        foreach ($priceDetails as $pricepack){
+            if($pricepack->license_name == $price_package)
+            {
+                $outputDetails =  [
+                    'license_name' => $pricepack->license_name,
+                    'price' => $pricepack->price,
+                    'item_id' => $getMusicDetails->id
+                ];
+                return json_encode($outputDetails);
+            }
+        }
     }
 }

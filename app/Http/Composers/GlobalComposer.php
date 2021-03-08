@@ -18,7 +18,9 @@ class GlobalComposer
     public function compose(View $view)
     {
         $itemsCart = Cart::getContent();
+        $total = Cart::getTotal();
         $view->with('cartDetails',$itemsCart);
+        $view->with('cart_total',$total);
         $view->with('logged_in_user', auth()->user());
     }
 }
