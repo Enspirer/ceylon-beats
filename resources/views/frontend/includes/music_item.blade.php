@@ -86,7 +86,7 @@
     </div>
 </div>
 
-
+{{------------------ Modal ------------------ --}}
 <form action="{{route('frontend.cart.add')}}" method="post">
 
 <div class="modal fade" id="exampleModalCenter{{$soundItem->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="display: none;">
@@ -141,13 +141,14 @@
                             </div>
                         </div>
                     </div>
+            </div>
                     <div class="modal-footer">
                         <a href="#" class="btn-cancel-modal" data-dismiss="modal">Cancel</a>
                         <button type="submit" id="submit_cores{{$soundItem->id}}"   class="btn-cart-modal" disabled>Add to Cart</button>
                         <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                         <button type="button" class="btn btn-primary">Save changes</button> -->
                     </div>
-            </div>
+
         </div>
     </div>
 </div>
