@@ -14,6 +14,12 @@ class GenresController extends Controller
         return view('backend.genres.index');
     }
 
+
+    public function create()
+    {
+        return view('backend.genres.creator');
+    }
+
     public function show($id)
     {
 

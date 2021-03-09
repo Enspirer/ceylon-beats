@@ -26,6 +26,11 @@ Breadcrumbs::for('admin.genres', function ($trail) {
 });
 
 
+Breadcrumbs::for('admin.genres.create', function ($trail) {
+    $trail->push('Genres Create', route('admin.genres.create'));
+});
+
+
 
 require __DIR__.'/auth.php';
 require __DIR__.'/log-viewer.php';
