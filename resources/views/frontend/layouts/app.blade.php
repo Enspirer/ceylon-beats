@@ -385,7 +385,7 @@
                var selelect_element =  $('#'+secltor_id).val();
                 $.get("{{url('/api/music_price')}}/"+ music_id +"/" + selelect_element, function(data, status){
                     var obj = JSON.parse(data);
-//                    alert("Data: " + obj.price + "\nStatus: " + status);
+                   // alert("Data: " + obj.price + "\nStatus: " + status);
                     $('#'+price_id).text(obj.price);
                     $('#pricedetails'+music_id).val(obj.price);
                     $('#submit_cores'+music_id).attr("disabled",false);

@@ -618,6 +618,11 @@ footer p {
     background: linear-gradient(0deg, black 0%, #6c0034 49%, black 100%) !important;
 }
 
+.mask-free-two {
+    background: -webkit-gradient(linear, left bottom, left top, from(black), to(#6c0034)) !important;
+    background: linear-gradient(0deg, black 0%, #6c0034 100%) !important;
+}
+
 #head-section {
     background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(49%, #6c0034), to(#0c0141));
     background: linear-gradient(0deg, black 0%, #6c0034 49%, #0c0141 100%);
@@ -2271,6 +2276,54 @@ footer p {
     margin-left: auto;
 }
 
+#explore-music .mask .right-result .licence-section .licence-text {
+    color: #b9b9b9;
+    font-family: Poppins;
+    font-size: 15px;
+}
+
+#explore-music .mask .right-result .licence-section .licence-text a {
+    color: #E9BA1F;
+}
+
+#explore-music .mask .right-result .terms-and-condetion h6 {
+    color: #b9b9b9;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+#explore-music .mask .right-result .terms-and-condetion ul {
+    margin-left: 50px;
+}
+
+#explore-music .mask .right-result .terms-and-condetion ul li {
+    color: #b9b9b9;
+    font-family: Poppins;
+    font-size: 15px;
+    line-height: 2;
+}
+
+#explore-music .mask .right-result .terms-and-condetion .form-check {
+    margin-top: 40px;
+}
+
+#explore-music .mask .right-result .terms-and-condetion .form-check label {
+    margin-left: 10px;
+    color: #b9b9b9;
+}
+
+#explore-music .mask .right-result .terms-and-condetion .form-check input {
+    width: 14px;
+    height: 14px;
+}
+
+#explore-music .mask .right-result .terms-and-condetion .form-check a {
+    color: #e9ba1f;
+    text-decoration: none;
+}
+
 #explore-music .mask .media-player {
     z-index: 9999999;
     position: fixed;
@@ -2530,8 +2583,8 @@ footer p {
 }
 
 .contact-form-section {
-    background: transparent -webkit-gradient(linear, left bottom, left top, from(#141414), to(#6c0034)) 0% 0% no-repeat padding-box;
-    background: transparent linear-gradient(0deg, #141414 0%, #6c0034 100%) 0% 0% no-repeat padding-box;
+    background: -webkit-gradient(linear, left bottom, left top, from(black), to(#6c0034));
+    background: linear-gradient(0deg, black 0%, #6c0034 100%);
     opacity: 1;
     padding: 83px 0;
 }
@@ -2644,7 +2697,11 @@ footer p {
     margin-left: 22px;
 }
 
-.contact-form-section .form form button {
+.contact-form-section .form form .row {
+    margin: auto;
+}
+
+.contact-form-section .form form .row .btn-view-all {
     font: normal normal 300 18px/33px Poppins;
     letter-spacing: -0.61px;
     color: #ffffff;
@@ -2653,20 +2710,26 @@ footer p {
     padding: 8px 30px;
     -webkit-transition: all 0.6s;
     transition: all 0.6s;
-    margin: auto;
+    margin: auto 10px;
     margin-top: 44px;
 }
 
-.contact-form-section .form form button:hover {
+.contact-form-section .form form .row .btn-view-all:hover {
     color: #fff;
     background-position: 100%;
 }
 
-.contact-form-section .form form button:active {
+.contact-form-section .form form .row .btn-view-all:active {
     -webkit-transform: translate(0.5rem, 0.5rem);
     transform: translate(0.5rem, 0.5rem);
     -webkit-box-shadow: 0px 10px 20px -15px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 10px 20px -15px rgba(0, 0, 0, 0.75);
+}
+
+.contact-form-section .form form .row .btn-view-all-yellow {
+    color: #ffffff;
+    border: 1px solid #E9BA1F;
+    background: #E9BA1F;
 }
 
 .contact-form-section img {
@@ -2674,6 +2737,34 @@ footer p {
     float: right;
     -webkit-box-shadow: 11px 17px 97px 6px rgba(255, 255, 255, 0.23);
     box-shadow: 11px 17px 97px 6px rgba(255, 255, 255, 0.23);
+}
+
+.contact-form-section .track-details {
+    padding: 20px 0;
+}
+
+.contact-form-section .track-details .play-button i {
+    background: #e9ba1f 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+    width: 88px;
+    height: 88px;
+    font-size: 33px;
+    color: #fff;
+    padding: 28px 0;
+    margin: auto;
+    text-align: center;
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+    cursor: pointer;
+}
+
+.contact-form-section .track-details .play-button i:hover {
+    background: #ffc400;
+}
+
+.contact-form-section .track-details p {
+    line-height: 1;
+    margin: 4px 0;
 }
 
 #about-section .hero-image {
@@ -2976,23 +3067,27 @@ footer p {
     background-color: rgba(255, 255, 255, 0.397);
 }
 
+.modal-content .modal-body .play-button {
+    position: revert !important;
+}
+
 .modal-content .modal-body .play-button i {
-    background: #e9ba1f 0% 0% no-repeat padding-box;
-    border-radius: 8px;
-    width: 88px;
-    height: 88px;
-    font-size: 33px;
-    color: #fff;
-    padding: 28px 0;
-    margin: auto;
-    text-align: center;
-    -webkit-transition: all 0.6s;
-    transition: all 0.6s;
-    cursor: pointer;
+    background: #e9ba1f 0% 0% no-repeat padding-box !important;
+    border-radius: 8px !important;
+    width: 88px !important;
+    height: 88px !important;
+    font-size: 33px !important;
+    color: #fff !important;
+    padding: 28px 0 !important;
+    margin: auto !important;
+    text-align: center !important;
+    -webkit-transition: all 0.6s !important;
+    transition: all 0.6s !important;
+    cursor: pointer !important;
 }
 
 .modal-content .modal-body .play-button i:hover {
-    background: #ffc400;
+    background: #ffc400 !important;
 }
 
 .modal-content .modal-body h6 {
@@ -3029,6 +3124,7 @@ footer p {
     color: #ffffff;
     text-align: left;
     line-height: 1;
+    margin: 0 !important;
 }
 
 .modal-content .modal-body .col-md-6 {
