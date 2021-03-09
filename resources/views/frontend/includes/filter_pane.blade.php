@@ -54,7 +54,7 @@
             @foreach($getGenres as $genre)
                     <div class="genres-item">
                         <div class="row d-flex justify-content-between">
-                            <a href="">
+                            <a href="{{route('frontend.explorer',[$genre->name,'null','null','null','null'])}}">
                                 <div class="row form-check">
                                     <label class="cbx" for="cbx">
                                         <div class="flip">
