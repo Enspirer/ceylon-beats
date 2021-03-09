@@ -35,6 +35,7 @@ Route::group(['middleware' => ['auth', 'password_expires']], function () {
         // User Dashboard Specific
         Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
         Route::get('my_cart', [MyCartController::class, 'index'])->name('my_cart');
+        Route::get('dashboard', [MyCartController::class, 'index'])->name('my_cart');
 
 
         // User Account Specific

@@ -1,7 +1,7 @@
 <div class="left-filter">
     <div class="row-filter-top row d-flex justify-content-between">
-        <a href="#"
-        ><svg
+        <a href="#">
+            <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="22.5"
                     height="15"

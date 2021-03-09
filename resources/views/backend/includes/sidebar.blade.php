@@ -25,6 +25,15 @@
                 </a>
             </li>
 
+            <li class="nav-item">
+                <a class="nav-link {{ active_class(Route::is('admin/genres'))}}" href="{{ route('admin.genres') }}">
+                    <i class="nav-icon fas fa-music"></i>
+                    Genres
+                </a>
+            </li>
+
+
+
             @if ($logged_in_user->isAdmin())
                 <li class="nav-title">
                     @lang('menus.backend.sidebar.system')

@@ -62,8 +62,6 @@
                     aria-label="Default select example"
             >
                 <option selected>LKR</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
             </select>
         </div>
     </div>
@@ -76,9 +74,6 @@
                     aria-label="Default select example"
             >
                 <option selected>Latest</option>
-                <option value="1">Trending</option>
-                <option value="2">Price</option>
-                <option value="2">Best Seller</option>
             </select>
         </div>
     </div>

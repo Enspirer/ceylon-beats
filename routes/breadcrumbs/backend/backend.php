@@ -21,6 +21,10 @@ Breadcrumbs::for('admin.license', function ($trail) {
     $trail->push('License Create', route('admin.license'));
 });
 
+Breadcrumbs::for('admin.genres', function ($trail) {
+    $trail->push('Genres', route('admin.genres'));
+});
+
 
 
 require __DIR__.'/auth.php';

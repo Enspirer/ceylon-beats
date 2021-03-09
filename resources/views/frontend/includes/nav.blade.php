@@ -54,19 +54,19 @@
                 @auth
                         <div class="user-menu-wrap">
 
-                            <a class="mini-photo-wrapper" onclick="myFunction2(event)" href="#"><img class="mini-photo" src="https://images.unsplash.com/photo-1578976563986-fb8769ab695e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" width="36" height="36"/></a>
+                            <a class="mini-photo-wrapper" onclick="myFunction2(event)" href="#"><img class="mini-photo" src="{{$logged_in_user->picture}}" width="36" height="36"/></a>
 
 
                             <div class="menu-container" id="menu-container">
                                 <ul class="user-menu">
                                     <div class="profile-highlight">
-                                        <img src="https://images.unsplash.com/photo-1578976563986-fb8769ab695e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" alt="profile-img" width=36 height=36>
+                                        <img src="{{$logged_in_user->picture}}" alt="profile-img" width=36 height=36>
                                         <div class="details">
                                             <div id="profile-name">{{auth()->user()->first_name}} {{auth()->user()->last_name}}</div>
                                         </div>
                                     </div>
                                     <li class="user-menu__item">
-                                        <a class="user-menu-link" href="#">
+                                        <a class="user-menu-link" href="{{route('frontend.user.my_cart')}}">
                                             <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1604623/trophy.png" alt="trophy_icon" width=20 height=20>
                                             <div>My Cart</div>
                                         </a>

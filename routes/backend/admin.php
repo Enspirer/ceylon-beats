@@ -3,6 +3,8 @@
 use App\Http\Controllers\Backend\DashboardController;
 use App\Http\Controllers\Backend\MusicController;
 use App\Http\Controllers\Backend\LicenseController;
+use App\Http\Controllers\Backend\GenresController;
+
 // All route names are prefixed with 'admin.'.
 Route::redirect('/', '/admin/dashboard', 301);
 Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
@@ -19,3 +21,10 @@ Route::get('license/getdetails', [LicenseController::class, 'getTableDetails'])-
 Route::get('license/create', [LicenseController::class, 'create'])->name('license.create');
 Route::post('license/store', [LicenseController::class, 'store'])->name('license.store');
 Route::get('license/delete/{id}', [LicenseController::class, 'delete'])->name('license.delete');
+
+Route::get('genres', [GenresController::class, 'index'])->name('genres');
+Route::get('genres/getdetails', [GenresController::class, 'getTableDetails'])->name('genres.get_table_details');
+Route::get('genres/create', [GenresController::class, 'create'])->name('genres.create');
+Route::post('genres/store', [GenresController::class, 'store'])->name('genres.store');
+Route::get('genres/delete/{id}', [GenresController::class, 'delete'])->name('genres.delete');
+
