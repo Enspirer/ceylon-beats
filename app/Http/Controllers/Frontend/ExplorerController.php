@@ -42,7 +42,9 @@ class ExplorerController extends Controller
 
         return view('frontend.explorer',[
             'sound_item' => $sounditems->get(),
-            'getGenres' => $getGenres
+            'getGenres' => $getGenres,
+            'genres_name' => $genres,
+            'author_name' => $author_name,
         ]);
     }
 }
