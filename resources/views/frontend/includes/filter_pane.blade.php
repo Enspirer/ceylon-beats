@@ -36,17 +36,16 @@
                             <div class="row d-flex justify-content-between">
                                 <a href="{{route('frontend.explorer',[$genre->name,'null','null','null','null'])}}">
                                     <div class="row form-check">
-                                        <label class="cbx" for="cbx">
-                                            <div class="flip">
-                                                <div class="front"></div>
-                                                <div class="back">
-                                                    <svg width="15" height="17" viewBox="1 0 15 29">
-                                                        <path d="M2 8.5L6 12.5L14 1.5"></path>
-                                                    </svg>
-                                                </div>
+                                        <div class="flip">
+                                            <div class="front"></div>
+                                            <div class="back">
+                                                <svg width="15" height="17" viewBox="1 0 15 29">
+                                                    <path d="M2 8.5L6 12.5L14 1.5"></path>
+                                                </svg>
                                             </div>
-                                        </label>
-                                        <p class="form-check-label" for="exampleCheck1">{{$genre->name}}</p>
+                                        </div>
+
+                                        <p class="form-check-label" for="exampleCheck1" style="color: #e9ba1f;">{{$genre->name}}</p>
                                     </div>
                                 </a>
                             </div>
