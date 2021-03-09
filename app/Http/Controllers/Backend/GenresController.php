@@ -48,6 +48,13 @@ class GenresController extends Controller
 
     public function store(Request $request)
     {
+        $getGenres = new Generes;
+        $getGenres->name = $request->name;
+        $getGenres->description = $request->description;
+        $getGenres->status = $request->status;
+        $getGenres->save();
+
+        return redirect()->route('admin.genres');
 
     }
 
