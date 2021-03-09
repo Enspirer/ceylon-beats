@@ -16,7 +16,7 @@ class CreateMusicProductsTable extends Migration
         Schema::create('music_products', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->text('music_name');
-            $table->integer('price');
+            $table->text('price');
             $table->text('description')->nullable();
             $table->text('genres_id');
             $table->text('tags')->nullable();
