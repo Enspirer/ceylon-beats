@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
+use App\Models\Generes;
 use App\Models\MusicProducts;
 use App\Moduels\License;
 use Illuminate\Http\Request;
@@ -11,8 +12,11 @@ class MusicController extends Controller
 {
     public function index()
     {
+        $getGenres = Generes::where('status',1)->get();
 
-        return view('backend.music.index');
+        return view('backend.music.index',[
+            'get_genres' => $getGenres,
+        ]);
     }
 
     public function store(Request $request)
@@ -88,9 +92,11 @@ class MusicController extends Controller
     public function create()
     {
         $licenseDetails =  License::where('status',1)->get();
+        $getGenres = Generes::where('status',1)->get();
 
         return view('backend.music.creator',[
-            'liceseDetails' => $licenseDetails
+            'liceseDetails' => $licenseDetails,
+            'get_genres' => $getGenres,
         ]);
     }
 

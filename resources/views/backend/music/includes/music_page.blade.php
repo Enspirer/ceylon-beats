@@ -13,17 +13,9 @@
 <div class="form-group">
     <label>Genres</label>
     <select class="form-control" name="genres">
-        <option value="Blues">Blues</option>
-        <option value="Classical">Classical</option>
-        <option value="Dance/Techno">Dance/Techno</option>
-        <option value="Electronic">Electronic</option>
-        <option value="Folk">Folk</option>
-        <option value="Hip-Hop">Hip-Hop</option>
-        <option value="Jazz">Jazz</option>
-        <option value="Pop">Pop</option>
-        <option value="RandB">R&B</option>
-        <option value="Rock">Rock</option>
-        <option value="Reggae">Reggae</option>
+        @foreach($get_genres as $ge_genres)
+            <option value="{{$ge_genres->name}}">{{$ge_genres->name}}</option>
+        @endforeach
     </select>
 </div>
 
