@@ -294,6 +294,7 @@
                 console.log(icon);
                 x.pause();
             } else {
+                
                 var icondelemts = document.getElementById(icon);
                 icondelemts.className = 'fa fa-pause';
                 x.play();
@@ -301,6 +302,16 @@
                 //Not playing...maybe paused, stopped or never played.
 
             }
+
+            document.addEventListener('play', function(e){
+                var audios = document.getElementsByTagName('audio');
+                for(var i = 0, len = audios.length; i < len;i++){
+                    if(audios[i] != e.target){
+                        audios[i].pause();
+
+                    }
+                }
+            }, true);
         }
 
         function pauseAudio(id,icon) {
