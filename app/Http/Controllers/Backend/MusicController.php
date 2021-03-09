@@ -13,7 +13,6 @@ class MusicController extends Controller
     public function index()
     {
         $getGenres = Generes::where('status',1)->get();
-
         return view('backend.music.index',[
             'get_genres' => $getGenres,
         ]);
@@ -21,10 +20,7 @@ class MusicController extends Controller
 
     public function store(Request $request)
     {
-
-
         $priceArray = [];
-
         foreach ($request->price as $index =>$price_list)
         {
             $outarray = [
