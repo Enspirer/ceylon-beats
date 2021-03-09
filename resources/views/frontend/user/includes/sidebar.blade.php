@@ -15,13 +15,15 @@
                 </div>
             </a>
 
-
+            <a href="{{route('frontend.user.purchase_history')}}">
             <div class="menu-item row">
                 <div class="col-md-2">
                     <i class="fas fa-shopping-bag"></i>
                 </div>
                 <div class="col-md-9"><h5>Purchase History</h5></div>
             </div>
+            </a>
+
 
             <a href="{{route('frontend.user.account')}}">
                 <div class="menu-item row">

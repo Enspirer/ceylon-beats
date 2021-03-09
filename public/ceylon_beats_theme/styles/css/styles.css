@@ -4,10 +4,11 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none !important;
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 body {
@@ -1943,8 +1944,8 @@ footer p {
 }
 
 #explore-music .mask .right-result .container h2 {
-    margin-top: 50px;
-    font: normal normal 800 42px/27px Poppins;
+    margin-top: 100px;
+    font: normal normal 800 26px/27px Poppins;
     color: #fff;
 }
 
@@ -2073,6 +2074,201 @@ footer p {
 
 #explore-music .mask .right-result .table-dashboard .table-borderless thead {
     background: rgba(255, 255, 255, 0.205);
+}
+
+#explore-music .mask .right-result .not-found {
+    margin-top: 60px;
+}
+
+#explore-music .mask .right-result .not-found h1 {
+    font: normal normal 500 33px/27px Poppins;
+    text-align: center;
+    color: #fff;
+}
+
+#explore-music .mask .right-result .not-found p {
+    font-family: Poppins;
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 200;
+}
+
+#explore-music .mask .right-result .not-found .button-go-music {
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+#explore-music .mask .right-result .not-found .button-go-music a {
+    background: #e9ba1f;
+    padding: 10px 40px;
+    color: #fff;
+    text-decoration: none;
+    font-family: Poppins;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#explore-music .mask .right-result .profile-image-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+#explore-music .mask .right-result .profile-image-section .image-holder {
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+#explore-music .mask .right-result .profile-image-section .image-holder .change-profile-image {
+    cursor: pointer;
+    background: #5f5f5f9d;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+}
+
+#explore-music .mask .right-result .profile-image-section .image-holder .change-profile-image i {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 5px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.74);
+}
+
+#explore-music .mask .right-result .profile-image-body {
+    margin-top: 46px;
+}
+
+#explore-music .mask .right-result .profile-image-body .row {
+    padding: 15px 0;
+}
+
+#explore-music .mask .right-result .profile-image-body .row p {
+    margin: 0;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.897);
+    font-family: Poppins;
+    font-size: 18px;
+}
+
+#explore-music .mask .right-result .profile-image-body .row input,
+#explore-music .mask .right-result .profile-image-body .row select {
+    background: rgba(255, 255, 255, 0.212);
+    color: #b9b9b9;
+    border: none;
+}
+
+#explore-music .mask .right-result .profile-image-body .row input::-webkit-input-placeholder,
+#explore-music .mask .right-result .profile-image-body .row select::-webkit-input-placeholder {
+    color: #b9b9b9;
+}
+
+#explore-music .mask .right-result .profile-image-body .row input:-ms-input-placeholder,
+#explore-music .mask .right-result .profile-image-body .row select:-ms-input-placeholder {
+    color: #b9b9b9;
+}
+
+#explore-music .mask .right-result .profile-image-body .row input::-ms-input-placeholder,
+#explore-music .mask .right-result .profile-image-body .row select::-ms-input-placeholder {
+    color: #b9b9b9;
+}
+
+#explore-music .mask .right-result .profile-image-body .row input::placeholder,
+#explore-music .mask .right-result .profile-image-body .row select::placeholder {
+    color: #b9b9b9;
+}
+
+#explore-music .mask .right-result .profile-image-body h2 {
+    margin-top: 60px;
+    font: normal normal 800 26px/27px Poppins;
+    color: #fff;
+}
+
+#explore-music .mask .right-result .profile-image-body .form-check {
+    margin-top: 40px;
+}
+
+#explore-music .mask .right-result .profile-image-body .form-check label {
+    margin-left: 10px;
+    color: #b9b9b9;
+}
+
+#explore-music .mask .right-result .profile-image-body .form-check input {
+    width: 14px;
+    height: 14px;
+}
+
+#explore-music .mask .right-result .profile-image-body .form-check a {
+    color: #e9ba1f;
+    text-decoration: none;
+}
+
+#explore-music .mask .right-result .profile-image-body .account-diactivate-section {
+    margin-top: 50px;
+    padding: 20px 20px 100px 20px;
+    border: 1px solid #e9ba1f;
+}
+
+#explore-music .mask .right-result .profile-image-body .account-diactivate-section h3 {
+    font: normal normal 600 26px/27px Poppins;
+    color: #e9ba1f;
+}
+
+#explore-music .mask .right-result .profile-image-body .account-diactivate-section P {
+    margin-top: 12px;
+    color: #fff;
+    font-family: Poppins;
+}
+
+#explore-music .mask .right-result .profile-image-body .account-diactivate-section ul {
+    margin: 0 40px;
+    color: #fff;
+    font-family: Poppins;
+    line-height: 2;
+    font-weight: 200;
+}
+
+#explore-music .mask .right-result .profile-image-body .account-diactivate-section a {
+    background: #e9ba1f;
+    padding: 10px 40px;
+    color: #fff;
+    text-decoration: none;
+    font-family: Poppins;
+    float: right;
+    margin-top: 30px;
+}
+
+#explore-music .mask .right-result .profile-image-body .row-button {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: end;
+}
+
+#explore-music .mask .right-result .profile-image-body .row-button button {
+    background: #e9ba1f;
+    padding: 10px 40px;
+    color: #fff;
+    text-decoration: none;
+    font-family: Poppins;
+    margin-top: 30px;
+    border-radius: 0px !important;
+    margin-left: auto;
 }
 
 #explore-music .mask .media-player {

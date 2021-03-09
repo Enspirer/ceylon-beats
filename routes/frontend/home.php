@@ -7,7 +7,7 @@ use App\Http\Controllers\Frontend\User\DashboardController;
 use App\Http\Controllers\Frontend\User\ProfileController;
 use App\Http\Controllers\Frontend\ExplorerController;
 use App\Http\Controllers\Frontend\MyCartController;
-
+use App\Http\Controllers\Frontend\User\PurchaseHistoryController;
 /*
  * Frontend Controllers
  * All route names are prefixed with 'frontend.'.
@@ -36,6 +36,7 @@ Route::group(['middleware' => ['auth', 'password_expires']], function () {
         Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
         Route::get('my_cart', [MyCartController::class, 'index'])->name('my_cart');
         Route::get('dashboard', [MyCartController::class, 'index'])->name('my_cart');
+        Route::get('purchase_history', [PurchaseHistoryController::class, 'index'])->name('purchase_history');
 
 
         // User Account Specific
