@@ -48,3 +48,32 @@
 
 
 @endsection
+
+<script>
+
+
+    function playAudio(id,icon) {
+        var x = document.getElementById(id);
+//            x.play();
+
+        if (x.duration > 0 && !x.paused && !x.stopped) {
+            var icondelemts = document.getElementById(icon);
+            icondelemts.className = 'fa fa-play';
+            console.log(icon);
+            x.pause();
+        } else {
+            var icondelemts = document.getElementById(icon);
+
+            icondelemts.className = 'fa fa-pause';
+            x.play();
+            //Not playing...maybe paused, stopped or never played.
+
+        }
+
+    }
+
+    function pauseAudio(id,icon) {
+        var x = document.getElementById(id);
+        x.pause();
+    }
+</script>

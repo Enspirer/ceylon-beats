@@ -22,6 +22,7 @@ Route::post('contact/send', [ContactController::class, 'send'])->name('contact.s
 
 
 Route::post('cart/addtocart', [HomeController::class, 'addCart'])->name('cart.add');
+Route::get('cart/removecart/{cart_item}', [HomeController::class, 'removeCart'])->name('cart.remove');
 Route::post('search_query', [HomeController::class, 'search_query'])->name('search_query.index');
 
 /*
@@ -34,6 +35,7 @@ Route::group(['middleware' => ['auth', 'password_expires']], function () {
         // User Dashboard Specific
         Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
         Route::get('my_cart', [MyCartController::class, 'index'])->name('my_cart');
+
 
         // User Account Specific
         Route::get('account', [AccountController::class, 'index'])->name('account');

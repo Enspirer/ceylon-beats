@@ -42,8 +42,11 @@ class HomeController extends Controller
         return back();
     }
 
-    public function removeCart(Request $request)
+    public function removeCart($cart_item)
     {
+        Cart::remove($cart_item);
+
+        return back();
 
     }
 

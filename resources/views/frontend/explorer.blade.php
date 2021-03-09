@@ -17,13 +17,16 @@
 
                             <div class="container">
                                 @include('frontend.includes.filter_topbar')
-
                                 <div class="list-group" id="playlist">
-                                    @foreach($sound_item as $key=>$soundItem)
-                                        <div class="list-item">
-                                            @include('frontend.includes.music_item')
-                                        </div>
-                                    @endforeach
+                                    @if(count($sound_item) == 0)
+                                        @include('frontend.includes.page_not_found')
+                                    @else
+                                        @foreach($sound_item as $key=>$soundItem)
+                                            <div class="list-item">
+                                                @include('frontend.includes.music_item')
+                                            </div>
+                                        @endforeach
+                                    @endif
                                 </div>
                             </div>
                         </div>

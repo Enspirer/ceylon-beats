@@ -11,7 +11,7 @@
         <div class="menu col-md-7">
             <div class="row">
                 <div class="menu-item col-md-2">
-                    <a href="{{url('/')}}" class="active">Home</a>
+                    <a href="{{url('/')}}" class="">Home</a>
                 </div>
                 <div class="menu-item col-md-2"><a href="{{route('frontend.explorer',['null','null','null','null','null'])}}">Music</a></div>
                 <div class="menu-item col-md-3">
@@ -68,19 +68,14 @@
                                     <li class="user-menu__item">
                                         <a class="user-menu-link" href="#">
                                             <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1604623/trophy.png" alt="trophy_icon" width=20 height=20>
-                                            <div>Achievements</div>
+                                            <div>My Cart</div>
                                         </a>
                                     </li>
-                                    <li class="user-menu__item">
-                                        <a class="user-menu-link" href="#">
-                                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1604623/team.png" alt="team_icon" width=20 height=20 >
-                                            <div>Team</div>
-                                        </a>
-                                    </li>
+
                                     <li class="user-menu__item">
                                         <a class="user-menu-link" href="#">
                                             <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1604623/book.png" alt="team_icon" width=20 height=20 >
-                                            <div>Log History</div>
+                                            <div>Purchased History</div>
                                         </a>
                                     </li>
                                     <div class="footer">

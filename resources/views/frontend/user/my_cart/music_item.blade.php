@@ -1,12 +1,20 @@
+<audio id="myAudio{{$cartDetail->id}}">
+    <source src="{{url('files/preview_files/'.$cartDetail->attributes->preview_link)}}" type="audio/ogg">
+    <source src="{{url('files/preview_files/'.$cartDetail->attributes->preview_link)}}" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
 <div class="list-item">
     <div class="row">
         <div class="col-md-2">
             <div
                     id="player-pop-up"
-                    onclick="Onplaye('http://localhost/cb/assets/demo.wav')"
+                    onclick="playAudio('myAudio{{$cartDetail->id}}','play_icon{{$cartDetail->id}}')"
                     class="play-button"
             >
-                <i class="fa fa-play" aria-hidden="true"></i>
+                <div class="play-icon">
+                    <i id="play_icon{{$cartDetail->id}}" class="fa fa-play" style="font-size: 54px;color: white;"></i>
+                </div>
             </div>
         </div>
         <div class="col col-md-3">
@@ -39,7 +47,7 @@
             </div>
         </div>
         <div class="col-md-1 m-auto">
-            <a href="#"><i class="fas fa-trash"></i></a>
+            <a href="{{route('frontend.cart.remove',$cartDetail->id)}}"><i class="fas fa-trash"></i></a>
         </div>
     </div>
 </div>

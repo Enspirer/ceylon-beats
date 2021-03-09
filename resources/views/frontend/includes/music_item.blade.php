@@ -30,7 +30,7 @@
     <div class="col col-md-2">
         <div class="text-group-three">
             <div class="row">
-                <a href="#">
+                <a href="{{url('files/preview_files/'.$soundItem->preview_link)}}" download>
                     <svg  xmlns="http://www.w3.org/2000/svg"  width="19.196"  height="24.196"  viewBox="0 0 34.196 34.196">
                         <g id="Icon_feather-download" data-name="Icon feather-download" transform="translate(2.5 2.5)">
                             <path id="Path_111" data-name="Path 111" d="M33.7,22.5v5.622a3.051,3.051,0,0,1-3.244,2.811H7.744A3.051,3.051,0,0,1,4.5,28.122V22.5" transform="translate(-4.5 -1.737)" fill="none" stroke="#b9b9b9" stroke-linecap="round" stroke-linejoin="round"stroke-width="5"></path>
