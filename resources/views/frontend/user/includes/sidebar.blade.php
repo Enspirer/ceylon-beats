@@ -1,16 +1,20 @@
 <div class="left-filter">
     <div class="container container-dashboard">
         <div class="profile-dashboard-row row">
-            <img src="https://source.unsplash.com/100x100" alt="" />
-            <h6>{{auth()->user()->first_name}} <br />{{auth()->user()->last_name}}</h6>
+            <img src="{{$logged_in_user->picture}}" alt="" />
+            <h6>{{auth()->user()->first_name}} <br/>{{auth()->user()->last_name}}</h6>
         </div>
         <div class="menu-item-dashboard">
-            <div class="menu-item row active-menu">
-                <div class="col-md-2">
-                    <i class="fas fa-shopping-cart"></i>
+            <a href="{{route('frontend.user.my_cart')}}">
+                <div class="menu-item row active-menu">
+
+                    <div class="col-md-2">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="col-md-9"><h5>My Cart</h5></div>
                 </div>
-                <div class="col-md-9"><h5>My Cart</h5></div>
-            </div>
+            </a>
+
 
             <div class="menu-item row">
                 <div class="col-md-2">
@@ -19,12 +23,14 @@
                 <div class="col-md-9"><h5>Purchase History</h5></div>
             </div>
 
-            <div class="menu-item row">
-                <div class="col-md-2">
-                    <i class="far fa-user"></i>
+            <a href="{{route('frontend.user.account')}}">
+                <div class="menu-item row">
+                    <div class="col-md-2">
+                        <i class="far fa-user"></i>
+                    </div>
+                    <div class="col-md-9"><h5>Account Settings</h5></div>
                 </div>
-                <div class="col-md-9"><h5>Account Settings</h5></div>
-            </div>
+            </a>
 
             <div class="menu-item row">
                 <div class="col-md-2">
