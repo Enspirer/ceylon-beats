@@ -62,12 +62,15 @@
                 <div class="col-md-9"><h5>Inquiries</h5></div>
             </div>
 
-            <div class="menu-item row">
-                <div class="col-md-2">
-                    <i class="fas fa-sign-out-alt"></i>
+            <a href="{{route('frontend.auth.logout')}}">
+                <div class="menu-item row">
+                    <div class="col-md-2">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </div>
+                    <div class="col-md-9"><h5>Sign Out</h5></div>
                 </div>
-                <div class="col-md-9"><h5>Sign Out</h5></div>
-            </div>
+            </a>
+
         </div>
     </div>
     <div class="space"></div>

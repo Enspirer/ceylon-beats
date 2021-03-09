@@ -22,20 +22,17 @@
                                 @include('frontend.user.my_cart.music_item')
                             @endforeach
                                 <div class="row my-cart-bottum">
-                                    <div class="col-md-5"><p>Have a coupon code?</p></div>
+                                    <div class="col-md-5"></div>
                                     <div class="col-md-7">
                                         <div class="row">
-                                            <div class="col col-md-6"><h3>Sub Total</h3></div>
+                                            <div class="col col-md-6"><h3>Total</h3></div>
                                             <div class="col col-md-6"><h3>LKR {{number_format($cart_total,2)}}</h3></div>
                                         </div>
                                         <div class="m-t-15"></div>
-                                        <div class="row">
-                                            <div class="col col-md-6"><h3>Sub Total</h3></div>
-                                            <div class="col col-md-6"><h3>LKR {{number_format($cart_total,2)}}</h3></div>
-                                        </div>
+
                                         <div class="space"></div>
                                         <div class="row bottum-button">
-                                            <a href="#" class="btn-continue">Continue Browsing</a>
+                                            <a href="{{route('frontend.explorer',['null','null','null','null','null'])}}" class="btn-continue">Continue Browsing</a>
                                             <a href="#" class="btn-checkout">Checkout Now</a>
 
                                         </div>

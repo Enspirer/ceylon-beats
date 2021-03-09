@@ -31,7 +31,7 @@
                                     <label>Enabled</label>
                                     <select type="text" class="form-control" name="status" required>
                                         <option name="1" selected>Enabled</option>
-                                        <option name="0" selected>Disabled</option>
+                                        <option name="0">Disabled</option>
                                     </select>
                                 </div>
                             </div>

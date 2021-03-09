@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
+use App\Models\Generes;
 use App\Models\MusicProducts;
 use Illuminate\Http\Request;
 
@@ -33,11 +34,15 @@ class ExplorerController extends Controller
 
         }
 
+        $getGenres = Generes::where('status',1)->get();
+
+
 
 
 
         return view('frontend.explorer',[
-            'sound_item' => $sounditems->get()
+            'sound_item' => $sounditems->get(),
+            'getGenres' => $getGenres
         ]);
     }
 }

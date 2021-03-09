@@ -42,281 +42,37 @@
         <div class="genres-title">
             <div class="row d-flex justify-content-between">
                 <p>Genres</p>
-                <a href=""
-                ><svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="16"
-                            height="22"
-                            viewBox="0 0 16 2"
-                    >
-                        <g
-                                id="Group_59"
-                                data-name="Group 59"
-                                transform="translate(-321.5 -157.5)"
-                        >
-                            <line
-                                    id="Line_4"
-                                    data-name="Line 4"
-                                    x2="16"
-                                    transform="translate(321.5 158.5)"
-                                    fill="none"
-                                    stroke="#707070"
-                                    stroke-width="2"
-                            />
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="22" viewBox="0 0 16 2">
+                        <g id="Group_59" data-name="Group 59" transform="translate(-321.5 -157.5)">
+                            <line id="Line_4" data-name="Line 4" x2="16" transform="translate(321.5 158.5)" fill="none" stroke="#707070" stroke-width="2"></line>
                         </g>
                     </svg>
                 </a>
             </div>
-        </div>
-        <div class="genres-content">
-            <div class="genres-item">
-                <div class="row d-flex justify-content-between">
-                    <div class="row form-check">
-                        <input id="cbx" type="checkbox" />
-                        <label class="cbx" for="cbx">
-                            <div class="flip">
-                                <div class="front"></div>
-                                <div class="back">
-                                    <svg width="15" height="17" viewBox="1 0 15 29">
-                                        <path d="M2 8.5L6 12.5L14 1.5"></path>
-                                    </svg>
+            <div class="genres-content">
+            @foreach($getGenres as $genre)
+                    <div class="genres-item">
+                        <div class="row d-flex justify-content-between">
+                            <a href="">
+                                <div class="row form-check">
+                                    <label class="cbx" for="cbx">
+                                        <div class="flip">
+                                            <div class="front"></div>
+                                            <div class="back">
+                                                <svg width="15" height="17" viewBox="1 0 15 29">
+                                                    <path d="M2 8.5L6 12.5L14 1.5"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <p class="form-check-label" for="exampleCheck1">{{$genre->name}}</p>
                                 </div>
-                            </div>
-                        </label>
-                        <p class="form-check-label" for="exampleCheck1">Blues</p>
-                    </div>
-                    <p>30</p>
-                </div>
-            </div>
+                            </a>
 
-            <div class="genres-item">
-                <div class="row d-flex justify-content-between">
-                    <div class="row form-check">
-                        <input id="cbx" type="checkbox" />
-                        <label class="cbx" for="cbx">
-                            <div class="flip">
-                                <div class="front"></div>
-                                <div class="back">
-                                    <svg width="15" height="17" viewBox="1 0 15 29">
-                                        <path d="M2 8.5L6 12.5L14 1.5"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </label>
-                        <p class="form-check-label" for="exampleCheck1">
-                            Classical
-                        </p>
+                        </div>
                     </div>
-                    <p>20</p>
-                </div>
-            </div>
-
-            <div class="genres-item">
-                <div class="row d-flex justify-content-between">
-                    <div class="row form-check">
-                        <input id="cbx" type="checkbox" />
-                        <label class="cbx" for="cbx">
-                            <div class="flip">
-                                <div class="front"></div>
-                                <div class="back">
-                                    <svg width="15" height="17" viewBox="1 0 15 29">
-                                        <path d="M2 8.5L6 12.5L14 1.5"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </label>
-                        <p class="form-check-label" for="exampleCheck1">
-                            Country
-                        </p>
-                    </div>
-                    <p>0</p>
-                </div>
-            </div>
-
-            <div class="genres-item">
-                <div class="row d-flex justify-content-between">
-                    <div class="row form-check">
-                        <input id="cbx" type="checkbox" />
-                        <label class="cbx" for="cbx">
-                            <div class="flip">
-                                <div class="front"></div>
-                                <div class="back">
-                                    <svg width="15" height="17" viewBox="1 0 15 29">
-                                        <path d="M2 8.5L6 12.5L14 1.5"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </label>
-                        <p class="form-check-label" for="exampleCheck1">
-                            Dance/Techno
-                        </p>
-                    </div>
-                    <p>12</p>
-                </div>
-            </div>
-
-            <div class="genres-item">
-                <div class="row d-flex justify-content-between">
-                    <div class="row form-check">
-                        <input id="cbx" type="checkbox" />
-                        <label class="cbx" for="cbx">
-                            <div class="flip">
-                                <div class="front"></div>
-                                <div class="back">
-                                    <svg width="15" height="17" viewBox="1 0 15 29">
-                                        <path d="M2 8.5L6 12.5L14 1.5"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </label>
-                        <p class="form-check-label" for="exampleCheck1">
-                            Electronic
-                        </p>
-                    </div>
-                    <p>1</p>
-                </div>
-            </div>
-
-            <div class="genres-item">
-                <div class="row d-flex justify-content-between">
-                    <div class="row form-check">
-                        <input id="cbx" type="checkbox" />
-                        <label class="cbx" for="cbx">
-                            <div class="flip">
-                                <div class="front"></div>
-                                <div class="back">
-                                    <svg width="15" height="17" viewBox="1 0 15 29">
-                                        <path d="M2 8.5L6 12.5L14 1.5"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </label>
-                        <p class="form-check-label" for="exampleCheck1">Folk</p>
-                    </div>
-                    <p>24</p>
-                </div>
-            </div>
-
-            <div class="genres-item">
-                <div class="row d-flex justify-content-between">
-                    <div class="row form-check">
-                        <input id="cbx" type="checkbox" />
-                        <label class="cbx" for="cbx">
-                            <div class="flip">
-                                <div class="front"></div>
-                                <div class="back">
-                                    <svg width="15" height="17" viewBox="1 0 15 29">
-                                        <path d="M2 8.5L6 12.5L14 1.5"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </label>
-                        <p class="form-check-label" for="exampleCheck1">
-                            Hip-Hop
-                        </p>
-                    </div>
-                    <p>10</p>
-                </div>
-            </div>
-
-            <div class="genres-item">
-                <div class="row d-flex justify-content-between">
-                    <div class="row form-check">
-                        <input id="cbx" type="checkbox" />
-                        <label class="cbx" for="cbx">
-                            <div class="flip">
-                                <div class="front"></div>
-                                <div class="back">
-                                    <svg width="15" height="17" viewBox="1 0 15 29">
-                                        <path d="M2 8.5L6 12.5L14 1.5"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </label>
-                        <p class="form-check-label" for="exampleCheck1">Jazz</p>
-                    </div>
-                    <p>11</p>
-                </div>
-            </div>
-
-            <div class="genres-item">
-                <div class="row d-flex justify-content-between">
-                    <div class="row form-check">
-                        <input id="cbx" type="checkbox" />
-                        <label class="cbx" for="cbx">
-                            <div class="flip">
-                                <div class="front"></div>
-                                <div class="back">
-                                    <svg width="15" height="17" viewBox="1 0 15 29">
-                                        <path d="M2 8.5L6 12.5L14 1.5"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </label>
-                        <p class="form-check-label" for="exampleCheck1">Pop</p>
-                    </div>
-                    <p>0</p>
-                </div>
-            </div>
-
-            <div class="genres-item">
-                <div class="row d-flex justify-content-between">
-                    <div class="row form-check">
-                        <input id="cbx" type="checkbox" />
-                        <label class="cbx" for="cbx">
-                            <div class="flip">
-                                <div class="front"></div>
-                                <div class="back">
-                                    <svg width="15" height="17" viewBox="1 0 15 29">
-                                        <path d="M2 8.5L6 12.5L14 1.5"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </label>
-                        <p class="form-check-label" for="exampleCheck1">R&B</p>
-                    </div>
-                    <p>5</p>
-                </div>
-            </div>
-
-            <div class="genres-item">
-                <div class="row d-flex justify-content-between">
-                    <div class="row form-check">
-                        <input id="cbx" type="checkbox" />
-                        <label class="cbx" for="cbx">
-                            <div class="flip">
-                                <div class="front"></div>
-                                <div class="back">
-                                    <svg width="15" height="17" viewBox="1 0 15 29">
-                                        <path d="M2 8.5L6 12.5L14 1.5"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </label>
-                        <p class="form-check-label" for="exampleCheck1">Rock</p>
-                    </div>
-                    <p>16</p>
-                </div>
-            </div>
-
-            <div class="genres-item">
-                <div class="row d-flex justify-content-between">
-                    <div class="row form-check">
-                        <input id="cbx" type="checkbox" />
-                        <label class="cbx" for="cbx">
-                            <div class="flip">
-                                <div class="front"></div>
-                                <div class="back">
-                                    <svg width="15" height="17" viewBox="1 0 15 29">
-                                        <path d="M2 8.5L6 12.5L14 1.5"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </label>
-                        <p class="form-check-label" for="exampleCheck1">Reggae</p>
-                    </div>
-                    <p>1</p>
-                </div>
+            @endforeach
             </div>
         </div>
     </div>
