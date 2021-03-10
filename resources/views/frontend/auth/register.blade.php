@@ -1,4 +1,4 @@
-@extends('frontend.layouts.app')
+signing u@extends('frontend.layouts.app')
 
 @section('title', app_name() . ' | ' . __('labels.frontend.auth.login_box_title'))
 
@@ -45,11 +45,11 @@
 
                                 <div class="row d-flex justify-content-between">
                                     <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <input type="checkbox" class="form-check-input" id="checkme">
                                         <label class="form-check-label" for="exampleCheck1">By signing up a agree with <a href="#">Terms and conditions.</a> </label>
                                     </div>
                                 </div>
-                                <button type="submit" class="btn btn-primary btn-block">
+                                <button disabled="disabled" id="sendNewSms" type="submit" class="btn btn-primary btn-block">
                                     Register
                                 </button>
                             </form>
@@ -90,6 +90,19 @@
 @if(config('access.captcha.login'))
     @captchaScripts
 @endif
+
+    <script>
+        var checker = document.getElementById('checkme');
+        var sendbtn = document.getElementById('sendNewSms');
+        checker.onchange = function(){
+            if(this.checked){
+                sendbtn.disabled = false;
+            } else {
+                sendbtn.disabled = true;
+            }
+
+        }
+    </script>
 @endpush
 
 
