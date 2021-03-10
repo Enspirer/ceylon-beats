@@ -96,7 +96,6 @@
                 x.play();
                 //Not playing...maybe paused, stopped or never played.
             }
-
             document.addEventListener('play', function(e){
                 var audios = document.getElementsByTagName('audio');
                 for(var i = 0, len = audios.length; i < len;i++){
@@ -106,7 +105,6 @@
                 }
             }, true);
         }
-
         function pauseAudio(id,icon) {
             var x = document.getElementById(id);
             x.pause();
