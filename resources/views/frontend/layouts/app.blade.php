@@ -290,21 +290,22 @@
                 ].join(':');
             };
             // Bind controls
-            document.addEventListener('DOMContentLoaded', function() {
-                wavesurfer = WaveSurfer.create({
-                    container: '#waveform',
-                    waveColor: '#428bca',
-                    progressColor: '#31708f',
-                    height: 120,
-                    barWidth: 3
-                });
 
+
+            wavesurfer = WaveSurfer.create({
+                container: '#waveform',
+                waveColor: '#428bca',
+                progressColor: '#31708f',
+                height: 120,
+                barWidth: 3,
+                fillParent: false,
+            });
+
+
+            document.addEventListener('DOMContentLoaded', function() {
 
                 // Toggle play/pause text
                 wavesurfer.on('play', function() {
-
-
-
                     document.querySelector('#play').style.display = 'none';
                     document.querySelector('#pause').style.display = '';
                     $('#playerduration').text(formatTime(wavesurfer.getDuration()));
@@ -329,7 +330,6 @@
                 // The playlist links
                 let links = document.querySelectorAll('#playlist a');
                 let currentTrack = 0;
-                // Load a track by index and highlight the corresponding link
                 let setCurrentSong = function(index) {
 //                    links[currentTrack].classList.remove('active');
                     currentTrack = index;
@@ -339,6 +339,8 @@
                     $('#play_button').show();
                     $('#playerduration').text(formatTime(wavesurfer.getDuration()));
                 };
+
+                console.log(currentTrack);
 
                 // Load the track on click
                 Array.prototype.forEach.call(links, function(link, index) {
