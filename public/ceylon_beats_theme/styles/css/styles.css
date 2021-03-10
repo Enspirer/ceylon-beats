@@ -348,6 +348,10 @@ body {
     transition: all 0.2s ease-in-out;
 }
 
+.menu-container .user-menu__item a i {
+    color: #333333 !important;
+}
+
 .user-menu {
     z-index: 99 !important;
     position: absolute;
@@ -911,7 +915,17 @@ footer p {
     margin-right: 7px;
 }
 
-#head-section .mask .music .container .new-release .new-release-container .row .player-margin .player .row i {
+#head-section .mask .music .container .new-release .new-release-container .row .player-margin .player .row a {
+    color: #666666;
+    -webkit-transition: all ease-in-out 0.1s;
+    transition: all ease-in-out 0.1s;
+}
+
+#head-section .mask .music .container .new-release .new-release-container .row .player-margin .player .row a:hover {
+    color: #ffc400;
+}
+
+#head-section .mask .music .container .new-release .new-release-container .row .player-margin .player .row a i {
     margin: 0 5px;
 }
 
@@ -2299,7 +2313,7 @@ footer p {
 }
 
 #explore-music .mask .right-result .licence-section .licence-text a {
-    color: #E9BA1F;
+    color: #e9ba1f;
 }
 
 #explore-music .mask .right-result .terms-and-condetion h6 {
@@ -2740,8 +2754,8 @@ footer p {
 
 .contact-form-section .form form .btn-view-all .btn-view-all-yellow {
     color: #ffffff;
-    border: 1px solid #E9BA1F;
-    background: #E9BA1F;
+    border: 1px solid #e9ba1f;
+    background: #e9ba1f;
 }
 
 .contact-form-section img {

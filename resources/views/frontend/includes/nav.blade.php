@@ -68,21 +68,33 @@
                                     </div>
                                     <li class="user-menu__item">
                                         <a class="user-menu-link" href="{{route('frontend.user.my_cart')}}">
-                                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1604623/trophy.png" alt="trophy_icon" width=20 height=20>
+                                            <i class="fas fa-shopping-cart"></i>
                                             <div>My Cart</div>
                                         </a>
                                     </li>
 
                                     <li class="user-menu__item">
                                         <a class="user-menu-link" href="#">
-                                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1604623/book.png" alt="team_icon" width=20 height=20 >
+                                            <i class="fa fa-history" aria-hidden="true"></i>
                                             <div>Purchased History</div>
                                         </a>
                                     </li>
-                                    <div class="footer">
-                                        <li class="user-menu__item"><a class="user-menu-link" href="{{route('frontend.auth.logout')}}" style="color: #F44336;">Logout</a></li>
-                                        <li class="user-menu__item"><a class="user-menu-link" href="{{route('frontend.user.account')}}">Settings</a></li>
-                                    </div>
+                                    <li class="user-menu__item">
+                                        <a class="user-menu-link" href="{{route('frontend.user.account')}}">
+                                            <i class="fa fa-cog" aria-hidden="true"></i>
+                                            <div>Settings</div>
+                                        </a>
+                                    </li>
+                                    <li class="user-menu__item">
+                                        <a class="user-menu-link" href="{{route('frontend.auth.logout')}}">
+                                            <i style="color: #F44336 !important;" class="fa fa-sign-out" aria-hidden="true"></i>
+                                            <div style="color: #F44336;">Logout</div>
+                                        </a>
+                                    </li>
+{{--                                    <div class="footer">--}}
+{{--                                        <li class="user-menu__item"><a class="user-menu-link" href="{{route('frontend.auth.logout')}}" style="color: #F44336;">Logout</a></li>--}}
+{{--                                        <li class="user-menu__item"><a class="user-menu-link" href="{{route('frontend.user.account')}}">Settings</a></li>--}}
+{{--                                    </div>--}}
                                 </ul>
                             </div>
                         </div>
@@ -118,7 +130,7 @@
                     @else
                         @foreach($cartDetails as $cartDetail)
                             <li class="clearfix" style="list-style-type: none;">
-                                <img src="{{url('ceylon_beats_theme/assets/dummy_music.png')}}" alt="item1">
+                                <img src="{{url('ceylon_beats_theme/assets/albumart.png')}}" alt="item1">
                                 <span class="item-name">{{$cartDetail->name}}</span>
                                 <span class="item-detail">
                                 {{$cartDetail->attributes->license_name}}

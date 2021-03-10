@@ -6,7 +6,7 @@
 
 <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 8" style="width: 250.5px; margin-right: 20px;">
     <div class="top-image">
-        <img src="{{url('ceylon_beats_theme/assets/image/MaskGroup2@2x.png')}}" alt="">
+        <img src="{{url('ceylon_beats_theme/assets/albumart.png')}}" alt="">
     </div>
 
     <div class="bottum-details">
