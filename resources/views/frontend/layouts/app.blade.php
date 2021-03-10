@@ -302,6 +302,9 @@
 
                 // Toggle play/pause text
                 wavesurfer.on('play', function() {
+
+
+
                     document.querySelector('#play').style.display = 'none';
                     document.querySelector('#pause').style.display = '';
                     $('#playerduration').text(formatTime(wavesurfer.getDuration()));
@@ -343,6 +346,7 @@
                         var iconselctor =  document.querySelector('#'+link.id+' i');
                         e.preventDefault();
                         if (wavesurfer.isPlaying()){
+                            setCurrentSong(currentTrack);
                             $('#playerduration').text(formatTime(wavesurfer.getDuration()));
                             iconselctor.className  = "fa fa-play";
                            console.log(iconselctor);
@@ -375,7 +379,6 @@
                     setCurrentSong((currentTrack + 1) % links.length);
                 });
                 // Load the first track
-//                setCurrentSong(currentTrack);
             });
         </script>
 
