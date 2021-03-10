@@ -57,24 +57,7 @@
                         />
                     </svg>
                 </a>
-                <a href="#">
-                    <svg
-                            id="Icon_material-playlist-add"
-                            data-name="Icon material-playlist-add"
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="25.126"
-                            height="34.388"
-                            viewBox="0 0 49.126 34.388"
-                    >
-                        <path
-                                id="Icon_material-playlist-add-2"
-                                data-name="Icon material-playlist-add"
-                                d="M32.475,18.825H3v4.913H32.475Zm0-9.825H3v4.913H32.475ZM42.3,28.65V18.825H37.388V28.65H27.563v4.913h9.825v9.825H42.3V33.563h9.825V28.65ZM3,33.563H22.65V28.65H3Z"
-                                transform="translate(-3 -9)"
-                                fill="#b9b9b9"
-                        />
-                    </svg>
-                </a>
+               
             </div>
         </div>
     </div>
