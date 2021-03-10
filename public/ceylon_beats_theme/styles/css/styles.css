@@ -874,6 +874,7 @@ footer p {
 
 #head-section .mask .music .container .swiper-container .swiper-wrapper .swiper-slide .bottum-details .type-time .time {
     float: right;
+    margin: 0 !important;
 }
 
 #head-section .mask .music .container .swiper-container .swiper-button {

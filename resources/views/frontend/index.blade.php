@@ -59,26 +59,7 @@
                         <div class="new-release-container">
                             <div class="row">
                                 @foreach($latest_music as $lastestMusic)
-                                    <div class="player-margin col-md-4 animscroll-init" data-animscroll="fade-up">
-                                        <div class="player" style="height: 120px;">
-                                            <div class="play-button">
-                                                <i class="fa fa-play" aria-hidden="true"></i>
-                                            </div>
-                                            <div class="row">
-                                                <h4>{{$lastestMusic->music_name}}</h4>
-                                                <i>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15.569" height="14.119" viewBox="0 0 17.569 16.119">
-                                                        <path id="Icon_metro-favorite" data-name="Icon metro-favorite" d="M13.926,22.546l-1.274-1.155c-4.524-4.107-7.511-6.817-7.511-10.133A4.779,4.779,0,0,1,9.973,6.427a5.271,5.271,0,0,1,3.953,1.832,5.271,5.271,0,0,1,3.953-1.832,4.779,4.779,0,0,1,4.831,4.831c0,3.316-2.987,6.026-7.511,10.133Z" transform="translate(-5.141 -6.427)" fill="#8f8f8f"></path>
-                                                    </svg>
-                                                </i>
-                                            </div>
-                                            <div class="type-time">
-                                                <p class="type">{{$lastestMusic->author_name}}</p>
-                                                <p><b>{{$lastestMusic->genres_id}}</b></p><br>
-                                                <p class="time">{{$lastestMusic->duration}}</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                @include('frontend.includes.homepage_last_music_item_cart_dialog')
                                 @endforeach
                             </div>
                             <div class="btn-view-all animscroll-init" data-animscroll="fade-up">
