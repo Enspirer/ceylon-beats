@@ -5,10 +5,7 @@
     <title>Ceylon Beatz</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://wavesurfer-js.org/example/css/style.css" />
@@ -16,33 +13,21 @@
     <!-- Material Icon  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Bootstrap CSS -->
-    <link
-            rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-            crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-            integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-            crossorigin="anonymous"
-    />
-    <link
-            rel="stylesheet"
-            href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <link
-            rel="stylesheet"
-            href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 <!-- <link rel='stylesheet' href='https://unpkg.com/tailwindcss@1.8.9/dist/tailwind.min.css'> -->
     <link rel="stylesheet" href="{{url('ceylon_beats_theme/styles/css/styles.css')}}" />
     <link rel="stylesheet" href="{{url('ceylon_beats_theme/styles/css/tailwind.css')}}" />
 
     <link rel="stylesheet" href="{{url('ceylon_beats_theme/plugin/AnimTrap/css/animtrap.css')}}" />
+
+    <style>
+
+    </style>
 
     <script src="{{url('ceylon_beats_theme/plugin/wave/wave.js')}}"></script>
 </head>
@@ -67,10 +52,7 @@
         <footer class="footer">
             <div class="container bottom_border">
                 <div class="row">
-                    <div
-                            class="col-sm-4 col-md col-sm-4 col-12 col"
-                            data-animscroll="fade-up"
-                    >
+                    <div class="col-sm-4 col-md col-sm-4 col-12 col" data-animscroll="fade-up">
                         <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
                         <!--headin5_amrc-->
                         <p class="mb10">
@@ -101,14 +83,24 @@
                         <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
                         <!--headin5_amrc-->
                         <ul class="footer_ul_amrc">
-                            <li><a href="http://webenlance.com">Remove Background</a></li>
+                            <li>
+                                <a href="http://webenlance.com">Remove Background</a>
+                            </li>
                             <li>
                                 <a href="http://webenlance.com">Shadows & Mirror Reflection</a>
                             </li>
-                            <li><a href="http://webenlance.com">Logo Design</a></li>
-                            <li><a href="http://webenlance.com">Vectorization</a></li>
-                            <li><a href="http://webenlance.com">Hair Masking/Clipping</a></li>
-                            <li><a href="http://webenlance.com">Image Cropping</a></li>
+                            <li>
+                                <a href="http://webenlance.com">Logo Design</a>
+                            </li>
+                            <li>
+                                <a href="http://webenlance.com">Vectorization</a>
+                            </li>
+                            <li>
+                                <a href="http://webenlance.com">Hair Masking/Clipping</a>
+                            </li>
+                            <li>
+                                <a href="http://webenlance.com">Image Cropping</a>
+                            </li>
                         </ul>
                         <!--footer_ul_amrc ends here-->
                     </div>
@@ -119,33 +111,30 @@
 
                         <ul class="footer_ul2_amrc">
                             <li>
-                                <a href="#"
-                                ><i class="fab fa-twitter fleft padding-right"></i>
+                                <a href="#">
+                                    <i class="fab fa-twitter fleft padding-right"></i>
                                 </a>
                                 <p>
-                                    Lorem Ipsum is simply dummy text of the printing...<a href="#"
-                                    >https://www.lipsum.com/</a
-                                    >
+                                    Lorem Ipsum is simply dummy text of the printing...
+                                    <a href="#">https://www.lipsum.com/</a>
                                 </p>
                             </li>
                             <li>
-                                <a href="#"
-                                ><i class="fab fa-twitter fleft padding-right"></i>
+                                <a href="#">
+                                    <i class="fab fa-twitter fleft padding-right"></i>
                                 </a>
                                 <p>
-                                    Lorem Ipsum is simply dummy text of the printing...<a href="#"
-                                    >https://www.lipsum.com/</a
-                                    >
+                                    Lorem Ipsum is simply dummy text of the printing...
+                                    <a href="#">https://www.lipsum.com/</a>
                                 </p>
                             </li>
                             <li>
-                                <a href="#"
-                                ><i class="fab fa-twitter fleft padding-right"></i>
+                                <a href="#">
+                                    <i class="fab fa-twitter fleft padding-right"></i>
                                 </a>
                                 <p>
-                                    Lorem Ipsum is simply dummy text of the printing...<a href="#"
-                                    >https://www.lipsum.com/</a
-                                    >
+                                    Lorem Ipsum is simply dummy text of the printing...
+                                    <a href="#">https://www.lipsum.com/</a>
                                 </p>
                             </li>
                         </ul>
@@ -197,13 +186,11 @@
         <script
                 src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
                 integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-                crossorigin="anonymous"
-        ></script>
+                crossorigin="anonymous"></script>
         <script
                 src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
                 integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-                crossorigin="anonymous"
-        ></script>
+                crossorigin="anonymous"></script>
         <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script src="{{url('ceylon_beats_theme/plugin/AnimTrap/js/anim-trap.js')}}"></script>

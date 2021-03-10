@@ -4,6 +4,12 @@
 
 @section('content')
     <body>
+    <div class="square">
+        <div class="circle">
+        </div>
+        <div class="circle">
+        </div>
+    </div>
         @include('frontend.includes.nav')
 
         <div id="demo">
