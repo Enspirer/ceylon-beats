@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Frontend;
 
+use App\Http\Controllers\Backend\MusicController;
 use App\Http\Controllers\Controller;
 use App\Models\MusicProducts;
 use Illuminate\Http\Request;
@@ -18,8 +19,14 @@ class HomeController extends Controller
     {
         $infatore = MusicProducts::where('is_features',1)
             ->get();
+
+        $getLastedMusic = MusicProducts::orderBy('created_at', 'desc')
+            ->take(4)
+            ->get();
+
         return view('frontend.index',[
-            'feature_music' => $infatore
+            'feature_music' => $infatore,
+            'latest_music' => $getLastedMusic
         ]);
     }
 

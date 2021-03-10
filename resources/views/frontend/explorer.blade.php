@@ -3,7 +3,7 @@
 @section('title', app_name() . ' | ' . __('labels.frontend.contact.box_title'))
 
 @section('content')
-    <body>
+  <body>
     <div class="square">
         <div class="circle">
         </div>
@@ -11,6 +11,8 @@
         </div>
     </div>
         @include('frontend.includes.nav')
+
+
 
         <div id="demo">
             <section id="explore-music">
