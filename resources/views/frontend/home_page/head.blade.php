@@ -12,7 +12,7 @@
 
                 <form action="{{route('frontend.search_query.index')}}" method="post">
                     {{csrf_field()}}
-                    <input class="search" name="search" type="text" id="search">
+                    <input class="search" id="seachInputs" name="search" type="text" id="search">
                     <input class="submit" type="submit" value="Search">
                 </form>
 

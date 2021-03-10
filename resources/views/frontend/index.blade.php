@@ -14,6 +14,17 @@
 
     @push('after-scripts')
 
+    <script src="{{url('ceylon_beats_theme/js/auto_complete.js')}}"></script>
+    <script>
+
+        var countries = [
+            @foreach($feature_music as $featureM)
+                "{{$featureM->music_name}}",
+            @endforeach
+        ];
+        autocomplete(document.getElementById("seachInputs"), countries);
+    </script>
+
 
 
     <script>
