@@ -15,7 +15,7 @@
                 </div>
                 <div class="menu-item col-md-2"><a href="{{route('frontend.explorer',['null','null','null','null','null'])}}">Music</a></div>
                 <div class="menu-item col-md-3">
-                    <img
+                   <a href="{{url('/')}}"> <img
                             class="default-logo"
                             src="{{url('/ceylon_beats_theme/assets/image/Group 57@2x.png')}}"
                             alt=""
@@ -25,9 +25,10 @@
                             src="{{url('/ceylon_beats_theme/assets/image/Group 57@2x.png')}}"
                             alt=""
                     />
+                   </a>
                 </div>
-                <div class="menu-item col-md-2"><a href="">About Us</a></div>
-                <div class="menu-item col-md-3"><a href="">Contact Us</a></div>
+                <div class="menu-item col-md-2"><a href="{{route('frontend.about_us')}}">About Us</a></div>
+                <div class="menu-item col-md-3"><a href="{{route('frontend.contact')}}">Contact Us</a></div>
             </div>
         </div>
         <div class="cart col-md-3">

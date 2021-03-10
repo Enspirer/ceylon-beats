@@ -2702,11 +2702,7 @@ footer p {
     margin-left: 22px;
 }
 
-.contact-form-section .form form .row {
-    margin: auto;
-}
-
-.contact-form-section .form form .row .btn-view-all {
+.contact-form-section .form form .btn-view-all {
     font: normal normal 300 18px/33px Poppins;
     letter-spacing: -0.61px;
     color: #ffffff;
@@ -2719,19 +2715,19 @@ footer p {
     margin-top: 44px;
 }
 
-.contact-form-section .form form .row .btn-view-all:hover {
+.contact-form-section .form form .btn-view-all:hover {
     color: #fff;
     background-position: 100%;
 }
 
-.contact-form-section .form form .row .btn-view-all:active {
+.contact-form-section .form form .btn-view-all:active {
     -webkit-transform: translate(0.5rem, 0.5rem);
     transform: translate(0.5rem, 0.5rem);
     -webkit-box-shadow: 0px 10px 20px -15px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 10px 20px -15px rgba(0, 0, 0, 0.75);
 }
 
-.contact-form-section .form form .row .btn-view-all-yellow {
+.contact-form-section .form form .btn-view-all .btn-view-all-yellow {
     color: #ffffff;
     border: 1px solid #E9BA1F;
     background: #E9BA1F;

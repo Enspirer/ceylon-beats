@@ -13,7 +13,7 @@ use App\Http\Controllers\Frontend\User\PurchaseHistoryController;
  * All route names are prefixed with 'frontend.'.
  */
 Route::get('/', [HomeController::class, 'index'])->name('index');
-Route::get('/about-us', [HomeController::class, 'abouts_us'])->name('about_us');
+Route::get('/about_us', [HomeController::class, 'abouts_us'])->name('about_us');
 Route::get('/explore/{genres}/{author_name}/{duration}/{price}/{music_name}', [ExplorerController::class, 'index'])->name('explorer');
 
 

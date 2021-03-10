@@ -23,6 +23,13 @@ class HomeController extends Controller
         ]);
     }
 
+    public function abouts_us()
+    {
+        return view('frontend.about_us');
+    }
+
+
+
     public function search_query(Request $request)
     {
         if($request->search){
