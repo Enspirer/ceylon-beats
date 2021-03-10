@@ -32,7 +32,7 @@
             <div class="genres-content">
             @foreach($getGenres as $genre)
                 @if($genres_name == $genre->name)
-                        <div class="genres-item">
+                        <div class="genres-item" style="padding-bottom: 10px;">
                             <div class="row d-flex justify-content-between">
                                 <a href="{{route('frontend.explorer',[$genre->name,'null','null','null','null'])}}">
                                     <div class="row form-check">
@@ -51,7 +51,7 @@
                             </div>
                         </div>
                 @else
-                        <div class="genres-item">
+                        <div class="genres-item" style="padding-bottom: 10px;">
                             <div class="row d-flex justify-content-between">
                                 <a href="{{route('frontend.explorer',[$genre->name,'null','null','null','null'])}}">
                                     <div class="row form-check">
@@ -78,5 +78,5 @@
 
 
     <hr>
-    
+
 </div>
