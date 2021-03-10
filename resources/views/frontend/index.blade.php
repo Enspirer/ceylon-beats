@@ -49,7 +49,7 @@
                         <div class="swiper-button swiper-button-prev swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-c8e8c2212346de109" aria-disabled="true"></div>
                     </div>
                     <div class="btn-view-all animscroll-init" data-animscroll="fade-up">
-                        <a href="{{route('frontend.explorer',['null','null','null','null','nul'])}}" type="button" class="black">View All</a>
+                        <a href="{{route('frontend.explorer',['null','null','null','null','null'])}}" type="button" class="black">View All</a>
                     </div>
                     <div class="new-release">
                         <div class="background-wave"></div>
@@ -58,270 +58,70 @@
                         </div>
                         <div class="new-release-container">
                             <div class="row">
-                                <div class="player-margin col-md-4 animscroll-init" data-animscroll="fade-up">
-                                    <div class="player">
-                                        <div class="play-button">
-                                            <i class="fa fa-play" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="row">
-                                            <h4>Light Up the Way</h4>
-                                            <i>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="15.569" height="14.119" viewBox="0 0 17.569 16.119">
-                                                    <path id="Icon_metro-favorite" data-name="Icon metro-favorite" d="M13.926,22.546l-1.274-1.155c-4.524-4.107-7.511-6.817-7.511-10.133A4.779,4.779,0,0,1,9.973,6.427a5.271,5.271,0,0,1,3.953,1.832,5.271,5.271,0,0,1,3.953-1.832,4.779,4.779,0,0,1,4.831,4.831c0,3.316-2.987,6.026-7.511,10.133Z" transform="translate(-5.141 -6.427)" fill="#8f8f8f"></path>
-                                                </svg>
-                                            </i>
-                                            <i>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 30 21">
-                                                    <path id="Icon_material-playlist-add" data-name="Icon material-playlist-add" d="M21,15H3v3H21Zm0-6H3v3H21Zm6,12V15H24v6H18v3h6v6h3V24h6V21ZM3,24H15V21H3Z" transform="translate(-3 -9)" fill="#8f8f8f"></path>
-                                                </svg>
-                                            </i>
-                                        </div>
-                                        <div class="type-time">
-                                            <p class="type">Family music /calm</p>
-                                            <p class="time">02:34</p>
+                                @foreach($latest_music as $lastestMusic)
+                                    <div class="player-margin col-md-4 animscroll-init" data-animscroll="fade-up">
+                                        <div class="player" style="height: 120px;">
+                                            <div class="play-button">
+                                                <i class="fa fa-play" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="row">
+                                                <h4>{{$lastestMusic->music_name}}</h4>
+                                                <i>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15.569" height="14.119" viewBox="0 0 17.569 16.119">
+                                                        <path id="Icon_metro-favorite" data-name="Icon metro-favorite" d="M13.926,22.546l-1.274-1.155c-4.524-4.107-7.511-6.817-7.511-10.133A4.779,4.779,0,0,1,9.973,6.427a5.271,5.271,0,0,1,3.953,1.832,5.271,5.271,0,0,1,3.953-1.832,4.779,4.779,0,0,1,4.831,4.831c0,3.316-2.987,6.026-7.511,10.133Z" transform="translate(-5.141 -6.427)" fill="#8f8f8f"></path>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                            <div class="type-time">
+                                                <p class="type">{{$lastestMusic->author_name}}</p>
+                                                <p><b>{{$lastestMusic->genres_id}}</b></p><br>
+                                                <p class="time">{{$lastestMusic->duration}}</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-
-                                <div class="player-margin col-md-4 animscroll-init" data-animscroll="fade-up">
-                                    <div class="player">
-                                        <div class="play-button">
-                                            <i class="fa fa-play" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="row">
-                                            <h4>Light Up the Way</h4>
-                                            <i><svg xmlns="http://www.w3.org/2000/svg" width="15.569" height="14.119" viewBox="0 0 17.569 16.119">
-                                                    <path id="Icon_metro-favorite" data-name="Icon metro-favorite" d="M13.926,22.546l-1.274-1.155c-4.524-4.107-7.511-6.817-7.511-10.133A4.779,4.779,0,0,1,9.973,6.427a5.271,5.271,0,0,1,3.953,1.832,5.271,5.271,0,0,1,3.953-1.832,4.779,4.779,0,0,1,4.831,4.831c0,3.316-2.987,6.026-7.511,10.133Z" transform="translate(-5.141 -6.427)" fill="#8f8f8f"></path>
-                                                </svg>
-                                            </i>
-                                            <i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 30 21">
-                                                    <path id="Icon_material-playlist-add" data-name="Icon material-playlist-add" d="M21,15H3v3H21Zm0-6H3v3H21Zm6,12V15H24v6H18v3h6v6h3V24h6V21ZM3,24H15V21H3Z" transform="translate(-3 -9)" fill="#8f8f8f"></path>
-                                                </svg>
-                                            </i>
-                                        </div>
-                                        <div class="type-time">
-                                            <p class="type">Family music /calm</p>
-                                            <p class="time">02:34</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="player-margin col-md-4 animscroll-init" data-animscroll="fade-up">
-                                    <div class="player">
-                                        <div class="play-button">
-                                            <i class="fa fa-play" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="row">
-                                            <h4>Light Up the Way</h4>
-                                            <i><svg xmlns="http://www.w3.org/2000/svg" width="15.569" height="14.119" viewBox="0 0 17.569 16.119">
-                                                    <path id="Icon_metro-favorite" data-name="Icon metro-favorite" d="M13.926,22.546l-1.274-1.155c-4.524-4.107-7.511-6.817-7.511-10.133A4.779,4.779,0,0,1,9.973,6.427a5.271,5.271,0,0,1,3.953,1.832,5.271,5.271,0,0,1,3.953-1.832,4.779,4.779,0,0,1,4.831,4.831c0,3.316-2.987,6.026-7.511,10.133Z" transform="translate(-5.141 -6.427)" fill="#8f8f8f"></path>
-                                                </svg>
-                                            </i>
-                                            <i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 30 21">
-                                                    <path id="Icon_material-playlist-add" data-name="Icon material-playlist-add" d="M21,15H3v3H21Zm0-6H3v3H21Zm6,12V15H24v6H18v3h6v6h3V24h6V21ZM3,24H15V21H3Z" transform="translate(-3 -9)" fill="#8f8f8f"></path>
-                                                </svg>
-                                            </i>
-                                        </div>
-                                        <div class="type-time">
-                                            <p class="type">Family music /calm</p>
-                                            <p class="time">02:34</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="player-margin col-md-4 animscroll-init" data-animscroll="fade-up">
-                                    <div class="player">
-                                        <div class="play-button">
-                                            <i class="fa fa-play" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="row">
-                                            <h4>Light Up the Way</h4>
-                                            <i><svg xmlns="http://www.w3.org/2000/svg" width="15.569" height="14.119" viewBox="0 0 17.569 16.119">
-                                                    <path id="Icon_metro-favorite" data-name="Icon metro-favorite" d="M13.926,22.546l-1.274-1.155c-4.524-4.107-7.511-6.817-7.511-10.133A4.779,4.779,0,0,1,9.973,6.427a5.271,5.271,0,0,1,3.953,1.832,5.271,5.271,0,0,1,3.953-1.832,4.779,4.779,0,0,1,4.831,4.831c0,3.316-2.987,6.026-7.511,10.133Z" transform="translate(-5.141 -6.427)" fill="#8f8f8f"></path>
-                                                </svg>
-                                            </i>
-                                            <i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 30 21">
-                                                    <path id="Icon_material-playlist-add" data-name="Icon material-playlist-add" d="M21,15H3v3H21Zm0-6H3v3H21Zm6,12V15H24v6H18v3h6v6h3V24h6V21ZM3,24H15V21H3Z" transform="translate(-3 -9)" fill="#8f8f8f"></path>
-                                                </svg>
-                                            </i>
-                                        </div>
-                                        <div class="type-time">
-                                            <p class="type">Family music /calm</p>
-                                            <p class="time">02:34</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="player-margin col-md-4 animscroll-init" data-animscroll="fade-up">
-                                    <div class="player">
-                                        <div class="play-button">
-                                            <i class="fa fa-play" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="row">
-                                            <h4>Light Up the Way</h4>
-                                            <i><svg xmlns="http://www.w3.org/2000/svg" width="15.569" height="14.119" viewBox="0 0 17.569 16.119">
-                                                    <path id="Icon_metro-favorite" data-name="Icon metro-favorite" d="M13.926,22.546l-1.274-1.155c-4.524-4.107-7.511-6.817-7.511-10.133A4.779,4.779,0,0,1,9.973,6.427a5.271,5.271,0,0,1,3.953,1.832,5.271,5.271,0,0,1,3.953-1.832,4.779,4.779,0,0,1,4.831,4.831c0,3.316-2.987,6.026-7.511,10.133Z" transform="translate(-5.141 -6.427)" fill="#8f8f8f"></path>
-                                                </svg>
-                                            </i>
-                                            <i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 30 21">
-                                                    <path id="Icon_material-playlist-add" data-name="Icon material-playlist-add" d="M21,15H3v3H21Zm0-6H3v3H21Zm6,12V15H24v6H18v3h6v6h3V24h6V21ZM3,24H15V21H3Z" transform="translate(-3 -9)" fill="#8f8f8f"></path>
-                                                </svg>
-                                            </i>
-                                        </div>
-                                        <div class="type-time">
-                                            <p class="type">Family music /calm</p>
-                                            <p class="time">02:34</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="player-margin col-md-4 animscroll-init" data-animscroll="fade-up">
-                                    <div class="player">
-                                        <div class="play-button">
-                                            <i class="fa fa-play" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="row">
-                                            <h4>Light Up the Way</h4>
-                                            <i><svg xmlns="http://www.w3.org/2000/svg" width="15.569" height="14.119" viewBox="0 0 17.569 16.119">
-                                                    <path id="Icon_metro-favorite" data-name="Icon metro-favorite" d="M13.926,22.546l-1.274-1.155c-4.524-4.107-7.511-6.817-7.511-10.133A4.779,4.779,0,0,1,9.973,6.427a5.271,5.271,0,0,1,3.953,1.832,5.271,5.271,0,0,1,3.953-1.832,4.779,4.779,0,0,1,4.831,4.831c0,3.316-2.987,6.026-7.511,10.133Z" transform="translate(-5.141 -6.427)" fill="#8f8f8f"></path>
-                                                </svg>
-                                            </i>
-                                            <i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 30 21">
-                                                    <path id="Icon_material-playlist-add" data-name="Icon material-playlist-add" d="M21,15H3v3H21Zm0-6H3v3H21Zm6,12V15H24v6H18v3h6v6h3V24h6V21ZM3,24H15V21H3Z" transform="translate(-3 -9)" fill="#8f8f8f"></path>
-                                                </svg>
-                                            </i>
-                                        </div>
-                                        <div class="type-time">
-                                            <p class="type">Family music /calm</p>
-                                            <p class="time">02:34</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="player-margin col-md-4 animscroll-init" data-animscroll="fade-up">
-                                    <div class="player">
-                                        <div class="play-button">
-                                            <i class="fa fa-play" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="row">
-                                            <h4>Light Up the Way</h4>
-                                            <i><svg xmlns="http://www.w3.org/2000/svg" width="15.569" height="14.119" viewBox="0 0 17.569 16.119">
-                                                    <path id="Icon_metro-favorite" data-name="Icon metro-favorite" d="M13.926,22.546l-1.274-1.155c-4.524-4.107-7.511-6.817-7.511-10.133A4.779,4.779,0,0,1,9.973,6.427a5.271,5.271,0,0,1,3.953,1.832,5.271,5.271,0,0,1,3.953-1.832,4.779,4.779,0,0,1,4.831,4.831c0,3.316-2.987,6.026-7.511,10.133Z" transform="translate(-5.141 -6.427)" fill="#8f8f8f"></path>
-                                                </svg>
-                                            </i>
-                                            <i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 30 21">
-                                                    <path id="Icon_material-playlist-add" data-name="Icon material-playlist-add" d="M21,15H3v3H21Zm0-6H3v3H21Zm6,12V15H24v6H18v3h6v6h3V24h6V21ZM3,24H15V21H3Z" transform="translate(-3 -9)" fill="#8f8f8f"></path>
-                                                </svg>
-                                            </i>
-                                        </div>
-                                        <div class="type-time">
-                                            <p class="type">Family music /calm</p>
-                                            <p class="time">02:34</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="player-margin col-md-4 animscroll-init" data-animscroll="fade-up">
-                                    <div class="player">
-                                        <div class="play-button">
-                                            <i class="fa fa-play" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="row">
-                                            <h4>Light Up the Way</h4>
-                                            <i><svg xmlns="http://www.w3.org/2000/svg" width="15.569" height="14.119" viewBox="0 0 17.569 16.119">
-                                                    <path id="Icon_metro-favorite" data-name="Icon metro-favorite" d="M13.926,22.546l-1.274-1.155c-4.524-4.107-7.511-6.817-7.511-10.133A4.779,4.779,0,0,1,9.973,6.427a5.271,5.271,0,0,1,3.953,1.832,5.271,5.271,0,0,1,3.953-1.832,4.779,4.779,0,0,1,4.831,4.831c0,3.316-2.987,6.026-7.511,10.133Z" transform="translate(-5.141 -6.427)" fill="#8f8f8f"></path>
-                                                </svg>
-                                            </i>
-                                            <i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 30 21">
-                                                    <path id="Icon_material-playlist-add" data-name="Icon material-playlist-add" d="M21,15H3v3H21Zm0-6H3v3H21Zm6,12V15H24v6H18v3h6v6h3V24h6V21ZM3,24H15V21H3Z" transform="translate(-3 -9)" fill="#8f8f8f"></path>
-                                                </svg>
-                                            </i>
-                                        </div>
-                                        <div class="type-time">
-                                            <p class="type">Family music /calm</p>
-                                            <p class="time">02:34</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="player-margin col-md-4 animscroll-init" data-animscroll="fade-up">
-                                    <div class="player">
-                                        <div class="play-button">
-                                            <i class="fa fa-play" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="row">
-                                            <h4>Light Up the Way</h4>
-                                            <i><svg xmlns="http://www.w3.org/2000/svg" width="15.569" height="14.119" viewBox="0 0 17.569 16.119">
-                                                    <path id="Icon_metro-favorite" data-name="Icon metro-favorite" d="M13.926,22.546l-1.274-1.155c-4.524-4.107-7.511-6.817-7.511-10.133A4.779,4.779,0,0,1,9.973,6.427a5.271,5.271,0,0,1,3.953,1.832,5.271,5.271,0,0,1,3.953-1.832,4.779,4.779,0,0,1,4.831,4.831c0,3.316-2.987,6.026-7.511,10.133Z" transform="translate(-5.141 -6.427)" fill="#8f8f8f"></path>
-                                                </svg>
-                                            </i>
-                                            <i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 30 21">
-                                                    <path id="Icon_material-playlist-add" data-name="Icon material-playlist-add" d="M21,15H3v3H21Zm0-6H3v3H21Zm6,12V15H24v6H18v3h6v6h3V24h6V21ZM3,24H15V21H3Z" transform="translate(-3 -9)" fill="#8f8f8f"></path>
-                                                </svg>
-                                            </i>
-                                        </div>
-                                        <div class="type-time">
-                                            <p class="type">Family music /calm</p>
-                                            <p class="time">02:34</p>
-                                        </div>
-                                    </div>
-                                </div>
+                                @endforeach
                             </div>
                             <div class="btn-view-all animscroll-init" data-animscroll="fade-up">
                                 <a href="{{route('frontend.explorer',['null','null','null','null','null'])}}" type="button" class="black">View All</a>
                             </div>
                         </div>
                     </div>
-
                 </div>
-
             </div>
 
         </div>
     </section>
 
-   @include('frontend.includes.homepage_last_music_item_cart_dialog')
+   @include('frontend.includes.homepage_treanding_item_cart_dialog')
 
     @push('after-scripts')
 
 
 
     <script>
-
-
         function playAudio(id,icon) {
             var x = document.getElementById(id);
             var getallicon = $('.fa-pause');
-
             getallicon.attr('class','fa fa-play');
-
             console.log(getallicon);
 //            x.play();
-
             if (x.duration > 0 && !x.paused) {
                 var icondelemts = document.getElementById(icon);
-
                 icondelemts.className = 'fa fa-play';
                 console.log(icon);
                 x.pause();
             } else {
-
                 var icondelemts = document.getElementById(icon);
                 icondelemts.className = 'fa fa-pause';
                 x.play();
-
                 //Not playing...maybe paused, stopped or never played.
-
             }
 
             document.addEventListener('play', function(e){
                 var audios = document.getElementsByTagName('audio');
-
-
                 for(var i = 0, len = audios.length; i < len;i++){
                     if(audios[i] != e.target){
                         audios[i].pause();
-
-
                     }
                 }
             }, true);

@@ -159,18 +159,24 @@
 
                 <ul class="social_footer_ul">
                     <li>
-                        <a href="http://webenlance.com"
-                        ><i class="fab fa-facebook-f"></i
-                            ></a>
+                        <a href="http://webenlance.com">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
                     </li>
                     <li>
-                        <a href="http://webenlance.com"><i class="fab fa-twitter"></i></a>
+                        <a href="http://webenlance.com">
+                            <i class="fab fa-twitter"></i>
+                        </a>
                     </li>
                     <li>
-                        <a href="http://webenlance.com"><i class="fab fa-linkedin"></i></a>
+                        <a href="http://webenlance.com">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
                     </li>
                     <li>
-                        <a href="http://webenlance.com"><i class="fab fa-instagram"></i></a>
+                        <a href="http://webenlance.com">
+                            <i class="fab fa-instagram"></i>
+                        </a>
                     </li>
                 </ul>
                 <!--social_footer_ul ends here-->
@@ -256,8 +262,6 @@
             // 'use strict';
             @stack('before-scripts')
              let wavesurfer;
-
-
              function soundMute() {
                  wavesurfer.toggleMute();
              }
@@ -285,10 +289,6 @@
                     ('00' + Math.floor(time % 60)).slice(-2) // seconds
                 ].join(':');
             };
-
-
-
-
             // Bind controls
             document.addEventListener('DOMContentLoaded', function() {
                 wavesurfer = WaveSurfer.create({
@@ -323,11 +323,9 @@
                     $('#pause_button').hide();
                     $('#media-player').show();
                 });
-
                 // The playlist links
                 let links = document.querySelectorAll('#playlist a');
                 let currentTrack = 0;
-
                 // Load a track by index and highlight the corresponding link
                 let setCurrentSong = function(index) {
 //                    links[currentTrack].classList.remove('active');
@@ -337,34 +335,25 @@
                     wavesurfer.load(links[currentTrack].href);
                     $('#play_button').show();
                     $('#playerduration').text(formatTime(wavesurfer.getDuration()));
-
                 };
 
                 // Load the track on click
                 Array.prototype.forEach.call(links, function(link, index) {
                     link.addEventListener('click', function(e) {
                         var iconselctor =  document.querySelector('#'+link.id+' i');
-
                         e.preventDefault();
                         if (wavesurfer.isPlaying()){
-
                             $('#playerduration').text(formatTime(wavesurfer.getDuration()));
-
                             iconselctor.className  = "fa fa-play";
                            console.log(iconselctor);
                             wavesurfer.stop();
                         }else{
-
-
-
                             $(".fa-stop").attr('class', 'fa fa-play');
                             iconselctor.className = "fa fa-stop";
                             setCurrentSong(index);
                             $('#playerduration').text(formatTime(wavesurfer.getDuration()));
-
                         }
                     });
-
                     wavesurfer.on('finish', function(link) {
                         var iconselctor =  document.querySelector('#'+link.id+' i');
                         link.addEventListener('click', function(e) {
@@ -374,21 +363,17 @@
 //                        $('#'+links[currentTrack].id).show();
                     });
                 });
-
                 // Play on audio load
                 wavesurfer.on('ready', function() {
                     wavesurfer.play();
                 });
-
                 wavesurfer.on('error', function(e) {
                     console.warn(e);
                 });
-
                 // Go to the next track on finish
                 wavesurfer.on('finish', function() {
                     setCurrentSong((currentTrack + 1) % links.length);
                 });
-
                 // Load the first track
 //                setCurrentSong(currentTrack);
             });
@@ -412,9 +397,7 @@
                     $('#'+price_id).text(obj.price);
                     $('#pricedetails'+music_id).val(obj.price);
                     $('#submit_cores'+music_id).attr("disabled",false);
-
                 });
-
             }
         </script>
 

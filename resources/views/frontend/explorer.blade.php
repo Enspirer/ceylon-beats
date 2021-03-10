@@ -3,7 +3,7 @@
 @section('title', app_name() . ' | ' . __('labels.frontend.contact.box_title'))
 
 @section('content')
-x    <body>
+  <body>
     <div class="square">
         <div class="circle">
         </div>
