@@ -35,7 +35,11 @@
                 <div class="time-icon">
                     <div class="row">
                         <div class="time">
-                            <h1 id="playerduration">0 : 32 / 4 . 24</h1>
+                            <h1>
+                                <span id="playercurrentduration">4 . 24</span>
+                                <span>/</span>
+                                <span id="playerduration">4 . 24</span>
+                            </h1>
                             <p>128 BPM</p>
                         </div>
                         <div class="icon">
