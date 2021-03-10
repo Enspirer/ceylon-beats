@@ -280,6 +280,28 @@
              let wavesurfer;
 
 
+             function soundMute() {
+                 wavesurfer.toggleMute();
+             }
+
+             function backwordFunction() {
+                 wavesurfer.skipBackward()
+             }
+
+            function forwordFunction() {
+                wavesurfer.skipForward()
+            }
+
+            function playFunction()
+            {
+                wavesurfer.play();
+            }
+
+            function pauseFunction() {
+                wavesurfer.pause();
+            }
+
+
 
 
             // Bind controls
@@ -291,11 +313,7 @@
                     height: 120,
                     barWidth: 3
                 });
-                wavesurfer.load('ss');
-                let playPause = document.querySelector('#play_button');
-                playPause.addEventListener('click', function() {
-                    wavesurfer.playPause();
-                });
+
 
                 // Toggle play/pause text
                 wavesurfer.on('play', function() {

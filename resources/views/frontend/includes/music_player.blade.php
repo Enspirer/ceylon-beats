@@ -13,17 +13,17 @@
             <div class="row d-flex justify-content-between">
                 <div class="buttons-name">
                     <div class="row">
-                        <button class="btn-control backword">
+                        <button onclick="backwordFunction()" class="btn-control backword">
                             <i class="fa fa-backward" aria-hidden="true"></i>
                         </button>
 
-                        <button class="btn-control play" id="play_button">
+                        <button onclick="playFunction()"  class="btn-control play" id="play_button">
                             <i class="fa fa-play" aria-hidden="true"></i>
                         </button>
-                        <button class="btn-control play" id="pause_button">
+                        <button onclick="pauseFunction()" class="btn-control play" id="pause_button">
                             <i class="fa fa-pause" aria-hidden="true"></i>
                         </button>
-                        <button class="btn-control forword">
+                        <button onclick="forwordFunction()" class="btn-control forword">
                             <i class="fa fa-forward" aria-hidden="true"></i>
                         </button>
                         <div class="name">
@@ -40,12 +40,11 @@
                         </div>
                         <div class="icon">
                             <div class="row">
-                                <a href="#"
-                                ><i class="fa fa-volume-up" aria-hidden="true"></i
-                                    ></a>
-                                <a href="#"
-                                ><i class="fa fa-heart" aria-hidden="true"></i
-                                    ></a>
+                                <a onclick="soundMute()" href="#">
+                                    <i class="fa fa-volume-up" aria-hidden="true"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-heart" aria-hidden="true"></i></a>
                                 <a href="#">
                                     <i class="material-icons">playlist_add</i>
                                 </a>
