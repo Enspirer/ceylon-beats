@@ -138,7 +138,7 @@
 
                                 <span class="item-price">LKR {{number_format($cartDetail->price,2)}}</span>
 
-                                <span class="item-quantity"><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></span>
+                                <span class="item-quantity"><a href="{{route('frontend.cart.remove',$cartDetail->id)}}"><i class="fa fa-trash" aria-hidden="true"></i></a></span>
                             </li>
                         @endforeach
                     @endif

@@ -47,30 +47,33 @@
 
 
 @endsection
-
 <script>
-
-
     function playAudio(id,icon) {
         var x = document.getElementById(id);
+        var getallicon = $('.fa-pause');
+        getallicon.attr('class','fa fa-play');
+        console.log(getallicon);
 //            x.play();
-
-        if (x.duration > 0 && !x.paused && !x.stopped) {
+        if (x.duration > 0 && !x.paused) {
             var icondelemts = document.getElementById(icon);
             icondelemts.className = 'fa fa-play';
             console.log(icon);
             x.pause();
         } else {
             var icondelemts = document.getElementById(icon);
-
             icondelemts.className = 'fa fa-pause';
             x.play();
             //Not playing...maybe paused, stopped or never played.
-
         }
-
+        document.addEventListener('play', function(e){
+            var audios = document.getElementsByTagName('audio');
+            for(var i = 0, len = audios.length; i < len;i++){
+                if(audios[i] != e.target){
+                    audios[i].pause();
+                }
+            }
+        }, true);
     }
-
     function pauseAudio(id,icon) {
         var x = document.getElementById(id);
         x.pause();

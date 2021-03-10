@@ -354,7 +354,6 @@
                         if (wavesurfer.isPlaying()){
                             if(currentPlayingTack === link)
                             {
-                                setCurrentSong(index);
                                 $('#playerduration').text(formatTime(wavesurfer.getDuration()));
                                 iconselctor.className  = "fa fa-play";
                                 console.log(iconselctor);
