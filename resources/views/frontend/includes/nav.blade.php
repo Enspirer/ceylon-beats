@@ -112,22 +112,25 @@
                 <!--end shopping-cart-header -->
 
                 <ul class="shopping-cart-items">
-                    @foreach($cartDetails as $cartDetail)
-                        <li class="clearfix" style="list-style-type: none;">
-                            <img src="{{url('ceylon_beats_theme/assets/dummy_music.png')}}" alt="item1">
-                            <span class="item-name">{{$cartDetail->name}}</span>
-                            <span class="item-detail">
+                    @if(count($cartDetails) == 0)
+                        <p>Your Cart Is Empty.</p>
+                    @else
+                        @foreach($cartDetails as $cartDetail)
+                            <li class="clearfix" style="list-style-type: none;">
+                                <img src="{{url('ceylon_beats_theme/assets/dummy_music.png')}}" alt="item1">
+                                <span class="item-name">{{$cartDetail->name}}</span>
+                                <span class="item-detail">
                                 {{$cartDetail->attributes->license_name}}
                             </span>
 
-                            <span class="item-price">LKR {{number_format($cartDetail->price,2)}}</span>
+                                <span class="item-price">LKR {{number_format($cartDetail->price,2)}}</span>
 
-                            <span class="item-quantity">QTY: 1</span>
-                            <button class="btn btn-danger">
-                                <i class="fa fa-trash"></i>
-                            </button>
-                        </li>
-                    @endforeach
+                                <span class="item-quantity"><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></span>
+                            </li>
+                        @endforeach
+                    @endif
+
+
                 </ul>
 
                 @auth

@@ -244,6 +244,11 @@ body {
     margin-bottom: 18px;
 }
 
+.navbar-top .container .cart .shopping-cart .shopping-cart-items li .fa-trash {
+    color: #ffc400;
+    float: right !important;
+}
+
 .navbar-top .container .cart .shopping-cart .shopping-cart-items img {
     float: left;
     margin-right: 12px;
@@ -295,7 +300,7 @@ body {
 }
 
 .navbar-top .container .cart .button {
-    background: #f8770c;
+    background: #ffc400;
     color: white;
     text-align: center;
     padding: 12px;
@@ -308,7 +313,7 @@ body {
 }
 
 .navbar-top .container .cart .button:hover {
-    background: #f87f1b;
+    background: #ffc80f;
 }
 
 .navbar-top .container .cart .button i {
