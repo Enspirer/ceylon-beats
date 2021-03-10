@@ -346,7 +346,7 @@
                         var iconselctor =  document.querySelector('#'+link.id+' i');
                         e.preventDefault();
                         if (wavesurfer.isPlaying()){
-                            setCurrentSong(index);
+//                            setCurrentSong(index);
                             $('#playerduration').text(formatTime(wavesurfer.getDuration()));
                             iconselctor.className  = "fa fa-play";
                            console.log(iconselctor);
