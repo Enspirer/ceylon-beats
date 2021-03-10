@@ -280,6 +280,35 @@
              let wavesurfer;
 
 
+             function soundMute() {
+                 wavesurfer.toggleMute();
+             }
+
+             function backwordFunction() {
+                 wavesurfer.skipBackward()
+             }
+
+            function forwordFunction() {
+                wavesurfer.skipForward()
+            }
+
+            function playFunction()
+            {
+                wavesurfer.play();
+            }
+
+            function pauseFunction() {
+                wavesurfer.pause();
+            }
+
+            var formatTime = function (time) {
+                return [
+                    Math.floor((time % 3600) / 60), // minutes
+                    ('00' + Math.floor(time % 60)).slice(-2) // seconds
+                ].join(':');
+            };
+
+
 
 
             // Bind controls
@@ -291,19 +320,24 @@
                     height: 120,
                     barWidth: 3
                 });
-                wavesurfer.load('ss');
-                let playPause = document.querySelector('#play_button');
-                playPause.addEventListener('click', function() {
-                    wavesurfer.playPause();
-                });
+
 
                 // Toggle play/pause text
                 wavesurfer.on('play', function() {
                     document.querySelector('#play').style.display = 'none';
                     document.querySelector('#pause').style.display = '';
+                    $('#playerduration').text(formatTime(wavesurfer.getDuration()));
                     $('#play_button').hide();
                     $('#pause_button').show();
                     $('#media-player').show();
+
+//                    getCurrentTime()
+
+                    timett=setInterval(function(){
+                        $('#playercurrentduration').text(formatTime(wavesurfer.getCurrentTime()));
+
+                    },1000);
+
                 });
                 wavesurfer.on('pause', function() {
                     document.querySelector('#play').style.display = '';
@@ -325,6 +359,7 @@
                     console.log(links[currentTrack].href);
                     wavesurfer.load(links[currentTrack].href);
                     $('#play_button').show();
+                    $('#playerduration').text(formatTime(wavesurfer.getDuration()));
 
                 };
 
@@ -336,15 +371,19 @@
                         e.preventDefault();
                         if (wavesurfer.isPlaying()){
 
+                            $('#playerduration').text(formatTime(wavesurfer.getDuration()));
 
                             iconselctor.className  = "fa fa-play";
                            console.log(iconselctor);
                             wavesurfer.stop();
                         }else{
 
+
+
                             $(".fa-stop").attr('class', 'fa fa-play');
                             iconselctor.className = "fa fa-stop";
                             setCurrentSong(index);
+                            $('#playerduration').text(formatTime(wavesurfer.getDuration()));
 
                         }
                     });
