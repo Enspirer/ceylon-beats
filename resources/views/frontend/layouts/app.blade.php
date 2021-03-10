@@ -319,6 +319,7 @@
                 wavesurfer.on('play', function() {
                     document.querySelector('#play').style.display = 'none';
                     document.querySelector('#pause').style.display = '';
+                    $('#playerduration').text(wavesurfer.getDuration());
                     $('#play_button').hide();
                     $('#pause_button').show();
                     $('#media-player').show();
@@ -343,6 +344,7 @@
                     console.log(links[currentTrack].href);
                     wavesurfer.load(links[currentTrack].href);
                     $('#play_button').show();
+                    $('#playerduration').text(wavesurfer.getDuration());
 
                 };
 
@@ -354,15 +356,19 @@
                         e.preventDefault();
                         if (wavesurfer.isPlaying()){
 
+                            $('#playerduration').text(wavesurfer.getDuration());
 
                             iconselctor.className  = "fa fa-play";
                            console.log(iconselctor);
                             wavesurfer.stop();
                         }else{
 
+
+
                             $(".fa-stop").attr('class', 'fa fa-play');
                             iconselctor.className = "fa fa-stop";
                             setCurrentSong(index);
+                            $('#playerduration').text(wavesurfer.getDuration());
 
                         }
                     });
