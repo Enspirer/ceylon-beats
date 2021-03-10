@@ -32,7 +32,7 @@
 
                                         <div class="space"></div>
                                         <div class="row bottum-button">
-                                            <a href="{{route('frontend.explorer',['null','null','null','null','null'])}}" class="btn-continue">Continue Browsing</a>
+                                            <a href="{{route('frontend.explorer',['genres','author_name','duration','price','music_name'])}}" class="btn-continue">Continue Browsing</a>
                                             <a href="#" class="btn-checkout">Checkout Now</a>
 
                                         </div>

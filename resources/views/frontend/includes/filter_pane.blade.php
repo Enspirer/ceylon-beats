@@ -8,7 +8,7 @@
         <div class="clear d-flex justify-content-between">
             <div class="row">
                 <p>Clear All</p>
-                <a href="{{route('frontend.explorer',['null','null','null','null','null'])}}">
+                <a href="{{route('frontend.explorer',['genres','author_name','duration','price','music_name'])}}">
                     <svg xmlns="http://www.w3.org/2000/svg" width="15.608" height="15.608" viewBox="0 0 15.608 15.608">
                         <path id="x" d="M4.827,4.827a1.115,1.115,0,0,1,1.578,0l5.9,5.9,5.9-5.9A1.116,1.116,0,1,1,19.78,6.4l-5.9,5.9,5.9,5.9A1.116,1.116,0,1,1,18.2,19.78l-5.9-5.9-5.9,5.9A1.116,1.116,0,1,1,4.827,18.2l5.9-5.9-5.9-5.9a1.115,1.115,0,0,1,0-1.578Z" transform="translate(-4.499 -4.499)" fill="#8f8f8f"></path>
                     </svg>
@@ -34,7 +34,7 @@
                 @if($genres_name == $genre->name)
                         <div class="genres-item" style="padding-bottom: 10px;">
                             <div class="row d-flex justify-content-between">
-                                <a href="{{route('frontend.explorer',[$genre->name,'null','null','null','null'])}}">
+                                <a href="{{route('frontend.explorer',[$genre->name,'author_name','duration','price','music_name'])}}">
                                     <div class="row form-check">
                                         <div class="flip">
                                             <div class="front"></div>
@@ -53,7 +53,7 @@
                 @else
                         <div class="genres-item" style="padding-bottom: 10px;">
                             <div class="row d-flex justify-content-between">
-                                <a href="{{route('frontend.explorer',[$genre->name,'null','null','null','null'])}}">
+                                <a href="{{route('frontend.explorer',[$genre->name,'author_name','duration','price','music_name'])}}">
                                     <div class="row form-check">
                                         <div class="flip">
                                             <div class="front"></div>
