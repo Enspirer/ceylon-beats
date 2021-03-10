@@ -1,4 +1,4 @@
-signing u@extends('frontend.layouts.app')
+@extends('frontend.layouts.app')
 
 @section('title', app_name() . ' | ' . __('labels.frontend.auth.login_box_title'))
 
@@ -90,19 +90,18 @@ signing u@extends('frontend.layouts.app')
 @if(config('access.captcha.login'))
     @captchaScripts
 @endif
-
-    <script>
-        var checker = document.getElementById('checkme');
-        var sendbtn = document.getElementById('sendNewSms');
-        checker.onchange = function(){
-            if(this.checked){
-                sendbtn.disabled = false;
-            } else {
-                sendbtn.disabled = true;
-            }
-
+<script>
+    var checker = document.getElementById('checkme');
+    var sendbtn = document.getElementById('sendNewSms');
+    checker.onchange = function(){
+        if(this.checked){
+            sendbtn.disabled = false;
+        } else {
+            sendbtn.disabled = true;
         }
-    </script>
+
+    }
+</script>
 @endpush
 
 
