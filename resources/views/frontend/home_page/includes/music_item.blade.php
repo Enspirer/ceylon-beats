@@ -17,11 +17,8 @@
         </a>
 
         <div class="row">
-            <i><svg xmlns="http://www.w3.org/2000/svg" width="30" height="21" viewBox="0 0 30 21">
-                    <path id="Icon_material-playlist-add" data-name="Icon material-playlist-add" d="M21,15H3v3H21Zm0-6H3v3H21Zm6,12V15H24v6H18v3h6v6h3V24h6V21ZM3,24H15V21H3Z" transform="translate(-3 -9)" fill="#8f8f8f"></path>
-                </svg>
-            </i>
-            <i><svg xmlns="http://www.w3.org/2000/svg" width="19.619" height="18" viewBox="0 0 19.619 18">
+            <i>
+                <svg xmlns="http://www.w3.org/2000/svg" width="19.619" height="18" viewBox="0 0 19.619 18">
                     <path id="Icon_metro-favorite" data-name="Icon metro-favorite" d="M14.951,24.427l-1.422-1.29c-5.052-4.586-8.387-7.612-8.387-11.315a5.337,5.337,0,0,1,5.4-5.4,5.887,5.887,0,0,1,4.414,2.045,5.887,5.887,0,0,1,4.414-2.045,5.337,5.337,0,0,1,5.4,5.4c0,3.7-3.335,6.729-8.387,11.315Z" transform="translate(-5.141 -6.427)" fill="#8f8f8f"></path>
                 </svg>
             </i>
