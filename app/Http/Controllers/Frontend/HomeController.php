@@ -40,9 +40,9 @@ class HomeController extends Controller
     public function search_query(Request $request)
     {
         if($request->search){
-            return redirect()->route('frontend.explorer',['null','null','null','null',$request->search]);
+            return redirect()->route('frontend.explorer',['genres','author_name','duration','price',$request->search]);
         }else{
-            return redirect()->route('frontend.explorer',['null','null','null','null','null']);
+            return redirect()->route('frontend.explorer',['genres','author_name','duration','price','music_name']);
         }
     }
 

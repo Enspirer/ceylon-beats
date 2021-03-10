@@ -49,7 +49,7 @@
                         <div class="swiper-button swiper-button-prev swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-c8e8c2212346de109" aria-disabled="true"></div>
                     </div>
                     <div class="btn-view-all animscroll-init" data-animscroll="fade-up">
-                        <a href="{{route('frontend.explorer',['null','null','null','null','null'])}}" type="button" class="black">View All</a>
+                        <a href="{{route('frontend.explorer',['genres','author_name','duration','price','music_name'])}}" type="button" class="black">View All</a>
                     </div>
                     <div class="new-release">
                         <div class="background-wave"></div>
@@ -63,7 +63,7 @@
                                 @endforeach
                             </div>
                             <div class="btn-view-all animscroll-init" data-animscroll="fade-up">
-                                <a href="{{route('frontend.explorer',['null','null','null','null','null'])}}" type="button" class="black">View All</a>
+                                <a href="{{route('frontend.explorer',['genres','author_name','duration','price','music_name'])}}" type="button" class="black">View All</a>
                             </div>
                         </div>
                     </div>

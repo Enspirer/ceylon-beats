@@ -13,7 +13,7 @@
                 <div class="menu-item col-md-2">
                     <a href="{{url('/')}}" class="">Home</a>
                 </div>
-                <div class="menu-item col-md-2"><a href="{{route('frontend.explorer',['null','null','null','null','null'])}}">Music</a></div>
+                <div class="menu-item col-md-2"><a href="{{route('frontend.explorer',['genres','author_name','duration','price','music_name'])}}">Music</a></div>
                 <div class="menu-item col-md-3">
                    <a href="{{url('/')}}"> <img
                             class="default-logo"

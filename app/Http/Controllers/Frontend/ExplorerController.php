@@ -12,22 +12,22 @@ class ExplorerController extends Controller
     public function index($genres,$author_name,$duration,$price,$music_name)
     {
         $sounditems = MusicProducts::query();
-        if($genres != 'null')
+        if($genres != 'genres')
         {
            $sounditems->where('genres_id','like',$genres);
         }
 
-        if($author_name != 'null')
+        if($author_name != 'author_name')
         {
             $sounditems->where('author_name',$author_name);
         }
 
-        if($duration != 'null')
+        if($duration != 'duration')
         {
             $sounditems->where('duration',$duration);
         }
 
-        if($music_name != 'null')
+        if($music_name != 'music_name')
         {
             $sounditems->orWhere('music_name', 'like', '%' . $music_name . '%');
 
