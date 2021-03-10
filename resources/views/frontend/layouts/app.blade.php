@@ -278,6 +278,11 @@
             // 'use strict';
             @stack('before-scripts')
              let wavesurfer;
+
+
+
+
+            // Bind controls
             document.addEventListener('DOMContentLoaded', function() {
                 wavesurfer = WaveSurfer.create({
                     container: '#waveform',
@@ -286,10 +291,7 @@
                     height: 120,
                     barWidth: 3
                 });
-            });
-
-            // Bind controls
-            document.addEventListener('DOMContentLoaded', function() {
+                wavesurfer.load('ss');
                 let playPause = document.querySelector('#play_button');
                 playPause.addEventListener('click', function() {
                     wavesurfer.playPause();
@@ -317,9 +319,10 @@
 
                 // Load a track by index and highlight the corresponding link
                 let setCurrentSong = function(index) {
-                    links[currentTrack].classList.remove('active');
+//                    links[currentTrack].classList.remove('active');
                     currentTrack = index;
-                    links[currentTrack].classList.add('active');
+//                    links[currentTrack].classList.add('active');
+                    console.log(links[currentTrack].href);
                     wavesurfer.load(links[currentTrack].href);
                     $('#play_button').show();
 
@@ -329,16 +332,20 @@
                 Array.prototype.forEach.call(links, function(link, index) {
                     link.addEventListener('click', function(e) {
                         var iconselctor =  document.querySelector('#'+link.id+' i');
+
                         e.preventDefault();
                         if (wavesurfer.isPlaying()){
+
 
                             iconselctor.className  = "fa fa-play";
                            console.log(iconselctor);
                             wavesurfer.stop();
                         }else{
+
                             $(".fa-stop").attr('class', 'fa fa-play');
                             iconselctor.className = "fa fa-stop";
                             setCurrentSong(index);
+
                         }
                     });
 
