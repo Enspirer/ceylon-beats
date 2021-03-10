@@ -11,4 +11,5 @@ class MyCartController extends Controller
     {
         return view('frontend.user.my_cart.my_cart');
     }
+    
 }

@@ -115,10 +115,6 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <h5>{{$soundItem->author_name}}</h5>
-
-                                    </div>
-                                    <div class="col-md-6">
-                                        <h4>Licence <br> <span>Music Broadcast (1 Milion)</span></h4>
                                     </div>
                                 </div>
                             </div>
