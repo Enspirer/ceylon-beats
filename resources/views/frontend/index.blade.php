@@ -65,11 +65,13 @@
                                         </div>
                                         <div class="row">
                                             <h4>Light Up the Way</h4>
-                                            <i><svg xmlns="http://www.w3.org/2000/svg" width="15.569" height="14.119" viewBox="0 0 17.569 16.119">
+                                            <i>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15.569" height="14.119" viewBox="0 0 17.569 16.119">
                                                     <path id="Icon_metro-favorite" data-name="Icon metro-favorite" d="M13.926,22.546l-1.274-1.155c-4.524-4.107-7.511-6.817-7.511-10.133A4.779,4.779,0,0,1,9.973,6.427a5.271,5.271,0,0,1,3.953,1.832,5.271,5.271,0,0,1,3.953-1.832,4.779,4.779,0,0,1,4.831,4.831c0,3.316-2.987,6.026-7.511,10.133Z" transform="translate(-5.141 -6.427)" fill="#8f8f8f"></path>
                                                 </svg>
                                             </i>
-                                            <i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 30 21">
+                                            <i>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 30 21">
                                                     <path id="Icon_material-playlist-add" data-name="Icon material-playlist-add" d="M21,15H3v3H21Zm0-6H3v3H21Zm6,12V15H24v6H18v3h6v6h3V24h6V21ZM3,24H15V21H3Z" transform="translate(-3 -9)" fill="#8f8f8f"></path>
                                                 </svg>
                                             </i>
@@ -276,6 +278,68 @@
 
         </div>
     </section>
+
+    @foreach($feature_music as $feature_musirc)
+        {{------------------ Modal ------------------ --}}
+        <form action="{{route('frontend.cart.add')}}" method="post">
+            <div class="modal fade" id="exampleModalCenter{{$feature_musirc->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="display: none;">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    {{csrf_field()}}
+                    <div class="modal-content">
+                        <h1>Select Your Licenses</h1>
+                        <select class="form-control" name="license_name" id="licesensect{{$feature_musirc->id}}" onchange="selectPackage('{{$feature_musirc->id}}','licesensect{{$feature_musirc->id}}','inpack_price{{$feature_musirc->id}}')">
+                            <option selected>Select License</option>
+                            @foreach(json_decode($feature_musirc->price) as  $pricerange)
+                                <option value="{{$pricerange->license_name}}">{{$pricerange->license_name}}</option>
+                            @endforeach
+                        </select>
+
+                        <input type="hidden" name="music_item_id" value="{{$feature_musirc->id}}">
+                        <div class="modal-body">
+                            <input type="hidden" name="price_details" value="" id="pricedetails{{$feature_musirc->id}}">
+                            <input type="hidden" name="music_item_id" value="{{$feature_musirc->id}}">
+                            <input type="hidden" name="music_name" value="{{$feature_musirc->music_name}}">
+                            <input type="hidden" name="preview_link" value="{{$feature_musirc->preview_link}}">
+                            <input type="hidden" name="author_name" value="{{$feature_musirc->author_name}}">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="play-button">
+                                            <i class="fa fa-play" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <h6>{{$feature_musirc->music_name}}</h6>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <h2 id="inpack_price{{$feature_musirc->id}}">0</h2>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <h5>{{$feature_musirc->author_name}}</h5>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <h4>Licence <br> <span>Music Broadcast (1 Milion)</span></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#" class="btn-cancel-modal" data-dismiss="modal">Cancel</a>
+                            <button type="submit" id="submit_cores{{$feature_musirc->id}}"   class="btn-cart-modal" disabled>Add to Cart</button>
+                            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    @endforeach
 
     @push('after-scripts')
 

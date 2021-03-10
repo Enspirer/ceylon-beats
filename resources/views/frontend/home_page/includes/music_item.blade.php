@@ -17,7 +17,7 @@
         </a>
 
         <div class="row">
-            <a href="#"> <i class="fa fa-cart-plus" aria-hidden="true"></i></a>
+            <a href="#"  data-toggle="modal" data-target="#exampleModalCenter{{$feature_musirc->id}}"> <i class="fa fa-cart-plus" aria-hidden="true"></i></a>
             <a href="#"> <i class="fa fa-heart" aria-hidden="true"></i></a>
         </div>
         <h3>{{$feature_musirc->music_name}}</h3>
@@ -27,3 +27,4 @@
         </div>
     </div>
 </div>
+
