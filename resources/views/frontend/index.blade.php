@@ -18,6 +18,7 @@
 
     <script>
         function playAudio(id,icon) {
+            console.log(id);
             var x = document.getElementById(id);
             var getallicon = $('.fa-pause');
             getallicon.attr('class','fa fa-play');

@@ -1,9 +1,9 @@
 <div class="player-margin col-md-4 animscroll-init" data-animscroll="fade-up">
     <div class="player">
         <div class="play-button">
-            <a onclick="playAudio('myAudio{{$lastestMusic->id}}','play_icon{{$lastestMusic->id}}')">
+            <a onclick="playAudio('myAudio{{$lastestMusic->id}}','play_iconse{{$lastestMusic->id}}')">
                 <div class="play-icon">
-                    <i id="play_icon{{$lastestMusic->id}}" class="fa fa-play" style="font-size: 54px;color: white;"></i>
+                    <i id="play_iconse{{$lastestMusic->id}}" class="fa fa-play" style="font-size: 54px;color: white;"></i>
                 </div>
             </a>
 

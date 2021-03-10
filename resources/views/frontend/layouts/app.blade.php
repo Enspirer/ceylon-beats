@@ -305,16 +305,13 @@
 
                 // Toggle play/pause text
                 wavesurfer.on('play', function() {
-
                     document.querySelector('#play').style.display = 'none';
                     document.querySelector('#pause').style.display = '';
                     $('#playerduration').text(formatTime(wavesurfer.getDuration()));
                     $('#play_button').hide();
                     $('#pause_button').show();
                     $('#media-player').show();
-
 //                    getCurrentTime()
-
                     timett=setInterval(function(){
                         $('#playercurrentduration').text(formatTime(wavesurfer.getCurrentTime()));
                     },1000);
@@ -339,17 +336,13 @@
                     $('#play_button').show();
                     $('#playerduration').text(formatTime(wavesurfer.getDuration()));
                 };
-
                 console.log(currentTrack);
 
                 // Load the track on click
 
-
                 Array.prototype.forEach.call(links, function(link, index,currentPlayingTack) {
-
                     link.addEventListener('click', function(e) {
                         var iconselctor =  document.querySelector('#'+link.id+' i');
-
                         e.preventDefault();
                         if (wavesurfer.isPlaying()){
                             if(currentPlayingTack === link)
