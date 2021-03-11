@@ -33,7 +33,9 @@
                                             <h6>{{$feature_musirc->music_name}}</h6>
                                         </div>
                                         <div class="col-md-6">
-                                            <h2 id="inpack_price{{$feature_musirc->id}}">0</h2>
+                                            <div style="font-size: 19px;font-weight: 700;color: wheat;">
+                                                LKR <span id="inpack_price{{$feature_musirc->id}}">0</span>.00
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -41,7 +43,7 @@
                                             <h5>{{$feature_musirc->author_name}}</h5>
                                         </div>
                                         <div class="col-md-6">
-                                            <h4>Licence <br> <span>Music Broadcast (1 Milion)</span></h4>
+
                                         </div>
                                     </div>
                                 </div>

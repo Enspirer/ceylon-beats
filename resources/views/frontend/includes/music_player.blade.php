@@ -48,11 +48,8 @@
                                     <i class="fa fa-volume-up" aria-hidden="true"></i>
                                 </a>
                                 <a href="#">
-                                    <i class="fa fa-heart" aria-hidden="true"></i></a>
-                                <a href="#">
-                                    <i class="material-icons">playlist_add</i>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
                                 </a>
-                                <a href="#"><i class="fas fa-shopping-cart"></i></a>
                             </div>
                         </div>
                     </div>
