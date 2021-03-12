@@ -61,7 +61,7 @@
                     class="form-select"
                     aria-label="Default select example"
             >
-                <option selected>LKR</option>
+                <option selected>USD</option>
             </select>
         </div>
     </div>
