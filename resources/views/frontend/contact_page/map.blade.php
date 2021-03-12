@@ -29,7 +29,7 @@
             />
         </div>
         <div class="contact-details" data-animscroll="fade-up" data-animscroll-delay="100">
-            <h1 data-animscroll="fade-up" data-animscroll-delay="100">Ceylon Beats</h1>
+            <h1 data-animscroll="fade-up" data-animscroll-delay="100">Ceylon Beatz</h1>
             <p data-animscroll="fade-up" data-animscroll-delay="200">A beat with Ceylon touch</p>
             <div class="details">
                 <div class="details-item" data-animscroll="fade-up" data-animscroll-delay="300">
