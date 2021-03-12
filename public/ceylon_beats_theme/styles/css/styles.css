@@ -830,6 +830,10 @@ footer p {
     color: #ffc400;
 }
 
+#head-section .mask .music .container .swiper-container .swiper-wrapper .swiper-slide .bottum-details .active-fav {
+    color: #ffc400;
+}
+
 #head-section .mask .music .container .swiper-container .swiper-wrapper .swiper-slide .bottum-details .play-icon {
     width: 90px;
     height: 90px;
