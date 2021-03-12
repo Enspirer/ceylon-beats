@@ -11,9 +11,11 @@
         <div class="menu col-md-7">
             <div class="row">
                 <div class="menu-item col-md-2">
-                    <a href="{{url('/')}}" class="">Home</a>
+x                    <a href="{{url('/')}}" class="{{ Request::segment(1) === null ? 'active' : null }}">Home</a>
                 </div>
-                <div class="menu-item col-md-2"><a href="{{route('frontend.explorer',['genres','author_name','duration','price','music_name'])}}">Music</a></div>
+                <div class="menu-item col-md-2">
+                    <a class="{{ Request::segment(1) === 'explore' ? 'active' : null }}" href="{{route('frontend.explorer',['genres','author_name','duration','price','music_name'])}}">Music</a>
+                </div>
                 <div class="menu-item col-md-3">
                    <a href="{{url('/')}}"> <img
                             class="default-logo"
@@ -27,8 +29,12 @@
                     />
                    </a>
                 </div>
-                <div class="menu-item col-md-2"><a href="{{route('frontend.about_us')}}">About Us</a></div>
-                <div class="menu-item col-md-3"><a href="{{route('frontend.contact')}}">Contact Us</a></div>
+                <div class="menu-item col-md-2">
+                    <a class="{{ Request::segment(1) === 'about_us' ? 'active' : null }}"  href="{{route('frontend.about_us')}}">About Us</a>
+                </div>
+                <div class="menu-item col-md-3">
+                    <a class="{{ Request::segment(1) === 'contact' ? 'active' : null }}"   href="{{route('frontend.contact')}}">Contact Us</a>
+                </div>
             </div>
         </div>
         <div class="cart col-md-3">
