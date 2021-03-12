@@ -80,7 +80,7 @@ x                    <a href="{{url('/')}}" class="{{ Request::segment(1) === nu
                                     </li>
 
                                     <li class="user-menu__item">
-                                        <a class="user-menu-link" href="#">
+                                        <a class="user-menu-link" href="{{route('frontend.user.purchase_history')}}">
                                             <i class="fa fa-history" aria-hidden="true"></i>
                                             <div>Purchased History</div>
                                         </a>
