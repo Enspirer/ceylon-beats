@@ -137,12 +137,11 @@
                         <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
                         <!--headin5_amrc-->
                         <ul class="footer_ul_amrc">
-                            <li><a href="http://webenlance.com">Image Rectoucing</a></li>
-                            <li><a href="http://webenlance.com">Clipping Path</a></li>
-                            <li><a href="http://webenlance.com">Hollow Man Montage</a></li>
-                            <li><a href="http://webenlance.com">Ebay & Amazon</a></li>
-                            <li><a href="http://webenlance.com">Hair Masking/Clipping</a></li>
-                            <li><a href="http://webenlance.com">Image Cropping</a></li>
+                            <li><a href="{{route('frontend.explorer',['genres','author_name','duration','price','blues'])}}">Blues</a></li>
+                            <li><a href="{{route('frontend.explorer',['genres','author_name','duration','price','classic'])}}">Classic</a></li>
+                            <li><a href="{{route('frontend.explorer',['genres','author_name','duration','price','indian'])}}">Indian</a></li>
+                            <li><a href="{{route('frontend.explorer',['genres','author_name','duration','price','rap'])}}">Rap</a></li>
+                            <li><a href="{{route('frontend.explorer',['genres','author_name','duration','price','rock'])}}">Rock</a></li>
                         </ul>
                         <!--footer_ul_amrc ends here-->
                     </div>
@@ -152,22 +151,16 @@
                         <!--headin5_amrc-->
                         <ul class="footer_ul_amrc">
                             <li>
-                                <a href="http://webenlance.com">Remove Background</a>
+                                <a href="{{url('/')}}">Home</a>
                             </li>
                             <li>
-                                <a href="http://webenlance.com">Shadows & Mirror Reflection</a>
+                                <a href="{{route('frontend.about_us')}}" >About</a>
                             </li>
                             <li>
-                                <a href="http://webenlance.com">Logo Design</a>
+                                <a href="{{route('frontend.explorer',['genres','author_name','duration','price','music_name'])}}">Music</a>
                             </li>
                             <li>
-                                <a href="http://webenlance.com">Vectorization</a>
-                            </li>
-                            <li>
-                                <a href="http://webenlance.com">Hair Masking/Clipping</a>
-                            </li>
-                            <li>
-                                <a href="http://webenlance.com">Image Cropping</a>
+                                <a href="{{route('frontend.contact')}}">Contact</a>
                             </li>
                         </ul>
                         <!--footer_ul_amrc ends here-->
