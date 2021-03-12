@@ -5,7 +5,7 @@
         <div class="container">
             <div class="col-md-6">
                 <h1 data-animscroll="fade-up" data-animscroll-delay="100">
-                    Ceylon Beats
+                    Ceylon Beatz
                 </h1>
                 <p data-animscroll="fade-up" data-animscroll-delay="200">
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
