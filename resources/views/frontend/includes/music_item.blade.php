@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-md-2">
-        <a href="{{url('files/preview_files/'.$soundItem->preview_link)}}" id="play_item{{$key}}" class="play-button">
+        <a href="{{url('files/preview_files/'.$soundItem->preview_link)}}" id="play_item{{$key}}" class="play-button" playeritemname="{{$soundItem->music_name}}">
             <i class="fa fa-play" aria-hidden="true"></i>
         </a>
 

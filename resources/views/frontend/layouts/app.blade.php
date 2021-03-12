@@ -421,6 +421,8 @@
                                 wavesurfer.stop();
                             }else {
                                 $(".fa-stop").attr('class', 'fa fa-play');
+                                var enplime = $('#'+link.id).attr('playeritemname');
+                                $('#player_item_name').text(enplime);
                                 iconselctor.className = "fa fa-stop";
                                 setCurrentSong(index);
                                 $('#playerduration').text(formatTime(wavesurfer.getDuration()));
@@ -430,6 +432,10 @@
                         }else{
 
                             $(".fa-stop").attr('class', 'fa fa-play');
+
+                            var enplime = $('#'+link.id).attr('playeritemname');
+                            $('#player_item_name').text(enplime);
+
                             iconselctor.className = "fa fa-stop";
                             setCurrentSong(index);
                             currentPlayingTack = link;

@@ -27,8 +27,8 @@
                             <i class="fa fa-forward" aria-hidden="true"></i>
                         </button>
                         <div class="name">
-                            <h1>Ready for This</h1>
-                            <p>R&B</p>
+                            <h1 id="player_item_name">Ready for This</h1>
+                            <p id="player_author_name">CeylonBeatz</p>
                         </div>
                     </div>
                 </div>
