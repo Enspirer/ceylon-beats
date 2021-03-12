@@ -361,11 +361,12 @@
 
             wavesurfer = WaveSurfer.create({
                 container: '#waveform',
-                waveColor: '#428bca',
+                waveColor: '#e9ba1f',
                 progressColor: '#31708f',
                 height: 120,
-                barWidth: 3,
+                weight: 170,
                 fillParent: false,
+                minPxPerSec: 13
             });
 
 
