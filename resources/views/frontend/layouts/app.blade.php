@@ -123,11 +123,11 @@
                     <div class="col-sm-4 col-md col-sm-4 col-12 col" data-animscroll="fade-up">
                         <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
                         <!--headin5_amrc-->
-                        <p class="mb10">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry. Lorem Ipsum has been the industry's standard dummy text
-                            ever since the 1500s
-                        </p>
+{{--                        <p class="mb10">--}}
+{{--                            Lorem Ipsum is simply dummy text of the printing and typesetting--}}
+{{--                            industry. Lorem Ipsum has been the industry's standard dummy text--}}
+{{--                            ever since the 1500s--}}
+{{--                        </p>--}}
                         <p><i class="fa fa-location-arrow"></i> &nbsp; 387/C, Kalalgoda, Pannipitiya</p>
                         <p><i class="fa fa-phone"></i>&nbsp; 077 261 7424</p>
                         <p><i class="fa fa fa-envelope"></i>&nbsp; jandsstudioslk@gmail.com</p>
