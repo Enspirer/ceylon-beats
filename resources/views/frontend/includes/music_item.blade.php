@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-md-2">
-        <a href="{{url('files/preview_files/'.$soundItem->preview_link)}}" id="play_item{{$key}}" class="play-button">
+        <a href="{{url('files/preview_files/'.$soundItem->preview_link)}}" id="play_item{{$key}}" class="play-button" playeritemname="{{$soundItem->music_name}}">
             <i class="fa fa-play" aria-hidden="true"></i>
         </a>
 
@@ -110,7 +110,7 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div style="font-size: 19px;font-weight: 700;color: wheat;">
-                                            LKR <span id="inpack_price{{$soundItem->id}}">0</span>.00
+                                            <span id="inpack_price{{$soundItem->id}}">0</span>.00 USD
                                         </div>
                                     </div>
                                 </div>

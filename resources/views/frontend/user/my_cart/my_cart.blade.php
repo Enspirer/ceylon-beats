@@ -26,7 +26,7 @@
                                     <div class="col-md-7">
                                         <div class="row">
                                             <div class="col col-md-6"><h3>Total</h3></div>
-                                            <div class="col col-md-6"><h3>LKR {{number_format($cart_total,2)}}</h3></div>
+                                            <div class="col col-md-6"><h3>{{number_format($cart_total,2)}} USD</h3></div>
                                         </div>
                                         <div class="m-t-15"></div>
 
