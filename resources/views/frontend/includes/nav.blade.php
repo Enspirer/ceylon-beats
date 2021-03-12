@@ -30,10 +30,10 @@ x                    <a href="{{url('/')}}" class="{{ Request::segment(1) === nu
                    </a>
                 </div>
                 <div class="menu-item col-md-2">
-                    <a class="{{ Request::segment(1) === 'about_us' ? 'active' : null }}" href="{{route('frontend.explorer',['genres','author_name','duration','price','music_name'])}}" href="{{route('frontend.about_us')}}">About Us</a>
+                    <a class="{{ Request::segment(1) === 'about_us' ? 'active' : null }}"  href="{{route('frontend.about_us')}}">About Us</a>
                 </div>
                 <div class="menu-item col-md-3">
-                    <a class="{{ Request::segment(1) === 'contact' ? 'active' : null }}" href="{{route('frontend.explorer',['genres','author_name','duration','price','music_name'])}}" href="{{route('frontend.about_us')}}" href="{{route('frontend.contact')}}">Contact Us</a>
+                    <a class="{{ Request::segment(1) === 'contact' ? 'active' : null }}"  href="{{route('frontend.about_us')}}" href="{{route('frontend.contact')}}">Contact Us</a>
                 </div>
             </div>
         </div>
