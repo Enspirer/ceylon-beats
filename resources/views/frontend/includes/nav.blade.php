@@ -120,7 +120,7 @@ x                    <a href="{{url('/')}}" class="{{ Request::segment(1) === nu
             </div>
 
             <!-- ------------------- cart -------------------------------------  -->
-            <div class="shopping-cart" style="transition-delay: 50ms;">
+            <div class="shopping-cart" style="transition-delay: 50ms;right: 80px">
                 <div class="shopping-cart-header">
                     <i class="fa fa-shopping-cart cart-icon"></i><span class="badge">{{count($cartDetails)}}</span>
                     <div class="shopping-cart-total">

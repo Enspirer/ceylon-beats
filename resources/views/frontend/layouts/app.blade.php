@@ -117,7 +117,7 @@
         <!-- <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fa fa-chevron-up"
           aria-hidden="true"></i></i></a> -->
 
-        <footer class="footer">
+        <footer class="footer" style="padding-bottom: 220px">
             <div class="container bottom_border">
                 <div class="row">
                     <div class="col-sm-4 col-md col-sm-4 col-12 col" data-animscroll="fade-up">
