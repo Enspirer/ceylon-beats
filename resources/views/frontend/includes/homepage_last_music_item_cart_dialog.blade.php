@@ -17,8 +17,8 @@
             </div>
         </div>
         <div class="type-time row">
-            <p class="type">{{$lastestMusic->author_name}}</p>
-            <p style="margin-left: 8px"><b>{{$lastestMusic->genres_id}}</b></p><br>
+            <p class="type" style="text-overflow: ellipsis;white-space: nowrap;overflow: hidden;width: 80px;">{{$lastestMusic->author_name}}</p>
+            <p style="margin-left: 8px;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;width: 80px;"><b>{{$lastestMusic->genres_id}}</b></p><br>
             <p class="time" style="margin-top: 0;margin-left: auto">{{$lastestMusic->duration}}</p>
         </div>
     </div>
