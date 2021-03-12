@@ -128,9 +128,9 @@
                             industry. Lorem Ipsum has been the industry's standard dummy text
                             ever since the 1500s
                         </p>
-                        <p><i class="fa fa-location-arrow"></i> 9878/25 sec 9 rohini 35</p>
-                        <p><i class="fa fa-phone"></i> +91-9999878398</p>
-                        <p><i class="fa fa fa-envelope"></i> info@example.com</p>
+                        <p><i class="fa fa-location-arrow"></i> &nbsp; 387/C, Kalalgoda, Pannipitiya</p>
+                        <p><i class="fa fa-phone"></i>&nbsp; 077 261 7424</p>
+                        <p><i class="fa fa fa-envelope"></i>&nbsp; jandsstudioslk@gmail.com</p>
                     </div>
 
                     <div class="col-sm-4 col-md col-6 col" data-animscroll="fade-up">
