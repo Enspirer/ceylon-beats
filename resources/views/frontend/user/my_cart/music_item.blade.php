@@ -47,7 +47,29 @@
             </div>
         </div>
         <div class="col-md-1 m-auto">
-            <a href="{{route('frontend.cart.remove',$cartDetail->id)}}"><i class="fas fa-trash"></i></a>
+            <a data-toggle="modal" style="cursor: pointer" data-target="#exampleModalCenter2{{$cartDetail->id}}"><i class="fas fa-trash"></i></a>
         </div>
     </div>
 </div>
+
+@foreach($cartDetails as $cartDetail)
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter2{{$cartDetail->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle" style="color: #fff;">Are You Sure Delete Music?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span style="color: #fff;" aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a href="{{route('frontend.cart.remove',$cartDetail->id)}}" class="btn btn-danger">Delete</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+@endforeach

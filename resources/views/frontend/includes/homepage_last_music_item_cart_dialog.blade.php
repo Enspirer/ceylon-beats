@@ -11,8 +11,10 @@
         </div>
         <div class="row">
             <h4 style="margin-top: 4px">{{$lastestMusic->music_name}}</h4>
+            <div class="row ml-auto">
             <a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
             <a href="#"> <i class="fa fa-cart-plus" aria-hidden="true"></i></a>
+            </div>
         </div>
         <div class="type-time row">
             <p class="type">{{$lastestMusic->author_name}}</p>

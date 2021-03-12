@@ -20,9 +20,9 @@
                     variety of music, limited by imagination. J & S Studios' - For
                     the Passionate, Young & Talented.
                 </p>
-                <div class="btn-view-all" data-animscroll="fade-up">
-                    <a href="#" type="button" class="black">View All</a>
-                </div>
+{{--                <div class="btn-view-all" data-animscroll="fade-up">--}}
+{{--                    <a href="#" type="button" class="black">View All</a>--}}
+{{--                </div>--}}
             </div>
         </div>
     </div>

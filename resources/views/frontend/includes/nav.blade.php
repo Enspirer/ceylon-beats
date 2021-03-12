@@ -140,7 +140,7 @@
 
                                 <span class="item-quantity">
                                     <a>
-                                        <i data-toggle="modal" data-target="#exampleModalCenter2{{$cartDetail->id}}" class="fa fa-trash" aria-hidden="true"></i>
+                                        <i style="cursor: pointer" data-toggle="modal" data-target="#exampleModalCenter2{{$cartDetail->id}}" class="fa fa-trash" aria-hidden="true"></i>
                                     </a>
                                 </span>
                             </li>

@@ -16,7 +16,7 @@
                     voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
                     Stet clita kasd gubergren, no sea takimata sanctus est
                 </p>
-                <a href="#" type="button">READ MORE ABOUT J&S STUDIOS</a>
+                <a href="{{route('frontend.about_us')}}" type="button">READ MORE ABOUT J&S STUDIOS</a>
             </div>
             <div class="right-video col-md-6" data-animscroll="fade-left">
                 <div class="video-back">
