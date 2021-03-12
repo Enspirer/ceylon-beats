@@ -4,106 +4,106 @@
         <div class="row">
             <div class="category col-md-2">
                 <div class="item" data-animscroll="fade-up">
-                    <p>Happy</p>
+                    <a href="{{route('frontend.explorer',['genres','author_name','duration','price','happy'])}}"><p>Happy</p></a>
                 </div>
             </div>
 
             <div class="category col-md-2">
                 <div class="item" data-animscroll="fade-up">
-                    <p>Jazz</p>
+                    <a href="{{route('frontend.explorer',['genres','author_name','duration','price','jazz'])}}"><p>Jazz</p></a>
                 </div>
             </div>
 
             <div class="category col-md-2">
                 <div class="item" data-animscroll="fade-up">
-                    <p>Action</p>
+                    <a href="{{route('frontend.explorer',['genres','author_name','duration','price','action'])}}"><p>Action</p></a>
                 </div>
             </div>
 
             <div class="category col-md-2">
                 <div class="item" data-animscroll="fade-up">
-                    <p>Coperate</p>
+                    <a href="{{route('frontend.explorer',['genres','author_name','duration','price','coperate'])}}"><p>Coperate</p></a>
                 </div>
             </div>
 
             <div class="category col-md-2">
                 <div class="item" data-animscroll="fade-up">
-                    <p>Classical</p>
+                    <a href="{{route('frontend.explorer',['genres','author_name','duration','price','classical'])}}"><p>Classical</p></a>
                 </div>
             </div>
 
             <div class="category col-md-2">
                 <div class="item" data-animscroll="fade-up">
-                    <p>Horror</p>
+                    <a href="{{route('frontend.explorer',['genres','author_name','duration','price','horror'])}}"><p>Horror</p></a>
                 </div>
             </div>
 
             <div class="category col-md-2">
                 <div class="item" data-animscroll="fade-up">
-                    <p>Country</p>
+                    <a href="{{route('frontend.explorer',['genres','author_name','duration','price','country'])}}"><p>Country</p></a>
                 </div>
             </div>
 
             <div class="category col-md-2">
                 <div class="item" data-animscroll="fade-up">
-                    <p>Rock</p>
+                    <a href="{{route('frontend.explorer',['genres','author_name','duration','price','rock'])}}"><p>Rock</p></a>
                 </div>
             </div>
 
             <div class="category col-md-2">
                 <div class="item" data-animscroll="fade-up">
-                    <p>YouTube</p>
+                    <a href="{{route('frontend.explorer',['genres','author_name','duration','price','youtube'])}}"><p>YouTube</p></a>
                 </div>
             </div>
 
             <div class="category col-md-2">
                 <div class="item" data-animscroll="fade-up">
-                    <p>News</p>
+                    <a href="{{route('frontend.explorer',['genres','author_name','duration','price','news'])}}"><p>News</p></a>
                 </div>
             </div>
 
             <div class="category col-md-2">
                 <div class="item" data-animscroll="fade-up">
-                    <p>Ambiant</p>
+                    <a href="{{route('frontend.explorer',['genres','author_name','duration','price','ambiant'])}}"><p>Ambiant</p></a>
                 </div>
             </div>
 
             <div class="category col-md-2">
                 <div class="item" data-animscroll="fade-up">
-                    <p>Sad</p>
+                    <a href="{{route('frontend.explorer',['genres','author_name','duration','price','sad'])}}"><p>Sad</p></a>
                 </div>
             </div>
 
             <div class="category col-md-2">
                 <div class="item" data-animscroll="fade-up">
-                    <p>Folk</p>
+                    <a href="{{route('frontend.explorer',['genres','author_name','duration','price','folk'])}}"><p>Folk</p></a>
                 </div>
             </div>
 
             <div class="category col-md-2">
                 <div class="item" data-animscroll="fade-up">
-                    <p>Folk</p>
+                    <a href="{{route('frontend.explorer',['genres','author_name','duration','price','folk'])}}"><p>Folk</p></a>
                 </div>
             </div>
 
             <div class="category col-md-2">
                 <div class="item" data-animscroll="fade-up">
-                    <p>Cinematic</p>
+                    <a href="{{route('frontend.explorer',['genres','author_name','duration','price','cinematic'])}}"><p>Cinematic</p></a>
                 </div>
             </div>
             <div class="category col-md-2">
                 <div class="item" data-animscroll="fade-up">
-                    <p>Drums</p>
+                    <a href="{{route('frontend.explorer',['genres','author_name','duration','price','drums'])}}"><p>Drums</p></a>
                 </div>
             </div>
             <div class="category col-md-2">
                 <div class="item" data-animscroll="fade-up">
-                    <p>Bass</p>
+                    <a href="{{route('frontend.explorer',['genres','author_name','duration','price','bass'])}}"><p>Bass</p></a>
                 </div>
             </div>
             <div class="category col-md-2">
                 <div class="item" data-animscroll="fade-up">
-                    <p>Tradditional</p>
+                    <a href="{{route('frontend.explorer',['genres','author_name','duration','price','traditional'])}}"><p>Tradditional</p></a>
                 </div>
             </div>
         </div>
