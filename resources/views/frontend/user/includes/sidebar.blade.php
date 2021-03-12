@@ -6,7 +6,7 @@
         </div>
         <div class="menu-item-dashboard">
             <a href="{{route('frontend.user.my_cart')}}">
-                <div class="menu-item row active-menu">
+                <div class="menu-item row {{ Request::segment(1) === 'my_cart' ? 'active-menu' : null }}">
 
                     <div class="col-md-2">
                         <i class="fas fa-shopping-cart"></i>
@@ -16,7 +16,7 @@
             </a>
 
             <a href="{{route('frontend.user.purchase_history')}}">
-            <div class="menu-item row">
+            <div class="menu-item row {{ Request::segment(1) === 'purchase_history' ? 'active-menu' : null }}">
                 <div class="col-md-2">
                     <i class="fas fa-shopping-bag"></i>
                 </div>
@@ -26,7 +26,7 @@
 
 
             <a href="{{route('frontend.user.account')}}">
-                <div class="menu-item row">
+                <div class="menu-item row {{ Request::segment(1) === 'account' ? 'active-menu' : null }}">
                     <div class="col-md-2">
                         <i class="far fa-user"></i>
                     </div>
