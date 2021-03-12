@@ -1,51 +1,58 @@
 @extends('frontend.layouts.app')
 
-@section('title', app_name() . ' | ' . __('labels.frontend.passwords.reset_password_box_title'))
+@section('title', app_name() . ' | ' . __('labels.frontend.auth.login_box_title'))
 
 @section('content')
-    <div class="row justify-content-center align-items-center">
-        <div class="col col-sm-6 align-self-center">
-            <div class="card">
-                <div class="card-header">
-                    <strong>
-                        @lang('labels.frontend.passwords.reset_password_box_title')
-                    </strong>
-                </div><!--card-header-->
+    @include('frontend.includes.nav')
 
-                <div class="card-body">
+    <section id="login-section">
+        <div class="container animscroll-init animscroll-animate" data-animscroll="fade-up">
+            <div class="login-form-body animscroll-init animscroll-animate" data-animscroll="fade-up">
+                <div class="row">
+                    <div class="left-form-login col-md-5 animscroll-init animscroll-animate" data-animscroll="fade-right">
+                        <h1>Reset Your Password</h1>
 
-                    @if(session('status'))
-                        <div class="alert alert-success">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    {{ html()->form('POST', route('frontend.auth.password.email.post'))->open() }}
-                        <div class="row">
-                            <div class="col">
+                        <div class="form-login">
+                            <form action="{{route('frontend.auth.password.email.post')}}" method="post">
+                                {{csrf_field()}}
                                 <div class="form-group">
-                                    {{ html()->label(__('validation.attributes.frontend.email'))->for('email') }}
+                                    <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email / Username">
+                                </div>
 
-                                    {{ html()->email('email')
-                                        ->class('form-control')
-                                        ->placeholder(__('validation.attributes.frontend.email'))
-                                        ->attribute('maxlength', 191)
-                                        ->required()
-                                        ->autofocus() }}
-                                </div><!--form-group-->
-                            </div><!--col-->
-                        </div><!--row-->
+                                <button type="submit" class="btn btn-primary btn-block">
+                                    Continue
+                                </button>
+                            </form>
 
+                        </div>
+                    </div>
+                    <div class="right-side-body col-md-7 animscroll-init animscroll-animate" data-animscroll="fade-left">
+                        <h1>Welcome to Ceylon Beatz,</h1>
+                        <p>Get access to thousands of <br> beats instantly</p>
                         <div class="row">
-                            <div class="col">
-                                <div class="form-group mb-0 clearfix">
-                                    {{ form_submit(__('labels.frontend.passwords.send_password_reset_link_button')) }}
-                                </div><!--form-group-->
-                            </div><!--col-->
-                        </div><!--row-->
-                    {{ html()->form()->close() }}
-                </div><!-- card-body -->
-            </div><!-- card -->
-        </div><!-- col-6 -->
-    </div><!-- row -->
+                            <div class="image col-md-3 animscroll-init animscroll-animate" data-animscroll="fade-up" data-animscroll-delay="100">
+                                <img src="{{url('ceylon_beats_theme/assets/image/Mask Group 2@2x.png')}}" alt="">
+                            </div>
+                            <div class="image col-md-3 animscroll-init animscroll-animate" data-animscroll="fade-up" data-animscroll-delay="200">
+                                <img src="{{url('ceylon_beats_theme/assets/image/Mask Group 3@2x.png')}}" alt="">
+                            </div>
+                            <div class="image col-md-3 animscroll-init animscroll-animate" data-animscroll="fade-up" data-animscroll-delay="300">
+                                <img src="{{url('ceylon_beats_theme/assets/image/Mask Group 4@2x.png')}}" alt="">
+                            </div>
+                            <div class="image col-md-3 animscroll-init animscroll-animate" data-animscroll="fade-up" data-animscroll-delay="400">
+                                <img src="{{url('ceylon_beats_theme/assets/image/Mask Group 5@2x.png')}}" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 @endsection
+
+
+
+
+
+
