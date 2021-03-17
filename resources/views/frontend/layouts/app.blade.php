@@ -130,7 +130,7 @@
 {{--                        </p>--}}
                         <p><i class="fa fa-location-arrow"></i> &nbsp; 387/C, Kalalgoda, Pannipitiya</p>
                         <p><i class="fa fa-phone"></i>&nbsp; 077 261 7424</p>
-                        <p><i class="fa fa fa-envelope"></i>&nbsp; jandsstudioslk@gmail.com</p>
+                        <p><i class="fa fa fa-envelope"></i>&nbsp; jnsstuiolk@gmail.com</p>
                     </div>
 
                     <div class="col-sm-4 col-md col-6 col" data-animscroll="fade-up">

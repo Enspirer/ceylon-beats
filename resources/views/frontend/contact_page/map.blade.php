@@ -47,7 +47,7 @@
                 <div class="details-item" data-animscroll="fade-up" data-animscroll-delay="500">
                     <div class="row">
                         <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <p>jandsstudioslk@gmail.com</p>
+                        <p>jnsstuiolk@gmail.com</p>
                     </div>
                 </div>
                 <div class="details-item" data-animscroll="fade-up" data-animscroll-delay="600">
