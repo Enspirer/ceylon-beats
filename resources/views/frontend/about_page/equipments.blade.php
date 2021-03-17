@@ -6,40 +6,35 @@
             <div class="swiper-wrapper">
                 <div
                     class="swiper-slide"
-                    style="background-image: url({{url('/ceylon_beats_theme/assets/image/eq1.jpg')}})"
+                    style="background-image: url({{url('/ceylon_beats_theme/assets/eq/DSC02801.jpg')}})"
                 >
-                    <div class="instrument-name"><p>Nord Stage 3</p></div>
+                    <div class="instrument-name"><p>FENDER ULTIMATE CHORUS</p></div>
                 </div>
                 <div
                     class="swiper-slide"
-                    style="background-image: url({{url('/ceylon_beats_theme/assets/image/eq2.jpg')}})"
+                    style="background-image: url({{url('/ceylon_beats_theme/assets/eq/DSC03011.jpg')}})"
                 >
-                    <div class="instrument-name"><p>Nord Stage 3</p></div>
+                    <div class="instrument-name"><p>FANTOM X7</p></div>
                 </div>
                 <div
                     class="swiper-slide"
-                    style="background-image: url({{url('/ceylon_beats_theme/assets/image/eq3.png')}})"
+                    style="background-image: url({{url('/ceylon_beats_theme/assets/eq/DSC03019.jpg')}})"
                 >
-                    <div class="instrument-name"><p>Nord Stage 3</p></div>
+                    <div class="instrument-name"><p>NORD STAGE 3</p></div>
                 </div>
                 <div
                     class="swiper-slide"
-                    style="background-image: url({{url('/ceylon_beats_theme/assets/image/eq4.png')}})"
+                    style="background-image: url({{url('/ceylon_beats_theme/assets/eq/DSC05554.jpg')}})"
                 >
-                    <div class="instrument-name"><p>Nord Stage 3</p></div>
+                    <div class="instrument-name"><p>BLACK STAR HT5</p></div>
                 </div>
                 <div
                     class="swiper-slide"
-                    style="background-image: url({{url('/ceylon_beats_theme/assets/image/eq5.png')}})"
+                    style="background-image: url({{url('/ceylon_beats_theme/assets/eq/DSC05579-2.jpg')}})"
                 >
-                    <div class="instrument-name"><p>Nord Stage 3</p></div>
+                    <div class="instrument-name"><p>LINE 6</p></div>
                 </div>
-                <div
-                    class="swiper-slide"
-                    style="background-image: url({{url('/ceylon_beats_theme/assets/image/eq6.jpg')}})"
-                >
-                    <div class="instrument-name"><p>Nord Stage 3</p></div>
-                </div>
+
             </div>
             <!-- Add Pagination -->
             <!-- <div class="swiper-pagination"></div> -->
