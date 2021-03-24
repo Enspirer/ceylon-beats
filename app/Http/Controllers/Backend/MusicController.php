@@ -77,8 +77,8 @@ class MusicController extends Controller
         $category = MusicProducts::all();
         return Datatables::of($category)
             ->addColumn('action', function($row){
-                $btn1 = '<a href="x" class="edit btn btn-primary btn-sm"><i class="fa fa-edit"></i> Edit </a>';
-                $btn2 = ' <a href="x" class="edit btn btn-danger btn-sm"><i class="fa fa-trash"></i> Trash </a>';
+                $btn1 = '<a href="'.route('admin.music.edit',$row->id).'" class="edit btn btn-primary btn-sm"><i class="fa fa-edit"></i> Edit </a>';
+                $btn2 = ' <a href="'.route('admin.music.delete',$row->id).'" class="edit btn btn-danger btn-sm"><i class="fa fa-trash"></i> Trash </a>';
                 return $btn1.$btn2;
             })
             ->rawColumns(['action'])
@@ -94,6 +94,13 @@ class MusicController extends Controller
             'liceseDetails' => $licenseDetails,
             'get_genres' => $getGenres,
         ]);
+    }
+    public function edit($id)
+    {
+        $licenseDetails =  License::where('status',1)->get();
+        $getGenres = Generes::where('status',1)->get();
+        $musicDetails = MusicProducts::where('id',$id)->first();
+        return view('backend.music.edit',['musicDetails'=>$musicDetails, 'get_genres' => $getGenres, 'liceseDetails' => $licenseDetails,]);
     }
 
 }

@@ -15,12 +15,16 @@ Route::get('music', [MusicController::class, 'index'])->name('music');
 Route::get('music/getdetails', [MusicController::class, 'getTableDetails'])->name('music.get_table_details');
 Route::get('music/create', [MusicController::class, 'create'])->name('music.create');
 Route::post('music/store', [MusicController::class, 'store'])->name('music.store');
+Route::get('music/delete/{id}', [MusicController::class, 'delete'])->name('music.delete');
+Route::get('music/edit/{id}', [MusicController::class, 'edit'])->name('music.edit');
 
 Route::get('license', [LicenseController::class, 'index'])->name('license');
 Route::get('license/getdetails', [LicenseController::class, 'getTableDetails'])->name('license.get_table_details');
 Route::get('license/create', [LicenseController::class, 'create'])->name('license.create');
 Route::post('license/store', [LicenseController::class, 'store'])->name('license.store');
+Route::post('license/update', [LicenseController::class, 'update'])->name('license.update');
 Route::get('license/delete/{id}', [LicenseController::class, 'delete'])->name('license.delete');
+Route::get('license/edit/{id}', [LicenseController::class, 'edit'])->name('license.edit');
 
 Route::get('genres', [GenresController::class, 'index'])->name('genres');
 Route::get('genres/getdetails', [GenresController::class, 'getTableDetails'])->name('genres.get_table_details');

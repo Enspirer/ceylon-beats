@@ -12,6 +12,10 @@ Breadcrumbs::for('admin.music.create', function ($trail) {
     $trail->push('Music Create', route('admin.music.create'));
 });
 
+Breadcrumbs::for('admin.music.edit', function ($trail) {
+    $trail->push('Music Update', route('admin.music.edit',1));
+});
+
 
 Breadcrumbs::for('admin.license.create', function ($trail) {
     $trail->push('License Create', route('admin.license.create'));
@@ -19,6 +23,10 @@ Breadcrumbs::for('admin.license.create', function ($trail) {
 
 Breadcrumbs::for('admin.license', function ($trail) {
     $trail->push('License Create', route('admin.license'));
+});
+
+Breadcrumbs::for('admin.license.edit', function ($trail) {
+    $trail->push('License Update', route('admin.license.edit',1));
 });
 
 Breadcrumbs::for('admin.genres', function ($trail) {

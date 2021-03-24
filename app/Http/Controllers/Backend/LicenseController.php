@@ -43,11 +43,27 @@ class LicenseController extends Controller
         $licenses = License::all();
         return Datatables::of($licenses)
             ->addColumn('action', function($row){
-                $btn1 = '<a href="x" class="edit btn btn-primary btn-sm"><i class="fa fa-edit"></i> Edit </a>';
+                $btn1 = '<a href="'.route('admin.license.edit',$row->id).'" class="edit btn btn-primary btn-sm"><i class="fa fa-edit"></i> Edit </a>';
                 $btn2 = ' <a href="'.route('admin.license.delete',$row->id).'" class="edit btn btn-danger btn-sm"><i class="fa fa-trash"></i> Trash </a>';
                 return $btn1.$btn2;
             })
             ->rawColumns(['action'])
             ->make();
+    }
+    public function edit($id)
+    {
+        $liceseDetails = License::where('id',$id)->first();
+        return view('backend.license.edit',['liceseDetails'=>$liceseDetails]);
+    }
+    public function update(Request $request)
+    {
+        License::where('id',$request->id)->update([
+            'license_name' => $request->license_name,
+            'license_agreement' => $request->license_agreement,
+            'description' => $request->description,
+            'status' => $request->status,
+            'license_type' => $request->license_type,
+         ]);
+         return back();
     }
 }
