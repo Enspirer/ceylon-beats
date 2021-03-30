@@ -29,6 +29,8 @@ Route::get('license/edit/{id}', [LicenseController::class, 'edit'])->name('licen
 Route::get('genres', [GenresController::class, 'index'])->name('genres');
 Route::get('genres/getdetails', [GenresController::class, 'getTableDetails'])->name('genres.get_table_details');
 Route::get('genres/create', [GenresController::class, 'create'])->name('genres.create');
+Route::get('genres/edit/{id}', [GenresController::class, 'edit'])->name('genres.edit');
+Route::post('genres/update', [GenresController::class, 'update'])->name('genres.update');
 Route::post('genres/store', [GenresController::class, 'store'])->name('genres.store');
 Route::get('genres/delete/{id}', [GenresController::class, 'delete'])->name('genres.delete');
 

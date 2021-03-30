@@ -38,6 +38,10 @@ Breadcrumbs::for('admin.genres.create', function ($trail) {
     $trail->push('Genres Create', route('admin.genres.create'));
 });
 
+Breadcrumbs::for('admin.genres.edit', function ($trail) {
+    $trail->push('Genres Edit', route('admin.genres.edit',1));
+});
+
 
 
 require __DIR__.'/auth.php';

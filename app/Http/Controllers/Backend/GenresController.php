@@ -20,6 +20,16 @@ class GenresController extends Controller
         return view('backend.genres.creator');
     }
 
+
+    public function edit($id)
+    {
+        $genresDetails = Generes::where('id',$id)->first();
+
+        return view('backend.genres.edit',[
+            'genres' => $genresDetails
+        ]);
+    }
+
     public function show($id)
     {
 
@@ -30,7 +40,7 @@ class GenresController extends Controller
         $genres = Generes::all();
         return Datatables::of($genres)
             ->addColumn('action', function($row){
-                $btn1 = '<a href="x" class="edit btn btn-primary btn-sm"><i class="fa fa-edit"></i> Edit </a>';
+                $btn1 = '<a href="'.route('admin.genres.edit',$row->id).'" class="edit btn btn-primary btn-sm"><i class="fa fa-edit"></i> Edit </a>';
                 $btn2 = ' <a href="'.route('admin.genres.delete',$row->id).'" class="edit btn btn-danger btn-sm"><i class="fa fa-trash"></i> Trash </a>';
                 return $btn1.$btn2;
             })
@@ -60,6 +70,13 @@ class GenresController extends Controller
 
     public function update(Request $request)
     {
-
+        $getgenres = Generes::where('id',$request->id)->update(
+            [
+                'name' => $request->name,
+                'description' => $request->description,
+                'status' => $request->status,
+            ]
+        );
+        return redirect()->route('admin.genres');
     }
 }
