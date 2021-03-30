@@ -5,7 +5,7 @@
 @section('content')
 
     <div class="light-style flex-grow-1 container-p-y">
-        <form id="form" action="{{route('admin.music.store')}}" method="post" enctype="multipart/form-data">
+        <form id="form" action="{{route('admin.music.update')}}" method="post" enctype="multipart/form-data">
             {{csrf_field()}}
             <div class="card overflow-hidden">
                 <div class="row no-gutters row-bordered row-border-light">

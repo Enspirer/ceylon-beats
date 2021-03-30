@@ -15,6 +15,7 @@ Route::get('music', [MusicController::class, 'index'])->name('music');
 Route::get('music/getdetails', [MusicController::class, 'getTableDetails'])->name('music.get_table_details');
 Route::get('music/create', [MusicController::class, 'create'])->name('music.create');
 Route::post('music/store', [MusicController::class, 'store'])->name('music.store');
+Route::post('music/update', [MusicController::class, 'update'])->name('music.update');
 Route::get('music/delete/{id}', [MusicController::class, 'delete'])->name('music.delete');
 Route::get('music/edit/{id}', [MusicController::class, 'edit'])->name('music.edit');
 

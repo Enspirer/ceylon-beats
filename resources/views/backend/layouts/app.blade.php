@@ -14,6 +14,8 @@
     @yield('meta')
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
 
+    <link rel="stylesheet" href="https://www.jqueryscript.net/demo/Clean-Audio-Player-jQuery/css/audioplayer.css">
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 
     {{-- See https://laravel.com/docs/5.5/blade#stacks for usage --}}
     @stack('before-styles')

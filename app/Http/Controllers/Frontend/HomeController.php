@@ -51,7 +51,7 @@ class HomeController extends Controller
         Cart::add($request->music_item_id, $request->music_name, $request->price_details, 1, [
             'license_name' => $request->license_name,
             'preview_link' => $request->preview_link,
-            'author_name' => $request->author_name
+            'author_name' => $request->author_name,
         ]);
         return back();
     }
