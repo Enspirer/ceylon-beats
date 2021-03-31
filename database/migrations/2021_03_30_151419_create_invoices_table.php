@@ -15,6 +15,14 @@ class CreateInvoicesTable extends Migration
     {
         Schema::create('invoices', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->text('user_id');
+            $table->text('total');
+            $table->text('sub_total');
+            $table->text('payment_method');
+            $table->text('phone_number');
+            $table->text('status');
+            $table->text('discount_type')->default('percentage');
+            $table->text('discount_value')->default('0');
             $table->timestamps();
         });
     }

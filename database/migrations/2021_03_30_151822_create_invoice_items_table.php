@@ -15,6 +15,16 @@ class CreateInvoiceItemsTable extends Migration
     {
         Schema::create('invoice_items', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->text('invoice_id');
+            $table->text('music_id');
+            $table->text('selected_license');
+            $table->text('price');
+            $table->text('offer_available')->nullable();
+            $table->text('offered_price')->nullable();
+            $table->text('preview_link');
+            $table->text('download_link');
+            $table->text('author_name');
+            $table->text('genres');
             $table->timestamps();
         });
     }
