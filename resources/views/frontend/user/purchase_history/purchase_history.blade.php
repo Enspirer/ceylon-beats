@@ -124,50 +124,25 @@
                                 <tr>
                                     <th scope="col">Date</th>
                                     <th scope="col">Track Title</th>
+                                    <th scope="col">License</th>
                                     <th scope="col">Genre</th>
-                                    <th scope="col">Duration</th>
-                                    <th scope="col">BPM</th>
-                                    <th scope="col">Price</th>
-                                    <th scope="col">Payment Method</th>
+                                    <th scope="col">Author Name</th>
+                                    <th scope="col">Download Link</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                </tr>
+                                @foreach($purchased_details as $purchaseDetails)
+                                    <tr>
+                                        <th scope="row">{{$purchaseDetails->id}}</th>
+                                        <td>{{$purchaseDetails->music_name}}</td>
+                                        <td>{{$purchaseDetails->selected_license}}</td>
+                                        <td>{{$purchaseDetails->genres}}</td>
+                                        <td>{{$purchaseDetails->author_name }}</td>
+                                        <td><a href="{{$purchaseDetails->download_link}}">Download</a> </td>
+                                    </tr>
+                                @endforeach
+
+
                                 </tbody>
                             </table>
                         </div>
