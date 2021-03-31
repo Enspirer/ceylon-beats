@@ -18,7 +18,7 @@
                         @if(count($cartDetails) == 0)
                             @include('frontend.user.my_cart.cart_item not_found')
                         @else
-                            <form action="{{route('frontend.user.checkout')}}" method="post">
+                            <form action="" method="post">
                                 {{csrf_field()}}
                                 @foreach($cartDetails as $cartDetail)
                                     @include('frontend.user.my_cart.music_item')
@@ -36,12 +36,15 @@
                                         <div class="space"></div>
                                         <div class="row bottum-button">
                                             <a href="{{route('frontend.explorer',['genres','author_name','duration','price','music_name'])}}" class="btn-continue">Continue Browsing</a>
-                                            <button type="submit" class="btn-checkout">Checkout Now</button>
+                                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Checkout Now</a>
 
                                         </div>
                                     </div>
                                 </div>
                             </form>
+
+
+
 
                         @endif
                     </div>
@@ -49,6 +52,60 @@
             </div>
         </div>
     </section>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="z-index: 1000px;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Check Out</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form method="post" action="https://sandbox.payhere.lk/pay/checkout">
+                        <input type="hidden" name="merchant_id" value="1217011">    <!-- Replace your Merchant ID -->
+                        <input type="hidden" name="return_url" value="{{route('frontend.user.checkout_finish')}}">
+                        <input type="hidden" name="cancel_url" value="http://sample.com/cancel">
+                        <input type="hidden" name="notify_url" value="http://sample.com/notify">
+                        <input type="hidden" name="order_id" value="ItemNo12345">
+                        <input type="hidden" name="items" value="AudioMusic"><br>
+                        <input type="hidden" name="currency" value="USD">
+                        <input type="hidden" name="amount" value="{{$cart_total}}">
+                        <input type="hidden" name="first_name" value="{{auth()->user()->first_name}}">
+                        <input type="hidden" name="last_name" value="{{auth()->user()->last_name}}"><br>
+                        <input type="hidden" name="email" value="{{auth()->user()->email}}">
+                        <div class="" style="padding: 10px;text-align: left">
+                            <div class="form-group">
+                                <label>Phone Number</label>
+                                <input type="text" name="phone" value="0771234567"><br>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Address</label>
+                                <input type="text" name="address" value="No.1, Galle Road">
+                            </div>
+                            <div class="form-group">
+                                <label>Address</label>
+                                <input type="text" name="city" value="Colombo">
+                            </div>
+                            <div class="form-group">
+                                <label>Address</label>
+                                <select class="form-control" name="country" style="text-align: left !important;max-width:none;">
+                                    <option value="Sri Lanka">Sri Lanka</option>
+                                    <option value="USA">USA</option>
+                                </select>
+                            </div>
+                            <input type="submit" value="Buy Now">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 @endsection

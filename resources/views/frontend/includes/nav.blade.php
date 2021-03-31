@@ -17,16 +17,9 @@ x                    <a href="{{url('/')}}" class="{{ Request::segment(1) === nu
                     <a class="{{ Request::segment(1) === 'explore' ? 'active' : null }}" href="{{route('frontend.explorer',['genres','author_name','duration','price','music_name'])}}">Music</a>
                 </div>
                 <div class="menu-item col-md-3">
-                   <a href="{{url('/')}}"> <img
-                            class="default-logo"
-                            src="{{url('/ceylon_beats_theme/assets/image/Group 57@2x.png')}}"
-                            alt=""
-                    />
-                    <img
-                            class="sticky-logo d-none"
-                            src="{{url('/ceylon_beats_theme/assets/image/Group 57@2x.png')}}"
-                            alt=""
-                    />
+                   <a href="{{url('/')}}">
+                       <img class="default-logo" style="z-index: 12" src="{{url('/ceylon_beats_theme/assets/image/Group 57@2x.png')}}" alt="">
+                    <img class="sticky-logo d-none" src="{{url('/ceylon_beats_theme/assets/image/Group 57@2x.png')}}" alt="">
                    </a>
                 </div>
                 <div class="menu-item col-md-2">
@@ -60,10 +53,7 @@ x                    <a href="{{url('/')}}" class="{{ Request::segment(1) === nu
 
                 @auth
                         <div class="user-menu-wrap">
-
                             <a class="mini-photo-wrapper" onclick="myFunction2(event)" href="#"><img class="mini-photo" src="{{$logged_in_user->picture}}" width="36" height="36"/></a>
-
-
                             <div class="menu-container" id="menu-container">
                                 <ul class="user-menu">
                                     <div class="profile-highlight">

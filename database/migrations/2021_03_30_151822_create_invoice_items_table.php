@@ -18,6 +18,7 @@ class CreateInvoiceItemsTable extends Migration
             $table->text('invoice_id');
             $table->text('music_id');
             $table->text('selected_license');
+            $table->text('music_name');
             $table->text('price');
             $table->text('offer_available')->nullable();
             $table->text('offered_price')->nullable();
