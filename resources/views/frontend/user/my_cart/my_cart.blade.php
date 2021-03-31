@@ -18,26 +18,31 @@
                         @if(count($cartDetails) == 0)
                             @include('frontend.user.my_cart.cart_item not_found')
                         @else
-                            @foreach($cartDetails as $cartDetail)
-                                @include('frontend.user.my_cart.music_item')
-                            @endforeach
+                            <form action="{{route('frontend.user.checkout')}}" method="post">
+                                {{csrf_field()}}
+                                @foreach($cartDetails as $cartDetail)
+                                    @include('frontend.user.my_cart.music_item')
+                                @endforeach
                                 <div class="row my-cart-bottum">
                                     <div class="col-md-5"></div>
                                     <div class="col-md-7">
                                         <div class="row">
                                             <div class="col col-md-6"><h3>Total</h3></div>
                                             <div class="col col-md-6"><h3>{{number_format($cart_total,2)}} USD</h3></div>
+                                            <input type="hidden" value="{{number_format($cart_total,2)}}" name="total">
                                         </div>
                                         <div class="m-t-15"></div>
 
                                         <div class="space"></div>
                                         <div class="row bottum-button">
                                             <a href="{{route('frontend.explorer',['genres','author_name','duration','price','music_name'])}}" class="btn-continue">Continue Browsing</a>
-                                            <a href="#" class="btn-checkout">Checkout Now</a>
+                                            <button type="submit" class="btn-checkout">Checkout Now</button>
 
                                         </div>
                                     </div>
                                 </div>
+                            </form>
+
                         @endif
                     </div>
                 </div>

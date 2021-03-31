@@ -4,14 +4,17 @@
     Your browser does not support the audio element.
 </audio>
 
+<input type="hidden" name="preview_link[]" value="{{$cartDetail->attributes->preview_link}}">
+<input type="hidden" name="music_id[]" value="{{$cartDetail->id}}">
+<input type="hidden" name="music_name[]" value="{{$cartDetail->name}}">
+<input type="hidden" name="author_name[]" value="{{$cartDetail->attributes->author_name}}">
+<input type="hidden" name="license_name[]" value="{{$cartDetail->attributes->license_name}}">
+<input type="hidden" name="price[]" value="{{number_format($cartDetail->price,2)}}">
+
 <div class="list-item">
     <div class="row">
         <div class="col-md-2">
-            <div
-                    id="player-pop-up"
-                    onclick="playAudio('myAudio{{$cartDetail->id}}','play_icon{{$cartDetail->id}}')"
-                    class="play-button"
-            >
+            <div id="player-pop-up" onclick="playAudio('myAudio{{$cartDetail->id}}','play_icon{{$cartDetail->id}}')" class="play-button">
                 <div class="play-icon">
                     <i id="play_icon{{$cartDetail->id}}" class="fa fa-play" style="font-size: 54px;color: white;"></i>
                 </div>
