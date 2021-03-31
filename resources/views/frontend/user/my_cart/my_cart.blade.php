@@ -74,6 +74,9 @@
                     </button>
                 </div>
                 <div class="modal-body">
+                    <div>
+                        <h2>LKR: {{number_format($cart_total,2)}}</h2>
+                    </div>
                     <form method="post" action="https://sandbox.payhere.lk/pay/checkout">
                         <input type="hidden" name="merchant_id" value="1217011">    <!-- Replace your Merchant ID -->
                         <input type="hidden" name="return_url" value="{{route('frontend.user.checkout_finish')}}">
@@ -89,19 +92,19 @@
                         <div class="" style="padding: 10px;text-align: left">
                             <div class="form-group">
                                 <label>Phone Number</label>
-                                <input type="text" name="phone" value="0771234567"><br>
+                                <input type="text" name="phone" value="" placeholder="071XXXXXXX" required><br>
                             </div>
 
                             <div class="form-group">
                                 <label>Address</label>
-                                <input type="text" name="address" value="No.1, Galle Road">
+                                <input type="text" name="address" value="" required>
                             </div>
                             <div class="form-group">
-                                <label>Address</label>
-                                <input type="text" name="city" value="Colombo">
+                                <label>City</label>
+                                <input type="text" name="city" value="" required>
                             </div>
                             <div class="form-group">
-                                <label>Address</label>
+                                <label>Country</label>
                                 <select class="form-control" name="country" style="text-align: left !important;max-width:none;">
                                     <option value="Sri Lanka">Sri Lanka</option>
                                     <option value="USA">USA</option>

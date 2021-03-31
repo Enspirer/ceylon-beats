@@ -42,6 +42,15 @@ Breadcrumbs::for('admin.genres.edit', function ($trail) {
     $trail->push('Genres Edit', route('admin.genres.edit',1));
 });
 
+Breadcrumbs::for('admin.invoice.index', function ($trail) {
+    $trail->push('Sales Invoice', route('admin.invoice.index'));
+});
+
+Breadcrumbs::for('admin.invoice.show', function ($trail) {
+    $trail->push('View Invoice', route('admin.invoice.show',1));
+});
+
+
 
 
 require __DIR__.'/auth.php';

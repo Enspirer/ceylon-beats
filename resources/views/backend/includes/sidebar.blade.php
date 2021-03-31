@@ -19,6 +19,16 @@
             </li>
 
             <li class="nav-item">
+                <a class="nav-link {{ active_class(Route::is('admin/invoice'))}}" href="{{ route('admin.invoice.index') }}">
+                    <i class="nav-icon fas fa-file"></i>
+                    Sales Invoice
+                </a>
+            </li>
+
+
+
+
+            <li class="nav-item">
                 <a class="nav-link {{ active_class(Route::is('admin/license'))}}" href="{{ route('admin.license') }}">
                     <i class="nav-icon fas fa-paperclip"></i>
                     License

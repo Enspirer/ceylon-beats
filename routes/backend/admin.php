@@ -5,6 +5,8 @@ use App\Http\Controllers\Backend\MusicController;
 use App\Http\Controllers\Backend\LicenseController;
 use App\Http\Controllers\Backend\GenresController;
 
+use App\Http\Controllers\Backend\InvoiceController;
+
 // All route names are prefixed with 'admin.'.
 Route::redirect('/', '/admin/dashboard', 301);
 Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
@@ -34,4 +36,10 @@ Route::get('genres/edit/{id}', [GenresController::class, 'edit'])->name('genres.
 Route::post('genres/update', [GenresController::class, 'update'])->name('genres.update');
 Route::post('genres/store', [GenresController::class, 'store'])->name('genres.store');
 Route::get('genres/delete/{id}', [GenresController::class, 'delete'])->name('genres.delete');
+
+
+Route::get('invoice', [InvoiceController::class, 'index'])->name('invoice.index');
+Route::get('invoice/getdetails', [InvoiceController::class, 'getTableDetails'])->name('invoice.get_table_details');
+Route::get('invoice/delete/{id}', [InvoiceController::class, 'delete'])->name('invoice.delete');
+Route::get('invoice/show/{id}', [InvoiceController::class, 'show'])->name('invoice.show');
 
