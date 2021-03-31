@@ -17,6 +17,7 @@ class CreateInvoiceItemsTable extends Migration
             $table->bigIncrements('id');
             $table->text('invoice_id');
             $table->text('music_id');
+            $table->text('user_id');
             $table->text('selected_license');
             $table->text('music_name');
             $table->text('price');

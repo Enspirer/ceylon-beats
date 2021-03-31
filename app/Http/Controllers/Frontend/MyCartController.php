@@ -23,7 +23,7 @@ class MyCartController extends Controller
         $cardDetails = Cart::getTotal();
         $getCartContent = Cart::getContent();
 
-        dd($getCartContent);
+
 
 
 
@@ -42,31 +42,32 @@ class MyCartController extends Controller
             $Invoice->discount_value = '0';
             $Invoice->save();
 
-            foreach ($request->music_id as $key => $music_id)
+            foreach ($getCartContent as $key => $music)
             {
-                $productDetails = MusicProducts::where('id',$music_id)->first();
+                $productDetails = MusicProducts::where('id',$music->id)->first();
                 $arrayDetail = [
-                    'music_id' => $music_id,
-                    'selected_license' => $request->license_name[$key],
-                    'price' => $request->price[$key],
+                    'music_id' => $music->id,
+                    'selected_license' => $music->attributes->license_name,
+                    'price' => $music->price,
                     'offer_available' => 'yes',
-                    'offered_price' => $request->price[$key],
-                    'preview_link' => $request->preview_link[$key],
+                    'offered_price' => $music->price,
+                    'preview_link' => $music->attributes->preview_link,
                     'download_link' => $productDetails->download_link,
+                    'user_id' => auth()->user()->id,
                     'author_name' => $productDetails->author_name,
                     'genres' => $productDetails->genres_id,
-                    'music_name' => $request->music_name[$key],
+                    'music_name' =>$music->name,
                     'invoice_id' =>$Invoice->id
                 ];
-                array_push($music_output,$arrayDetail);
+                DB::table('invoice_items')->insert($arrayDetail);
             }
-            DB::table('invoice_items')->insert($music_output);
+
             DB::commit();
         } catch (\Exception $e) {
             DB::rollback();
         }
         Cart::clear();
-        return back();
+        return back()->with('message', 'message|Record updated.');
     }
 
 

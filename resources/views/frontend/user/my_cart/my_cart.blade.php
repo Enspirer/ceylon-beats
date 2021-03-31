@@ -12,41 +12,49 @@
                 @include('frontend.user.includes.sidebar')
                 <div class="right-result">
                     <div class="container">
-                        <h2>My Cart</h2>
-                        <div class="space-double"></div>
+                        @if(Session::has('message'))
+                            <div style="text-align: center;padding-top: 25%;">
+                                <div class="" style="text-align: center;color:white;">
+                                    <h3>Music Purchases Successful</h3>
+                                    <p>Thank you for the choosing world best music selling platform</p>
+                                    <button class="btn btn-primary" style="background-color: #ffcb1d">Check Purchase History</button>
+                                </div>
+                            </div>
 
-                        @if(count($cartDetails) == 0)
-                            @include('frontend.user.my_cart.cart_item not_found')
                         @else
-                            <form action="" method="post">
-                                {{csrf_field()}}
-                                @foreach($cartDetails as $cartDetail)
-                                    @include('frontend.user.my_cart.music_item')
-                                @endforeach
-                                <div class="row my-cart-bottum">
-                                    <div class="col-md-5"></div>
-                                    <div class="col-md-7">
-                                        <div class="row">
-                                            <div class="col col-md-6"><h3>Total</h3></div>
-                                            <div class="col col-md-6"><h3>{{number_format($cart_total,2)}} USD</h3></div>
-                                            <input type="hidden" value="{{number_format($cart_total,2)}}" name="total">
-                                        </div>
-                                        <div class="m-t-15"></div>
+                            <h2>My Cart</h2>
+                            <div class="space-double"></div>
 
-                                        <div class="space"></div>
-                                        <div class="row bottum-button">
-                                            <a href="{{route('frontend.explorer',['genres','author_name','duration','price','music_name'])}}" class="btn-continue">Continue Browsing</a>
-                                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Checkout Now</a>
+                            @if(count($cartDetails) == 0)
+                                @include('frontend.user.my_cart.cart_item not_found')
+                            @else
+                                <form action="" method="post">
+                                    {{csrf_field()}}
+                                    @foreach($cartDetails as $cartDetail)
+                                        @include('frontend.user.my_cart.music_item')
+                                    @endforeach
+                                    <div class="row my-cart-bottum">
+                                        <div class="col-md-5"></div>
+                                        <div class="col-md-7">
+                                            <div class="row">
+                                                <div class="col col-md-6"><h3>Total</h3></div>
+                                                <div class="col col-md-6"><h3>{{number_format($cart_total,2)}} USD</h3></div>
+                                                <input type="hidden" value="{{number_format($cart_total,2)}}" name="total">
+                                            </div>
+                                            <div class="m-t-15"></div>
 
+                                            <div class="space"></div>
+                                            <div class="row bottum-button">
+                                                <a href="{{route('frontend.explorer',['genres','author_name','duration','price','music_name'])}}" class="btn-continue">Continue Browsing</a>
+                                                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Checkout Now</a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </form>
-
-
-
+                                </form>
+                            @endif
 
                         @endif
+
                     </div>
                 </div>
             </div>
