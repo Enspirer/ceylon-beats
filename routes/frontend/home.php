@@ -8,6 +8,8 @@ use App\Http\Controllers\Frontend\User\ProfileController;
 use App\Http\Controllers\Frontend\ExplorerController;
 use App\Http\Controllers\Frontend\MyCartController;
 use App\Http\Controllers\Frontend\User\PurchaseHistoryController;
+use App\Http\Controllers\Backend\FavoriteController;
+use App\Http\Controllers\Frontend\PurchasedMusicController;
 /*
  * Frontend Controllers
  * All route names are prefixed with 'frontend.'.
@@ -38,6 +40,8 @@ Route::group(['middleware' => ['auth', 'password_expires']], function () {
         Route::get('checkout',[MyCartController::class, 'checkout_finish'])->name('checkout_finish');
         Route::get('dashboard', [MyCartController::class, 'index'])->name('my_cart');
         Route::get('purchase_history', [PurchaseHistoryController::class, 'index'])->name('purchase_history');
+
+        Route::get('music_items', [PurchasedMusicController::class, 'index'])->name('purchased_music');
 
 
         // User Account Specific

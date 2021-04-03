@@ -15,12 +15,14 @@
                 </div>
             </a>
 
-            <div class="menu-item row">
+            <a href="{{route('frontend.user.purchased_music')}}">
+            <div class="menu-item row  {{ Request::segment(1) === 'music_items' ? 'active-menu' : null }}">
                 <div class="col-md-2">
                     <i class="fa fa-play"></i>
                 </div>
                 <div class="col-md-9"><h5>Purchased Musics</h5></div>
             </div>
+            </a>
 
 
             <a href="{{route('frontend.user.purchase_history')}}">
@@ -34,13 +36,15 @@
 
 
 
-
-            <div class="menu-item row">
-                <div class="col-md-2">
-                    <i class="far fa-heart"></i>
+            <a href="{{route('frontend.user.account')}}">
+                <div class="menu-item row">
+                    <div class="col-md-2">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <div class="col-md-9"><h5>Favorites</h5></div>
                 </div>
-                <div class="col-md-9"><h5>Favorites</h5></div>
-            </div>
+            </a>
+
 
 
             <a href="{{route('frontend.user.account')}}">
