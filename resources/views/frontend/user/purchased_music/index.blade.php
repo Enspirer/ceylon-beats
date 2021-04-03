@@ -12,7 +12,7 @@
                 @include('frontend.user.includes.sidebar')
                 <div class="right-result">
                     <div class="container">
-                        <h2>Purchase History</h2>
+                        <h2>Purchased Music</h2>
                         <div class="space"></div>
                         <div class="row row-select-option">
                             <div class="col-md-8">
@@ -84,11 +84,23 @@
                                     <th scope="col">Music Name</th>
                                     <th scope="col">Author Name</th>
                                     <th scope="col">Genre</th>
+                                    <th scope="col">License Name</th>
                                     <th scope="col">Download Link</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-
+                                    @foreach($music_detaials as $musicdetails)
+                                        <tr>
+                                            <th scope="row">{{$musicdetails->id}}</th>
+                                            <td>USD {{$musicdetails->music_name}}</td>
+                                            <td>{{$musicdetails->author_name}}</td>
+                                            <td>{{$musicdetails->genres}}</td>
+                                            <td>{{$musicdetails->selected_license}}</td>
+                                            <td>
+                                                <a href="" target="_blank" class="btn btn-primary" >Download</a>
+                                            </td>
+                                        </tr>
+                                    @endforeach
 
                                 </tbody>
                             </table>

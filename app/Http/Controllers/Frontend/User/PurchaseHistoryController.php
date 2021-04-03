@@ -45,8 +45,21 @@ class PurchaseHistoryController extends Controller
            array_push($invoices,$outarray);
        }
 
+
+
        return view('frontend.user.purchase_history.purchase_history',[
-           'purchased_details' => $getPurchasedMusic_item
+           'invoice_detaials' => $invoices
        ]);
    }
+
+    public function view_invoice($id)
+    {
+        $invoiceDetails = Invoice::where('id',$id)->first();
+        $invoiceItems = InvoiceItem::where('invoice_id',$id)->get();
+
+        return view('frontend.user.purchase_history.view_invoice',[
+            'invoice_details' => $invoiceDetails,
+            'invoice_items' => $invoiceItems
+        ]);
+    }
 }
