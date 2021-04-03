@@ -122,12 +122,6 @@
                 <div class="row">
                     <div class="col-sm-4 col-md col-sm-4 col-12 col" data-animscroll="fade-up">
                         <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
-                        <!--headin5_amrc-->
-{{--                        <p class="mb10">--}}
-{{--                            Lorem Ipsum is simply dummy text of the printing and typesetting--}}
-{{--                            industry. Lorem Ipsum has been the industry's standard dummy text--}}
-{{--                            ever since the 1500s--}}
-{{--                        </p>--}}
                         <p><i class="fa fa-location-arrow"></i> &nbsp; 387/C, Kalalgoda, Pannipitiya</p>
                         <p><i class="fa fa-phone"></i>&nbsp; 077 261 7424</p>
                         <p><i class="fa fa fa-envelope"></i>&nbsp; jnsstuiolk@gmail.com</p>
@@ -143,12 +137,10 @@
                             <li><a href="{{route('frontend.explorer',['genres','author_name','duration','price','rap'])}}">Rap</a></li>
                             <li><a href="{{route('frontend.explorer',['genres','author_name','duration','price','rock'])}}">Rock</a></li>
                         </ul>
-                        <!--footer_ul_amrc ends here-->
                     </div>
 
                     <div class="col-sm-4 col-md col-6 col" data-animscroll="fade-up">
                         <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
-                        <!--headin5_amrc-->
                         <ul class="footer_ul_amrc">
                             <li>
                                 <a href="{{url('/')}}">Home</a>
@@ -163,13 +155,10 @@
                                 <a href="{{route('frontend.contact')}}">Contact</a>
                             </li>
                         </ul>
-                        <!--footer_ul_amrc ends here-->
                     </div>
 
                     <div class="col-sm-4 col-md col-12 col" data-animscroll="fade-up">
                         <h5 class="headin5_amrc col_white_amrc pt2">Follow us</h5>
-                        <!--headin5_amrc ends here-->
-
                         <ul class="footer_ul2_amrc">
                             <li>
                                 <a href="#">
@@ -199,19 +188,12 @@
                                 </p>
                             </li>
                         </ul>
-                        <!--footer_ul2_amrc ends here-->
                     </div>
                 </div>
             </div>
 
             <div class="container">
                 <ul class="foote_bottom_ul_amrc">
-                    <!-- <li><a href="http://webenlance.com">Home</a></li>
-                <li><a href="http://webenlance.com">About</a></li>
-                <li><a href="http://webenlance.com">Services</a></li>
-                <li><a href="http://webenlance.com">Pricing</a></li>
-                <li><a href="http://webenlance.com">Blog</a></li>
-                <li><a href="http://webenlance.com">Contact</a></li> -->
                 </ul>
                 <!--foote_bottom_ul_amrc ends here-->
                 <p class="text-center">
@@ -240,12 +222,9 @@
                         </a>
                     </li>
                 </ul>
-                <!--social_footer_ul ends here-->
             </div>
         </footer>
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>

@@ -21,10 +21,7 @@
                                         <div class="curency">
                                             <div class="row">
                                                 <p>Genres</p>
-                                                <select
-                                                    class="form-select"
-                                                    aria-label="Default select example"
-                                                >
+                                                <select class="form-select" aria-label="Default select example">
                                                     <option selected>all</option>
                                                     <option value="1">Trending</option>
                                                     <option value="2">Price</option>
@@ -37,10 +34,7 @@
                                         <div class="curency">
                                             <div class="row">
                                                 <p>Show</p>
-                                                <select
-                                                    class="form-select"
-                                                    aria-label="Default select example"
-                                                >
+                                                <select class="form-select" aria-label="Default select example">
                                                     <option selected>2021</option>
                                                     <option value="1">Trending</option>
                                                     <option value="2">Price</option>
@@ -53,10 +47,7 @@
                                         <div class="curency">
                                             <div class="row">
                                                 <p>Sort By</p>
-                                                <select
-                                                    class="form-select"
-                                                    aria-label="Default select example"
-                                                >
+                                                <select class="form-select" aria-label="Default select example">
                                                     <option selected>Latest</option>
                                                     <option value="1">Trending</option>
                                                     <option value="2">Price</option>
@@ -71,19 +62,16 @@
                                 <div class="search-bar">
                                     <form>
                                         <div class="input-group">
-                                            <i
-                                            ><svg
+                                            <i><svg
                                                     xmlns="http://www.w3.org/2000/svg"
                                                     width="21.778"
                                                     height="21.778"
-                                                    viewBox="0 0 21.778 21.778"
-                                                >
+                                                    viewBox="0 0 21.778 21.778">
                                                     <g
                                                         id="Icon_feather-search"
                                                         data-name="Icon feather-search"
                                                         transform="translate(-3.5 -3.5)"
-                                                        opacity="0.7"
-                                                    >
+                                                        opacity="0.7">
                                                         <path
                                                             id="Path_107"
                                                             data-name="Path 107"
