@@ -92,8 +92,7 @@
                                                             stroke="#b9b9b9"
                                                             stroke-linecap="round"
                                                             stroke-linejoin="round"
-                                                            stroke-width="2"
-                                                        />
+                                                            stroke-width="2">
                                                         <path
                                                             id="Path_108"
                                                             data-name="Path 108"
@@ -103,8 +102,7 @@
                                                             stroke="#b9b9b9"
                                                             stroke-linecap="round"
                                                             stroke-linejoin="round"
-                                                            stroke-width="2"
-                                                        />
+                                                            stroke-width="2">
                                                     </g>
                                                 </svg>
                                             </i>
@@ -122,7 +120,7 @@
                             <table class="table table-borderless">
                                 <thead>
                                 <tr>
-                                    <th scope="col">Date</th>
+                                    <th scope="col">ID</th>
                                     <th scope="col">Track Title</th>
                                     <th scope="col">License</th>
                                     <th scope="col">Genre</th>
@@ -132,7 +130,7 @@
                                 </thead>
                                 <tbody>
                                 @foreach($purchased_details as $purchaseDetails)
-                                    <tr>
+                                    <tr  data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                                         <th scope="row">{{$purchaseDetails->id}}</th>
                                         <td>{{$purchaseDetails->music_name}}</td>
                                         <td>{{$purchaseDetails->selected_license}}</td>
@@ -140,6 +138,31 @@
                                         <td>{{$purchaseDetails->author_name }}</td>
                                         <td><a href="{{$purchaseDetails->download_link}}">Download</a> </td>
                                     </tr>
+
+
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    ...
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
                                 @endforeach
 
 

@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Backend;
 use App\Http\Controllers\Controller;
 use App\Models\Auth\User;
 use App\Models\Invoice;
+use App\Models\InvoiceItem;
 use Illuminate\Http\Request;
 use DataTables;
 class InvoiceController extends Controller
@@ -36,6 +37,15 @@ class InvoiceController extends Controller
 
     public function show($id)
     {
+        $invoiceDetails = Invoice::where('id',$id)->first();
+        $invoiceItemDetails = InvoiceItem::where('invoice_id',$id)->get();
+        $userDetails = User::where('id',$invoiceDetails->user_id)->first();
+
+        return view('backend.invoice.show',[
+            'invoice_details' =>$invoiceDetails,
+            'invoice_itemDetails' =>$invoiceItemDetails,
+            'userDetails' => $userDetails
+        ]);
 
     }
 
