@@ -1,3 +1,5 @@
+
+
 <div class="player-margin col-md-4 animscroll-init" data-animscroll="fade-up">
     <div class="player">
         <div class="play-button">
@@ -12,7 +14,22 @@
         <div class="row">
             <h4 style="margin-top: 4px">{{$lastestMusic->music_name}}</h4>
             <div class="row ml-auto">
-            <a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
+                @auth()
+                    @if(\App\Models\Favorite::where('music_id',$lastestMusic->id)->first() != null)
+                        <a onclick="add_favorites('{{$lastestMusic->id}}','favorite_iconRT{{$lastestMusic->id}}')">
+                            <i id="favorite_iconRT{{$lastestMusic->id}}" class="fa fa-heart" aria-hidden="true" style="color: red;"></i>
+                        </a>
+                    @else
+                        <a onclick="add_favorites('{{$lastestMusic->id}}','favorite_iconRT{{$lastestMusic->id}}')">
+                            <i id="favorite_iconRT{{$lastestMusic->id}}" class="fa fa-heart" aria-hidden="true" style=""></i>
+                        </a>
+                    @endif
+                @else
+                    <a href="{{route('frontend.auth.login')}}">
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                    </a>
+                @endauth
+
             <a href="#" data-toggle="modal" data-target="#exampleModalCenter{{$feature_musirc->id}}"> <i class="fa fa-cart-plus" aria-hidden="true"></i></a>
             </div>
         </div>
