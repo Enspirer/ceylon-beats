@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="https://wavesurfer-js.org/example/css/style.css" />
     <link rel="stylesheet" href="https://wavesurfer-js.org/example/css/ribbon.css" /> -->
     <!-- Material Icon  -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link src="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -235,6 +239,30 @@
         <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
         <script src="{{url('ceylon_beats_theme/js/main.js')}}"></script>
 
+
+        @auth()
+        <script>
+            function add_favorites(music_id,element_id) {
+                $.post("{{route('add_favorite')}}",
+                    {
+                        music_id: music_id,
+                        user_id: {{auth()->user()->id}}
+                    },
+                    function(data, status){
+                        if(data == 'added'){
+                            $('#'+element_id).css("color", "red");
+                        }else{
+                            $('#'+element_id).css("color", "#b3b3b3");
+
+                        }
+                    });
+            }
+
+        </script>
+        @else
+
+        @endauth()
+
         <script>
             var swiper = new Swiper(".col-swiper-container", {
                 slidesPerView: 4,
@@ -302,8 +330,19 @@
             @stack('before-scripts')
              let wavesurfer;
              function soundMute() {
+                 if(wavesurfer.isMuted == 1)
+                 {
+                     $('#soundicon').attr('class','fa fa-volume-up');
+                     console.log('Append');
+                 }else{
+                     $('#soundicon').attr('class','fa fa-volume-down');
+                     console.log('Rellpend');
+                 }
+
                  wavesurfer.toggleMute();
              }
+
+
 
              function backwordFunction() {
                  wavesurfer.skipBackward()
@@ -343,6 +382,11 @@
 
 
             document.addEventListener('DOMContentLoaded', function() {
+
+
+
+
+
 
                 // Toggle play/pause text
                 wavesurfer.on('play', function() {
@@ -414,6 +458,8 @@
                             currentPlayingTack = link;
                             $('#playerduration').text(formatTime(wavesurfer.getDuration()));
                         }
+
+                        console.log(wavesurfer.muted);
                     });
                     wavesurfer.on('finish', function(link) {
                         var iconselctor =  document.querySelector('#'+link.id+' i');

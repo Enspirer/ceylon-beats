@@ -45,11 +45,9 @@
                         <div class="icon">
                             <div class="row">
                                 <a onclick="soundMute()" href="#">
-                                    <i class="fa fa-volume-up" aria-hidden="true"></i>
+                                    <i id="soundicon" class="fa fa-volume-down" aria-hidden="true"></i>
                                 </a>
-                                <a href="#">
-                                    <i class="fa fa-heart" aria-hidden="true"></i>
-                                </a>
+
                             </div>
                         </div>
                     </div>

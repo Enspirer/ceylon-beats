@@ -87,29 +87,7 @@
   </div>
 
 
-  @auth()
-      <script>
-          function add_favorites(music_id,element_id) {
-              $.post("{{route('add_favorite')}}",
-                  {
-                      music_id: music_id,
-                      user_id: {{auth()->user()->id}}
-                  },
-                  function(data, status){
-                        if(data == 'added'){
-                            $('#'+element_id).css("color", "red");
-                        }else{
-                            $('#'+element_id).css("color", "#b3b3b3");
 
-                        }
-                  });
-          }
-
-      </script>
-  @else
-
-
-  @endauth()
 
 
 
