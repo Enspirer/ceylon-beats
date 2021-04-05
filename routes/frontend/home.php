@@ -45,6 +45,7 @@ Route::group(['middleware' => ['auth', 'password_expires']], function () {
         Route::get('music_items/viiew_invoice/{id}', [PurchaseHistoryController::class, 'view_invoice'])->name('view_invoice');
 
         Route::get('favorite', [FavoriteController::class, 'index'])->name('favorite');
+        Route::get('favorite/delete/{id}', [FavoriteController::class, 'delete'])->name('favorite.delete');
 
 
 
