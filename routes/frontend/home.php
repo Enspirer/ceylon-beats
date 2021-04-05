@@ -10,6 +10,7 @@ use App\Http\Controllers\Frontend\MyCartController;
 use App\Http\Controllers\Frontend\User\PurchaseHistoryController;
 use App\Http\Controllers\Frontend\FavoriteController;
 use App\Http\Controllers\Frontend\PurchasedMusicController;
+use App\Http\Controllers\Frontend\Auth\UpdatePasswordController;
 /*
  * Frontend Controllers
  * All route names are prefixed with 'frontend.'.
@@ -51,6 +52,7 @@ Route::group(['middleware' => ['auth', 'password_expires']], function () {
 
         // User Account Specific
         Route::get('account', [AccountController::class, 'index'])->name('account');
+        Route::post('update_userDetails', [AccountController::class, 'updateUserDetails'])->name('account.updateUserDetails');
 
         // User Profile Specific
         Route::patch('profile/update', [ProfileController::class, 'update'])->name('profile.update');
