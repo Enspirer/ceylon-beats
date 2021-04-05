@@ -14,15 +14,6 @@
                     <div class="container">
                         <h2>Account Settings</h2>
                         <div class="space"></div>
-
-                        <div class="profile-image-section">
-                            <div class="image-holder">
-                                <img src="https://source.unsplash.com/140x140?girl" alt="" />
-                                <div class="change-profile-image">
-                                    <i class="fas fa-camera"></i>
-                                </div>
-                            </div>
-                        </div>
                         <div class="profile-image-body">
                             <form action="{{route('frontend.user.account.updateUserDetails')}}" method="post">
                                 {{csrf_field()}}

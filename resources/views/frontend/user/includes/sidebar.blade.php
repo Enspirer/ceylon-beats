@@ -37,7 +37,7 @@
 
 
             <a href="{{route('frontend.user.favorite')}}">
-                <div class="menu-item row">
+                <div class="menu-item row {{ Request::segment(1) === 'favorite' ? 'active-menu' : null }}">
                     <div class="col-md-2">
                         <i class="far fa-heart"></i>
                     </div>
@@ -67,5 +67,5 @@
 
         </div>
     </div>
-    <div class="space"></div>
+    <div class="space" style="background-image: linear-gradient(#141414, black);height: 100px;"></div>
 </div>
