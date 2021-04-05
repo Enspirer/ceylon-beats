@@ -8,7 +8,7 @@ use App\Http\Controllers\Frontend\User\ProfileController;
 use App\Http\Controllers\Frontend\ExplorerController;
 use App\Http\Controllers\Frontend\MyCartController;
 use App\Http\Controllers\Frontend\User\PurchaseHistoryController;
-use App\Http\Controllers\Backend\FavoriteController;
+use App\Http\Controllers\Frontend\FavoriteController;
 use App\Http\Controllers\Frontend\PurchasedMusicController;
 /*
  * Frontend Controllers
@@ -43,6 +43,9 @@ Route::group(['middleware' => ['auth', 'password_expires']], function () {
 
         Route::get('music_items', [PurchasedMusicController::class, 'index'])->name('purchased_music');
         Route::get('music_items/viiew_invoice/{id}', [PurchaseHistoryController::class, 'view_invoice'])->name('view_invoice');
+
+        Route::get('favorite', [FavoriteController::class, 'index'])->name('favorite');
+
 
 
         // User Account Specific

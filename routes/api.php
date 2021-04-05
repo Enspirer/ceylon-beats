@@ -3,7 +3,7 @@
 use Illuminate\Http\Request;
 use App\Http\Controllers\Backend\MusicController;
 use App\Http\Controllers\Frontend\HomeController;
-
+use App\Http\Controllers\Frontend\FavoriteController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -19,5 +19,7 @@ use App\Http\Controllers\Frontend\HomeController;
     return $request->user();
 });*/
 Route::get('music_price/{itemID}/{price_package}', [HomeController::class, 'getJsonData'])->name('contact');
+
+Route::post('add_favorite',[FavoriteController::class,'insertItem'])->name('add_favorite');
 
 

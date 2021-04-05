@@ -36,7 +36,7 @@
 
 
 
-            <a href="{{route('frontend.user.account')}}">
+            <a href="{{route('frontend.user.favorite')}}">
                 <div class="menu-item row">
                     <div class="col-md-2">
                         <i class="far fa-heart"></i>

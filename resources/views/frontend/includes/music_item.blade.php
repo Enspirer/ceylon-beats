@@ -39,24 +39,23 @@
                         </g>
                     </svg>
                 </a>
-                <a href="#">
-                    <svg
-                            id="Icon_metro-favorite"
-                            data-name="Icon metro-favorite"
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="19.681"
-                            height="29.985"
-                            viewBox="0 0 32.681 29.985"
-                    >
-                        <path
-                                id="Icon_metro-favorite-2"
-                                data-name="Icon metro-favorite"
-                                d="M21.482,36.411l-2.369-2.149C10.7,26.623,5.141,21.582,5.141,15.414a8.89,8.89,0,0,1,8.987-8.987,9.806,9.806,0,0,1,7.353,3.407,9.806,9.806,0,0,1,7.353-3.407,8.89,8.89,0,0,1,8.987,8.987c0,6.169-5.556,11.21-13.971,18.849Z"
-                                transform="translate(-5.141 -6.427)"
-                                fill="#b9b9b9"
-                        />
-                    </svg>
-                </a>
+                @auth()
+                    @if(\App\Models\Favorite::where('music_id',$soundItem->id)->first() != null)
+                        <a href="#" onclick="add_favorites('{{$soundItem->id}}','favorite_icon{{$soundItem->id}}')" style="font-size: 24px;">
+                            <i class="fa fa-heart" id="favorite_icon{{$soundItem->id}}" style="color: red"></i>
+                        </a>
+                    @else
+                        <a href="#" onclick="add_favorites('{{$soundItem->id}}','favorite_icon{{$soundItem->id}}')" style="font-size: 24px;">
+                            <i class="fa fa-heart" id="favorite_icon{{$soundItem->id}}" style="color: #b3b3b3"></i>
+                        </a>
+                    @endif
+
+                @else
+                    <a href="{{route('frontend.auth.login')}}" style="font-size: 24px;">
+                        <i class="fa fa-heart"></i>
+                    </a>
+                @endauth
+
                
             </div>
         </div>
