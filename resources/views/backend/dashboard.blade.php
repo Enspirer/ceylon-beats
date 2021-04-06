@@ -43,7 +43,29 @@
 
     <div class="card">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6"><br>
+                <div class="container">
+                    <div class="card" style="height: 400px">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th scope="col">Date</th>
+                                <th scope="col">Total Sales</th>
+                                <th scope="col">Orders Count</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            @foreach($orderDays as $listOrders)
+                                <tr>
+                                    <td>{{$listOrders->days}}</td>
+                                    <td>USD {{number_format($listOrders->sums,2)}}</td>
+                                    <td>{{$listOrders->numberoders}}</td>
+                                </tr>
+                            @endforeach
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
 
             </div>
             <div class="col-md-6"> <br>

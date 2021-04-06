@@ -27,14 +27,10 @@ class DashboardController extends Controller
 
         $ordersDays = Invoice::select(
             DB::raw('sum(total) as sums'),
+            DB::raw('count(total) as numberoders'),
             DB::raw("DATE_FORMAT(created_at,'%D %M %Y') as days"))
             ->groupBy('days')
             ->get();
-
-
-
-
-
 
 
 
