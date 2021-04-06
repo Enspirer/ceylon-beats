@@ -29,9 +29,6 @@ class FavoriteController extends Controller
             }
 
         }
-
-
-
         return view('frontend.user.favorites.index',[
             'favorite_details' => $outputArray
         ]);

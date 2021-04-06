@@ -10,7 +10,10 @@ class LicenseController extends Controller
 {
     public function index()
     {
-        return view('backend.license.index');
+        $license = License::all();
+        return view('backend.license.index',[
+            'license' => $license
+        ]);
     }
 
     public function delete($id)
@@ -44,7 +47,7 @@ class LicenseController extends Controller
         return Datatables::of($licenses)
             ->addColumn('action', function($row){
                 $btn1 = '<a href="'.route('admin.license.edit',$row->id).'" class="edit btn btn-primary btn-sm"><i class="fa fa-edit"></i> Edit </a>';
-                $btn2 = ' <a href="'.route('admin.license.delete',$row->id).'" class="edit btn btn-danger btn-sm"><i class="fa fa-trash"></i> Trash </a>';
+                $btn2 = '<button class="edit btn btn-primary btn-sm" style="margin-left:5px;" data-toggle="modal" data-target="#exampleModal'.$row->id.'"><i class="fa fa-trash"></i> Trash </button>';
                 return $btn1.$btn2;
             })
             ->rawColumns(['action'])
