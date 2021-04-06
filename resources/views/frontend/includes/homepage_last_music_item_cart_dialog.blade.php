@@ -1,6 +1,6 @@
 
 
-<div class="player-margin col-md-4 animscroll-init" data-animscroll="fade-up">
+<div class="player-margin col-lg-4 col-md-6 col-12 animscroll-init" data-animscroll="fade-up">
     <div class="player">
         <div class="play-button">
             <a onclick="playAudio('myAudio{{$lastestMusic->id}}','play_iconse{{$lastestMusic->id}}')">
