@@ -16,15 +16,21 @@ class FavoriteController extends Controller
         foreach ($favoriteDetails as $favDetails)
         {
             $getMusicDetails = MusicProducts::where('id',$favDetails->music_id)->first();
-            $favoriteDetails = [
-                'id' => $getMusicDetails->id,
-                'music_name' => $getMusicDetails->music_name,
-                'genres' => $getMusicDetails->genres_id,
-                'preview_link' => $getMusicDetails->preview_link,
-                'author_name' => $getMusicDetails->author_name,
-            ];
-            array_push($outputArray,$favoriteDetails);
+
+            if($getMusicDetails){
+                $favoriteDetails = [
+                    'id' => $getMusicDetails->id,
+                    'music_name' => $getMusicDetails->music_name,
+                    'genres' => $getMusicDetails->genres_id,
+                    'preview_link' => $getMusicDetails->preview_link,
+                    'author_name' => $getMusicDetails->author_name,
+                ];
+                array_push($outputArray,$favoriteDetails);
+            }
+
         }
+
+
 
         return view('frontend.user.favorites.index',[
             'favorite_details' => $outputArray

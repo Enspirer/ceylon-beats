@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
+use App\Models\Favorite;
 use App\Models\Generes;
 use App\Models\MusicProducts;
 use App\Moduels\License;
@@ -12,10 +13,17 @@ class MusicController extends Controller
 {
     public function index()
     {
-        $getGenres = Generes::where('status',1)->get();
+        $getGenres = MusicProducts::all();
         return view('backend.music.index',[
-            'get_genres' => $getGenres,
+            'music' => $getGenres,
         ]);
+    }
+
+    public function delete($id)
+    {
+        MusicProducts::where('id',$id)->delete();
+        Favorite::where('music_id',$id)->delete();
+        return back();
     }
 
     public function store(Request $request)
@@ -138,7 +146,7 @@ class MusicController extends Controller
             })
             ->addColumn('action', function($row){
                 $btn1 = '<a href="'.route('admin.music.edit',$row->id).'" class="edit btn btn-primary btn-sm"><i class="fa fa-edit"></i> Edit </a>';
-                $btn2 = ' <a href="'.route('admin.music.delete',$row->id).'" class="edit btn btn-danger btn-sm"><i class="fa fa-trash"></i> Trash </a>';
+                $btn2 = ' <button   data-toggle="modal" data-target="#exampleModal'.$row->id.'"  class="edit btn btn-danger btn-sm"><i class="fa fa-trash"></i> Trash </button>';
                 return $btn1.$btn2;
             })
             ->rawColumns(['action','price'])

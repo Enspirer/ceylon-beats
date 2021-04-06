@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
 use App\Models\Generes;
+use App\Models\MusicProducts;
 use Illuminate\Http\Request;
 use DataTables;
 
@@ -11,7 +12,10 @@ class GenresController extends Controller
 {
     public function index()
     {
-        return view('backend.genres.index');
+        $music = MusicProducts::all();
+        return view('backend.genres.index',[
+            'music' => $music
+        ]);
     }
 
 
