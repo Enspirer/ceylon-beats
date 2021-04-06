@@ -97,7 +97,7 @@
                                             <td>{{$musicdetails->genres}}</td>
                                             <td>{{$musicdetails->selected_license}}</td>
                                             <td>
-                                                <a href="" target="_blank" class="btn btn-primary" >Download</a>
+                                                <a href="{{url('files/original_files',$musicdetails->download_link)}}" target="_blank" class="btn btn-primary" download>Download</a>
                                             </td>
                                         </tr>
                                     @endforeach

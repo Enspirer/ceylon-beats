@@ -10,7 +10,7 @@
             <div class="card">
                 <div class="container" style="padding-top: 10px;padding-bottom: 10px;">
                     <h3>Total Sales</h3>
-                    <h2>01</h2>
+                    <h2>USD {{number_format($total_sales,2)}}</h2>
                 </div>
             </div>
         </div>
@@ -18,7 +18,7 @@
             <div class="card">
                 <div class="container" style="padding-top: 10px;padding-bottom: 10px;">
                     <h3>Number of Orders</h3>
-                    <h2>22</h2>
+                    <h2>{{$numberof_orders}}</h2>
                 </div>
             </div>
 
@@ -26,24 +26,32 @@
         <div class="col-md-3">
             <div class="card">
                 <div class="container" style="padding-top: 10px;padding-bottom: 10px;">
-                    <h3>Number of Orders</h3>
-                    <h2>22</h2>
+                    <h3>Sold Music Items</h3>
+                    <h2>{{$invoice_item}}</h2>
                 </div>
             </div>
         </div>
         <div class="col-md-3">
             <div class="card">
                 <div class="container" style="padding-top: 10px;padding-bottom: 10px;">
-                    <h3>Number of Orders</h3>
-                    <h2>22</h2>
+                    <h3>Users Count</h3>
+                    <h2>{{$user_count}}</h2>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="card">
+        <div class="row">
+            <div class="col-md-6">
 
-        <div id="container" style="height: 400px"></div>
+            </div>
+            <div class="col-md-6"> <br>
+                <h2>Sales This Week</h2>
+                <div id="container" style="height: 400px"></div>
+            </div>
+        </div>
+
 
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
     </div>
@@ -64,13 +72,22 @@
         option = {
             xAxis: {
                 type: 'category',
-                data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+                data: [
+                    @foreach($orderDays as $orderSalesI)
+                    "{{$orderSalesI->days}}",
+                    @endforeach
+
+                ]
             },
             yAxis: {
                 type: 'value'
             },
             series: [{
-                data: [120, 200, 150, 80, 70, 110, 130],
+                data: [
+                    @foreach($orderDays as $orderSales)
+                    {{$orderSales->sums.','}}
+                    @endforeach
+                ],
                 type: 'bar',
                 showBackground: true,
                 backgroundStyle: {
