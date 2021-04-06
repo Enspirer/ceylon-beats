@@ -92,7 +92,7 @@
                                     @foreach($music_detaials as $musicdetails)
                                         <tr>
                                             <th scope="row">{{$musicdetails->id}}</th>
-                                            <td>USD {{$musicdetails->music_name}}</td>
+                                            <td>{{settings('currency')}} {{$musicdetails->music_name}}</td>
                                             <td>{{$musicdetails->author_name}}</td>
                                             <td>{{$musicdetails->genres}}</td>
                                             <td>{{$musicdetails->selected_license}}</td>

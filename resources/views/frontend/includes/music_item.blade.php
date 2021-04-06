@@ -109,7 +109,7 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div style="font-size: 19px;font-weight: 700;color: wheat;">
-                                            <span id="inpack_price{{$soundItem->id}}">0</span>.00 USD
+                                            {{settings('currency')}} <span id="inpack_price{{$soundItem->id}}">0</span>.00
                                         </div>
                                     </div>
                                 </div>

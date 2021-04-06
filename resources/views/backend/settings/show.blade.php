@@ -24,6 +24,9 @@
                     </div>
                 </div>
             </div>
+            <button type="submit" class="btn btn-primary pull-right">Save Settings</button>
+        </div>
+
     </form>
 
 @endsection
