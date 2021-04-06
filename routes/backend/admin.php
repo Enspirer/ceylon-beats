@@ -4,8 +4,8 @@ use App\Http\Controllers\Backend\DashboardController;
 use App\Http\Controllers\Backend\MusicController;
 use App\Http\Controllers\Backend\LicenseController;
 use App\Http\Controllers\Backend\GenresController;
-
 use App\Http\Controllers\Backend\InvoiceController;
+use App\Http\Controllers\Backend\SettingsController;
 
 // All route names are prefixed with 'admin.'.
 Route::redirect('/', '/admin/dashboard', 301);
@@ -43,3 +43,5 @@ Route::get('invoice/getdetails', [InvoiceController::class, 'getTableDetails'])-
 Route::get('invoice/delete/{id}', [InvoiceController::class, 'delete'])->name('invoice.delete');
 Route::get('invoice/show/{id}', [InvoiceController::class, 'show'])->name('invoice.show');
 
+
+Route::get('settings/show', [SettingsController::class, 'show'])->name('settings.show');

@@ -1,4 +1,5 @@
 <?php
+use App\Models\Settings;
 
 if (! function_exists('app_name')) {
     /**
@@ -21,6 +22,19 @@ if (! function_exists('gravatar')) {
         return app('gravatar');
     }
 }
+
+if (! function_exists('settings')) {
+    /**
+     * Access the gravatar helper.
+     */
+    function settings($key)
+    {
+        $settings = Settings::where('key',$key)->first();
+        return $settings->value;
+    }
+}
+
+
 
 if (! function_exists('home_route')) {
     /**

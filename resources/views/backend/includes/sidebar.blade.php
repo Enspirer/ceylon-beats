@@ -28,6 +28,7 @@
 
 
 
+
             <li class="nav-item">
                 <a class="nav-link {{ active_class(Route::is('admin/license'))}}" href="{{ route('admin.license') }}">
                     <i class="nav-icon fas fa-paperclip"></i>
@@ -44,9 +45,17 @@
 
 
 
+
             @if ($logged_in_user->isAdmin())
                 <li class="nav-title">
                     @lang('menus.backend.sidebar.system')
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link {{ active_class(Route::is('admin/settings'))}}" href="{{ route('admin.settings.show') }}">
+                        <i class="nav-icon fas fa-cogs"></i>
+                        Settings
+                    </a>
                 </li>
 
                 <li class="nav-item nav-dropdown {{

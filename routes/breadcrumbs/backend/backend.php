@@ -50,6 +50,10 @@ Breadcrumbs::for('admin.invoice.show', function ($trail) {
     $trail->push('View Invoice', route('admin.invoice.show',1));
 });
 
+Breadcrumbs::for('admin.settings.show', function ($trail) {
+    $trail->push('Settings', route('admin.settings.show'));
+});
+
 
 
 
