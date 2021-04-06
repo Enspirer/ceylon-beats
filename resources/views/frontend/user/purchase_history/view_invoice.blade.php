@@ -181,7 +181,7 @@
                                 <div class="d-none d-sm-block col-1">{{$invoice_item->id}}</div>
                                 <div class="col-9 col-sm-5">{{$invoice_item->music_name}}</div>
                                 <div class="d-none d-sm-block col-2">{{$invoice_item->selected_license}}</div>
-                                <div class="d-none d-sm-block col-2 text-95">USD {{number_format($invoice_item->price,2)}}</div>
+                                <div class="d-none d-sm-block col-2 text-95">{{settings('currency')}} {{number_format($invoice_item->price,2)}}</div>
                             </div>
                         @endforeach
                     </div>
@@ -199,7 +199,7 @@
                                     SubTotal
                                 </div>
                                 <div class="col-5">
-                                    <span class="text-120 text-secondary-d1">USD {{number_format($invoice_details->total,2)}}</span>
+                                    <span class="text-120 text-secondary-d1">{{settings('currency')}} {{number_format($invoice_details->total,2)}}</span>
                                 </div>
                             </div>
 
@@ -210,7 +210,7 @@
                                     Total Amount
                                 </div>
                                 <div class="col-5">
-                                    <span class="text-150 text-success-d3 opacity-2">USD {{number_format($invoice_details->total,2)}}</span>
+                                    <span class="text-150 text-success-d3 opacity-2">{{settings('currency')}} {{number_format($invoice_details->total,2)}}</span>
                                 </div>
                             </div>
                         </div>

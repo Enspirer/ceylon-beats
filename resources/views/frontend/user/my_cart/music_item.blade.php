@@ -46,7 +46,7 @@
         </div>
         <div class="col-md-3 m-auto">
             <div class="text-group-four">
-                <h1>{{number_format($cartDetail->price,2)}} USD</h1>
+                <h1>{{settings('currency')}} {{number_format($cartDetail->price,2)}}</h1>
             </div>
         </div>
         <div class="col-md-1 m-auto">

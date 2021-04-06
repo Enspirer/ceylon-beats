@@ -61,7 +61,7 @@
                     class="form-select"
                     aria-label="Default select example"
             >
-                <option selected>USD</option>
+                <option selected>{{settings('currency')}}</option>
             </select>
         </div>
     </div>

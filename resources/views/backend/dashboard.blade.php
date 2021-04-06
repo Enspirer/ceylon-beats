@@ -10,7 +10,7 @@
             <div class="card">
                 <div class="container" style="padding-top: 10px;padding-bottom: 10px;">
                     <h3>Total Sales</h3>
-                    <h2>USD {{number_format($total_sales,2)}}</h2>
+                    <h2>{{settings('currency')}} {{number_format($total_sales,2)}}</h2>
                 </div>
             </div>
         </div>
@@ -58,7 +58,7 @@
                             @foreach($orderDays as $listOrders)
                                 <tr>
                                     <td>{{$listOrders->days}}</td>
-                                    <td>USD {{number_format($listOrders->sums,2)}}</td>
+                                    <td>{{settings('currency')}} {{number_format($listOrders->sums,2)}}</td>
                                     <td>{{$listOrders->numberoders}}</td>
                                 </tr>
                             @endforeach

@@ -30,7 +30,7 @@
                                 @foreach($invoice_detaials as $invoice_detail)
                                     <tr  data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                                         <th scope="row">{{$invoice_detail['invoice_id']}}</th>
-                                        <td>USD {{number_format($invoice_detail['total'],2)}}</td>
+                                        <td>{{settings('currency')}} {{number_format($invoice_detail['total'],2)}}</td>
                                         <td>{{$invoice_detail['date']}}</td>
                                         <td>{{$invoice_detail['status']}}</td>
                                         <td>

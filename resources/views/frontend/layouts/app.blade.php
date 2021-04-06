@@ -28,7 +28,9 @@
     <link rel="stylesheet" href="{{url('ceylon_beats_theme/styles/css/media.css')}}" />
     <link rel="stylesheet" href="{{url('ceylon_beats_theme/styles/css/tailwind.css')}}" />
 
-    <link rel="stylesheet" href="{{url('ceylon_beats_theme/plugin/AnimTrap/css/animtrap.css')}}" />
+    @if(request()->header('sec-ch-ua-mobile') == '?0')
+        <link rel="stylesheet" href="{{url('ceylon_beats_theme/plugin/AnimTrap/css/animtrap.css')}}" />
+    @endif
 
     <style>
         * {

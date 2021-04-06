@@ -4,7 +4,7 @@
             <div class="row">
                 <img src="{{url('/ceylon_beats_theme/assets/image/Image 15@2x.png')}}" alt="" srcset="" />
                 <select class="form-select" aria-label="Default select example">
-                    <option selected>USD</option>
+                    <option selected>{{settings('currency')}}</option>
                 </select>
             </div>
         </div>
@@ -143,7 +143,7 @@
                     <i class="fa fa-shopping-cart cart-icon"></i><span class="badge">{{count($cartDetails)}}</span>
                     <div class="shopping-cart-total">
                         <span class="lighter-text">Total:</span>
-                        <span class="main-color-text total">{{number_format($cart_total,2)}} USD</span>
+                        <span class="main-color-text total">{{settings('currency')}} {{number_format($cart_total,2)}}</span>
                     </div>
                 </div>
                 <!--end shopping-cart-header -->
@@ -160,7 +160,7 @@
                                 {{$cartDetail->attributes->license_name}}
                             </span>
 
-                                <span class="item-price">{{number_format($cartDetail->price,2)}} USD</span>
+                                <span class="item-price">{{settings('currency')}} {{number_format($cartDetail->price,2)}}</span>
 
                                 <span class="item-quantity">
                                     <a>

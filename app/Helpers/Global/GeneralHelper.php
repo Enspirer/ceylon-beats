@@ -30,9 +30,16 @@ if (! function_exists('settings')) {
     function settings($key)
     {
         $settings = Settings::where('key',$key)->first();
-        return $settings->value;
+        if($settings)
+        {
+            return $settings->value;
+        }else{
+            return null;
+        }
+
     }
 }
+
 
 
 
