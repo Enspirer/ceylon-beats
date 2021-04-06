@@ -139,14 +139,10 @@
 
                     <div class="page-tools">
                         <div class="action-buttons">
-                            <a class="btn bg-white btn-light mx-1px text-95" href="#" data-title="Print">
+                            <button onclick="window.print()" class="btn bg-white btn-light mx-1px text-95" data-title="Print">
                                 <i class="mr-1 fa fa-print text-primary-m1 text-120 w-2"></i>
                                 Print
-                            </a>
-                            <a class="btn bg-white btn-light mx-1px text-95" href="#" data-title="PDF">
-                                <i class="mr-1 fa fa-file-pdf-o text-danger-m1 text-120 w-2"></i>
-                                Export
-                            </a>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -274,7 +270,6 @@
 
                                 <div>
                                     <span class="text-secondary-d1 text-105">Thank you for your business</span>
-                                    <a href="#" class="btn btn-info btn-bold px-4 float-right mt-3 mt-lg-0">Pay Now</a>
                                 </div>
                             </div>
                         </div>
