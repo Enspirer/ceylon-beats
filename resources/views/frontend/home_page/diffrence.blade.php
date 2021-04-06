@@ -20,7 +20,7 @@
             </div>
             <div class="right-video col-md-6" data-animscroll="fade-left">
                 <div class="video-back">
-                    <img src="assets/image/Mask Group 9@2x.png" alt="" />
+                    <img src="{{url('ceylon_beats_theme/assets/image/Mask Group 9@2x.png')}}" alt="" />
                     <div class="black-glow"></div>
                 </div>
             </div>

@@ -1,0 +1,122 @@
+@media (max-width: 768px) {
+  .curency img {
+    display: none;
+  }
+  #head-section .mask .search h1 {
+    margin: auto;
+    max-width: 480px;
+    font-size: 40px;
+  }
+  #head-section .mask .search .wrapper {
+    padding-top: 30px;
+    max-width: 480px;
+    margin: auto;
+  }
+  #head-section .mask .search .wrapper i {
+    top: 40px;
+    left: 30px;
+  }
+  #head-section .mask .search .wrapper .search {
+    width: 70%;
+  }
+  #head-section .mask .music .swiper-button {
+    display: none;
+  }
+  .middle-container img {
+    width: 95% !important;
+  }
+  #diffrence .right-video {
+    padding: 20px;
+  }
+  #diffrence .right-video img {
+    margin-top: 0px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  #head-section .mask .search {
+    padding-top: 100px;
+  }
+  #head-section .mask .search h1 {
+    margin: auto;
+    max-width: 320px;
+    font-size: 26px;
+  }
+  #head-section .mask .search .wrapper {
+    padding-top: 20px;
+    max-width: 480px;
+    margin: auto;
+  }
+  #head-section .mask .search .wrapper i {
+    display: none;
+  }
+  #head-section .mask .search .wrapper .search {
+    height: 30px;
+    width: 60%;
+    padding: 0 10px;
+  }
+  #head-section .mask .search .wrapper .submit {
+    width: auto;
+    padding: 0 10px;
+    height: 30px;
+  }
+  #head-section .mask .music {
+    margin: 120px 0px 100px 0px;
+  }
+  #head-section .mask .music .swiper-button {
+    display: none;
+  }
+  #head-section .mask .music h1 {
+    line-height: 1 !important;
+    font-size: 30px !important;
+  }
+  #head-section .mask .music .text-new-releases h1 {
+    font-size: 30px;
+  }
+  #head-section .mask .music .new-release-container {
+    margin: 20px !important;
+  }
+  #diffrence .left-text {
+    padding: 20px;
+  }
+  #diffrence .left-text h2 {
+    font-size: 28px !important;
+    line-height: 1 !important;
+  }
+  #diffrence .left-text h1 {
+    font-size: 32px !important;
+  }
+  #diffrence .left-text p {
+    font-size: 12px !important;
+  }
+  #diffrence .left-text a {
+    font-size: 12px !important;
+    line-height: 1 !important;
+  }
+  #diffrence .right-video {
+    padding: 20px;
+  }
+  #diffrence .right-video img {
+    margin-top: 0px !important;
+  }
+  #popular-search h1 {
+    line-height: 1 !important;
+    font-size: 32px !important;
+  }
+  #popular-search .middle-container {
+    margin: 0 !important;
+  }
+  #popular-search .middle-container img {
+    width: 100% !important;
+  }
+  #popular-search .middle-container .right-icon {
+    padding: 40px;
+  }
+  #popular-search .middle-container .right-icon p {
+    font-size: 14px !important;
+  }
+  #popular-search h1 {
+    margin-top: 40px !important;
+  }
+}
+/*# sourceMappingURL=media.css.map */

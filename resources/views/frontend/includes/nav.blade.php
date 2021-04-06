@@ -1,6 +1,6 @@
 <nav class="navbar-top navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <div class="curency col-md-2">
+        <div class="curency col-2 col-md-2">
             <div class="row">
                 <img src="{{url('/ceylon_beats_theme/assets/image/Image 15@2x.png')}}" alt="" srcset="" />
                 <select class="form-select" aria-label="Default select example">
@@ -8,16 +8,17 @@
                 </select>
             </div>
         </div>
-        <div class="menu col-md-7">
+        
+        <div class="menu col-md-8">
             <div class="row">
                 <div class="menu-item col-md-2">
-x                    <a href="{{url('/')}}" class="{{ Request::segment(1) === null ? 'active' : null }}">Home</a>
+                   <a href="{{url('/')}}" class="{{ Request::segment(1) === null ? 'active' : null }}">Home</a>
                 </div>
                 <div class="menu-item col-md-2">
                     <a class="{{ Request::segment(1) === 'explore' ? 'active' : null }}" href="{{route('frontend.explorer',['genres','author_name','duration','price','music_name'])}}">Music</a>
                 </div>
                 <div class="menu-item col-md-3">
-                   <a href="{{url('/')}}">
+                   <a href="{{url('/')}}" class="d-contain">
                        <img class="default-logo" style="z-index: 12" src="{{url('/ceylon_beats_theme/assets/image/Group 57@2x.png')}}" alt="">
                     <img class="sticky-logo d-none" src="{{url('/ceylon_beats_theme/assets/image/Group 57@2x.png')}}" alt="">
                    </a>
@@ -30,7 +31,34 @@ x                    <a href="{{url('/')}}" class="{{ Request::segment(1) === nu
                 </div>
             </div>
         </div>
-        <div class="cart col-md-3">
+        
+        <div class="menu-mob-logo-center d-none col-8">
+          <img
+          class="default-logo"
+          src="{{url('/ceylon_beats_theme/assets/image/Group 57@2x.png')}}"
+          alt=""
+        />
+        <img
+        class="sticky-logo d-none"
+        src="{{url('/ceylon_beats_theme/assets/image/Group 57@2x.png')}}"
+        alt=""
+      />
+        </div>
+
+        <div class="col-md-2 d-none menu-mob col-2">
+          <input type="checkbox" id="overlay-input" />
+          <label for="overlay-input" id="overlay-button"><span></span></label>
+          <div id="overlay">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Music</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cart col-md-2">
             <div class="row">
 
 

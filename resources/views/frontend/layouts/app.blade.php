@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 <!-- <link rel='stylesheet' href='https://unpkg.com/tailwindcss@1.8.9/dist/tailwind.min.css'> -->
     <link rel="stylesheet" href="{{url('ceylon_beats_theme/styles/css/styles.css')}}" />
+    <link rel="stylesheet" href="{{url('ceylon_beats_theme/styles/css/media.css')}}" />
     <link rel="stylesheet" href="{{url('ceylon_beats_theme/styles/css/tailwind.css')}}" />
 
     <link rel="stylesheet" href="{{url('ceylon_beats_theme/plugin/AnimTrap/css/animtrap.css')}}" />
