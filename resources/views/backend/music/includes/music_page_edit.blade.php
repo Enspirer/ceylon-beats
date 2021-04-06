@@ -15,7 +15,7 @@
     <label>Genres</label>
     <select class="form-control" name="genres">
         @foreach($get_genres as $ge_genres)
-            <option value="{{$ge_genres->name}}">{{$ge_genres->name}}</option>
+            <option value="{{$ge_genres->name}}" {{ $ge_genres->name == $musicDetails->genres ? 'selected':'' }}>{{$ge_genres->name}}</option>
         @endforeach
     </select>
 </div>
