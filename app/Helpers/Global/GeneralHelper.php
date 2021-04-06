@@ -42,6 +42,7 @@ if (! function_exists('settings')) {
 
 
 
+
 if (! function_exists('home_route')) {
     /**
      * Return the route to the "home" page depending on authentication/authorization status.
