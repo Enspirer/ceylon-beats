@@ -51,6 +51,7 @@ class InvoiceController extends Controller
 
     public function delete($id)
     {
-
+        Invoice::where('id',$id)->delete();
+        return back();
     }
 }
