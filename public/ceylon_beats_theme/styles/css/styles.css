@@ -3222,7 +3222,7 @@ footer p {
   position: absolute;
   top: 154px;
   left: 55px;
-  max-width: 450px;
+  max-width: 550px;
 }
 
 #about-section .bottum-content-all .our-team .container .details-container .full-image-placeholder .placeholder-content h1 {
@@ -3230,14 +3230,16 @@ footer p {
   letter-spacing: 0px;
   color: #ffffff;
   text-align: left;
+  line-height: 1;
+  margin: 0;
 }
 
 #about-section .bottum-content-all .our-team .container .details-container .full-image-placeholder .placeholder-content h4 {
   font: italic normal normal 26px/55px Poppins;
   letter-spacing: 0px;
   color: #ffffff;
-  line-height: 0;
-  margin-top: -20px;
+  line-height: 1;
+  margin: 0;
 }
 
 #about-section .bottum-content-all .our-team .container .details-container .full-image-placeholder .placeholder-content p {

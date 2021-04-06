@@ -128,7 +128,7 @@
                     <div class="col-sm-4 col-md col-sm-4 col-12 col" data-animscroll="fade-up">
                         <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
                         <p><i class="fa fa-location-arrow"></i> &nbsp; 387/C, Kalalgoda, Pannipitiya</p>
-                        <p><i class="fa fa-phone"></i>&nbsp; 077 261 7424</p>
+                        <p><i class="fa fa-phone"></i>&nbsp; 074 067 9187</p>
                         <p><i class="fa fa fa-envelope"></i>&nbsp; jnsstuiolk@gmail.com</p>
                     </div>
 

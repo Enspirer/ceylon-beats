@@ -62,9 +62,9 @@
             });
             $( "#img3" ).click(function() {
                 $("#blur-image").attr("src","{{url('/ceylon_beats_theme/assets/Mask Group 28@2x.png')}}");
-                $('#member-name').text("ccccc");
-                $('#member-designation').text("cccccc");
-                $('#member-description').text("cccccccc");
+                $('#member-name').text("Rukshan S Subasinghe");
+		$('#member-designation').text("MUSIC COMPOSER");
+		$('#member-description').text("Ruskshan is a Visharad in Violin and is a graduate in Art specialized in Performance Art - Music from the University of Kelaniya. He has worked on numerous commercials in leading brands locally and internationally. He is a hard-working, creative genius with a sheer sense of originality.");
                 $("#facebook").attr("href","https://www.facebook.com/?ref=tn_tnmn");
                 $("#linkedin").attr("href","https://www.facebook.com/?ref=tn_tnmn");
                 $("#mail").attr("href","https://www.facebook.com/?ref=tn_tnmn");
@@ -72,9 +72,9 @@
             });
             $( "#img4" ).click(function() {
                 $("#blur-image").attr("src","{{url('/ceylon_beats_theme/assets/Mask Group 29@2x.png')}}");
-                $('#member-name').text("ddddd");
-                $('#member-designation').text("ddddddd");
-                $('#member-description').text("ddddddddddd");
+                $('#member-name').text("Lasitha Gunawardana");
+		$('#member-designation').text("MUSIC DIRECTOR");
+		$('#member-description').text("Lasitha Sangeeth Visharadha graduated from Bhathkhande Music University India and was the former Orchestra Instructor at Ananda College. His notable work includes many recordings in the Sri Lanka Rupervahini Corporation, National Youth Corporation and Dusit Thani in the Maldives. He is a passionate, academic in music as well as a visionary in tunes.");
                 $("#facebook").attr("href","https://www.facebook.com/?ref=tn_tnmn");
                 $("#linkedin").attr("href","https://www.facebook.com/?ref=tn_tnmn");
                 $("#mail").attr("href","https://www.facebook.com/?ref=tn_tnmn");

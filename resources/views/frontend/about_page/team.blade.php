@@ -67,14 +67,14 @@
             </div>
             <div class="team-members">
                 <div class="container">
-                    <div class="row">
-                        <img
+                    <div class="row d-flex justify-content-center">
+                        <!-- <img
                             id="img1"
                             src="{{url('/ceylon_beats_theme/assets/Mask Group 30@2x.png')}}"
                             alt=""
                             data-animscroll="fade-up"
                             data-animscroll-delay="100"
-                        />
+                        /> -->
                         <img
                             id="img2"
                             src="{{url('/ceylon_beats_theme/assets/Mask Group 27@2x.png')}}"
