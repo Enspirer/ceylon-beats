@@ -45,3 +45,4 @@ Route::get('invoice/show/{id}', [InvoiceController::class, 'show'])->name('invoi
 
 
 Route::get('settings/show', [SettingsController::class, 'show'])->name('settings.show');
+Route::post('settings/index', [SettingsController::class, 'save_settings'])->name('settings.save_settings');

@@ -3,7 +3,7 @@
 @section('title', app_name() . ' | ' . __('strings.backend.dashboard.title'))
 
 @section('content')
-    <form action="" method="post">
+    <form action="{{route('admin.settings.save_settings')}}" method="post">
         {{csrf_field()}}
         <div class="light-style flex-grow-1 container-p-y">
             <div class="card overflow-hidden">

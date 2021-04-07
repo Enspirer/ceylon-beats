@@ -15,9 +15,9 @@
                         @if(Session::has('message'))
                             <div style="text-align: center;padding-top: 25%;">
                                 <div class="" style="text-align: center;color:white;">
-                                    <h3>Music Purchases Successful</h3>
-                                    <p>Thank you for the choosing world best music selling platform</p>
-                                    <button class="btn btn-primary" style="background-color: #ffcb1d">Check Purchase History</button>
+                                    <h3>Your purchase successfully completed.</h3>
+                                    <p>Thank you for choosing Ceylon Beatz - The world's premium Beatz collection</p>
+                                    <a href="" class="btn btn-primary" style="background-color: #ffcb1d">Check Purchase History</a>
                                 </div>
                             </div>
 
@@ -87,8 +87,8 @@
                     <form method="post" action="https://sandbox.payhere.lk/pay/checkout">
                         <input type="hidden" name="merchant_id" value="1217011">    <!-- Replace your Merchant ID -->
                         <input type="hidden" name="return_url" value="{{route('frontend.user.checkout_finish')}}">
-                        <input type="hidden" name="cancel_url" value="http://sample.com/cancel">
-                        <input type="hidden" name="notify_url" value="http://sample.com/notify">
+                        <input type="hidden" name="cancel_url" value="{{route('frontend.user.purchase.not_working')}}">
+                        <input type="hidden" name="notify_url" value="{{url('/')}}">
                         <input type="hidden" name="order_id" value="ItemNo12345">
                         <input type="hidden" name="items" value="AudioMusic"><br>
                         <input type="hidden" name="currency" value="USD">
@@ -99,7 +99,7 @@
                         <div class="" style="padding: 10px;text-align: left">
                             <div class="form-group">
                                 <label>Phone Number</label>
-                                <input type="text" name="phone" value="" placeholder="071XXXXXXX" required><br>
+                                <input type="text" name="phone" max="10" min="10" value="" placeholder="" required><br>
                             </div>
 
                             <div class="form-group">
