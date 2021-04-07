@@ -48,13 +48,39 @@ class HomeController extends Controller
         }
     }
 
+
+    public static function check_chart_exssiting($music_item_id)
+    {
+        $itemsCart = Cart::getContent();
+
+        foreach ($itemsCart as $cartItem)
+        {
+
+            if($music_item_id == $cartItem->id)
+            {
+                return 'yes';
+            }
+
+              return null;
+        }
+
+    }
+
     public function addCart(Request $request)
     {
-        Cart::add($request->music_item_id, $request->music_name, $request->price_details, 1, [
-            'license_name' => $request->license_name,
-            'preview_link' => $request->preview_link,
-            'author_name' => $request->author_name,
-        ]);
+
+        $details = self::check_chart_exssiting($request->music_item_id);
+
+        if($details == null)
+        {
+            Cart::add($request->music_item_id, $request->music_name, $request->price_details, 1, [
+                'license_name' => $request->license_name,
+                'preview_link' => $request->preview_link,
+                'author_name' => $request->author_name,
+            ]);
+        }
+
+
         return back();
     }
 

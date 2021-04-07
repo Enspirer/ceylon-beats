@@ -105,7 +105,7 @@
     <script src="{{url('ceylon_beats_theme/plugin/wave/wave.js')}}"></script>
 </head>
 
-    <body>
+    <body style="overflow-x: hidden;">
 
         <div id="app">
 
@@ -341,12 +341,13 @@
                      $('#soundicon').attr('class','fa fa-volume-down');
                      console.log('Rellpend');
                  }
-
                  wavesurfer.toggleMute();
              }
-
-
-
+             function close_player() {
+                 wavesurfer.stop();
+                 $(".fa-stop").attr('class', 'fa fa-play');
+                 $('#media-player').hide();
+             }
              function backwordFunction() {
                  wavesurfer.skipBackward()
              }
@@ -377,20 +378,12 @@
                 container: '#waveform',
                 waveColor: '#e9ba1f',
                 progressColor: '#31708f',
-                height: 120,
+                height: 64,
                 weight: 170,
                 fillParent: false,
                 minPxPerSec: 13
             });
-
-
             document.addEventListener('DOMContentLoaded', function() {
-
-
-
-
-
-
                 // Toggle play/pause text
                 wavesurfer.on('play', function() {
                     document.querySelector('#play').style.display = 'none';
