@@ -39,7 +39,6 @@
             <div class="text-group-two">
                 <div class="duration">
                     <div class="row">
-                        <p>24.28 MB</p>
                     </div>
                 </div>
             </div>

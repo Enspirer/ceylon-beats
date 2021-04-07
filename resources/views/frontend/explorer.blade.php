@@ -14,6 +14,7 @@
 
 
 
+
         <div id="demo">
             <section id="explore-music">
 
@@ -24,16 +25,23 @@
                         <div class="right-result">
 
                             <div class="container">
+                                <div id="loader_track"  class="" style="position: fixed;width: 500px;height: 200px;top: 50%;left: 50%;margin-top: -100px; z-index: 100;display: none">
+                                    <div class="loader"></div>
+                                </div>
+
                                 @include('frontend.includes.filter_topbar')
                                 <div class="list-group" id="playlist">
                                     @if(count($sound_item) == 0)
                                         @include('frontend.includes.page_not_found')
                                     @else
+
                                         @foreach($sound_item as $key=>$soundItem)
                                             <div class="list-item">
                                                 @include('frontend.includes.music_item')
                                             </div>
                                         @endforeach
+
+                                            {{ $sound_item->links() }}
                                     @endif
                                 </div>
                             </div>

@@ -30,7 +30,7 @@
                     </a>
                 @endauth
 
-            <a href="#" data-toggle="modal" data-target="#exampleModalCenter{{$feature_musirc->id}}"> <i class="fa fa-cart-plus" aria-hidden="true"></i></a>
+            <a href="#" data-toggle="modal" data-target="#exampleModalCenter{{$lastestMusic->id}}"> <i class="fa fa-cart-plus" aria-hidden="true"></i></a>
             </div>
         </div>
         <div class="type-time row">

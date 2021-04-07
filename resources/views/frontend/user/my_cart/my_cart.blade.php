@@ -82,7 +82,7 @@
                 </div>
                 <div class="modal-body">
                     <div>
-                        <h2>LKR: {{number_format($cart_total,2)}}</h2>
+                        <h2>{{settings('currency')}}: {{number_format($cart_total,2)}}</h2>
                     </div>
                     <form method="post" action="https://sandbox.payhere.lk/pay/checkout">
                         <input type="hidden" name="merchant_id" value="1217011">    <!-- Replace your Merchant ID -->

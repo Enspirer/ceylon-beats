@@ -23,7 +23,7 @@ class CreateMusicProductsTable extends Migration
             $table->text('duration');
             $table->text('instrument')->nullable();
             $table->text('bmp');
-            $table->text('tempo');
+            $table->text('tempo')->nullable();
             $table->text('preview_link');
             $table->text('download_link');
             $table->text('author_name');
