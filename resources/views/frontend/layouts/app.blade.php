@@ -341,21 +341,13 @@
                      $('#soundicon').attr('class','fa fa-volume-down');
                      console.log('Rellpend');
                  }
-
                  wavesurfer.toggleMute();
              }
-
-
              function close_player() {
                  wavesurfer.stop();
                  $(".fa-stop").attr('class', 'fa fa-play');
                  $('#media-player').hide();
-
-
              }
-
-
-
              function backwordFunction() {
                  wavesurfer.skipBackward()
              }
@@ -391,15 +383,7 @@
                 fillParent: false,
                 minPxPerSec: 13
             });
-
-
             document.addEventListener('DOMContentLoaded', function() {
-
-
-
-
-
-
                 // Toggle play/pause text
                 wavesurfer.on('play', function() {
                     document.querySelector('#play').style.display = 'none';

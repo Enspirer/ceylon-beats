@@ -71,7 +71,7 @@ class HomeController extends Controller
 
         $details = self::check_chart_exssiting($request->music_item_id);
 
-        if($details == 'yes')
+        if($details == null)
         {
             Cart::add($request->music_item_id, $request->music_name, $request->price_details, 1, [
                 'license_name' => $request->license_name,
