@@ -35,11 +35,11 @@
                                 </div>
                                 <div class="form-group">
                                     <label>Password</label>
-                                    <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="●●●●●●●●●">
+                                    <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Enter your Password">
                                 </div>
                                 <div class="form-group">
                                     <label>Password Confirmation</label>
-                                    <input type="password" name="password_confirmation" class="form-control" id="exampleInputPassword1" placeholder="●●●●●●●●●">
+                                    <input type="password" name="password_confirmation" class="form-control" id="exampleInputPassword1" placeholder="Confirm your password">
                                 </div>
 
 
