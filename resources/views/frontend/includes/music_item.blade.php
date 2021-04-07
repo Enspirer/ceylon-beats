@@ -22,7 +22,7 @@
             <div class="duration">
                 <div class="row">
                     <p>{{$soundItem->genres_id}}</p>
-                    <h6>128</h6>
+                    <h6>{{$soundItem->bmp}}</h6>
                 </div>
             </div>
         </div>

@@ -35,7 +35,6 @@
                 <div class="duration">
                     <div class="row">
                         <p style="padding-bottom:10px; ">{{$favoriteDetail['genres']}}</p>
-                        <p>24.28 MB</p>
                     </div>
                 </div>
             </div>
