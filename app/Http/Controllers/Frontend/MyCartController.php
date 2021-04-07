@@ -16,6 +16,12 @@ class MyCartController extends Controller
         return view('frontend.user.my_cart.my_cart');
     }
 
+
+    public function not_working()
+    {
+        return view('frontend.error_report.purchase_error');
+    }
+
     public function checkout_finish()
     {
 

@@ -87,8 +87,8 @@
                     <form method="post" action="https://sandbox.payhere.lk/pay/checkout">
                         <input type="hidden" name="merchant_id" value="1217011">    <!-- Replace your Merchant ID -->
                         <input type="hidden" name="return_url" value="{{route('frontend.user.checkout_finish')}}">
-                        <input type="hidden" name="cancel_url" value="http://sample.com/cancel">
-                        <input type="hidden" name="notify_url" value="http://sample.com/notify">
+                        <input type="hidden" name="cancel_url" value="{{route('frontend.user.purchase.not_working')}}">
+                        <input type="hidden" name="notify_url" value="{{url('/')}}">
                         <input type="hidden" name="order_id" value="ItemNo12345">
                         <input type="hidden" name="items" value="AudioMusic"><br>
                         <input type="hidden" name="currency" value="USD">

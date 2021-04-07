@@ -56,5 +56,9 @@ Route::group(['middleware' => ['auth', 'password_expires']], function () {
 
         // User Profile Specific
         Route::patch('profile/update', [ProfileController::class, 'update'])->name('profile.update');
+
+
+        Route::get('purchase_error', [MyCartController::class, 'not_working'])->name('purchase.not_working');
+
     });
 });
