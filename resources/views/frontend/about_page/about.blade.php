@@ -42,7 +42,7 @@
             </div>
             <div class="col-md-7">
                 <img
-                    src="assets/image/Mask Group 22@2x.png"
+                src="{{url('/ceylon_beats_theme/assets/image/Mask Group 22@2x.png')}}"
                     alt=""
                     data-animscroll="fade-left"
                 />
