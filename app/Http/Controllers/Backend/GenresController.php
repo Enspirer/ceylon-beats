@@ -43,6 +43,13 @@ class GenresController extends Controller
     {
         $genres = Generes::all();
         return Datatables::of($genres)
+            ->editColumn('status',function ($row){
+                if($row->status  == 1){
+                    return 'Enabled';
+                }else{
+                    return 'Disabled';
+                }
+            })
             ->addColumn('action', function($row){
                 $btn1 = '<a href="'.route('admin.genres.edit',$row->id).'" class="edit btn btn-primary btn-sm"><i class="fa fa-edit"></i> Edit </a>';
                 $btn2 = ' <a href="'.route('admin.genres.delete',$row->id).'" class="edit btn btn-danger btn-sm"><i class="fa fa-trash"></i> Trash </a>';

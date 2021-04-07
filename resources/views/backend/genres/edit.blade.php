@@ -11,7 +11,7 @@
                 <div class="row no-gutters row-bordered row-border-light">
                     <div class="col-md-3 pt-0">
                         <div class="list-group list-group-flush account-settings-links">
-                            <a class="list-group-item list-group-item-action active" data-toggle="list" href="#account-general">License Details</a>
+                            <a class="list-group-item list-group-item-action active" data-toggle="list" href="#account-general">Genres Details</a>
                         </div>
                     </div>
                     <div class="col-md-9">
@@ -26,7 +26,7 @@
 
                                 <div class="form-group">
                                     <label>Description</label>
-                                    <textarea type="text" class="form-control" name="description" rows="10" required>{{$genres->description}}</textarea>
+                                    <textarea type="text" class="form-control" name="description" rows="10">{{$genres->description}}</textarea>
                                 </div>
 
                                 <div class="form-group">
