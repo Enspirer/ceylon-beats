@@ -1,6 +1,9 @@
-<div class="media-player" id="media-player">
-    <div id="player">
-        <div id="waveform" style="height: 120px;">
+
+
+<div class="media-player" id="media-player" style="height: 200px;">
+    <button onclick="close_player()" class="btn btn-primary pull-right" style="background: black;padding: 0px;margin-right: 10px;padding: 2px;padding-right: 11px;padding-left: 10px;border-color: #e9ba1f;color: #e9ba1f;">X</button>
+    <div id="player" style="margin-top: 30px;">
+        <div id="waveform" style="height: 85px;">
             <div class="progress-striped active" id="progress-bar">
                 <div class="progress-bar progress-bar-info bg-success"></div>
             </div>
