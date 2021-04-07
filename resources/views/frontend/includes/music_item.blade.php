@@ -21,8 +21,9 @@
             </div>
             <div class="duration">
                 <div class="row">
-                    <p>{{$soundItem->genres_id}}</p>
-                    <h6>{{$soundItem->bmp}}</h6>
+                    <p>Genres:</p>
+                    <h6>{{$soundItem->genres_id}}</h6>
+
                 </div>
             </div>
         </div>
