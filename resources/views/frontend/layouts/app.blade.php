@@ -343,6 +343,7 @@
                  }
                  wavesurfer.toggleMute();
              }
+
              function close_player() {
                  wavesurfer.stop();
                  $(".fa-stop").attr('class', 'fa fa-play');
@@ -388,8 +389,11 @@
                 wavesurfer.on('play', function() {
                     document.querySelector('#play').style.display = 'none';
                     document.querySelector('#pause').style.display = '';
+                    console.log( 'loading' );
                     $('#playerduration').text(formatTime(wavesurfer.getDuration()));
                     $('#play_button').hide();
+
+                    console.log( 'completed_loading' );
                     $('#pause_button').show();
                     $('#media-player').show();
 //                    getCurrentTime()
@@ -477,6 +481,7 @@
                 wavesurfer.on('finish', function() {
                     setCurrentSong((currentTrack + 1) % links.length);
                 });
+
                 // Load the first track
             });
         </script>
