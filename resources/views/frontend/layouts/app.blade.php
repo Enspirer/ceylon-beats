@@ -550,6 +550,76 @@
         @include('includes.partials.ga')
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+
+
+
+
+        <script>
+      $(document).ready(function () {
+        $(".genres-title").click(function () {
+          $(".collapse").collapse("toggle");
+          if ($("#colapsiconmine").hasClass("d-none")) {
+            $("#colapsiconplus").addClass("d-none");
+            $("#colapsiconmine").removeClass("d-none");
+          } else {
+            $("#colapsiconplus").removeClass("d-none");
+            $("#colapsiconmine").addClass("d-none");
+          }
+        });
+      });
+    </script>
+
+
+<script>
+  $(document).ready(function () {
+    $(".genres-title2").click(function () {
+      $(".collapse").collapse("toggle");
+      if ($("#colapsiconmine").hasClass("d-none")) {
+        $("#colapsiconplus2").addClass("d-none");
+        $("#colapsiconmine2").removeClass("d-none");
+      } else {
+        $("#colapsiconplus2").removeClass("d-none");
+        $("#colapsiconmine2").addClass("d-none");
+      }
+    });
+  });
+</script>
+
+<script>
+
+const pageHeader = document.querySelector(".page-header");
+const openMobMenu = document.querySelector(".open-mobile-menu");
+const closeMobMenu = document.querySelector(".close-mobile-menu");
+const topMenuWrapper = document.querySelector(".top-menu-wrapper");
+const isVisible = "is-visible";
+const showOffCanvas = "show-offcanvas";
+const noTransition = "no-transition";
+let resize;
+
+// Opening Mobile Menu
+openMobMenu.addEventListener("click", () => {
+  topMenuWrapper.classList.add(showOffCanvas);
+});
+
+// Closing Mobile Menu
+closeMobMenu.addEventListener("click", () => {
+  topMenuWrapper.classList.remove(showOffCanvas);
+});
+
+// Resizing Screen
+window.addEventListener("resize", () => {
+  pageHeader.querySelectorAll("*").forEach(function(el) {
+    el.classList.add(noTransition);
+  });
+  clearTimeout(resize);
+  resize = setTimeout(resizingComplete, 300);
+});
+
+function resizingComplete() {
+  pageHeader.querySelectorAll("*").forEach(function(el) {
+    el.classList.remove(noTransition);
+  });
+}</script>
     </body>
 </html>
 

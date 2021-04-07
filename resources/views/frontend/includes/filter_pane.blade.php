@@ -22,56 +22,61 @@
             <div class="row d-flex justify-content-between">
                 <p>Genres</p>
                 <a href="">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="22" viewBox="0 0 16 2">
+                    <svg id="colapsiconmine" class="d-none" xmlns="http://www.w3.org/2000/svg" width="16" height="22" viewBox="0 0 16 2">
                         <g id="Group_59" data-name="Group 59" transform="translate(-321.5 -157.5)">
                             <line id="Line_4" data-name="Line 4" x2="16" transform="translate(321.5 158.5)" fill="none" stroke="#707070" stroke-width="2"></line>
                         </g>
                     </svg>
+
+                    <svg id="colapsiconplus" id="Component_1_1" data-name="Component 1 – 1" xmlns="http://www.w3.org/2000/svg" width="16" height="36" viewBox="0 0 16 16">
+                        <line id="Line_4" data-name="Line 4" x2="16" transform="translate(0 8)" fill="none" stroke="#707070" stroke-width="2" />
+                        <line id="Line_5" data-name="Line 5" x2="16" transform="translate(8) rotate(90)" fill="none" stroke="#707070" stroke-width="2" />
+                    </svg>
                 </a>
             </div>
-            <div class="genres-content">
-            @foreach($getGenres as $genre)
+            <div class="genres-content collapse">
+                @foreach($getGenres as $genre)
                 @if($genres_name == $genre->name)
-                        <div class="genres-item" style="padding-bottom: 10px;">
-                            <div class="row d-flex justify-content-between">
-                                <a href="{{route('frontend.explorer',[$genre->name,'author_name','duration','price','music_name'])}}">
-                                    <div class="row form-check">
-                                        <div class="flip">
-                                            <div class="front"></div>
-                                            <div class="back">
-                                                <svg width="15" height="17" viewBox="1 0 15 29">
-                                                    <path d="M2 8.5L6 12.5L14 1.5"></path>
-                                                </svg>
-                                            </div>
-                                        </div>
-
-                                        <p class="form-check-label" for="exampleCheck1" style="color: #e9ba1f;">{{$genre->name}}</p>
+                <div class="genres-item" style="padding-bottom: 10px;">
+                    <div class="row d-flex justify-content-between">
+                        <a href="{{route('frontend.explorer',[$genre->name,'author_name','duration','price','music_name'])}}">
+                            <div class="row form-check">
+                                <div class="flip">
+                                    <div class="front"></div>
+                                    <div class="back">
+                                        <svg width="15" height="17" viewBox="1 0 15 29">
+                                            <path d="M2 8.5L6 12.5L14 1.5"></path>
+                                        </svg>
                                     </div>
-                                </a>
+                                </div>
+
+                                <p class="form-check-label" for="exampleCheck1" style="color: #e9ba1f;">{{$genre->name}}</p>
                             </div>
-                        </div>
+                        </a>
+                    </div>
+                </div>
                 @else
-                        <div class="genres-item" style="padding-bottom: 10px;">
-                            <div class="row d-flex justify-content-between">
-                                <a href="{{route('frontend.explorer',[$genre->name,'author_name','duration','price','music_name'])}}">
-                                    <div class="row form-check">
-                                        <div class="flip">
-                                            <div class="front"></div>
-                                            <div class="back">
-                                                <svg width="15" height="17" viewBox="1 0 15 29">
-                                                    <path d="M2 8.5L6 12.5L14 1.5"></path>
-                                                </svg>
-                                            </div>
-                                        </div>
-
-                                        <p class="form-check-label" for="exampleCheck1">{{$genre->name}}</p>
+                <div class="genres-item" style="padding-bottom: 10px;">
+                    <div class="row d-flex justify-content-between">
+                        <a href="{{route('frontend.explorer',[$genre->name,'author_name','duration','price','music_name'])}}">
+                            <div class="row form-check">
+                                <div class="flip">
+                                    <div class="front"></div>
+                                    <div class="back">
+                                        <svg width="15" height="17" viewBox="1 0 15 29">
+                                            <path d="M2 8.5L6 12.5L14 1.5"></path>
+                                        </svg>
                                     </div>
-                                </a>
+                                </div>
+
+                                <p class="form-check-label" for="exampleCheck1">{{$genre->name}}</p>
                             </div>
-                        </div>
+                        </a>
+                    </div>
+                </div>
                 @endif
 
-            @endforeach
+                @endforeach
             </div>
         </div>
     </div>

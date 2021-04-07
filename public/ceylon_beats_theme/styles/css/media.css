@@ -257,6 +257,11 @@
   #about-section #equipments h1 {
     line-height: 1 !important;
   }
+  #explore-music .row-mob-filter {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
   #explore-music .left-filter {
     display: none;
   }
