@@ -32,7 +32,7 @@
                                     @foreach($feature_music as $feature_musirc)
                                         @include('frontend.home_page.includes.music_item')
                                     @endforeach
-                                @endiff
+                                @endif
 
                             </div>
                             <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
