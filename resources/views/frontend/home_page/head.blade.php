@@ -26,9 +26,14 @@
                         <div class="col-md-1"></div>
                         <div class="col-swiper-container col-md-10 swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events" style="overflow: hidden">
                             <div class="swiper-wrapper" id="swiper-wrapper-c8e8c2212346de109" aria-live="polite" style="transform: translate3d(0px, 0px, 0px);">
-                                @foreach($feature_music as $feature_musirc)
-                                    @include('frontend.home_page.includes.music_item')
-                                @endforeach
+                                @if(count($feature_music) == 0)
+
+                                @else
+                                    @foreach($feature_music as $feature_musirc)
+                                        @include('frontend.home_page.includes.music_item')
+                                    @endforeach
+                                @endiff
+
                             </div>
                             <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
                         </div>
@@ -50,10 +55,14 @@
                     </div>
                     <div class="new-release-container">
                         <div class="row">
-                            @foreach($latest_music as $lastestMusic)
-                                @include('frontend.includes.homepage_last_music_item_cart_dialog')
-                            @endforeach
-                        </div>
+                            @if(count($latest_music) == 0)
+
+                            @else
+                                @foreach($latest_music as $lastestMusic)
+                                    @include('frontend.includes.homepage_last_music_item_cart_dialog')
+                                @endforeach
+                            @endif
+                                                    </div>
                         <div class="btn-view-all animscroll-init" data-animscroll="fade-up">
                             <a href="{{route('frontend.explorer',['genres','author_name','duration','price','music_name'])}}" type="button" class="black">View All</a>
                         </div>
