@@ -50,10 +50,10 @@
           <label for="overlay-input" id="overlay-button"><span></span></label>
           <div id="overlay">
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Music</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="{{url('/')}}">Home</a></li>
+              <li><a href="{{route('frontend.explorer',['genres','author_name','duration','price','music_name'])}}">Music</a></li>
+              <li><a href="{{route('frontend.about_us')}}">About Us</a></li>
+              <li><a  href="{{route('frontend.contact')}}">Contact Us</a></li>
             </ul>
           </div>
         </div>

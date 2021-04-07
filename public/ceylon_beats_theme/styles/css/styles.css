@@ -1075,6 +1075,10 @@ footer p {
   letter-spacing: 0px;
   color: #1d1d1d;
   margin: 7px 0px;
+  width: 140px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 #head-section .mask .music .container .swiper-container .swiper-wrapper .swiper-slide .bottum-details .type-time p {
@@ -1180,6 +1184,10 @@ footer p {
   letter-spacing: 0px;
   color: #1d1d1d;
   margin-right: 7px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 130px;
 }
 
 #head-section .mask .music .container .new-release .new-release-container .row .player-margin .player .row a {
@@ -1205,6 +1213,13 @@ footer p {
   font: normal normal normal 14px/18px Lora;
   letter-spacing: 0px;
   color: #8f8f8f;
+}
+
+#head-section .mask .music .container .new-release .new-release-container .row .player-margin .player .type-time .type {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 130px;
 }
 
 #head-section .mask .music .container .new-release .new-release-container .row .player-margin .player .type-time .time {
@@ -1365,6 +1380,19 @@ footer p {
   letter-spacing: 0px;
   margin-left: 30px;
   color: #1d1d1d;
+}
+
+#popular-search .customize .middle-container .right-icon .row-btn-home-bottum h1 {
+  line-height: 1;
+  margin-right: 20px;
+}
+
+#popular-search .customize .middle-container .right-icon .row-btn-home-bottum a {
+  border: 1px solid #1d1d1d;
+  line-height: 1;
+  margin: 0;
+  color: #1d1d1d;
+  padding: 11px 30px;
 }
 
 #popular-search h1 {
@@ -1768,6 +1796,7 @@ footer p {
 }
 
 #explore-music .mask .left-filter .genres .genres-title {
+  cursor: pointer;
   padding-bottom: 10px;
 }
 
@@ -2036,7 +2065,6 @@ footer p {
 
 #explore-music .mask .right-result .container .top-row .search-bar form .input-group i {
   position: absolute;
-  z-index: 22;
   left: 12px;
   top: 6px;
 }
@@ -2127,6 +2155,19 @@ footer p {
   color: #000;
 }
 
+#explore-music .mask .right-result .container .row-mob-filter {
+  padding: 0 0 60px 0;
+}
+
+#explore-music .mask .right-result .container .row-mob-filter .row-mob-filter-btn {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
 #explore-music .mask .right-result .container .list-item {
   height: 122px;
   width: 100%;
@@ -2210,6 +2251,11 @@ footer p {
 
 #explore-music .mask .right-result .container .list-item .row .text-group-three .row a {
   margin: 0 8px;
+}
+
+#explore-music .mask .right-result .container .list-item .row .text-group-three i {
+  color: #b9b9b9;
+  font-size: 20px;
 }
 
 #explore-music .mask .right-result .container .list-item .row .text-group-four {

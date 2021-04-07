@@ -158,6 +158,13 @@
   #popular-search .middle-container .right-icon p {
     font-size: 14px !important;
   }
+  #popular-search .middle-container .right-icon .row-btn-home-bottum {
+    margin-top: 10px !important;
+  }
+  #popular-search .middle-container .right-icon .row-btn-home-bottum a {
+    width: 100%;
+    text-align: center;
+  }
   #popular-search h1 {
     margin-top: 40px !important;
   }
@@ -249,6 +256,55 @@
   }
   #about-section #equipments h1 {
     line-height: 1 !important;
+  }
+  #explore-music .left-filter {
+    display: none;
+  }
+  #explore-music .right-result {
+    width: 100% !important;
+    padding: 10px !important;
+  }
+  #explore-music .right-result .curency {
+    display: none;
+  }
+  #explore-music .right-result .search-bar {
+    width: 100%;
+  }
+  #explore-music .right-result .list-item .fa-play {
+    width: 69px !important;
+    height: 69px !important;
+    padding: 13px !important;
+  }
+  #explore-music .right-result .list-item .text-group-one {
+    margin-top: 35px;
+    margin-left: 20px;
+  }
+  #explore-music .right-result .list-item .text-group-one h6 {
+    font-size: 14px !important;
+    line-height: 1;
+    margin: 0;
+  }
+  #explore-music .right-result .list-item .text-group-one p {
+    font-size: 12px !important;
+  }
+  #explore-music .right-result .list-item #text-group-two {
+    display: none;
+  }
+  #explore-music .right-result .list-item .text-group-three {
+    margin-top: 35px;
+    margin-left: 10px;
+  }
+  #explore-music .right-result .list-item .text-group-three i {
+    font-size: 14px !important;
+  }
+  #explore-music .right-result .list-item .text-group-three .cart-mob {
+    display: block !important;
+  }
+  #explore-music .right-result .list-item #text-group-four {
+    display: none;
+  }
+  #explore-music .right-result .top-row {
+    padding-bottom: 30px !important;
   }
 }
 /*# sourceMappingURL=media.css.map */
