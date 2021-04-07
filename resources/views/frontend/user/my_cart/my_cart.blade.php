@@ -26,7 +26,14 @@
                             <div class="space-double"></div>
 
                             @if(count($cartDetails) == 0)
-                                @include('frontend.user.my_cart.cart_item not_found')
+                                @include('frontend.user.my_cart.cart_item not_found',
+                                [
+                                    'error_title'=>'Cart is Empty',
+                                    'error_description'=>'Go to our music section for find the best tracks for your next projectt',
+                                   'error_button_link'=> route('frontend.explorer',['genres','author_name','duration','price','music_name']),
+                                    'error_button_name'=>'Go to Music',
+                                ])
+
                             @else
                                 <form action="" method="post">
                                     {{csrf_field()}}

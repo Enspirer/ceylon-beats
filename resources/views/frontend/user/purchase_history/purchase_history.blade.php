@@ -12,38 +12,58 @@
                 @include('frontend.user.includes.sidebar')
                 <div class="right-result">
                     <div class="container">
-                        <h2>Purchase History</h2>
-                        <div class="space"></div>
-                        <div class="table-dashboard">
-                            <table class="table table-borderless">
-                                <thead>
-                                <tr>
-                                    <th scope="col">Invoice ID</th>
-                                    <th scope="col">Total</th>
-                                    <th scope="col">Purchased Date</th>
-                                    <th scope="col">Status</th>
-                                    <th scope="col">Action</th>
-                                </tr>
-                                </thead>
-                                <tbody>
+                        @if(count($invoice_detaials) == 0)
+                            <h2>Purchase History</h2>
+                            <div class="space"></div>
+                            @include('frontend.user.my_cart.cart_item not_found',
+                           [
+                               'error_title'=>'Hmmm, Seems no purchases yet',
+                               'error_description'=>'Go to our music section for find the best tracks for your next projectt',
+                               'error_button_link'=> route('frontend.explorer',['genres','author_name','duration','price','music_name']),
+                               'error_button_name'=>'Go to Music',
+                           ])
 
-                                @foreach($invoice_detaials as $invoice_detail)
-                                    <tr  data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                        <th scope="row">{{$invoice_detail['invoice_id']}}</th>
-                                        <td>{{settings('currency')}} {{number_format($invoice_detail['total'],2)}}</td>
-                                        <td>{{$invoice_detail['date']}}</td>
-                                        <td>{{$invoice_detail['status']}}</td>
-                                        <td>
-                                            <a href="{{route('frontend.user.view_invoice',$invoice_detail['invoice_id'])}}" target="_blank" class="btn btn-primary" >View Invoice</a>
-                                        </td>
+                        @else
+                            <h2>Purchase History</h2>
+                            <div class="space"></div>
+                            <div class="table-dashboard">
+                                <table class="table table-borderless">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">Invoice ID</th>
+                                        <th scope="col">Total</th>
+                                        <th scope="col">Purchased Date</th>
+                                        <th scope="col">Status</th>
+                                        <th scope="col">Action</th>
                                     </tr>
+                                    </thead>
+                                    <tbody>
 
-                                @endforeach
 
 
-                                </tbody>
-                            </table>
-                        </div>
+
+
+
+                                    @foreach($invoice_detaials as $invoice_detail)
+                                        <tr  data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                            <th scope="row">{{$invoice_detail['invoice_id']}}</th>
+                                            <td>{{settings('currency')}} {{number_format($invoice_detail['total'],2)}}</td>
+                                            <td>{{$invoice_detail['date']}}</td>
+                                            <td>{{$invoice_detail['status']}}</td>
+                                            <td>
+                                                <a href="{{route('frontend.user.view_invoice',$invoice_detail['invoice_id'])}}" target="_blank" class="btn btn-primary" >View Invoice</a>
+                                            </td>
+                                        </tr>
+
+                                    @endforeach
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        @endif
+
+
                     </div>
                 </div>
             </div>
