@@ -41,7 +41,7 @@ class ExplorerController extends Controller
 
 
         return view('frontend.explorer',[
-            'sound_item' => $sounditems->get(),
+            'sound_item' => $sounditems->paginate(10),
             'getGenres' => $getGenres,
             'genres_name' => $genres,
             'author_name' => $author_name,

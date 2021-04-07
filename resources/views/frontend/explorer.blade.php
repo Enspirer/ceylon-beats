@@ -40,6 +40,8 @@
                                                 @include('frontend.includes.music_item')
                                             </div>
                                         @endforeach
+
+                                            {{ $sound_item->links() }}
                                     @endif
                                 </div>
                             </div>
