@@ -1562,7 +1562,7 @@ footer p {
   color: #333333;
 }
 
-#login-section .container .login-form-body .row .left-form-login .form-login .row p {
+#login-section .container .login-form-body .row .left-form-login .form-login .row a {
   font: normal normal normal 13px/17px Lora;
   letter-spacing: 0.2px;
   color: #9e2755;

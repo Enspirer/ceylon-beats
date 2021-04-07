@@ -48,19 +48,19 @@
                         <p>Get access to thousands of <br> beats instantly</p>
                         <div class="row">
                             <div class="image col-md-3 animscroll-init animscroll-animate" data-animscroll="fade-up" data-animscroll-delay="100">
-                                <img src="{{url('ceylon_beats_theme/assets/image/Mask Group 2@2x.png')}}" alt="">
+                                <img src="{{url('ceylon_beats_theme/assets/image/thumbnail-01.jpg')}}" alt="">
                             </div>
                             <div class="image col-md-3 animscroll-init animscroll-animate" data-animscroll="fade-up" data-animscroll-delay="200">
-                                <img src="{{url('ceylon_beats_theme/assets/image/Mask Group 3@2x.png')}}" alt="">
+                                <img src="{{url('ceylon_beats_theme/assets/image/thumbnail-02.jpg')}}" alt="">
                             </div>
                             <div class="image col-md-3 animscroll-init animscroll-animate" data-animscroll="fade-up" data-animscroll-delay="300">
-                                <img src="{{url('ceylon_beats_theme/assets/image/Mask Group 4@2x.png')}}" alt="">
+                                <img src="{{url('ceylon_beats_theme/assets/image/thumbnail-03.jpg')}}" alt="">
                             </div>
                             <div class="image col-md-3 animscroll-init animscroll-animate" data-animscroll="fade-up" data-animscroll-delay="400">
-                                <img src="{{url('ceylon_beats_theme/assets/image/Mask Group 5@2x.png')}}" alt="">
+                                <img src="{{url('ceylon_beats_theme/assets/image/thumbnail-04.jpg')}}" alt="">
                             </div>
                         </div>
-
+                        <p>and more...</p>
                     </div>
                 </div>
             </div>
