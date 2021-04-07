@@ -70,7 +70,7 @@
                 {{csrf_field()}}
                 <div class="modal-content">
                     <h1>Select Your Licenses</h1>
-                    <select class="form-control" name="license_name" id="licesensect{{$lastestMusicL->id}}" onchange="selectPackage('{{$lastestMusicL->id}}','licesensect{{$lastestMusicL->id}}','inpack_price{{$lastestMusicL->id}}')">
+                    <select class="form-control" name="license_name" id="licesensectr{{$lastestMusicL->id}}" onchange="selectPackage('{{$lastestMusicL->id}}','licesensectr{{$lastestMusicL->id}}','inpack_pricer{{$lastestMusicL->id}}')">
                         <option selected>Select License</option>
                         @foreach(json_decode($lastestMusicL->price) as  $priceranger)
                             <option value="{{$priceranger->license_name}}">{{$priceranger->license_name}}</option>
@@ -98,7 +98,7 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div style="font-size: 19px;font-weight: 700;color: wheat;">
-                                                {{settings('currency')}} <span id="inpack_price{{$lastestMusicL->id}}">0</span>.00
+                                                {{settings('currency')}} <span id="inpack_pricer{{$lastestMusicL->id}}">0</span>.00
                                             </div>
                                         </div>
                                     </div>
