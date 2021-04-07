@@ -8,15 +8,18 @@
                     Ceylon Beatz
                 </h1>
                 <p data-animscroll="fade-up" data-animscroll-delay="200">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                    aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                    justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-                    takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
-                    dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-                    eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-                    sed diam voluptua. At vero eos et accusam et justo duo dolores
-                    et
+                We are a purposeful endeavour by the brilliant minds of J &amp; S Studio; a
+premium studio &amp; recording facility provided for the aspiring musicians of Sri
+Lanka.
+Our team consist of prolific musicians, composers &amp; producers with a
+combined experience of over 15 Years thriving in the industry. Ceylon Beatz
+is designed to create a comprehensive platform that allows you to purchase
+Original Music for any form of requirement.
+Users can customize all available tracks within the platform whilst can
+produce new music for any form of media. With the help of our talented
+studio team, we provide Music for Movies, TV shows, Jingles and Melodies
+based on your requirement. Rock, Pop, RnB, Classical, Metal everything in
+between; We can provide for you.
                 </p>
             </div>
         </div>

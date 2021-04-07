@@ -183,6 +183,7 @@ body {
 
 .navbar-top .container .menu-mob-logo-center .default-logo {
   position: absolute;
+  z-index: 2;
   width: 130px;
   top: -15px;
 }

@@ -6,15 +6,14 @@
                 <h2>Feel</h2>
                 <h1>The Difference</h1>
                 <p>
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-                    erat, sed diam voluptua. At vero eos et accusam et justo duo
-                    dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                    sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-                    amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                    invidunt ut labore et dolore magna aliquyam erat, sed diam
-                    voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                    Stet clita kasd gubergren, no sea takimata sanctus est
+                Profoundly Passionate, Conditioned, Expert Sri Lankan Musicians creating
+the Sounds of the World.
+The International Music Industry has always shown a gap of contribution by
+the underrated Sri Lankan Musicians. We are set on bridging that gap
+through incredible music of all genres. From Incredible Guitar Solos to
+elegant drum fills, we are in the business of Providing Music for Everyone.
+We encourage, Sri Lankan Musicians to flourish in the Global Music Scene
+with paramount support and guidance.
                 </p>
                 <a href="{{route('frontend.about_us')}}" type="button">READ MORE ABOUT J&S STUDIOS</a>
             </div>
