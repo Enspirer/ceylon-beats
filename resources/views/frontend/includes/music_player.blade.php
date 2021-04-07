@@ -43,7 +43,6 @@
                                 <span>/</span>
                                 <span id="playerduration">4 . 24</span>
                             </h1>
-                            <p>128 BPM</p>
                         </div>
                         <div class="icon">
                             <div class="row">

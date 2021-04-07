@@ -36,6 +36,10 @@
         * {
             box-sizing: border-box;
         }
+        .page-link{
+            background: #660035;
+            color: white;
+        }
 
         body {
             font: 16px Arial;

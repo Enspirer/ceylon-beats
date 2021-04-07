@@ -1,9 +1,13 @@
-
+<audio id="myAudioq{{$lastestMusic->id}}">
+    <source src="{{url('files/preview_files/'.$lastestMusic->preview_link)}}" type="audio/ogg">
+    <source src="{{url('files/preview_files/'.$lastestMusic->preview_link)}}" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
 
 <div class="player-margin col-lg-4 col-md-6 col-12 animscroll-init" data-animscroll="fade-up">
     <div class="player">
         <div class="play-button">
-            <a onclick="playAudio('myAudio{{$lastestMusic->id}}','play_iconse{{$lastestMusic->id}}')">
+            <a onclick="playAudio('myAudioq{{$lastestMusic->id}}','play_iconse{{$lastestMusic->id}}')">
                 <div class="play-icon">
                     <i id="play_iconse{{$lastestMusic->id}}" class="fa fa-play" style="font-size: 54px;color: white;"></i>
                 </div>
@@ -30,7 +34,7 @@
                     </a>
                 @endauth
 
-            <a href="#" data-toggle="modal" data-target="#exampleModalCenter{{$lastestMusic->id}}"> <i class="fa fa-cart-plus" aria-hidden="true"></i></a>
+            <a href="#" data-toggle="modal" data-target="#exampleModalCenterTM{{$lastestMusic->id}}"> <i class="fa fa-cart-plus" aria-hidden="true"></i></a>
             </div>
         </div>
         <div class="type-time row">

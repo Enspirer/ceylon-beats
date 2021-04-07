@@ -134,6 +134,7 @@
         getallicon.attr('class','fa fa-play');
         console.log(getallicon);
 //            x.play();
+        console.log(x);
         if (x.duration > 0 && !x.paused) {
             var icondelemts = document.getElementById(icon);
             icondelemts.className = 'fa fa-play';

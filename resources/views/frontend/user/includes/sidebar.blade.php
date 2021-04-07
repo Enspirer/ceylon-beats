@@ -20,7 +20,7 @@
                 <div class="col-md-2">
                     <i class="fa fa-play"></i>
                 </div>
-                <div class="col-md-9"><h5>Purchased Musics</h5></div>
+                <div class="col-md-9"><h5>Purchased Music</h5></div>
             </div>
             </a>
 

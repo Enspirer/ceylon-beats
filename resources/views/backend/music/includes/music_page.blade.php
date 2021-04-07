@@ -38,7 +38,7 @@
                 <div class="form-group">
                     <p>License name: <b>{{$liceseDetail->license_name}}</b></p>
                     <label>Price</label>
-                    <input type="number" class="form-control" name="price[]" value="" required>
+                    <input type="number" class="form-control" name="price[]" max="100000" min="0" value="" required>
                     <input type="hidden" class="" value="{{$liceseDetail->license_name}}" name="licese_name[]" required>
                     <input type="hidden" class="" value="{{$liceseDetail->id}}" name="licese_id[]" required>
                 </div>
