@@ -13,7 +13,7 @@
 
 <div class="form-group">
     <label>Tag</label>
-    <input type="text" class="form-control" name="tag" required>
+    <input type="text" class="form-control" name="tag">
 </div>
 
 <div class="form-group">
@@ -33,6 +33,6 @@
 
 <div class="form-group">
     <label>Instrument</label>
-    <input type="text" class="form-control" name="instrument" required>
+    <input type="text" class="form-control" name="instrument">
 </div>
 
