@@ -18,8 +18,28 @@
                 </div>
                 <div class="col-5">
                     <div class="row">
-                        <i class="fa fa-download" aria-hidden="true"></i>
-                        <i class="fa fa-heart" aria-hidden="true"></i>
+                        <a href="{{url('files/preview_files/'.$soundItem->preview_link)}}" download>
+                            <i class="fa fa-download" aria-hidden="true"></i>
+                        </a>
+
+                        @auth()
+                        @if(\App\Models\Favorite::where('music_id',$soundItem->id)->first() != null)
+                            <a onclick="add_favorites('{{$soundItem->id}}','favorite_icon{{$soundItem->id}}')">
+                                <i id="favorite_icon{{$soundItem->id}}" class="fa fa-heart" aria-hidden="true" style="color: red;"></i>
+                            </a>
+                        @else
+                            <a onclick="add_favorites('{{$soundItem->id}}','favorite_icon{{$soundItem->id}}')">
+                                <i id="favorite_icon{{$soundItem->id}}" class="fa fa-heart" aria-hidden="true" style=""></i>
+                            </a>
+                        @endif
+                        @else
+                            <a href="{{route('frontend.auth.login')}}"> <i class="fa fa-heart" aria-hidden="true"></i></a>
+                        @endauth
+
+
+
+
+
                         <i class="fa fa-cart-plus" aria-hidden="true" data-toggle="modal" data-target="#exampleModalCenter{{$soundItem->id}}"></i>
                     </div>
                 </div>
