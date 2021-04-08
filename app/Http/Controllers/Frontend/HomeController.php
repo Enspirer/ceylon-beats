@@ -18,7 +18,6 @@ class HomeController extends Controller
     public function index()
     {
 
-
         $infatore = MusicProducts::where('is_features',1)
             ->get();
 
