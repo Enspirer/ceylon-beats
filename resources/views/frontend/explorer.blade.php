@@ -35,7 +35,7 @@
                                         @include('frontend.includes.page_not_found')
                                     @else
 
-                                        @if(request()->header('sec-ch-ua-mobile') == '?1')
+                                        @if(is_mobile(request()->header('user-agent')) != false )
                                             @foreach($sound_item as $key=>$soundItem)
 
                                                 @include('frontend.home_page.includes.music_item_mobile')
