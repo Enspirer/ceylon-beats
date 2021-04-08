@@ -11,6 +11,7 @@
 <input type="hidden" name="license_name[]" value="{{$cartDetail->attributes->license_name}}">
 <input type="hidden" name="price[]" value="{{number_format($cartDetail->price,2)}}">
 
+@if(is_mobile(request()->header('user-agent')) != true)
 <div class="list-item">
     <div class="row">
         <div class="col-md-2">
@@ -53,6 +54,35 @@
         </div>
     </div>
 </div>
+@else
+    <div class="list-item-mob-cart">
+        <div class="row m-0">
+            <div class="play-btn-mob" onclick="playAudio('myAudio{{$cartDetail->id}}','play_icon{{$cartDetail->id}}')">
+                <i id="play_icon{{$cartDetail->id}}" class="fa fa-play" aria-hidden="true"></i>
+            </div>
+            <div class="card-content-mob">
+                <div class="row">
+                    <div class="col-7">
+                        <h6>{{$cartDetail->name}}</h6>
+                        <p>{{$cartDetail->attributes->author_name}}</p>
+                    </div>
+                    <div class="col-3">
+                        <p>{{settings('currency')}} {{number_format($cartDetail->price,2)}}</p>
+                    </div>
+                    <div class="col-2">
+                        <i class="fa fa-trash" style="font-size: 14px;" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+@endif
+
+<br><br>
+
+
+
 
 @foreach($cartDetails as $cartDetail)
     <!-- Modal -->

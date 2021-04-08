@@ -138,50 +138,64 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content" style="background: #000; padding: 50px 20px">
                         <div class="container">
+                            @auth
                             <div class="row d-flex p-3">
-                                <img src="https://source.unsplash.com/user/erondu/100x100" style="
-                        width: 50px;
-                        height: 50px;
-                        object-fit: cover;
-                        border-radius: 50%;
-                      " alt=""/>
-                                <p style="padding: 20px 0">Guest Cart</p>
+                                <img src="https://source.unsplash.com/user/erondu/100x100" style=" width: 50px; height: 50px; object-fit: cover; border-radius: 50%;" alt=""/>
+                                <p style="padding: 20px 0">{{auth()->user()->first_name}} {{auth()->user()->last_name}}</p>
                             </div>
-                            <hr style="
-                      display: block;
-                      height: 1px;
-                      border: 0;
-                      border-top: 1px solid #ccc;
-                      margin: 1em 0;
-                      padding: 0;
-                    "/>
+                            @endauth
+                            <hr style=" display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;"/>
                             <div class="row d-flex p-3">
-                                <i class="fas fa-shopping-cart    "></i>
-                                <p>My Cart</p>
+                                <i class="fas fa-shopping-cart"></i>
+                                <a href="{{route('frontend.user.my_cart')}}">
+                                    <p>My Cart ({{count($cartDetails)}})</p>
+                                </a>
                             </div>
+                            @auth
                             <div class="row d-flex p-3">
-                                <i class="fa fa-history" aria-hidden="true"></i>
-                                <p>Purchased History</p>
+                                    <i class="fa fa-history" aria-hidden="true"></i>
+                                <a href="{{route('frontend.user.purchase_history')}}">
+                                    <p>Purchased History</p>
+                                </a>
                             </div>
                             <div class="row d-flex p-3">
                                 <i class="fa fa-music" aria-hidden="true"></i>
-                                <p>Purchased Music</p>
+                                <a href="{{route('frontend.user.purchased_music')}}">
+                                    <p>Purchased Music</p>
+                                </a>
                             </div>
 
                             <div class="row d-flex p-3">
                                 <i class="fa fa-star" aria-hidden="true"></i>
-                                <p>Favorite</p>
+                                <a href="{{route('frontend.user.favorite')}}">
+                                    <p>Favorite</p>
+                                </a>
                             </div>
 
                             <div class="row d-flex p-3">
                                 <i class="fa fa-cog" aria-hidden="true"></i>
+                                <a href="{{route('frontend.user.account')}}">
                                 <p>Account Settings</p>
+                                </a>
                             </div>
 
                             <div class="row d-flex p-3">
                                 <i class="fa fa-sign-out" aria-hidden="true"></i>
-                                <p>Log Out</p>
+                                <a href="{{route('frontend.auth.logout')}}">
+                                    <p>Log Out</p>
+                                </a>
                             </div>
+                            @endauth
+                            @auth
+
+                            @else
+                                <a href="{{route('frontend.auth.login')}}" class="row d-flex p-3">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                    <p>Login</p>
+                                </a>
+                            @endauth
+
+
                         </div>
                     </div>
                 </div>

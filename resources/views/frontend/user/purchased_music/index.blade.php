@@ -14,7 +14,7 @@
                     <div class="container">
                         <h2>Purchased Music</h2>
                         <div class="space"></div>
-
+x
                         @if(count($music_detaials) == 0)
                             @include('frontend.user.my_cart.cart_item not_found',
                             [
@@ -86,35 +86,63 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="table-dashboard">
-                                <table class="table table-borderless">
-                                    <thead>
-                                    <tr>
-                                        <th scope="col">ID</th>
-                                        <th scope="col">Music Name</th>
-                                        <th scope="col">Author Name</th>
-                                        <th scope="col">Genre</th>
-                                        <th scope="col">License Name</th>
-                                        <th scope="col">Download Link</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    @foreach($music_detaials as $musicdetails)
-                                        <tr>
-                                            <th scope="row">{{$musicdetails->id}}</th>
-                                            <td>{{settings('currency')}} {{$musicdetails->music_name}}</td>
-                                            <td>{{$musicdetails->author_name}}</td>
-                                            <td>{{$musicdetails->genres}}</td>
-                                            <td>{{$musicdetails->selected_license}}</td>
-                                            <td>
-                                                <a href="{{url('files/original_files',$musicdetails->download_link)}}" target="_blank" class="btn btn-primary" download>Download</a>
-                                            </td>
-                                        </tr>
-                                    @endforeach
 
-                                    </tbody>
-                                </table>
-                            </div>
+                            @if(is_mobile(request()->header('user-agent')) == true)
+                                <div class="table-dashboard">
+                                    <table class="table table-borderless">
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">Music Name</th>
+                                            <th scope="col">License</th>
+                                            <th scope="col">Link</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        @foreach($music_detaials as $musicdetails)
+                                            <tr>
+                                                <td>{{settings('currency')}} {{$musicdetails->music_name}}</td>
+                                                <td>{{$musicdetails->selected_license}}</td>
+                                                <td>
+                                                    <a href="{{url('files/original_files',$musicdetails->download_link)}}" target="_blank" class="btn btn-primary" download>Download</a>
+                                                </td>
+                                            </tr>
+                                        @endforeach
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            @else
+                                <div class="table-dashboard">
+                                    <table class="table table-borderless">
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">ID</th>
+                                            <th scope="col">Music Name</th>
+                                            <th scope="col">Author Name</th>
+                                            <th scope="col">Genre</th>
+                                            <th scope="col">License Name</th>
+                                            <th scope="col">Download Link</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        @foreach($music_detaials as $musicdetails)
+                                            <tr>
+                                                <th scope="row">{{$musicdetails->id}}</th>
+                                                <td>{{settings('currency')}} {{$musicdetails->music_name}}</td>
+                                                <td>{{$musicdetails->author_name}}</td>
+                                                <td>{{$musicdetails->genres}}</td>
+                                                <td>{{$musicdetails->selected_license}}</td>
+                                                <td>
+                                                    <a href="{{url('files/original_files',$musicdetails->download_link)}}" target="_blank" class="btn btn-primary" download>Download</a>
+                                                </td>
+                                            </tr>
+                                        @endforeach
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            @endif
+
                         @endif
 
 

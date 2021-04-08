@@ -5,7 +5,7 @@
 </audio>
 
 
-
+@if(is_mobile(request()->header('user-agent')) != true)
 <div class="list-item">
     <div class="row">
         <div class="col-md-2">
@@ -49,3 +49,29 @@
         </div>
     </div>
 </div>
+
+@else
+    <div class="list-item-mob-cart">
+        <div class="row m-0">
+            <div class="play-btn-mob" onclick="playAudio('myAudio{{$favoriteDetail['id']}}','play_icon{{$favoriteDetail['id']}}')">
+                <i id="play_icon{{$favoriteDetail['id']}}" class="fa fa-play" aria-hidden="true"></i>
+            </div>
+            <div class="card-content-mob">
+                <div class="row">
+                    <div class="col-7">
+                        <h6>{{$favoriteDetail['music_name']}}</h6>
+                        <p>{{$favoriteDetail['genres']}}</p>
+                    </div>
+
+                    <div class="col-2">
+                        <a href="{{route('frontend.user.favorite.delete',$favoriteDetail['id'])}}">
+                            <i class="fa fa-trash" style="font-size: 14px;" aria-hidden="true"></i>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br><br>
+@endif
+

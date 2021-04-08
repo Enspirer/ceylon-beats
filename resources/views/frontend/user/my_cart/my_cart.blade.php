@@ -40,6 +40,11 @@
                                     @foreach($cartDetails as $cartDetail)
                                         @include('frontend.user.my_cart.music_item')
                                     @endforeach
+
+
+
+
+
                                     <div class="row my-cart-bottum">
                                         <div class="col-md-5"></div>
                                         <div class="col-md-7">
