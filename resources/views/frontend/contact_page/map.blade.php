@@ -60,3 +60,56 @@
         </div>
     </div>
 </section>
+<section id="contact-details-mob">
+      <h1>Ceylon Beats</h1>
+      <p>A beat with Ceylon touch</p>
+      <div class="row m-0">
+        <div class="col-6">
+          <div class="row">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <p>387/C, Kalalgoda, Pannipitiya</p>
+          </div>
+          <div class="row">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <p>077 261 7424 <br />077 204 1799 <br />077 234 2664</p>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="row">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <p>jandsstudioslk@gmail.com</p>
+          </div>
+          <div class="row">
+            <i class="fa fa-globe" aria-hidden="true"></i>
+            <p>www.jnsstudios.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-details-mob-sm">
+      <h1>Ceylon Beats</h1>
+      <p>A beat with Ceylon touch</p>
+      <div class="row m-0">
+     
+          <div class="row">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <p>387/C, Kalalgoda, Pannipitiya</p>
+          </div>
+          <div class="row">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <p>077 261 7424 <br />077 204 1799 <br />077 234 2664</p>
+          </div>
+   
+   
+          <div class="row">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <p>jandsstudioslk@gmail.com</p>
+          </div>
+          <div class="row">
+            <i class="fa fa-globe" aria-hidden="true"></i>
+            <p>www.jnsstudios.com</p>
+          </div>
+
+      </div>
+    </section>
