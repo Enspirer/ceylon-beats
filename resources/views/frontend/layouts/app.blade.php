@@ -285,15 +285,32 @@
         @endauth()
 
         <script>
-            var swiper = new Swiper(".col-swiper-container", {
-                slidesPerView: 4,
-                spaceBetween: 20,
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-            });
-        </script>
+      var swiper = new Swiper(".col-swiper-container", {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          320: {
+          slidesPerView: 1,
+        },
+          480: {
+          slidesPerView: 1,
+        },
+        640: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        1024: {
+          slidesPerView: 4,
+        },
+      }
+      });
+    </script>
         <script>
             ANIMSCROLL.init({
                 easing: "ease-in-out-sine",

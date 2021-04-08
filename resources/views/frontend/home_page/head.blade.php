@@ -23,8 +23,8 @@
                 <h1 data-animscroll="fade-up" class="animscroll-init">Trending Tracks</h1>
                 <div class="swiper-container animscroll-init" data-animscroll="fade-up">
                     <div class="row">
-                        <div class="col-md-1"></div>
-                        <div class="col-swiper-container col-md-10 swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events" style="overflow: hidden">
+                        <div class="col-md-1 col-1"></div>
+                        <div class="col-swiper-container col-md-10 col-10 swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events" style="overflow: hidden">
                             <div class="swiper-wrapper" id="swiper-wrapper-c8e8c2212346de109" aria-live="polite" style="transform: translate3d(0px, 0px, 0px);">
                                 @if(count($feature_music) == 0)
 
@@ -37,7 +37,7 @@
                             </div>
                             <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
                         </div>
-                        <div class="col-md-1">
+                        <div class="col-md-1 col-1">
 
                         </div>
                     </div>
