@@ -16,6 +16,17 @@ body {
           box-sizing: border-box;
 }
 
+#mobile-modal i {
+  color: #fff;
+}
+
+#mobile-modal p {
+  font: normal normal 500 16px/27px Poppins;
+  color: #fff;
+  margin: 0 0 0 10px;
+  line-height: 1;
+}
+
 .no-transition {
   -webkit-transition: none !important;
   transition: none !important;

@@ -1,6 +1,115 @@
 <nav class="navbar-top navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <div class="curency col-2 col-md-2">
+
+    <div class="mob-user-ic col-md-2 col-2 d-none">
+          <i
+            class="fa fa-user"
+            type="button"
+            data-toggle="modal"
+            data-target="#exampleModalCenter2"
+            style="color: #fff"
+            aria-hidden="true"
+          ></i>
+        </div>
+
+      <!-- Modal -->
+      <section id="mobile-modal">
+          <div
+            class="modal fade"
+            id="exampleModalCenter2"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div
+                class="modal-content"
+                style="background: #000; padding: 50px 20px"
+              >
+                <div class="container">
+                  <div class="row d-flex p-3">
+                    <img
+                      src="https://source.unsplash.com/user/erondu/100x100"
+                      style="
+                        width: 50px;
+                        height: 50px;
+                        object-fit: cover;
+                        border-radius: 50%;
+                      "
+                      alt=""
+                    />
+                    <p style="padding: 20px 0">Guest Cart</p>
+                  </div>
+                  <hr
+                    style="
+                      display: block;
+                      height: 1px;
+                      border: 0;
+                      border-top: 1px solid #ccc;
+                      margin: 1em 0;
+                      padding: 0;
+                    "
+                  />
+                  <div class="row d-flex p-3">
+                 <i class="fas fa-shopping-cart    "></i>
+                    <p>My Cart</p>
+                  </div>
+
+                  <div class="row d-flex p-3">
+                   <i class="fa fa-history" aria-hidden="true"></i>
+                    <p>Purchased History</p>
+                  </div>
+
+                
+
+                   
+                  <div class="row d-flex p-3">
+            <i class="fa fa-music" aria-hidden="true"></i>
+                     <p>Purchased Music</p>
+                   </div>
+
+                   <div class="row d-flex p-3">
+                   <i class="fa fa-star" aria-hidden="true"></i>
+                     <p>Favorite</p>
+                   </div>
+
+                   <div class="row d-flex p-3">
+            <i class="fa fa-cog" aria-hidden="true"></i>
+                      <p>Account Settings</p>
+                    </div>
+                    
+                   <div class="row d-flex p-3">
+                    <i class="fa fa-sign-out" aria-hidden="true"></i>
+                              <p>Log Out</p>
+                            </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="curency cur-lan col-2 col-md-2">
             <div class="row">
                 <img src="{{url('/ceylon_beats_theme/assets/image/Image 15@2x.png')}}" alt="" srcset="" />
                 <select class="form-select" aria-label="Default select example">
