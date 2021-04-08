@@ -2598,6 +2598,52 @@ footer p {
   margin-right: 10px;
 }
 
+#explore-music .mask .right-result .container .list-item-mob-cart {
+  background: #141414 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 1px 10px #a5a5a540;
+          box-shadow: 0px 1px 10px #a5a5a540;
+  border-radius: 4px;
+}
+
+#explore-music .mask .right-result .container .list-item-mob-cart .play-btn-mob {
+  background: #ffc400;
+  cursor: pointer;
+  width: 70px;
+  border-radius: 4px 0 0 4px;
+}
+
+#explore-music .mask .right-result .container .list-item-mob-cart .play-btn-mob i {
+  padding: 50% 30px;
+  color: #fff;
+}
+
+#explore-music .mask .right-result .container .list-item-mob-cart .card-content-mob {
+  padding: 20px 10px;
+  width: calc(100% - 70px);
+}
+
+#explore-music .mask .right-result .container .list-item-mob-cart .card-content-mob h6 {
+  font-size: 16px;
+  color: #b9b9b9;
+  line-height: 1;
+  margin: 0;
+  font-family: lora;
+}
+
+#explore-music .mask .right-result .container .list-item-mob-cart .card-content-mob p {
+  color: #b9b9b9;
+  margin: 5px 0 0 0;
+  line-height: 1;
+  font-size: 11px;
+  font-family: lora;
+}
+
+#explore-music .mask .right-result .container .list-item-mob-cart .card-content-mob .fa {
+  text-align: right;
+  color: #b9b9b9;
+  margin-right: 10px;
+}
+
 #explore-music .mask .right-result .container .list-item {
   height: 122px;
   width: 100%;

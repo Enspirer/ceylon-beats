@@ -53,7 +53,7 @@
                                             <div class="space"></div>
                                             <div class="row bottum-button">
                                                 <a href="{{route('frontend.explorer',['genres','author_name','duration','price','music_name'])}}" class="btn-continue">Continue Browsing</a>
-                                                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Checkout Now</a>
+                                                <a href="#" class="btn-checkout" data-toggle="modal" data-target="#exampleModal">Checkout Now</a>
                                             </div>
                                         </div>
                                     </div>

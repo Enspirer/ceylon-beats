@@ -92,10 +92,13 @@
                                 <div class="col">
                                     <div class="form-group mb-0 clearfix">
 
-                                        {{ form_submit(__('labels.general.buttons.update') . ' ' . __('validation.attributes.frontend.password')) }}
+                                        <!-- {{ form_submit(__('labels.general.buttons.update') . ' ' . __('validation.attributes.frontend.password')) }} -->
                                     </div><!--form-group-->
                                 </div><!--col-->
                             </div><!--row-->
+                            <div class="row-button">
+                            <button type="submit" class="btn" >Update Password</button>
+                                </div>
                             {{ html()->form()->close() }}
 
                         </div>
