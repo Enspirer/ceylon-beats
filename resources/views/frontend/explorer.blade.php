@@ -35,18 +35,19 @@
                                         @include('frontend.includes.page_not_found')
                                     @else
 
-                                        @if(request()->header('sec-ch-ua-mobile') == '?0')
+                                        @if(request()->header('sec-ch-ua-mobile') == '?1')
+                                            @foreach($sound_item as $key=>$soundItem)
+
+                                                @include('frontend.home_page.includes.music_item_mobile')
+
+                                            @endforeach
+                                        @else
                                             @foreach($sound_item as $key=>$soundItem)
                                                 <div class="list-item">
                                                     @include('frontend.includes.music_item')
                                                 </div>
                                             @endforeach
-                                        @else
-                                            @foreach($sound_item as $key=>$soundItem)
 
-                                                    @include('frontend.home_page.includes.music_item_mobile')
-
-                                            @endforeach
                                         @endif
 
 
