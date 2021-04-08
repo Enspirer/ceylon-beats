@@ -439,6 +439,25 @@
   .contact-form-section .form {
     padding: 0;
   }
+  #login-section {
+    padding: 0;
+  }
+  #login-section h1 {
+    font-size: 22px !important;
+    margin: 0 !important;
+    line-height: 1 !important;
+  }
+  #login-section p {
+    font-size: 18px !important;
+    margin: 10px 0 0 0 !important;
+    line-height: 1 !important;
+  }
+  #login-section img {
+    margin: 15px 0;
+  }
+  #login-section .bottumText p {
+    font-size: 12px !important;
+  }
 }
 
 @media (max-width: 1024px) {
