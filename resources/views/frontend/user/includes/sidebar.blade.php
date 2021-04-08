@@ -1,4 +1,4 @@
-<div class="left-filter">
+<div class="left-filter" style="position: relative;">
     <div class="container container-dashboard">
         <div class="profile-dashboard-row row">
             <img src="{{$logged_in_user->picture}}" alt="" />
@@ -67,5 +67,5 @@
 
         </div>
     </div>
-    <div class="space" style="background-image: linear-gradient(#141414, black);height: 100px;"></div>
+    <div class="space" style="background-image: linear-gradient(#141414, black);height: 100px;position: absolute;bottom: 0;width: 100%;"></div>
 </div>
