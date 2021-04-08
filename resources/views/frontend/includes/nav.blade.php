@@ -2,38 +2,8 @@
     <div class="container">
 
     <div class="mob-user-ic col-md-2 col-2 d-none">
-          <i
-            class="fa fa-user"
-            type="button"
-            data-toggle="modal"
-            data-target="#exampleModalCenter2"
-            style="color: #fff"
-            aria-hidden="true"
-          ></i>
+          <i class="fa fa-user" type="button" data-toggle="modal" data-target="#exampleModalTEECenter2" style="color: #fff" aria-hidden="true"></i>
         </div>
-
-      <!-- Modal -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         <div class="curency cur-lan col-2 col-md-2">
             <div class="row">
@@ -71,13 +41,11 @@
           <img
           class="default-logo"
           src="{{url('/ceylon_beats_theme/assets/image/Group 57@2x.png')}}"
-          alt=""
-        />
+          alt=""/>
         <img
         class="sticky-logo d-none"
         src="{{url('/ceylon_beats_theme/assets/image/Group 57@2x.png')}}"
-        alt=""
-      />
+        alt=""/>
         </div>
 
         <div class="col-md-2 d-none menu-mob col-2">
@@ -110,7 +78,6 @@
                             <span class="badge badge-pill badge-danger">{{count($cartDetails)}}</span>
                         @endif
                         <i class="fa fa-shopping-cart"></i>
-
                     </div>
                 </a>
 
@@ -150,10 +117,6 @@
                                             <div style="color: #F44336;">Logout</div>
                                         </a>
                                     </li>
-{{--                                    <div class="footer">--}}
-{{--                                        <li class="user-menu__item"><a class="user-menu-link" href="{{route('frontend.auth.logout')}}" style="color: #F44336;">Logout</a></li>--}}
-{{--                                        <li class="user-menu__item"><a class="user-menu-link" href="{{route('frontend.user.account')}}">Settings</a></li>--}}
-{{--                                    </div>--}}
                                 </ul>
                             </div>
                         </div>

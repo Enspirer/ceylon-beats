@@ -134,56 +134,35 @@
         </div><!-- #app -->
 
         <div id="mobile-modal">
-            <div
-                    class="modal fade"
-                    id="exampleModalCenter2"
-                    tabindex="-1"
-                    role="dialog"
-                    aria-labelledby="exampleModalCenterTitle"
-                    aria-hidden="true"
-            >
+            <div class="modal fade" id="exampleModalTEECenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div class="modal-dialog" role="document">
-                    <div
-                            class="modal-content"
-                            style="background: #000; padding: 50px 20px"
-                    >
+                    <div class="modal-content" style="background: #000; padding: 50px 20px">
                         <div class="container">
                             <div class="row d-flex p-3">
-                                <img
-                                        src="https://source.unsplash.com/user/erondu/100x100"
-                                        style="
+                                <img src="https://source.unsplash.com/user/erondu/100x100" style="
                         width: 50px;
                         height: 50px;
                         object-fit: cover;
                         border-radius: 50%;
-                      "
-                                        alt=""
-                                />
+                      " alt=""/>
                                 <p style="padding: 20px 0">Guest Cart</p>
                             </div>
-                            <hr
-                                    style="
+                            <hr style="
                       display: block;
                       height: 1px;
                       border: 0;
                       border-top: 1px solid #ccc;
                       margin: 1em 0;
                       padding: 0;
-                    "
-                            />
+                    "/>
                             <div class="row d-flex p-3">
                                 <i class="fas fa-shopping-cart    "></i>
                                 <p>My Cart</p>
                             </div>
-
                             <div class="row d-flex p-3">
                                 <i class="fa fa-history" aria-hidden="true"></i>
                                 <p>Purchased History</p>
                             </div>
-
-
-
-
                             <div class="row d-flex p-3">
                                 <i class="fa fa-music" aria-hidden="true"></i>
                                 <p>Purchased Music</p>
