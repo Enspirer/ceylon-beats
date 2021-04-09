@@ -18,7 +18,7 @@ class CreateLicensesTable extends Migration
             $table->text('license_name');
             $table->text('license_agreement')->nullable();
             $table->text('description')->nullable();
-            $table->text('status')->default('1');
+            $table->integer('status')->default(1);
             $table->text('license_type')->default('1');
             $table->timestamps();
         });
