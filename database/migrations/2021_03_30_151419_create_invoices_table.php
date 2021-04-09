@@ -21,8 +21,8 @@ class CreateInvoicesTable extends Migration
             $table->text('payment_method');
             $table->text('phone_number');
             $table->text('status');
-            $table->text('discount_type')->default('percentage');
-            $table->text('discount_value')->default('0');
+            $table->text('discount_type')->nullable();
+            $table->text('discount_value')->nullable();
             $table->timestamps();
         });
     }
