@@ -17,7 +17,7 @@ class CreateGeneresTable extends Migration
             $table->bigIncrements('id');
             $table->text('name');
             $table->text('description')->nullable();
-            $table->text('status')->default('1');
+            $table->text('status')->nullable();
             $table->timestamps();
         });
     }
