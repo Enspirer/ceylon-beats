@@ -1,7 +1,7 @@
 <nav class="navbar-top navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
 
-    <div class="mob-user-ic col-md-2 col-2 d-none">
+    <div class="mob-user-ic col-md-2 col-2 d-none" data-toggle="modal" data-target="#exampleModalTEECenter2">
           <i class="fa fa-user" type="button" data-toggle="modal" data-target="#exampleModalTEECenter2" style="color: #fff" aria-hidden="true"></i>
         </div>
 
@@ -63,9 +63,6 @@
 
         <div class="cart col-md-2">
             <div class="row">
-
-
-
                 @auth
 
                 @endauth
