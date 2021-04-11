@@ -38,12 +38,6 @@
                         <p>387/C, Kalalgoda, Pannipitiya</p>
                     </div>
                 </div>
-                <div class="details-item" data-animscroll="fade-up" data-animscroll-delay="400">
-                    <div class="row">
-                        <i class="fa fa-phone" aria-hidden="true"></i>
-                        <p>077 261 7424 <br />077 204 1799 <br />077 234 2664</p>
-                    </div>
-                </div>
                 <div class="details-item" data-animscroll="fade-up" data-animscroll-delay="500">
                     <div class="row">
                         <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -69,10 +63,6 @@
             <i class="fa fa-map-marker" aria-hidden="true"></i>
             <p>387/C, Kalalgoda, Pannipitiya</p>
           </div>
-          <div class="row">
-            <i class="fa fa-phone" aria-hidden="true"></i>
-            <p>077 261 7424 <br />077 204 1799 <br />077 234 2664</p>
-          </div>
         </div>
         <div class="col-6">
           <div class="row">
@@ -96,10 +86,7 @@
             <i class="fa fa-map-marker" aria-hidden="true"></i>
             <p>387/C, Kalalgoda, Pannipitiya</p>
           </div>
-          <div class="row">
-            <i class="fa fa-phone" aria-hidden="true"></i>
-            <p>077 261 7424 <br />077 204 1799 <br />077 234 2664</p>
-          </div>
+
    
    
           <div class="row">
