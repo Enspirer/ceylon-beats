@@ -1,8 +1,8 @@
-<nav class="navbar-top navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar-top navbar navbar-expand-lg navbar-dark bg-dark" style="">
     <div class="container">
 
-    <div class="mob-user-ic col-md-2 col-2 d-none" data-toggle="modal" data-target="#exampleModalTEECenter2">
-          <i class="fa fa-user" type="button" data-toggle="modal" data-target="#exampleModalTEECenter2" style="color: #fff" aria-hidden="true"></i>
+    <div class="mob-user-ic col-md-2 col-2 d-none" data-toggle="modal" data-target="#exampleModalTEECenter2" style="padding-top: 10px;padding-bottom: 10px;">
+          <i class="fa fa-user"  type="button" data-toggle="modal" data-target="#exampleModalTEECenter2" style="color: #fff;font-size: 30px;" aria-hidden="true"></i>
         </div>
 
         <div class="curency cur-lan col-2 col-md-2">
