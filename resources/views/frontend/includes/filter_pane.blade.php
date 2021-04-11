@@ -1,10 +1,10 @@
 <div class="left-filter">
     <div class="row-filter-top row d-flex justify-content-between">
-        <a href="#">
+
             <svg xmlns="http://www.w3.org/2000/svg" width="22.5" height="15" viewBox="0 0 22.5 15">
                 <path id="Icon_material-sort" data-name="Icon material-sort" d="M4.5,24H12V21.5H4.5Zm0-15v2.5H27V9Zm0,8.75h15v-2.5H4.5Z" transform="translate(-4.5 -9)" fill="#fff"></path>
             </svg>
-        </a>
+
         <div class="clear d-flex justify-content-between">
             <div class="row">
                 <p>Clear All</p>
@@ -21,7 +21,7 @@
         <div class="genres-title">
             <div class="row d-flex justify-content-between">
                 <p>Genres</p>
-                <a href="">
+
                     <svg id="colapsiconmine" class="d-none" xmlns="http://www.w3.org/2000/svg" width="16" height="22" viewBox="0 0 16 2">
                         <g id="Group_59" data-name="Group 59" transform="translate(-321.5 -157.5)">
                             <line id="Line_4" data-name="Line 4" x2="16" transform="translate(321.5 158.5)" fill="none" stroke="#707070" stroke-width="2"></line>
@@ -32,9 +32,9 @@
                         <line id="Line_4" data-name="Line 4" x2="16" transform="translate(0 8)" fill="none" stroke="#707070" stroke-width="2" />
                         <line id="Line_5" data-name="Line 5" x2="16" transform="translate(8) rotate(90)" fill="none" stroke="#707070" stroke-width="2" />
                     </svg>
-                </a>
+
             </div>
-            <div class="genres-content collapse">
+            <div class="genres-content collapse show">
                 @foreach($getGenres as $genre)
                 @if($genres_name == $genre->name)
                 <div class="genres-item" style="padding-bottom: 10px;">
