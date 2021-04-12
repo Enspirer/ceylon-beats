@@ -19,7 +19,7 @@
             <section id="explore-music">
 
                 <div class="mask">
-                    <div class="row">
+                    <div class="row m-0">
                         @include('frontend.includes.filter_pane')
 
                         <div class="right-result">
