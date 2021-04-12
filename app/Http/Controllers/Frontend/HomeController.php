@@ -39,11 +39,19 @@ class HomeController extends Controller
 
     public function view_license($name)
     {
-        $license_details = License::where('license_name',$name)->first();
+        if ($name == 1)
+        {
+            $license_details = License::where('id',1)->first();
+            return view('frontend.view_licenses',[
+                'license_details' => $license_details
+            ]);
+        }else{
+            $license_details = License::where('license_name',$name)->first();
+            return view('frontend.view_licenses',[
+                'license_details' => $license_details
+            ]);
+        }
 
-        return view('frontend.view_licenses',[
-            'license_details' => $license_details
-        ]);
     }
 
 
