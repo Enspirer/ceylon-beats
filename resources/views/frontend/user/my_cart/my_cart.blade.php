@@ -89,7 +89,7 @@
                     <div>
                         <h2>{{settings('currency')}}: {{number_format($cart_total,2)}}</h2>
                     </div>
-                    <form method="post" action="https://sandbox.payhere.lk/pay/checkout">
+                    <form method="post" action="https://www.payhere.lk/pay/checkout">
                         <input type="hidden" name="merchant_id" value="1217011">    <!-- Replace your Merchant ID -->
                         <input type="hidden" name="return_url" value="{{route('frontend.user.checkout_finish')}}">
                         <input type="hidden" name="cancel_url" value="{{route('frontend.user.purchase.not_working')}}">
