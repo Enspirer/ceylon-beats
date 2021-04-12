@@ -118,6 +118,9 @@
                                     <div class="col-md-6">
                                         <h5>{{$soundItem->author_name}}</h5>
                                     </div>
+                                    <div class="col-md-6">
+                                        <a id="view_license_link{{$soundItem->id}}" href="{{route('frontend.view_licenses_details',1)}}" style="padding: 4px;background: #535353;color: white;border-radius: 10px;padding-left: 10px;padding-right: 10px;"> View Licenses</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>

@@ -12,6 +12,8 @@
                             <option value="{{$pricerange->license_name}}">{{$pricerange->license_name}}</option>
                         @endforeach
                     </select>
+                    <br>
+
 
                     <input type="hidden" name="music_item_id" value="{{$feature_musirc->id}}">
                     <div class="modal-body">
@@ -43,7 +45,7 @@
                                             <h5>{{$feature_musirc->author_name}}</h5>
                                         </div>
                                         <div class="col-md-6">
-
+                                            <a id="view_license_link{{$feature_musirc->id}}" href="{{route('frontend.view_licenses_details',1)}}" style="padding: 4px;background: #535353;color: white;border-radius: 10px;padding-left: 10px;padding-right: 10px;"> View Licenses</a>
                                         </div>
                                     </div>
                                 </div>
@@ -107,7 +109,7 @@
                                             <h5>{{$lastestMusicL->author_name}}</h5>
                                         </div>
                                         <div class="col-md-6">
-
+                                            <a id="view_license_Ilink{{$lastestMusicL->id}}" href="{{route('frontend.view_licenses_details',1)}}" style="padding: 4px;background: #535353;color: white;border-radius: 10px;padding-left: 10px;padding-right: 10px;"> View Licenses</a>
                                         </div>
                                     </div>
                                 </div>

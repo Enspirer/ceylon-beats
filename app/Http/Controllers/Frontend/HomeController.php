@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Frontend;
 use App\Http\Controllers\Backend\MusicController;
 use App\Http\Controllers\Controller;
 use App\Models\MusicProducts;
+use App\Moduels\License;
 use Illuminate\Http\Request;
 use Cart;
 /**
@@ -34,6 +35,15 @@ class HomeController extends Controller
     public function abouts_us()
     {
         return view('frontend.about_us');
+    }
+
+    public function view_license($name)
+    {
+        $license_details = License::where('license_name',$name)->first();
+
+        return view('frontend.view_licenses',[
+            'license_details' => $license_details
+        ]);
     }
 
 
