@@ -45,7 +45,16 @@
                                             <h5>{{$feature_musirc->author_name}}</h5>
                                         </div>
                                         <div class="col-md-6">
-                                            <a id="view_license_link{{$feature_musirc->id}}" href="{{route('frontend.view_licenses_details',1)}}" style="padding: 4px;background: #535353;color: white;border-radius: 10px;padding-left: 10px;padding-right: 10px;"> View Licenses</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <a target="_blank" href="#" id="view_license_link{{$feature_musirc->id}}" onclick="window.location.replace('{{route('frontend.view_licenses_details',1)}}')" style="padding: 4px;background: #535353;color: white;border-radius: 10px;padding-left: 10px;padding-right: 10px;"> View Licenses</a>
                                         </div>
                                     </div>
                                 </div>
@@ -109,7 +118,16 @@
                                             <h5>{{$lastestMusicL->author_name}}</h5>
                                         </div>
                                         <div class="col-md-6">
-                                            <a id="view_license_link{{$lastestMusicL->id}}" onclick="window.location.replace('{{route('frontend.view_licenses_details',1)}}')"  style="padding: 4px;background: #535353;color: white;border-radius: 10px;padding-left: 10px;padding-right: 10px;"> View Licenses</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <a target="_blank" href="#" id="view_license_Ilink{{$lastestMusicL->id}}" onclick="window.location.replace('{{route('frontend.view_licenses_details',1)}}')" style="padding: 4px;background: #535353;color: white;border-radius: 10px;padding-left: 10px;padding-right: 10px;"> View Licenses</a>
                                         </div>
                                     </div>
                                 </div>
