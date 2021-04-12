@@ -75,9 +75,10 @@ class MyCartController extends Controller
             DB::rollback();
         }
         Cart::clear();
+        Mail::to('sanjaya@yopmail.com')->send(new OrderCompleteMail(auth()->user()->first_name));
+
         return back()->with('message', 'message|Record updated.');
 
-        Mail::to('sanjaya@yopmail.com')->send(new OrderCompleteMail($name));
     }
 
 
