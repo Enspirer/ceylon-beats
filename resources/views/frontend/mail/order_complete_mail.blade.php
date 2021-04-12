@@ -85,9 +85,7 @@
 </head>
 
 <body class="" style="background-color: #f6f6f6; font-family: sans-serif; -webkit-font-smoothing: antialiased; font-size: 14px; line-height: 1.4; margin: 0; padding: 0; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
-<span class="preheader" style="color: transparent; display: none; height: 0; max-height: 0; max-width: 0; opacity: 0; overflow: hidden; mso-hide: all; visibility: hidden; width: 0;">
-    <p>Successful payment of USD {{number_format($invoice_details->total,2)}} for order reference #{{$invoice_details->id}}.<br> Please log in to <a href="http://ceylonbeatz.com/">www.ceylonbeatz.com </a> to.</p>
-</span>
+
 <table border="0" cellpadding="0" cellspacing="0" class="body" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; background-color: #f6f6f6;">
     <tr>
         <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;">&nbsp;</td>
@@ -103,6 +101,10 @@
                             <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
                                 <tr>
                                     <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;">
+                                        <span class="preheader" style="color: transparent; display: none; height: 0; max-height: 0; max-width: 0; opacity: 0; overflow: hidden; mso-hide: all; visibility: hidden; width: 0;">
+                                            <p>Successful payment of USD {{number_format($invoice_details->total,2)}} for order reference #{{$invoice_details->id}}.<br> Please log in to <a href="http://ceylonbeatz.com/">www.ceylonbeatz.com </a> to.</p>
+                                        </span>
+
                                         <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; box-sizing: border-box;">
                                             <tbody>
                                             <tr>
@@ -111,7 +113,7 @@
                                                         <tbody>
                                                         <tr>
                                                             <td style="font-family: sans-serif; font-size: 14px; vertical-align: top; background-color: #3498db; border-radius: 5px; text-align: center;">
-                                                                <a href="http://ceylonbeatz.com" target="_blank" style="display: inline-block; color: #ffffff; background-color: #3498db; border: solid 1px #3498db; border-radius: 5px; box-sizing: border-box; cursor: pointer; text-decoration: none; font-size: 14px; font-weight: bold; margin: 0; padding: 12px 25px; text-transform: capitalize; border-color: #3498db;">www.ceylonbeatz.com</a> </td>
+                                                                <a href="http://ceylonbeatz.com" target="_blank" style="display: inline-block; color: #ffffff; background-color: #3498db; border: solid 1px #3498db; border-radius: 5px; box-sizing: border-box; cursor: pointer; text-decoration: none; font-size: 14px; font-weight: bold; margin: 0; padding: 12px 25px; text-transform: capitalize; border-color: #3498db;">Visit</a> </td>
                                                         </tr>
                                                         </tbody>
                                                     </table>
@@ -119,8 +121,6 @@
                                             </tr>
                                             </tbody>
                                         </table>
-                                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">This is a really simple email template. Its sole purpose is to get the recipient to click the button with no distractions.</p>
-                                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Good luck! Hope it works.</p>
                                     </td>
                                 </tr>
                             </table>
@@ -135,8 +135,7 @@
                     <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
                         <tr>
                             <td class="content-block" style="font-family: sans-serif; vertical-align: top; padding-bottom: 10px; padding-top: 10px; font-size: 12px; color: #999999; text-align: center;">
-                                <span class="apple-link" style="color: #999999; font-size: 12px; text-align: center;">Company Inc, 3 Abbey Road, San Francisco CA 94102</span>
-                                <br> Don't like these emails? <a href="http://i.imgur.com/CScmqnj.gif" style="text-decoration: underline; color: #999999; font-size: 12px; text-align: center;">Unsubscribe</a>.
+                                <span class="apple-link" style="color: #999999; font-size: 12px; text-align: center;">Ceylon Beatz</span>
                             </td>
                         </tr>
                         <tr>
