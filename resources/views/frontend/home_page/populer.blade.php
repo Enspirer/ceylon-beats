@@ -166,7 +166,7 @@
                 <h1 class="p-0">Like the idea...?</h1>
                 <!-- <a  href="{{route('frontend.contact')}}" type="button">Talk to us now</a> -->
               </div>
-              <div class="row">
+              <div class="row m-0">
                 <a href="{{route('frontend.contact')}}" class="black" type="button">Talk to us now</a>
               </div>
                 </div>
