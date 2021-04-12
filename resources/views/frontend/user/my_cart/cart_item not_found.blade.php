@@ -1,4 +1,4 @@
-<div class="" style="text-align: center;color:white;">
+<div class="" style="text-align: center;color:white;padding: 30px 0 120px 0;">
     <div class="not-found">
         <h1>{{$error_title}}</h1>
         <p>{{$error_description}}</p>
