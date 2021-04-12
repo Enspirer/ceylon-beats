@@ -29,7 +29,18 @@ class ExplorerController extends Controller
 
         if($music_name != 'music_name')
         {
-            $sounditems->orWhere('music_name', 'like', '%' . $music_name . '%');
+
+            $pieces = explode(" ", $music_name);
+
+
+            foreach ($pieces as $pices)
+            {
+                $sounditems->orWhere('music_name', 'like', '%' . $pices . '%');
+                $sounditems->orWhere('tags', 'like', '%' . $pices . '%');
+
+            }
+
+           
 
 
         }
