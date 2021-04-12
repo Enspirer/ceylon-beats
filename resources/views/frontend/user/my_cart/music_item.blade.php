@@ -31,7 +31,7 @@
             <div class="text-group-two">
                 <div class="duration">
                     <div class="row">
-                        <p>{{$cartDetail->attributes->license_name}}</p>
+                        <p style="line-height: 1;">{{$cartDetail->attributes->license_name}}</p>
                     </div>
                 </div>
             </div>
@@ -90,7 +90,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle" style="color: #fff;">Are You Sure Delete Music?</h5>
+                    <h5 class="modal-title" id="exampleModalLongTitle" style="color: #fff;">Are you sure you want to delete?</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span style="color: #fff;" aria-hidden="true">&times;</span>
                     </button>

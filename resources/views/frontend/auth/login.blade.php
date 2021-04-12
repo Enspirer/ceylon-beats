@@ -11,12 +11,12 @@
                 <div class="row">
                     <div class="left-form-login col-md-5 animscroll-init animscroll-animate" data-animscroll="fade-right">
                         <h1>Log In</h1>
-                        <div class="login-buttons-section">
+                        <!-- <div class="login-buttons-section">
                             <a href="" class="button button--facebook">Continue With Facebook</a>
                             <a href="" class="button button--google">Continue With Google</a>
-                        </div>
-                        <div class="separator">or</div>
-                        <div class="form-login">
+                        </div> -->
+                        <!-- <div class="separator">or</div> -->
+                        <div class="form-login" style="margin-top: 50px;">
                             <form action="{{route('frontend.auth.login.post')}}" method="post">
                                 {{csrf_field()}}
                                 <div class="form-group">

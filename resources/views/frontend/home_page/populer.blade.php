@@ -164,7 +164,10 @@
                     </div>
                     <div class="row row-btn-home-bottum">
                 <h1 class="p-0">Like the idea...?</h1>
-                <a  href="{{route('frontend.contact')}}" type="button">Talk to us now</a>
+                <!-- <a  href="{{route('frontend.contact')}}" type="button">Talk to us now</a> -->
+              </div>
+              <div class="row">
+                <a href="{{route('frontend.contact')}}" class="black" type="button">Talk to us now</a>
               </div>
                 </div>
             </div>
