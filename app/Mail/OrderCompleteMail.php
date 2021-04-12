@@ -2,6 +2,7 @@
 
 namespace App\Mail;
 
+use App\Models\Invoice;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
@@ -10,15 +11,15 @@ use Illuminate\Http\Request;
 class OrderCompleteMail extends Mailable
 {
     use Queueable, SerializesModels;
-    public $request;
+    public $invoice_id;
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($name)
+    public function __construct($invoiceID)
     {
-        $this->request = $name;
+        $this->invoice_id = $invoiceID;
     }
 
     /**
@@ -28,6 +29,9 @@ class OrderCompleteMail extends Mailable
      */
     public function build()
     {
-        return $this->view('frontend.mail.order_complete_mail');
+        $invoideDetails = Invoice::where('id',$this->invoice_id)->first();
+        return $this->view('frontend.mail.order_complete_mail',[
+            'invoice_details' => $invoideDetails
+        ]);
     }
 }

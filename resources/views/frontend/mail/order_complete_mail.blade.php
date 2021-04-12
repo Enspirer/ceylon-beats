@@ -1,1 +1,1 @@
-<h2>Hello World</h2>
+Successful payment of USD {{$invoice_details->total}} for order reference #{{$invoice_details->id}}.Now you can download your purchased music
