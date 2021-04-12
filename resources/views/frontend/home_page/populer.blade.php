@@ -119,7 +119,7 @@
                 <div class="right-icon col-md-6">
                     <div class="item" data-animscroll="fade-up">
                         <div class="row">
-                            <i><svg xmlns="http://www.w3.org/2000/svg" width="60.16" height="73.177" viewBox="0 0 111.16 123.177">
+                            <i class="col-2 m-0 p-0"><svg xmlns="http://www.w3.org/2000/svg" width="60.16" height="73.177" viewBox="0 0 111.16 123.177">
                                     <g id="Icon_feather-shopping-bag" data-name="Icon feather-shopping-bag" transform="translate(-3 -1.5)">
                                         <path id="Path_89" data-name="Path 89" d="M22.527,3,4.5,27.035V111.16a12.018,12.018,0,0,0,12.018,12.018h84.124A12.018,12.018,0,0,0,112.66,111.16V27.035L94.633,3Z" transform="translate(0 0)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
                                         <path id="Path_90" data-name="Path 90" d="M4.5,9H112.66" transform="translate(0 18.035)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
@@ -127,13 +127,13 @@
                                     </g>
                                 </svg>
                             </i>
-                            <p>Select Your Track</p>
+                            <p class="col-9 m-0" style="margin-top: 10px !important;">Select Your Track</p>
                         </div>
                     </div>
 
                     <div class="item" data-animscroll="fade-up">
                         <div class="row">
-                            <i>
+                            <i class="col-2 m-0 p-0">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -144,13 +144,13 @@
                                     >
                                 </svg>
                             </i>
-                            <p>Let us know your need</p>
+                            <p class="col-9 m-0" style="margin-top: 10px !important;">Let us know your need</p>
                         </div>
                     </div>
 
                     <div class="item" data-animscroll="fade-up">
                         <div class="row">
-                            <i
+                            <i class="col-2 m-0 p-0"
                             ><svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="62.389"
@@ -159,7 +159,7 @@
                                     <path id="Path_97" data-name="Path 97" d="M81.409.753A2.987,2.987,0,0,0,79.123.02L26.159,5.905A2.942,2.942,0,0,0,23.54,8.83V61.268a17.026,17.026,0,0,0-8.827-2.416C6.6,58.852,0,64.131,0,70.622s6.6,11.77,14.712,11.77,14.712-5.276,14.712-11.77V26.191L76.5,20.947V55.374a17.026,17.026,0,0,0-8.827-2.407c-8.112,0-14.712,5.279-14.712,11.77s6.6,11.77,14.712,11.77,14.712-5.276,14.712-11.77V2.945A2.942,2.942,0,0,0,81.409.753Z" transform="translate(0 -0.004)"/>
                                 </svg>
                             </i>
-                            <p>We'll work our magic, and send you the tune</p>
+                            <p class="col-9 m-0" style="margin-top: 10px !important;">We'll work our magic, and send you the tune</p>
                         </div>
                     </div>
                     <div class="row row-btn-home-bottum">
