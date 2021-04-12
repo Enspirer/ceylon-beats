@@ -37,7 +37,7 @@
                                                             Visit
                                                         </div>
                                                     </table>
-                                                    <p style="font-size:20px;">Please contact us for any support you may need.</p>
+                                                    <p style="font-size:20px;">Please contact us for any support you may need. info@ceylonbeatz.com</p>
                                                 </td>
                                             </tr>
                                             </tbody>
