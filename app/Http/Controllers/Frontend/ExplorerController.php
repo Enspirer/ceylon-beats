@@ -40,7 +40,7 @@ class ExplorerController extends Controller
 
             }
 
-           
+
 
 
         }

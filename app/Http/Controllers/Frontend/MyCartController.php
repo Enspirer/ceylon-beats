@@ -26,15 +26,8 @@ class MyCartController extends Controller
 
     public function checkout_finish()
     {
-
-
         $cardDetails = Cart::getTotal();
         $getCartContent = Cart::getContent();
-
-
-
-
-
         DB::beginTransaction();
         try {
             $music_output = [];
@@ -49,7 +42,6 @@ class MyCartController extends Controller
             $Invoice->discount_value = '0';
             $Invoice->discount_value = '0';
             $Invoice->save();
-
             foreach ($getCartContent as $key => $music)
             {
                 $productDetails = MusicProducts::where('id',$music->id)->first();
@@ -75,10 +67,8 @@ class MyCartController extends Controller
             DB::rollback();
         }
         Cart::clear();
-        Mail::to('sanjaya@yopmail.com')->send(new OrderCompleteMail($Invoice->id));
-
+        Mail::to(auth()->user()->email)->send(new OrderCompleteMail($Invoice->id));
         return back()->with('message', 'message|Record updated.');
-
     }
 
 
