@@ -1,4 +1,4 @@
-<div class="left-filter" style="height: 650px !important;">
+<div class="left-filter" style="">
     <div class="row-filter-top row d-flex justify-content-between">
 
             <svg xmlns="http://www.w3.org/2000/svg" width="22.5" height="15" viewBox="0 0 22.5 15">
