@@ -611,7 +611,16 @@
                     $('#submit_cores'+music_id).attr("disabled",false);
                     $('#view_license_link'+music_id).attr("href",'{{url('/view_license/')}}/' + obj.license_name);
                     $('#view_license_link'+music_id).text(obj.license_name);
+                    $('#view_license_link'+music_id).click(function(){
+                        window.location.replace('{{url('/view_license/')}}/' + obj.license_name);
+                    });
+
+
                     $('#view_license_Ilink'+music_id).attr("href",'{{url('/view_license/')}}/' + obj.license_name);
+
+                    $('#view_license_Ilink'+music_id).click(function(){
+                        window.location.replace('{{url('/view_license/')}}/' + obj.license_name);
+                    });
                     $('#view_license_Ilink'+music_id).text(obj.license_name);
                 });
             }
