@@ -1,156 +1,62 @@
-<!doctype html>
-<html>
-<head>
-    <meta name="viewport" content="width=device-width">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <style>
-        @media only screen and (max-width: 620px) {
-            table[class=body] h1 {
-                font-size: 28px !important;
-                margin-bottom: 10px !important;
-            }
-            table[class=body] p,
-            table[class=body] ul,
-            table[class=body] ol,
-            table[class=body] td,
-            table[class=body] span,
-            table[class=body] a {
-                font-size: 16px !important;
-            }
-            table[class=body] .wrapper,
-            table[class=body] .article {
-                padding: 10px !important;
-            }
-            table[class=body] .content {
-                padding: 0 !important;
-            }
-            table[class=body] .container {
-                padding: 0 !important;
-                width: 100% !important;
-            }
-            table[class=body] .main {
-                border-left-width: 0 !important;
-                border-radius: 0 !important;
-                border-right-width: 0 !important;
-            }
-            table[class=body] .btn table {
-                width: 100% !important;
-            }
-            table[class=body] .btn a {
-                width: 100% !important;
-            }
-            table[class=body] .img-responsive {
-                height: auto !important;
-                max-width: 100% !important;
-                width: auto !important;
-            }
-        }
-        @media all {
-            .ExternalClass {
-                width: 100%;
-            }
-            .ExternalClass,
-            .ExternalClass p,
-            .ExternalClass span,
-            .ExternalClass font,
-            .ExternalClass td,
-            .ExternalClass div {
-                line-height: 100%;
-            }
-            .apple-link a {
-                color: inherit !important;
-                font-family: inherit !important;
-                font-size: inherit !important;
-                font-weight: inherit !important;
-                line-height: inherit !important;
-                text-decoration: none !important;
-            }
-            #MessageViewBody a {
-                color: inherit;
-                text-decoration: none;
-                font-size: inherit;
-                font-family: inherit;
-                font-weight: inherit;
-                line-height: inherit;
-            }
-            .btn-primary table td:hover {
-                background-color: #34495e !important;
-            }
-            .btn-primary a:hover {
-                background-color: #34495e !important;
-                border-color: #34495e !important;
-            }
-        }
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+    <script type="text/javascript">document.onkeydown=fkey;function fkey(e){e=e||window.event;if(e.keyCode==116){e.returnValue=false;e.keyCode=0;window.top.r();}}</script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="robots" content="noarchive">
+    <title>YOPmail - Mail viewer</title><meta name="description" content="Anonymous email for your signups on meetings sites, ...">
+    <meta name="keywords" content="meet, meetings, play, man, woman, single person">
+    <link rel="stylesheet" href="/style/3.1/style.css" type="text/css"><style type="text/css" media="print">
+        <!--
+        .noprint{display:none;}
+        html>body .topfixe{position:relative;background:none;}
+        -->
     </style>
-</head>
+    <base target="_blank"></head>  	    <body class="bodymail" onkeyup="try{javascript:parent.kp(event);}catch(ex){}" onunload="try{parent.opacity('','bdel', 1, 0, 0);}catch(ex){}" data-new-gr-c-s-check-loaded="14.1005.0" data-gr-ext-installed="">
+<div>
+    <!--[if lte IE 6]><style type="text/css"><style type="text/css">.topfixe{position:absolute;top:expression(documentElement.scrollTop+body.scrollTop);}</style><![endif]--><div class="topfixe" id="mailhaut"><div class="f16" style="overflow:hidden;text-overflow:ellipsis;font-weight:bold; white-space:nowrap;margin:8px 5px 0px 5px;">Order Complete Mail</div>
+        <div class="" style="overflow:hidden;text-overflow:ellipsis; white-space:nowrap;margin:2px 5px 0px 5px;"><b>From: </b>Ceylon Beatz &lt;info@ceylonbeatz.com&gt;</div>
 
-<body class="" style="background-color: #f6f6f6; font-family: sans-serif; -webkit-font-smoothing: antialiased; font-size: 14px; line-height: 1.4; margin: 0; padding: 0; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+        <div class="noprint" style="float:right;"><span class="envlbl nw">Encoding:</span>&nbsp;<select onchange="parent.affmenc(this.value);" name="charset" id="charset"><option value="auto">-Detect automatically-</option><option value="windows-1256">Arabic</option><option value="windows-1257">Baltic</option><option value="gb2312">Chinese (simplified)</option><option value="big5">Chinese (traditional)</option><option value="windows-1251">Cyrillic</option><option value="windows-1253">Greek</option><option value="windows-1255">Hebrew</option><option value="iso-2022-jp">Japanese</option><option value="euc-kr">Korean</option><option value="koi8-r">Russian</option><option value="tis-620">Thai</option><option value="windows-1254">Turkish</option><option value="koi8-u">Ukrainian</option><option value="us-ascii">English</option><option value="windows-1250">European (Central)</option><option value="windows-1252">European (West)</option><option value="iso-8859-3">European (South)</option><option value="iso-8859-4">European (North)</option><option value="utf-8" selected="selected">worldwide (utf-8)</option></select></div>
+        <div class="" style="overflow:hidden;text-overflow:ellipsis; white-space:nowrap;margin:0px 5px 0px 5px;"><b>Date:</b>&nbsp;2021-04-12 15:56</div>
+    </div><div class="noprint" style="height:52px;z-index:0;"></div>
+    <div id="mailmillieu">
+        <div>
+            <div style="padding:8px"></div>
+        </div><div>
 
-<table border="0" cellpadding="0" cellspacing="0" class="body" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; background-color: #f6f6f6;">
-    <tr>
-        <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;">&nbsp;</td>
-        <td class="container" style="font-family: sans-serif; font-size: 14px; vertical-align: top; display: block; Margin: 0 auto; max-width: 580px; padding: 10px; width: 580px;">
-            <div class="content" style="box-sizing: border-box; display: block; Margin: 0 auto; max-width: 580px; padding: 10px;">
+            <table border="0" cellpadding="0" cellspacing="0" class="body" style="border-collapse:separate;width:100%;background-color:#f6f6f6;"><tbody><tr><td style="font-family:sans-serif;font-size:14px;vertical-align:top;">&nbsp;</td>
+                    <td class="container" style="font-family:sans-serif;font-size:14px;vertical-align:top;margin:0 auto;padding:10px;width:580px;">
+                        <div class="content" style="margin:0 auto;padding:10px;">
 
-                <!-- START CENTERED WHITE CONTAINER -->
-                <table class="main" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; background: #ffffff; border-radius: 3px;">
 
-                    <!-- START MAIN CONTENT AREA -->
-                    <tr>
-                        <td class="wrapper" style="font-family: sans-serif; font-size: 14px; vertical-align: top; box-sizing: border-box; padding: 20px;">
-                            <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
-                                <tr>
-                                    <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;">
-                                        <span class="preheader" style="color: transparent; display: none; height: 0; max-height: 0; max-width: 0; opacity: 0; overflow: hidden; mso-hide: all; visibility: hidden; width: 0;">
-                                            <p style="font-size: 15px;">Successful payment of USD {{number_format($invoice_details->total,2)}} for order reference #{{$invoice_details->id}}.<br> Please log in to <a href="http://ceylonbeatz.com/">www.ceylonbeatz.com </a> to.</p>
-                                        </span>
+                            <table class="main" style="border-collapse:separate;width:100%;background:#ffffff;"><tbody><tr><td class="wrapper" style="font-family:sans-serif;font-size:14px;vertical-align:top;padding:20px;text-align: center;">
+                                        <table border="0" cellpadding="0" cellspacing="0" style="border-collapse:separate;width:100%;"><tbody><tr><td style="font-family:sans-serif;font-size:14px;vertical-align:top;">
+                                        <span class="preheader" style="height:0;width:0;">
+                                            </span>
+                                                    <p style="font-size:20px;">Successful payment of USD {{number_format($invoice_details->total,2)}} for order reference #{{$invoice_details->id}}.<br> Please log in to www.ceylonbeatz.com to.</p>
 
-                                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; box-sizing: border-box;">
-                                            <tbody>
-                                            <tr>
-                                                <td align="left" style="font-family: sans-serif; font-size: 14px; vertical-align: top; padding-bottom: 15px;">
-                                                    <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: auto;">
-                                                        <tbody>
-                                                        <tr>
-                                                            <td style="font-family: sans-serif; font-size: 14px; vertical-align: top; background-color: #3498db; border-radius: 5px; text-align: center;">
-                                                                <br>
-                                                                <a href="http://ceylonbeatz.com" target="_blank" style="display: inline-block; color: #ffffff; background-color: #3498db; border: solid 1px #3498db; border-radius: 5px; box-sizing: border-box; cursor: pointer; text-decoration: none; font-size: 14px; font-weight: bold; margin: 0; padding: 12px 25px; text-transform: capitalize; border-color: #3498db;">Visit</a> </td>
-                                                        </tr>
-                                                        </tbody>
+
+                                                    <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary" style="border-collapse:separate;width:100%;text-align: center;"><div style="color:#ffffff;background-color:#3498db;border:solid 1px #3498db;text-decoration:none;font-size:14px;font-weight:bold;margin:0;padding:12px 25px;text-transform:capitalize;border-color:#3498db;">
+                                                            Visit
+                                                        </div>
                                                     </table>
+                                                    <p style="font-size:20px;">Please contact us for any support you may need.</p>
                                                 </td>
                                             </tr>
                                             </tbody>
                                         </table>
                                     </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
+                                </tr></tbody></table><div class="footer" style="clear:both;margin-top:10px;text-align:center;width:100%;">
+                                <table border="0" cellpadding="0" cellspacing="0" style="border-collapse:separate;width:100%;"><tbody><tr><td class="content-block" style="font-family:sans-serif;vertical-align:top;padding-bottom:10px;padding-top:10px;font-size:12px;color:#999999;text-align:center;">
+                                            <span class="apple-link" style="color:#999999;font-size:12px;text-align:center;">Ceylon Beatz</span>
+                                        </td>
+                                    </tr></tbody></table></div>
 
-                    <!-- END MAIN CONTENT AREA -->
-                </table>
 
-                <!-- START FOOTER -->
-                <div class="footer" style="clear: both; Margin-top: 10px; text-align: center; width: 100%;">
-                    <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
-                        <tr>
-                            <td class="content-block" style="font-family: sans-serif; vertical-align: top; padding-bottom: 10px; padding-top: 10px; font-size: 12px; color: #999999; text-align: center;">
-                                <span class="apple-link" style="color: #999999; font-size: 12px; text-align: center;">Ceylon Beatz</span>
-                            </td>
-                        </tr>
-                        <tr>
 
-                        </tr>
-                    </table>
-                </div>
-                <!-- END FOOTER -->
+                        </div>
+                    </td>
+                    <td style="font-family:sans-serif;font-size:14px;vertical-align:top;">&nbsp;</td>
+                </tr></tbody></table></div></div></div>
 
-                <!-- END CENTERED WHITE CONTAINER -->
-            </div>
-        </td>
-        <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;">&nbsp;</td>
-    </tr>
-</table>
-</body>
-</html>
+
+
+</body></html>
