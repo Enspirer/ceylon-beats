@@ -23,7 +23,6 @@
         </div><div>
 
             <table border="0" cellpadding="0" cellspacing="0" class="body" style="border-collapse:separate;width:100%;background-color:#f6f6f6;"><tbody><tr><td style="font-family:sans-serif;font-size:14px;vertical-align:top;">&nbsp;</td>
-                    <td class="container" style="font-family:sans-serif;font-size:14px;vertical-align:top;margin:0 auto;padding:10px;width:580px;">
                         <div class="content" style="margin:0 auto;padding:10px;">
 
 
@@ -53,7 +52,6 @@
 
 
                         </div>
-                    </td>
                     <td style="font-family:sans-serif;font-size:14px;vertical-align:top;">&nbsp;</td>
                 </tr></tbody></table></div></div></div>
 
