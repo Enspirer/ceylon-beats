@@ -120,6 +120,11 @@
                                 <select class="form-control" name="country" style="text-align: left !important;max-width:none;">
                                     <option value="Sri Lanka">Sri Lanka</option>
                                     <option value="USA">USA</option>
+                                    <option value="Canada">Canada</option>
+                                    <option value="India">India</option>
+                                    <option value="England">England</option>
+                                    <option value="Japan">Japan</option>
+                                    <option value="China">China</option>
                                 </select>
                             </div>
                             <input type="submit" value="Buy Now">
