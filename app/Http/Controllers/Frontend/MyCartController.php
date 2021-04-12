@@ -9,6 +9,8 @@ use App\Models\MusicProducts;
 use Illuminate\Http\Request;
 use DB;
 use Cart;
+use Mail;
+use App\Mail\OrderCompleteMail;
 class MyCartController extends Controller
 {
     public function index()
@@ -74,6 +76,8 @@ class MyCartController extends Controller
         }
         Cart::clear();
         return back()->with('message', 'message|Record updated.');
+
+        Mail::to('sanjaya@yopmail.com')->send(new OrderCompleteMail($name));
     }
 
 
