@@ -1,4 +1,4 @@
-<nav class="navbar-top navbar navbar-expand-lg navbar-dark bg-dark" style="">
+<nav class="navbar-top navbar navbar-expand-lg navbar-dark bg-dark" style="z-index: 9999999999999;">
     <div class="container">
 
     <div class="mob-user-ic col-md-2 col-2 d-none" data-toggle="modal" data-target="#exampleModalTEECenter2" style="padding-top: 10px;padding-bottom: 10px;">
