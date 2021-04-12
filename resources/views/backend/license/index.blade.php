@@ -6,10 +6,10 @@
     <div class="row">
         <div class="col">
             <div class="card">
-                <div class="card-header">
-                    <strong>Licenses</strong>
-                    <a href="{{route('admin.license.create')}}" class="btn btn-primary" style="float: right">Add License</a>
-                </div><!--card-header-->
+                {{--<div class="card-header">--}}
+                    {{--<strong>Licenses</strong>--}}
+                    {{--<a href="{{route('admin.license.create')}}" class="btn btn-primary" style="float: right">Add License</a>--}}
+                {{--</div><!--card-header-->--}}
 
                 <div class="card-body">
                     <table class="table table-striped table-bordered" id="data_table" style="width:100%">
