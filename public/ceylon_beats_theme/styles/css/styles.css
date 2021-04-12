@@ -318,12 +318,61 @@ body {
   color: #fff;
 }
 
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  margin: auto;
+}
+
 .d-contain {
   display: contents;
 }
 
+.pagination .page-item {
+  margin: 0 5px !important;
+}
+
+.pagination .page-item .page-link {
+  color: #fff !important;
+  background: transparent !important;
+}
+
+.pagination .active .page-link {
+  color: #fff !important;
+  background: transparent !important;
+  border: 1px solid #fff !important;
+  color: #fff !important;
+  border-radius: 4px !important;
+}
+
+.pagination .disabled .page-link {
+  background: transparent !important;
+}
+
+.pagination .page-link {
+  border: none !important;
+}
+
 .pagination-explore .pagination {
   display: inline-block;
+}
+
+.pagination-explore .pagination .page-item .page-link {
+  color: #fff !important;
+}
+
+.pagination-explore .pagination .active {
+  background: transparent !important;
+}
+
+.pagination-explore .pagination .active .page-link {
+  color: #fff !important;
+}
+
+.pagination-explore .pagination .disabled .page-link {
+  background: transparent !important;
+}
+
+.pagination-explore .pagination .page-link {
+  border: none !important;
 }
 
 .pagination-explore .pagination a {
