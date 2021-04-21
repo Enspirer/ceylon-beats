@@ -129,7 +129,7 @@
                                     <option value="China">China</option>
                                 </select>
                             </div>
-                            <input type="submit" value="Buy Now">
+                            <input type="submit" value="Buy Now" disabled>
                         </div>
                     </form>
                 </div>
