@@ -287,10 +287,7 @@
                 <ul class="foote_bottom_ul_amrc">
                 </ul>
                 <!--foote_bottom_ul_amrc ends here-->
-                <p class="text-center">
-                    Copyright @2021 | Powered by <a style="color: #fff;font-weight: bold" href="https://www.enspirer.com/">Enspirer</a>
-                </p>
-
+               
                 <ul class="social_footer_ul">
                     <li>
                         <a href="">
