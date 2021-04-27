@@ -22,8 +22,8 @@ class MyCartController extends Controller
     public function CheckOutFunc(Request $request)
     {
         $amount = "200.00";
-        $complete_url = "";
-        $order_id = 23213;
+        $complete_url = url('/');
+        $order_id = rand();
         $api_base	= "https://test-gateway.mastercard.com/";
         $URL	= $api_base."api/rest/version/56/merchant/"."SEYLANTEST2"."/session";
         $username='merchant.'."SEYLANTEST2";
