@@ -117,7 +117,7 @@ class MyCartController extends Controller
         }
         Cart::clear();
         Mail::to(auth()->user()->email)->send(new OrderCompleteMail($Invoice->id));
-        return back()->with('message', 'message|Record updated.');
+        return redirect()->route('frontend.user,my_cart')->with('message', 'message|Record updated.');
     }
 
 
