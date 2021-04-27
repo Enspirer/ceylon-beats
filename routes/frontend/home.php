@@ -40,6 +40,7 @@ Route::group(['middleware' => ['auth', 'password_expires']], function () {
         // User Dashboard Specific
         Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
         Route::get('my_cart', [MyCartController::class, 'index'])->name('my_cart');
+        Route::post('CheckOutFunc', [MyCartController::class, 'CheckOutFunc'])->name('check_out_func');
         Route::get('checkout',[MyCartController::class, 'checkout_finish'])->name('checkout_finish');
         Route::get('dashboard', [MyCartController::class, 'index'])->name('my_cart');
         Route::get('purchase_history', [PurchaseHistoryController::class, 'index'])->name('purchase_history');
@@ -58,8 +59,6 @@ Route::group(['middleware' => ['auth', 'password_expires']], function () {
 
         // User Profile Specific
         Route::patch('profile/update', [ProfileController::class, 'update'])->name('profile.update');
-
-
         Route::get('purchase_error', [MyCartController::class, 'not_working'])->name('purchase.not_working');
 
     });

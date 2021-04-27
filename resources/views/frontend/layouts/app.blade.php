@@ -287,7 +287,7 @@
                 <ul class="foote_bottom_ul_amrc">
                 </ul>
                 <!--foote_bottom_ul_amrc ends here-->
-               
+
                 <ul class="social_footer_ul">
                     <li>
                         <a href="">

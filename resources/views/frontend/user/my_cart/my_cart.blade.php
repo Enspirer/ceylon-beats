@@ -91,7 +91,8 @@
                     </div>
                     {{--<form method="post" action="https://www.payhere.lk/pay/checkout">--}}
                     {{--<form method="post" action="https://sandbox.payhere.lk/pay/checkout">--}}
-                    <form method="post" action="">
+                    <form method="post" action="{{route('frontend.user.check_out_func')}}">
+                        {{csrf_field()}}
                         <input type="hidden" name="merchant_id" value="217295">    <!-- Replace your Merchant ID -->
                         <input type="hidden" name="return_url" value="{{route('frontend.user.checkout_finish')}}">
                         <input type="hidden" name="cancel_url" value="{{route('frontend.user.purchase.not_working')}}">
@@ -129,7 +130,7 @@
                                     <option value="China">China</option>
                                 </select>
                             </div>
-                            <input type="submit" value="Buy Now" disabled>
+                            <input type="submit" value="Buy Now">
                         </div>
                     </form>
                 </div>
