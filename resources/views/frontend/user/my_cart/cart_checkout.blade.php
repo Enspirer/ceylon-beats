@@ -26,7 +26,7 @@
         function completeCallback(resultIndicator, sessionVersion)
         {
             //handle payment completion
-            console.log(resultIndicator);
+            window.location.href="{{$complete_url}}";
         }
         Checkout.configure({
             merchant: 'SEYLANTEST2',
