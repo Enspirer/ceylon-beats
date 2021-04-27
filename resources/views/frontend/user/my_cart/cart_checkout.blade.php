@@ -14,7 +14,7 @@
     <script src="{{$api_base}}checkout/version/56/checkout.js"
             data-error="errorCallback"
             data-cancel="cancelCallback"
-            data-complete="{{ $complete_url."&session=".$session_id}}"
+            data-complete="{{ $complete_url}}"
     >
     </script>
 

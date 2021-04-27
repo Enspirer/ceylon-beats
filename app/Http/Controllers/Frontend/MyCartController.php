@@ -21,8 +21,8 @@ class MyCartController extends Controller
 
     public function CheckOutFunc(Request $request)
     {
-        $amount = "200.00";
-        $complete_url = url('/');
+        $amount = $request->amount;
+        $complete_url = $request->return_url;
         $order_id = rand();
         $api_base	= "https://test-gateway.mastercard.com/";
         $URL	= $api_base."api/rest/version/56/merchant/"."SEYLANTEST2"."/session";
@@ -58,7 +58,6 @@ class MyCartController extends Controller
         {
             $session_id = $response['session']['id'];
         }
-
         return view('frontend.user.my_cart.cart_checkout',[
             'session_id' => $session_id,
             'api_base' => $api_base,
