@@ -11,11 +11,7 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script src="{{$api_base}}checkout/version/56/checkout.js"
-            data-error="errorCallback"
-            data-cancel="cancelCallback"
-            data-complete="{{ $complete_url}}"
-    >
+    <script src="{{$api_base}}checkout/version/56/checkout.js" data-error="errorCallback" data-cancel="cancelCallback" data-complete="{{ $complete_url}}">
     </script>
 
     <script type="text/javascript">

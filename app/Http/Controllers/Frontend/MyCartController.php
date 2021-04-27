@@ -21,6 +21,7 @@ class MyCartController extends Controller
 
     public function CheckOutFunc(Request $request)
     {
+        dd($request);
         $amount = $request->amount;
         $complete_url = $request->return_url;
         $order_id = rand();
