@@ -24,10 +24,10 @@ class MyCartController extends Controller
         $amount = $request->amount;
         $complete_url = $request->return_url;
         $order_id = rand();
-        $api_base	= "https://test-gateway.mastercard.com/";
-        $URL	= $api_base."api/rest/version/56/merchant/"."SEYLANTEST2"."/session";
-        $username='merchant.'."SEYLANTEST2";
-        $password= "dc9e4b45b96612160cf7302c8dd9ce9a";
+        $api_base	= "https://ap-gateway.mastercard.com/";
+        $URL	= $api_base."api/rest/version/56/merchant/"."MPGS00000032"."/session";
+        $username='merchant.'."MPGS00000032";
+        $password= "9aaf7d2cd3c37f8631f4852a22916ac2";
         $header	= ["Content-Type: Application/json;charset=UTF-8"];
         $requestData = [
             'apiOperation' => 'CREATE_CHECKOUT_SESSION',
