@@ -58,6 +58,9 @@ class MyCartController extends Controller
         {
             $session_id = $response['session']['id'];
         }
+
+
+
         return view('frontend.user.my_cart.cart_checkout',[
             'session_id' => $session_id,
             'api_base' => $api_base,
