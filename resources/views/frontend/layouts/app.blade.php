@@ -245,6 +245,9 @@
                             <li>
                                 <a href="{{route('frontend.contact')}}">Contact</a>
                             </li>
+                            <li>
+                                <a href="{{route('frontend.privacy_policy')}}">Refund Policy</a>
+                            </li>
                         </ul>
                     </div>
 

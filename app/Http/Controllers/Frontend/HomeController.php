@@ -32,6 +32,12 @@ class HomeController extends Controller
         ]);
     }
 
+
+    public function privacy_policy ()
+    {
+        return view('frontend.privacy_policy.index');
+    }
+
     public function abouts_us()
     {
         return view('frontend.about_us');
