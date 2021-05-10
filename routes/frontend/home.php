@@ -10,7 +10,7 @@ use App\Http\Controllers\Frontend\MyCartController;
 use App\Http\Controllers\Frontend\User\PurchaseHistoryController;
 use App\Http\Controllers\Frontend\FavoriteController;
 use App\Http\Controllers\Frontend\PurchasedMusicController;
-
+use App\Http\Controllers\Frontend\Auth\UpdatePasswordController;
 /*
  * Frontend Controllers
  * All route names are prefixed with 'frontend.'.
