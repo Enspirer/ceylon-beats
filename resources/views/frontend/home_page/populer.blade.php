@@ -174,5 +174,118 @@
         </div>
     </div>
 
-    <h1 data-animscroll="fade-up">IT'S THAT SIMPLE</h1>
+    <h1 data-animscroll="fade-up">PARTNERS</h1>
+
+    <div class="container bottom_border">
+        <div class="row">
+            <div class="col-md-3">
+                <div style="background-image: url('{{url('logo/1.png')}}');height: 100px;background-repeat: no-repeat;background-position: center;filter: invert(1);background-size: contain;"></div>
+
+            </div>
+            <div class="col-md-3">
+                <div style="background-image: url('{{url('logo/2.png')}}');height: 100px;background-repeat: no-repeat;background-position: center;filter: invert(1);background-size: contain;"></div>
+
+            </div>
+            <div class="col-md-3">
+                <div style="background-image: url('{{url('logo/3.png')}}');height: 100px;background-repeat: no-repeat;background-position: center;background-size: contain;"></div>
+
+            </div>
+            <div class="col-md-3">
+                <div style="background-image: url('{{url('logo/4.png')}}');height: 100px;background-repeat: no-repeat;background-position: center;background-size: contain;"></div>
+
+            </div>
+        </div> <br><br>
+        <div class="row">
+            <div class="col-md-3">
+                <div style="background-image: url('{{url('logo/5.png')}}');height: 100px;background-repeat: no-repeat;background-position: center;filter: invert(1);background-size: contain;"></div>
+
+            </div>
+            <div class="col-md-3">
+                <div style="background-image: url('{{url('logo/6.png')}}');height: 100px;background-repeat: no-repeat;background-position: center;background-size: contain;"></div>
+
+            </div>
+            <div class="col-md-3">
+                <div style="background-image: url('{{url('logo/7.png')}}');height: 100px;background-repeat: no-repeat;background-position: center;background-size: contain;"></div>
+
+            </div>
+            <div class="col-md-3">
+                <div style="background-image: url('{{url('logo/8.png')}}');height: 100px;background-repeat: no-repeat;background-position: center;background-size: contain;"></div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4 col-md col-sm-4 col-12 col" data-animscroll="fade-up">
+                <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
+                <p><i class="fa fa-location-arrow"></i> &nbsp; 387/C, Kalalgoda, Pannipitiya</p>
+                <p><i class="fa fa fa-envelope"></i>&nbsp; jnsstuiolk@gmail.com</p>
+            </div>
+
+            <div class="col-sm-4 col-md col-6 col" data-animscroll="fade-up">
+                <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+                <!--headin5_amrc-->
+                <ul class="footer_ul_amrc">
+                    <li><a href="{{route('frontend.explorer',['genres','author_name','duration','price','blues'])}}">Blues</a></li>
+                    <li><a href="{{route('frontend.explorer',['genres','author_name','duration','price','classic'])}}">Classic</a></li>
+                    <li><a href="{{route('frontend.explorer',['genres','author_name','duration','price','indian'])}}">Indian</a></li>
+                    <li><a href="{{route('frontend.explorer',['genres','author_name','duration','price','rap'])}}">Rap</a></li>
+                    <li><a href="{{route('frontend.explorer',['genres','author_name','duration','price','rock'])}}">Rock</a></li>
+                </ul>
+            </div>
+
+            <div class="col-sm-4 col-md col-6 col" data-animscroll="fade-up">
+                <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+                <ul class="footer_ul_amrc">
+                    <li>
+                        <a href="{{url('/')}}">Home</a>
+                    </li>
+                    <li>
+                        <a href="{{route('frontend.about_us')}}" >About</a>
+                    </li>
+                    <li>
+                        <a href="{{route('frontend.explorer',['genres','author_name','duration','price','music_name'])}}">Music</a>
+                    </li>
+                    <li>
+                        <a href="{{route('frontend.contact')}}">Contact</a>
+                    </li>
+                    <li>
+                        <a href="{{route('frontend.privacy_policy')}}">Refund Policy</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-sm-4 col-md col-12 col" data-animscroll="fade-up">
+                <h5 class="headin5_amrc col_white_amrc pt2">Follow us</h5>
+                <ul class="footer_ul2_amrc">
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-twitter fleft padding-right"></i>
+                        </a>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing...
+                            <a href="#">https://www.lipsum.com/</a>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-twitter fleft padding-right"></i>
+                        </a>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing...
+                            <a href="#">https://www.lipsum.com/</a>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-twitter fleft padding-right"></i>
+                        </a>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing...
+                            <a href="#">https://www.lipsum.com/</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </section>
