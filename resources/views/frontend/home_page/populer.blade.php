@@ -261,7 +261,7 @@
                         <a href="#">
                             <i class="fab fa-twitter fleft padding-right"></i>
                         </a>
-                        <p>
+                        <p style="color: #b5b5b5;">
                             Lorem Ipsum is simply dummy text of the printing...
                             <a href="#">https://www.lipsum.com/</a>
                         </p>
@@ -270,7 +270,7 @@
                         <a href="#">
                             <i class="fab fa-twitter fleft padding-right"></i>
                         </a>
-                        <p>
+                        <p style="color: #b5b5b5;">
                             Lorem Ipsum is simply dummy text of the printing...
                             <a href="#">https://www.lipsum.com/</a>
                         </p>
@@ -279,7 +279,7 @@
                         <a href="#">
                             <i class="fab fa-twitter fleft padding-right"></i>
                         </a>
-                        <p>
+                        <p style="color: #b5b5b5;">
                             Lorem Ipsum is simply dummy text of the printing...
                             <a href="#">https://www.lipsum.com/</a>
                         </p>
