@@ -210,7 +210,45 @@
           aria-hidden="true"></i></i></a> -->
 
         <footer class="footer" style="padding-bottom: 220px">
+
             <div class="container bottom_border">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div style="background-image: url('{{url('logo/1.png')}}');height: 100px;background-repeat: no-repeat;background-position: center;filter: invert(1);background-size: contain;"></div>
+
+                    </div>
+                    <div class="col-md-3">
+                        <div style="background-image: url('{{url('logo/2.png')}}');height: 100px;background-repeat: no-repeat;background-position: center;filter: invert(1);background-size: contain;"></div>
+
+                    </div>
+                    <div class="col-md-3">
+                        <div style="background-image: url('{{url('logo/3.png')}}');height: 100px;background-repeat: no-repeat;background-position: center;background-size: contain;"></div>
+
+                    </div>
+                    <div class="col-md-3">
+                        <div style="background-image: url('{{url('logo/4.png')}}');height: 100px;background-repeat: no-repeat;background-position: center;background-size: contain;"></div>
+
+                    </div>
+                </div> <br><br>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div style="background-image: url('{{url('logo/5.png')}}');height: 100px;background-repeat: no-repeat;background-position: center;filter: invert(1);background-size: contain;"></div>
+
+                        </div>
+                        <div class="col-md-3">
+                            <div style="background-image: url('{{url('logo/6.png')}}');height: 100px;background-repeat: no-repeat;background-position: center;background-size: contain;"></div>
+
+                        </div>
+                        <div class="col-md-3">
+                            <div style="background-image: url('{{url('logo/7.png')}}');height: 100px;background-repeat: no-repeat;background-position: center;background-size: contain;"></div>
+
+                        </div>
+                        <div class="col-md-3">
+                            <div style="background-image: url('{{url('logo/8.png')}}');height: 100px;background-repeat: no-repeat;background-position: center;background-size: contain;"></div>
+
+                        </div>
+                    </div>
+
                 <div class="row">
                     <div class="col-sm-4 col-md col-sm-4 col-12 col" data-animscroll="fade-up">
                         <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
