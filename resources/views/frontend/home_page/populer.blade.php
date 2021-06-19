@@ -216,9 +216,9 @@
 
         <div class="row">
             <div class="col-sm-4 col-md col-sm-4 col-12 col" data-animscroll="fade-up">
-                <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
-                <p><i class="fa fa-location-arrow"></i> &nbsp; 387/C, Kalalgoda, Pannipitiya</p>
-                <p><i class="fa fa fa-envelope"></i>&nbsp; jnsstuiolk@gmail.com</p>
+                <h5 class="headin5_amrc col_white_amrc pt2" style="color: #b5b5b5;">Find us</h5>
+                <p style="color: #b5b5b5 !important;"><i class="fa fa-location-arrow"></i> &nbsp; 387/C, Kalalgoda, Pannipitiya</p>
+                <p style="color: #b5b5b5;"><i class="fa fa fa-envelope"></i>&nbsp; jnsstuiolk@gmail.com</p>
             </div>
 
             <div class="col-sm-4 col-md col-6 col" data-animscroll="fade-up">
