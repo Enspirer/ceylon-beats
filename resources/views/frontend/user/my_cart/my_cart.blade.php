@@ -40,11 +40,6 @@
                                     @foreach($cartDetails as $cartDetail)
                                         @include('frontend.user.my_cart.music_item')
                                     @endforeach
-
-
-
-
-
                                     <div class="row my-cart-bottum">
                                         <div class="col-md-5"></div>
                                         <div class="col-md-7">
@@ -94,7 +89,7 @@
                     <form method="post" action="{{route('frontend.user.check_out_func')}}">
                         {{csrf_field()}}
                         <input type="hidden" name="merchant_id" value="217295">    <!-- Replace your Merchant ID -->
-                        <input type="hidden" name="return_url" value="{{route('frontend.user.checkout_finish')}}">
+                        <input type="hidden" name="return_url" value="{{url('checkout')}}">
                         <input type="hidden" name="cancel_url" value="{{route('frontend.user.purchase.not_working')}}">
                         <input type="hidden" name="notify_url" value="{{url('/')}}">
                         <input type="hidden" name="order_id" value="ItemNo12345">

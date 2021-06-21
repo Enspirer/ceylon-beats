@@ -24,6 +24,9 @@ class MyCartController extends Controller
     {
         $newaddress = new AddressDetails;
         $newaddress->address = $request->address;
+        $newaddress->phone = $request->phone;
+        $newaddress->city = $request->city;
+        $newaddress->country = $request->country;
         $newaddress->save();
         $amount = $request->amount;
         $complete_url = $request->return_url.'/'.$newaddress->id;

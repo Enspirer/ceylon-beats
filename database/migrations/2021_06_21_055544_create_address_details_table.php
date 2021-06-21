@@ -16,6 +16,9 @@ class CreateAddressDetailsTable extends Migration
         Schema::create('address_details', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->text('invoice_id')->nullable();
+            $table->text('phone')->nullable();
+            $table->text('city')->nullable();
+            $table->text('country')->nullable();
             $table->text('address')->nullable();
             $table->timestamps();
         });

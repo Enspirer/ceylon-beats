@@ -166,10 +166,13 @@
                                         <span class="text-600 text-110 text-blue align-middle">{{$userDetails->first_name}} {{$userDetails->last_name}}</span>
                                         @if($addressDetails)
                                             <p>{{$addressDetails->address}}</p>
+                                            <p><b>City: </b>{{$addressDetails->city}}</p>
+                                            <p><b>Country: </b>{{$addressDetails->country}}</p>
+                                            <p><b>Phone Number: </b>{{$addressDetails->phone}}</p>
 
                                         @else
 
-                                            @endif
+                                        @endif
                                     </div>
                                 </div>
                                 <!-- /.col -->
