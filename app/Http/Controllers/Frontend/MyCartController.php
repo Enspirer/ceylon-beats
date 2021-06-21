@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
+use App\Models\AddressDetails;
 use App\Models\Invoice;
 use App\Models\InvoiceItem;
 use App\Models\MusicProducts;
@@ -21,8 +22,11 @@ class MyCartController extends Controller
 
     public function CheckOutFunc(Request $request)
     {
+        $newaddress = new AddressDetails;
+        $newaddress->address = $request->address;
+        $newaddress->save();
         $amount = $request->amount;
-        $complete_url = $request->return_url;
+        $complete_url = $request->return_url.'/'.$newaddress->id;
         $order_id = rand();
         $api_base	= "https://ap-gateway.mastercard.com/";
         $URL	= $api_base."api/rest/version/56/merchant/"."MPGS00000032"."/session";
@@ -58,15 +62,16 @@ class MyCartController extends Controller
         {
             $session_id = $response['session']['id'];
         }
-
-
-
         return view('frontend.user.my_cart.cart_checkout',[
             'session_id' => $session_id,
             'api_base' => $api_base,
             'complete_url' => $complete_url,
             'amount' => $amount,
-            'order_id' =>$order_id
+            'order_id' =>$order_id,
+            'address' => $request->address,
+            'phone' => $request->phone,
+            'city' => $request->city,
+            'country' => $request->country,
         ]);
     }
 
@@ -76,7 +81,7 @@ class MyCartController extends Controller
         return view('frontend.error_report.purchase_error');
     }
 
-    public function checkout_finish()
+    public function checkout_finish($id)
     {
         $cardDetails = Cart::getTotal();
         $getCartContent = Cart::getContent();
@@ -94,6 +99,9 @@ class MyCartController extends Controller
             $Invoice->discount_value = '0';
             $Invoice->discount_value = '0';
             $Invoice->save();
+            AddressDetails::where('id',$id)->update([
+                'invoice_id' => $Invoice->id
+            ]);
             foreach ($getCartContent as $key => $music)
             {
                 $productDetails = MusicProducts::where('id',$music->id)->first();
@@ -113,7 +121,6 @@ class MyCartController extends Controller
                 ];
                 DB::table('invoice_items')->insert($arrayDetail);
             }
-
             DB::commit();
         } catch (\Exception $e) {
             DB::rollback();

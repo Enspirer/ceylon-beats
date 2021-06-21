@@ -164,6 +164,7 @@
                                     <div>
                                         <span class="text-sm text-grey-m2 align-middle">To:</span>
                                         <span class="text-600 text-110 text-blue align-middle">{{$userDetails->first_name}} {{$userDetails->last_name}}</span>
+                                        <p>{{$addressDetails->address}}</p>
                                     </div>
                                 </div>
                                 <!-- /.col -->

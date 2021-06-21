@@ -23,6 +23,7 @@ class CreateInvoicesTable extends Migration
             $table->text('status');
             $table->text('discount_type')->nullable();
             $table->text('discount_value')->nullable();
+            $table->text('delivery_address')->nullable();
             $table->timestamps();
         });
     }

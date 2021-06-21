@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
+use App\Models\AddressDetails;
 use App\Models\Auth\User;
 use App\Models\Invoice;
 use App\Models\InvoiceItem;
@@ -40,11 +41,13 @@ class InvoiceController extends Controller
         $invoiceDetails = Invoice::where('id',$id)->first();
         $invoiceItemDetails = InvoiceItem::where('invoice_id',$id)->get();
         $userDetails = User::where('id',$invoiceDetails->user_id)->first();
+        $addressDetaials = AddressDetails::where('id',$invoiceDetails->id)->first();
 
         return view('backend.invoice.show',[
             'invoice_details' =>$invoiceDetails,
             'invoice_itemDetails' =>$invoiceItemDetails,
-            'userDetails' => $userDetails
+            'userDetails' => $userDetails,
+            'addressDetails' => $addressDetaials
         ]);
 
     }

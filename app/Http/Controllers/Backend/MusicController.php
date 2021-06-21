@@ -85,11 +85,6 @@ class MusicController extends Controller
             array_push($priceArray,$outarray);
         }
         $encodeJosnPackagePrice = json_encode($priceArray);
-
-
-
-
-
         if($request->file('preview_file'))
         {
             $preview_fileName = time().'.'.$request->preview_file->getClientOriginalExtension();
