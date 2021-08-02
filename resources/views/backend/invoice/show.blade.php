@@ -165,8 +165,8 @@
                                         <span class="text-sm text-grey-m2 align-middle">To:</span>
                                         <span class="text-600 text-110 text-blue align-middle">{{$userDetails->first_name}} {{$userDetails->last_name}}</span>
                                         @if($addressDetails)
-                                            <p><b>Email: </b>{{$addressDetails->email}}</p>
 
+                                            <p><b>Email: </b>{{$userDetails->email}}</p>
                                             <p>{{$addressDetails->address}}</p>
                                             <p><b>City: </b>{{$addressDetails->city}}</p>
                                             <p><b>Country: </b>{{$addressDetails->country}}</p>
