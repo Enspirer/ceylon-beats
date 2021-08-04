@@ -136,7 +136,7 @@
                     </div>
                     <div class="modal-footer">
                         <a href="#" class="btn-cancel-modal" data-dismiss="modal">Cancel</a>
-                        <button type="submit" id="submit_cores{{$lastestMusicL->id}}"   class="btn-cart-modal" disabled>Add to Cart</button>
+                        <button type="submit" id="submit_cores_r_{{$lastestMusicL->id}}"   class="btn-cart-modal" disabled>Add to Cart</button>
                         <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                         <button type="button" class="btn btn-primary">Save changes</button> -->
                     </div>

@@ -536,6 +536,7 @@
                     $('#'+price_id).text(obj.price);
                     $('#pricedetails'+music_id).val(obj.price);
                     $('#submit_cores'+music_id).attr("disabled",false);
+                    $('#submit_cores_r_'+music_id).attr("disabled",false);
                     $('#view_license_link'+music_id).attr("href",'{{url('/view_license/')}}/' + obj.license_name);
                     $('#view_license_link'+music_id).text(obj.license_name);
                     $('#view_license_link'+music_id).click(function(){
