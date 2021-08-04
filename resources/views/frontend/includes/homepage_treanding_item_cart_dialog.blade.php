@@ -90,7 +90,7 @@
 
                     <input type="hidden" name="music_item_id" value="{{$lastestMusicL->id}}">
                     <div class="modal-body">
-                        <input type="hidden" name="price_details" value="" id="pricedetails{{$lastestMusicL->id}}">
+                        <input type="hidden" name="price_details" value="" id="pricedetails_r_{{$lastestMusicL->id}}">
                         <input type="hidden" name="music_item_id" value="{{$lastestMusicL->id}}">
                         <input type="hidden" name="music_name" value="{{$lastestMusicL->music_name}}">
                         <input type="hidden" name="preview_link" value="{{$lastestMusicL->preview_link}}">
