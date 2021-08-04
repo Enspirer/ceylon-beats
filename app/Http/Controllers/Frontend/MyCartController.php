@@ -86,6 +86,8 @@ class MyCartController extends Controller
 
     public function checkout_finish($id)
     {
+
+
         $cardDetails = Cart::getTotal();
         $getCartContent = Cart::getContent();
         DB::beginTransaction();
@@ -131,6 +133,14 @@ class MyCartController extends Controller
         Cart::clear();
         Mail::to(auth()->user()->email)->send(new OrderCompleteMail($Invoice->id));
         return redirect()->route('frontend.user.my_cart')->with('message', 'message|Record updated.');
+    }
+
+
+    public function helloword()
+    {
+        Mail::to(auth()->user()->email)->send(new OrderCompleteMail(1));
+
+        return 'subbect';
     }
 
 

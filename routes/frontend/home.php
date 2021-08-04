@@ -48,6 +48,9 @@ Route::group(['middleware' => ['auth', 'password_expires']], function () {
         Route::get('dashboard', [MyCartController::class, 'index'])->name('my_cart');
         Route::get('purchase_history', [PurchaseHistoryController::class, 'index'])->name('purchase_history');
 
+
+        Route::get('test_mail_function',[MyCartController::class,'helloword'])->name('test_mail_function');
+
         Route::get('music_items', [PurchasedMusicController::class, 'index'])->name('purchased_music');
         Route::get('music_items/viiew_invoice/{id}', [PurchaseHistoryController::class, 'view_invoice'])->name('view_invoice');
 
