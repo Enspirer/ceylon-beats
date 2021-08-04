@@ -136,9 +136,9 @@ class MyCartController extends Controller
     }
 
 
-    public function helloword()
+    public function helloword($id)
     {
-        Mail::to(auth()->user()->email)->send(new OrderCompleteMail(1));
+        Mail::to(auth()->user()->email)->send(new OrderCompleteMail($id));
 
         return 'subbect';
     }
