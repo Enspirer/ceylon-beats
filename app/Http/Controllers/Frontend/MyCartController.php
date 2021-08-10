@@ -22,69 +22,60 @@ class MyCartController extends Controller
 
     public function CheckOutFunc(Request $request)
     {
-        $recaptura = $request['g-recaptcha-response'];
-
-        if($recaptura){
-            $newaddress = new AddressDetails;
-            $newaddress->address = $request->address;
-            $newaddress->phone = $request->phone;
-            $newaddress->city = $request->city;
-            $newaddress->country = $request->country;
-            $newaddress->save();
-            $amount = $request->amount;
-            $complete_url = $request->return_url.'/'.$newaddress->id;
-            $order_id = rand();
-            $api_base	= "https://ap-gateway.mastercard.com/";
-            $URL	= $api_base."api/rest/version/56/merchant/"."MPGS00000032"."/session";
-            $username='merchant.'."MPGS00000032";
-            $password= "9aaf7d2cd3c37f8631f4852a22916ac2";
-            $header	= ["Content-Type: Application/json;charset=UTF-8"];
-            $requestData = [
-                'apiOperation' => 'CREATE_CHECKOUT_SESSION',
-                'order' => [
-                    "id" => $order_id,
-                    "currency" => "USD"
-                ],
-                'interaction'=>["operation"=>"PURCHASE"]
-            ];
-            $jsonRequest = json_encode($requestData);
-            $ch = curl_init();
-            curl_setopt($ch, CURLOPT_URL,$URL);
-            curl_setopt($ch, CURLOPT_TIMEOUT, 30); //timeout after 30 seconds
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);
-            curl_setopt($ch, CURLOPT_POSTFIELDS, $jsonRequest);
-            curl_setopt($ch, CURLOPT_POST, 1);
-            curl_setopt($ch, CURLOPT_HTTPHEADER, array("Content-Length: " . count($requestData)));
-            curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
-            curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_ANY);
-            curl_setopt($ch, CURLOPT_USERPWD, $username.":".$password);
-            $result=curl_exec ($ch);
-            $info = curl_getinfo($ch);
-            curl_close ($ch);
-            $response 	= json_decode($result,true);
-            //print_r($response);
-            $session_id	= "";
-            if (!empty($response['result']) && $response['result'] == "SUCCESS")
-            {
-                $session_id = $response['session']['id'];
-            }
-            return view('frontend.user.my_cart.cart_checkout',[
-                'session_id' => $session_id,
-                'api_base' => $api_base,
-                'complete_url' => $complete_url,
-                'amount' => $amount,
-                'order_id' =>$order_id,
-                'address' => $request->address,
-                'phone' => $request->phone,
-                'city' => $request->city,
-                'country' => $request->country,
-            ]);
-        }else{
-            return back();
+        $newaddress = new AddressDetails;
+        $newaddress->address = $request->address;
+        $newaddress->phone = $request->phone;
+        $newaddress->city = $request->city;
+        $newaddress->country = $request->country;
+        $newaddress->save();
+        $amount = $request->amount;
+        $complete_url = $request->return_url.'/'.$newaddress->id;
+        $order_id = rand();
+        $api_base	= "https://ap-gateway.mastercard.com/";
+        $URL	= $api_base."api/rest/version/56/merchant/"."MPGS00000032"."/session";
+        $username='merchant.'."MPGS00000032";
+        $password= "9aaf7d2cd3c37f8631f4852a22916ac2";
+        $header	= ["Content-Type: Application/json;charset=UTF-8"];
+        $requestData = [
+            'apiOperation' => 'CREATE_CHECKOUT_SESSION',
+            'order' => [
+                "id" => $order_id,
+                "currency" => "USD"
+            ],
+            'interaction'=>["operation"=>"PURCHASE"]
+        ];
+        $jsonRequest = json_encode($requestData);
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL,$URL);
+        curl_setopt($ch, CURLOPT_TIMEOUT, 30); //timeout after 30 seconds
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $jsonRequest);
+        curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array("Content-Length: " . count($requestData)));
+        curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
+        curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_ANY);
+        curl_setopt($ch, CURLOPT_USERPWD, $username.":".$password);
+        $result=curl_exec ($ch);
+        $info = curl_getinfo($ch);
+        curl_close ($ch);
+        $response 	= json_decode($result,true);
+        //print_r($response);
+        $session_id	= "";
+        if (!empty($response['result']) && $response['result'] == "SUCCESS")
+        {
+            $session_id = $response['session']['id'];
         }
-
-
-
+        return view('frontend.user.my_cart.cart_checkout',[
+            'session_id' => $session_id,
+            'api_base' => $api_base,
+            'complete_url' => $complete_url,
+            'amount' => $amount,
+            'order_id' =>$order_id,
+            'address' => $request->address,
+            'phone' => $request->phone,
+            'city' => $request->city,
+            'country' => $request->country,
+        ]);
     }
 
 

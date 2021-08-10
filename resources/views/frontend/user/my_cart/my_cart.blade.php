@@ -4,7 +4,7 @@
 
 @section('content')
     @include('frontend.includes.nav')
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 
     <section id="explore-music">
         <div class="mask mask-free">
@@ -86,7 +86,7 @@
                     </div>
                     {{--<form method="post" action="https://www.payhere.lk/pay/checkout">--}}
                     {{--<form method="post" action="https://sandbox.payhere.lk/pay/checkout">--}}
-                    <form id="demo-form" method="post" action="{{route('frontend.user.check_out_func')}}">
+                    <form method="post" action="{{route('frontend.user.check_out_func')}}">
                         {{csrf_field()}}
                         <input type="hidden" name="merchant_id" value="217295">    <!-- Replace your Merchant ID -->
                         <input type="hidden" name="return_url" value="{{url('checkout')}}">
@@ -125,10 +125,6 @@
                                     <option value="China">China</option>
                                 </select>
                             </div>
-                            <div class="g-recaptcha"
-                                 data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"></div>
-                            <p></p><br>
-
                             <input type="submit" value="Buy Now">
                         </div>
                     </form>
@@ -139,9 +135,6 @@
 
 
 @endsection
-
-
-
 <script>
     function playAudio(id,icon) {
         var x = document.getElementById(id);
