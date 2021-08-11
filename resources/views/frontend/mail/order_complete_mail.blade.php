@@ -33,7 +33,16 @@
                                                     <p style="font-size:20px;">Successful payment of USD {{number_format($invoice_details->total,2)}} for order reference #{{$invoice_details->id}}.<br> Please log in to www.ceylonbeatz.com to.</p>
 
 
-                                                    <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary" style="border-collapse:separate;width:100%;text-align: center;"><div style="color:#ffffff;background-color:#3498db;border:solid 1px #3498db;text-decoration:none;font-size:14px;font-weight:bold;margin:0;padding:12px 25px;text-transform:capitalize;border-color:#3498db;">
+                                                    <div class="" style="text-align: left">
+                                                        <h4>Payment Details</h4><br>
+                                                        <b>Customer Name:</b> {{$user_details->first_name}} {{$user_details->last_name}} <br>
+                                                        <b>Payment Date:</b> {{$invoice_details->created_at}} <br>
+                                                        <b>Order ID:</b> #00 {{$invoice_details->id}} <br>
+                                                        <b>Phone Number:</b>  {{$address_details->phone}}
+                                                    </div><br>
+
+                                                    <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary" style="border-collapse:separate;width:100%;text-align: center;">
+                                                        <div style="color:#ffffff;background-color:#3498db;border:solid 1px #3498db;text-decoration:none;font-size:14px;font-weight:bold;margin:0;padding:12px 25px;text-transform:capitalize;border-color:#3498db;">
                                                             Visit
                                                         </div>
                                                     </table>

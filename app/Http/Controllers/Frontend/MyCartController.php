@@ -14,6 +14,8 @@ use Cart;
 use Mail;
 use App\Mail\OrderCompleteMail;
 use GuzzleHttp;
+
+
 class MyCartController extends Controller
 {
     public function index()
@@ -142,6 +144,7 @@ class MyCartController extends Controller
         }
         Cart::clear();
         Mail::to(auth()->user()->email)->send(new OrderCompleteMail($Invoice->id));
+        Mail::to(auth()->user()->email)->send(new ClientInvoiceMail($Invoice->id));
         return redirect()->route('frontend.user.my_cart')->with('message', 'message|Record updated.');
     }
 
@@ -149,7 +152,7 @@ class MyCartController extends Controller
     public function helloword($id)
     {
         Mail::to(auth()->user()->email)->send(new ClientInvoiceMail($id));
-
+        Mail::to(auth()->user()->email)->send(new OrderCompleteMail($id));
         return 'subbect';
     }
 
