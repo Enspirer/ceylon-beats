@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
+use App\Mail\ClientInvoiceMail;
 use App\Models\AddressDetails;
 use App\Models\Invoice;
 use App\Models\InvoiceItem;
@@ -147,7 +148,7 @@ class MyCartController extends Controller
 
     public function helloword($id)
     {
-        Mail::to(auth()->user()->email)->send(new OrderCompleteMail($id));
+        Mail::to(auth()->user()->email)->send(new ClientInvoiceMail($id));
 
         return 'subbect';
     }
