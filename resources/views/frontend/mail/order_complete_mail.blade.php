@@ -32,6 +32,23 @@
                                             </span>
                                                     <p style="font-size:20px;">Successful payment of USD {{number_format($invoice_details->total,2)}} for order reference #{{$invoice_details->id}}.<br> Please log in to www.ceylonbeatz.com to.</p>
 
+                                                    <div style="text-align: left">
+                                                        <p>By making this payment to CeylonBeatz you agreed</p>
+
+                                                        <p>that the Payment is non-transferable, non-refundable and non-revocable.
+                                                            to the Online Payment Terms and Conditions listed at www.mpg.seylan.lk/images/2020/ceylonbeatz.pdf </p>
+
+                                                        <p> to the facility Terms and Conditions listed at www.ceylonbeatz.com
+                                                            If you need any further assistance please feel free to email us at   jnsstuiolk@gmail.com. Please do not reply to this mail.</p>
+
+                                                        <p> Once again, Welcome to CeylonBeatz. We hope you enjoy your fitness journey with us.<p>
+
+                                                        <p>Thank you!</p>
+
+                                                        <p> Team CeylonBeatz </p>
+                                                    </div>
+
+
 
                                                     <div class="" style="text-align: left">
                                                         <h4>Payment Details</h4><br>
