@@ -17,7 +17,8 @@
     <script type="text/javascript">
         function errorCallback(error)
         {
-            window.location.href="{{url('/')}}";
+            console.log(error);
+            {{--window.location.href="{{url('/')}}";--}}
         }
         function cancelCallback() {
             window.location.href="{{url('/')}}";

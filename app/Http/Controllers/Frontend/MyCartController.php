@@ -45,7 +45,7 @@ class MyCartController extends Controller
             $api_base	= "https://test-seylan.mtf.gateway.mastercard.com/";
             $URL	= $api_base."api/rest/version/56/merchant/"."SEYLANTEST2"."/session";
             $username='merchant.'."SEYLANTEST2";
-            $password= "dc9e4b45b96612160cf7302c8dd9ce9a";
+            $password= "75ab0ed4208aafc60b9157fbae4d9fd0";
 
             $header	= ["Content-Type: Application/json;charset=UTF-8"];
             $requestData = [
@@ -71,6 +71,8 @@ class MyCartController extends Controller
             $info = curl_getinfo($ch);
             curl_close ($ch);
             $response 	= json_decode($result,true);
+
+
             //print_r($response);
             $session_id	= "";
             if (!empty($response['result']) && $response['result'] == "SUCCESS")
