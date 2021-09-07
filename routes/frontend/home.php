@@ -17,7 +17,7 @@ use App\Http\Controllers\Frontend\Auth\UpdatePasswordController;
  */
 Route::get('/', [HomeController::class, 'index'])->name('index');
 Route::get('/about_us', [HomeController::class, 'abouts_us'])->name('about_us');
-Route::get('/privacy_policy', [HomeController::class, 'privacy_policy'])->name('privacy_policy');
+Route::get('/refund_policy', [HomeController::class, 'privacy_policy'])->name('privacy_policy');
 
 Route::get('view_license/{name}', [HomeController::class,'view_license'])->name('view_licenses_details');
 

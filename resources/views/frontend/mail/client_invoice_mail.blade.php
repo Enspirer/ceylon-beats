@@ -81,7 +81,7 @@ Codepen: https://codepen.io/supah/
                                         <tr>
                                             <td>
                                                 <p> By making this payment to CeylonBeatz you agreed <br>
-                                                    that the Payment is non-transferable, non-refundable and non-revocable. to the Online Payment Terms and Conditions listed at www.mpg.seylan.lk/images/2020/ceylonbeatz.pdf <br>
+                                                    that the Payment is non-transferable, non-refundable and non-revocable. to the Online Payment Terms and Conditions listed at <a style="color: blue; font-weight: 500" href="{{route('frontend.privacy_policy')}}">Terms and Conditions</a>  <br>
                                                     to the facility Terms and Conditions listed at www.ceylonbeatz.com If you need any further assistance please feel free to email us at jnsstuiolk@gmail.com. Please do not reply to this mail.<br>
 
                                                     <br>Once again, Welcome to CeylonBeatz. We hope you enjoy your fitness journey with us.<br>
