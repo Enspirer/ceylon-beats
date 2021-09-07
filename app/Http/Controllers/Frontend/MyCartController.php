@@ -151,7 +151,7 @@ class MyCartController extends Controller
             DB::rollback();
         }
         Cart::clear();
-        Mail::to(auth()->user()->email)->send(new OrderCompleteMail($Invoice->id));
+//        Mail::to(auth()->user()->email)->send(new OrderCompleteMail($Invoice->id));
         Mail::to(auth()->user()->email)->send(new ClientInvoiceMail($Invoice->id));
         return redirect()->route('frontend.user.my_cart')->with('message', 'message|Record updated.');
     }
