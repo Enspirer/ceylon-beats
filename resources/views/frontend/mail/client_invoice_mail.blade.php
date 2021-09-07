@@ -43,12 +43,75 @@ Codepen: https://codepen.io/supah/
 
 
 <!-- Header -->
+
+
+
+
+
+
+
 <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="fullTable" bgcolor="#e1e1e1">
     <tr>
         <td height="20"></td>
     </tr>
     <tr>
         <td>
+
+
+            <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="fullTable" bgcolor="#e1e1e1">
+                <tr>
+                    <td>
+                        <table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="fullTable" bgcolor="#ffffff" style="border-radius: 0 0 10px 10px;">
+                            <tr>
+                                <td>
+                                    <table width="480" border="0" cellpadding="0" cellspacing="0" align="center" class="fullPadding">
+                                        <tbody>
+                                        <tr>
+                                            <td style="font-size: 12px; color: #5b5b5b; font-family: 'Open Sans', sans-serif; line-height: 18px; vertical-align: top; text-align: left;">
+                                                <p style="font-size: 20px;text-align: center;">Successful payment of USD {{number_format($invoice_details->total,2)}} for order reference #{{$invoice_details->id}}.<br></p>
+                                                <br>
+                                                <p style="font-size: 20px;text-align: center;">Please log in to www.ceylonbeatz.com to.</p>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <table width="480" border="0" cellpadding="0" cellspacing="0" align="center" class="fullPadding">
+                                        <tbody>
+                                        <tr>
+                                            <td>
+                                                <p> By making this payment to CeylonBeatz you agreed <br>
+                                                    that the Payment is non-transferable, non-refundable and non-revocable. to the Online Payment Terms and Conditions listed at www.mpg.seylan.lk/images/2020/ceylonbeatz.pdf <br>
+                                                    to the facility Terms and Conditions listed at www.ceylonbeatz.com If you need any further assistance please feel free to email us at jnsstuiolk@gmail.com. Please do not reply to this mail.<br>
+
+                                                    <br>Once again, Welcome to CeylonBeatz. We hope you enjoy your fitness journey with us.<br>
+                                                    Thank you! <br><br>
+                                                    Team CeylonBeatz</p>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <table width="480" border="0" cellpadding="0" cellspacing="0" align="center" class="fullPadding">
+                                        <tbody>
+                                        <tr>
+                                            <td style="font-size: 12px; color: #5b5b5b; font-family: 'Open Sans', sans-serif; line-height: 18px; vertical-align: top; text-align: left;">
+                                                <p style="font-size: 20px;text-align: center;">Please contact us for any support you may need. info@ceylonbeatz.com<br></p>
+                                                <br>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </td>
+                </tr><br><br>
+            </table>
+
+
+
             <table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="fullTable" bgcolor="#ffffff" style="border-radius: 10px 10px 0 0;">
                 <tr class="hiddenMobile">
                     <td height="40"></td>
@@ -135,8 +198,11 @@ Codepen: https://codepen.io/supah/
 </table>
 <!-- /Header -->
 <!-- Order Details -->
+
+
 <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="fullTable" bgcolor="#e1e1e1">
     <tbody>
+
     <tr>
         <td>
             <table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="fullTable" bgcolor="#ffffff">
@@ -152,6 +218,7 @@ Codepen: https://codepen.io/supah/
                     <td>
                         <table width="480" border="0" cellpadding="0" cellspacing="0" align="center" class="fullPadding">
                             <tbody>
+
                                 <tr>
                                     <th style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #5b5b5b; font-weight: normal; line-height: 1; vertical-align: top; padding: 0 10px 7px 0;" width="52%" align="left">
                                         Music Name
@@ -290,6 +357,8 @@ Codepen: https://codepen.io/supah/
                                     <b>File Format</b> - Wave
                                     <br><br>
                                     Thank you very much Trusting Ceylon Music Compositions<br><br>
+
+
                                 </td>
                             </tr>
                             </tbody>
