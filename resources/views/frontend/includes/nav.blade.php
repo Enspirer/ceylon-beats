@@ -1,7 +1,7 @@
 <nav class="navbar-top navbar navbar-expand-lg navbar-dark bg-dark" style="z-index: 9999999999999;">
     <div class="container">
 
-    <div class="mob-user-ic col-md-2 col-2 d-none" data-toggle="modal" data-target="#exampleModalTEECenter2" style="padding-top: 10px;padding-bottom: 10px;">
+    <div class="mob-user-ic col-md-2 col-2 d-none" id="stack_arm" data-toggle="modal" data-target="#exampleModalTEECenter2" style="padding-top: 10px;padding-bottom: 10px;">
           <i class="fa fa-user"  type="button" data-toggle="modal" data-target="#exampleModalTEECenter2" style="color: #fff;font-size: 30px;" aria-hidden="true"></i>
         </div>
 
@@ -11,8 +11,17 @@
                 <select class="form-select" aria-label="Default select example">
                     <option selected>{{settings('currency')}}</option>
                 </select>
+
+
+
             </div>
+
+
         </div>
+        <div class="mob-user-ic d-none" id="stack_armqs" data-toggle="modal" data-target="#exampleModalTEECenter2" style="padding-top: 10px;padding-bottom: 10px;">
+            <i class="fa fa-user"  type="button" data-toggle="modal" data-target="#exampleModalTEECenter2" style="color: #fff;font-size: 30px;" aria-hidden="true"></i>
+        </div>
+
         
         <div class="menu col-md-8">
             <div class="row">
@@ -34,6 +43,10 @@
                 <div class="menu-item col-md-3">
                     <a class="{{ Request::segment(1) === 'contact' ? 'active' : null }}"   href="{{route('frontend.contact')}}">Contact Us</a>
                 </div>
+
+
+
+
             </div>
         </div>
         
@@ -57,6 +70,18 @@
               <li><a href="{{route('frontend.explorer',['genres','author_name','duration','price','music_name'])}}">Music</a></li>
               <li><a href="{{route('frontend.about_us')}}">About Us</a></li>
               <li><a  href="{{route('frontend.contact')}}">Contact Us</a></li>
+
+              @auth
+
+                <li>
+                    <a style="background-color: #d88c00;padding: 10px;border-radius: 10px;font-size: 20px;color: white;" href="{{route('frontend.user.my_cart')}}" class="button">Checkout <i class="fa fa-shopping-cart"></i> ({{count($cartDetails)}})</a>
+                </li>
+
+              @else
+                  <li>
+                      <a href="{{route('frontend.auth.login')}}" class="button">Checkout <i class="fa fa-chevron-right"></i></a>
+                  </li>
+              @endauth
             </ul>
           </div>
         </div>

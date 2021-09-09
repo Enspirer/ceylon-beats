@@ -33,6 +33,20 @@
     @endif
 
     <style>
+        @media (max-width: 1290px){
+            #stack_armqs {
+                display: block !important;
+            }
+        }
+        @media (max-width: 768px){
+            #stack_armqs {
+                display: none !important;
+            }
+        }
+
+    </style>
+
+    <style>
         * {
             box-sizing: border-box;
         }
