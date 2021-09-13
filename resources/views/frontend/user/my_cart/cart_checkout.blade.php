@@ -30,7 +30,7 @@
             window.location.href="{{$complete_url}}";
         }
         Checkout.configure({
-            merchant: 'SEYLANTEST2',
+            merchant: 'MPGS00000032',
             order: {
                 amount: {{ $amount}},
                 currency: 'USD',
@@ -40,7 +40,7 @@
             interaction: {
                 operation: 'PURCHASE',
                 merchant: {
-                    name: 'SEYLANTEST2',
+                    name: 'MPGS00000032',
                     address: {
                         line1: 'Main Street,Colombo',
                         line2: 'Homagama'

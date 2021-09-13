@@ -42,10 +42,10 @@ class MyCartController extends Controller
             $amount = $request->amount;
             $complete_url = $request->return_url.'/'.$newaddress->id;
             $order_id = rand();
-            $api_base	= "https://test-seylan.mtf.gateway.mastercard.com/";
-            $URL	= $api_base."api/rest/version/56/merchant/"."SEYLANTEST2"."/session";
-            $username='merchant.'."SEYLANTEST2";
-            $password= "75ab0ed4208aafc60b9157fbae4d9fd0";
+            $api_base	= "https://seylan.gateway.mastercard.com/";
+            $URL	= $api_base."api/rest/version/56/merchant/"."MPGS00000032"."/session";
+            $username='merchant.'."MPGS00000032";
+            $password= "03ff8883cd16391970d89c0f367c02a0";
 
             $header	= ["Content-Type: Application/json;charset=UTF-8"];
             $requestData = [
