@@ -13,8 +13,8 @@ use DB;
 use Cart;
 use Mail;
 use App\Mail\OrderCompleteMail;
-use GuzzleHttp;
-
+use GuzzleHttp\Client;
+use Http;
 
 class MyCartController extends Controller
 {
@@ -25,75 +25,52 @@ class MyCartController extends Controller
 
     public function CheckOutFunc(Request $request)
     {
-        return back();
-//        $recaptura = $request['g-recaptcha-response'];
-//
-////        $api_base	= "https://ap-gateway.mastercard.com/";
-////        $URL	= $api_base."api/rest/version/56/merchant/"."MPGS00000032"."/session";
-////        $username='merchant.'."MPGS00000032";
-////        $password= "9aaf7d2cd3c37f8631f4852a22916ac2";
-//
-//        if($recaptura){
-//            $newaddress = new AddressDetails;
-//            $newaddress->address = $request->address;
-//            $newaddress->phone = $request->phone;
-//            $newaddress->city = $request->city;
-//            $newaddress->country = $request->country;
-//            $newaddress->save();
-//            $amount = $request->amount;
-//            $complete_url = $request->return_url.'/'.$newaddress->id;
-//            $order_id = rand();
-//            $api_base	= "https://seylan.gateway.mastercard.com/";
-//            $URL	= $api_base."api/rest/version/56/merchant/"."MPGS00000032"."/session";
-//            $username='merchant.'."MPGS00000032";
-//            $password= "03ff8883cd16391970d89c0f367c02a0";
-//
-//            $header	= ["Content-Type: Application/json;charset=UTF-8"];
-//            $requestData = [
-//                'apiOperation' => 'CREATE_CHECKOUT_SESSION',
-//                'order' => [
-//                    "id" => $order_id,
-//                    "currency" => "USD"
-//                ],
-//                'interaction'=>["operation"=>"PURCHASE"]
-//            ];
-//            $jsonRequest = json_encode($requestData);
-//            $ch = curl_init();
-//            curl_setopt($ch, CURLOPT_URL,$URL);
-//            curl_setopt($ch, CURLOPT_TIMEOUT, 30); //timeout after 30 seconds
-//            curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);
-//            curl_setopt($ch, CURLOPT_POSTFIELDS, $jsonRequest);
-//            curl_setopt($ch, CURLOPT_POST, 1);
-//            curl_setopt($ch, CURLOPT_HTTPHEADER, array("Content-Length: " . count($requestData)));
-//            curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
-//            curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_ANY);
-//            curl_setopt($ch, CURLOPT_USERPWD, $username.":".$password);
-//            $result=curl_exec ($ch);
-//            $info = curl_getinfo($ch);
-//            curl_close ($ch);
-//            $response 	= json_decode($result,true);
-//
-//
-//            //print_r($response);
-//            $session_id	= "";
-//            if (!empty($response['result']) && $response['result'] == "SUCCESS")
-//            {
-//                $session_id = $response['session']['id'];
-//            }
-//            return view('frontend.user.my_cart.cart_checkout',[
-//                'session_id' => $session_id,
-//                'api_base' => $api_base,
-//                'complete_url' => $complete_url,
-//                'amount' => $amount,
-//                'order_id' =>$order_id,
-//                'address' => $request->address,
-//                'phone' => $request->phone,
-//                'city' => $request->city,
-//                'country' => $request->country,
-//            ]);
-//        }else{
-//            return back();
-//        }
+        if($request['g-recaptcha-response']){
+            $newaddress = new AddressDetails;
+            $newaddress->address = $request->address;
+            $newaddress->phone = $request->phone;
+            $newaddress->city = $request->city;
+            $newaddress->country = $request->country;
+            $newaddress->save();
+            $order_id = rand();
+
+            $headers = [
+                'user_secret' => '$2a$10$0.ogcTfS46TZIlKdyUeKHu0Hr2cDGcbNiufzIybnDtYpULkd4V3Li',
+                'Content-Type' => 'application/json',
+            ];
+
+            $GetOrder = [
+                'merchantRID' => $order_id,
+                'amount' => number_format($request->amount,2),
+                'validTimeLimit' => '5',
+                'returnUrl' => 'https://ceylonbeats.com/checkout/'.$order_id,
+                'customerMail' => $request->email,
+                'customerMobile' => $request->phone,
+                'mode' => 'WEB',
+                'orderSummary' => 'Order Description',
+                'customerReference' => $order_id,
+            ];
+
+            $client = new client();
+            $res = $client->post('https://dev.app.marx.lk/api/v2/ipg/orders', [
+                'headers' => $headers,
+                'json' => $GetOrder,
+            ]);
+
+            $decodeOuts = json_decode($res->getBody()->getContents());
+
+            return redirect($decodeOuts->data->payUrl);
+
+
+
+        }else{
+            return back();
+        }
+
+
+
+
+
 
 
 
