@@ -34,6 +34,7 @@ class MyCartController extends Controller
             $newaddress->save();
             $order_id = rand();
 
+
             $headers = [
                 'user_secret' => '$2a$10$0.ogcTfS46TZIlKdyUeKHu0Hr2cDGcbNiufzIybnDtYpULkd4V3Li',
                 'Content-Type' => 'application/json',
@@ -43,7 +44,7 @@ class MyCartController extends Controller
                 'merchantRID' => $order_id,
                 'amount' => number_format($request->amount,2),
                 'validTimeLimit' => '5',
-                'returnUrl' => 'https://ceylonbeats.com/checkout/'.$order_id,
+                'returnUrl' => 'https://ceylonbeats.com/checkout/'.$newaddress->id,
                 'customerMail' => $request->email,
                 'customerMobile' => $request->phone,
                 'mode' => 'WEB',
