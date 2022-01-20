@@ -36,7 +36,7 @@ class MyCartController extends Controller
 
 
             $headers = [
-                'user_secret' => '$2a$10$0.ogcTfS46TZIlKdyUeKHu0Hr2cDGcbNiufzIybnDtYpULkd4V3Li',
+                'user_secret' => '$2a$10$oICbDB.OG5Zt4Cx9fnPZ6.EK/MiAqe0dsn0UFV3c16LbB6TwWmE3i',
                 'Content-Type' => 'application/json',
             ];
 
@@ -53,7 +53,7 @@ class MyCartController extends Controller
             ];
 
             $client = new client();
-            $res = $client->post('https://dev.app.marx.lk/api/v2/ipg/orders', [
+            $res = $client->post('https://app.marx.lk/api/v2/ipg/orders', [
                 'headers' => $headers,
                 'json' => $GetOrder,
             ]);
