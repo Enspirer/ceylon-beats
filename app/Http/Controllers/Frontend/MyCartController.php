@@ -53,13 +53,13 @@ class MyCartController extends Controller
             ];
 
             $client = new client();
-            $res = $client->post('https://app.marx.lk/api/v2/ipg/orders', [
+            $res = $client->post('https://app.global.marx.lk/api/v2/ipg/orders', [
                 'headers' => $headers,
                 'json' => $GetOrder,
             ]);
 
             $decodeOuts = json_decode($res->getBody()->getContents());
-
+            
             return redirect($decodeOuts->data->payUrl);
 
 
