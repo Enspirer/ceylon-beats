@@ -83,7 +83,7 @@ class MyCartController extends Controller
         return view('frontend.error_report.purchase_error');
     }
 
-    public function checkout_finish($id,$order_id)
+    public function checkout_finish($id,$order_id , Request $request)
     {
 
         $headers = [
@@ -92,12 +92,12 @@ class MyCartController extends Controller
         ];
 
         $GetOrder = [
-            'merchantRID' => $order_id,
+            'merchantRID' => $request->mur,
 
         ];
 
         $client = new client();
-        $res = $client->put('https://app.global.marx.lk/api/v2/ipg/orders/'.$order_id, [
+        $res = $client->put('https://app.global.marx.lk/api/v2/ipg/orders/'.$request->tr, [
             'headers' => $headers,
             'json' => $GetOrder,
         ]);
