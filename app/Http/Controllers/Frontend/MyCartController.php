@@ -97,7 +97,7 @@ class MyCartController extends Controller
         ];
 
         $client = new client();
-        $res = $client->put('https://app.global.marx.lk/api/v2/ipg/orders', [
+        $res = $client->put('https://app.global.marx.lk/api/v2/ipg/orders/'.$id, [
             'headers' => $headers,
             'json' => $GetOrder,
         ]);
