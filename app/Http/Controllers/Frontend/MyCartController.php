@@ -104,55 +104,59 @@ class MyCartController extends Controller
 
 
         $decodeOuts = json_decode($res->getBody()->getContents());
-        dd($decodeOuts);
 
-
-        $cardDetails = Cart::getTotal();
-        $getCartContent = Cart::getContent();
-        DB::beginTransaction();
-        try {
-            $music_output = [];
-            $Invoice = new Invoice;
-            $Invoice->user_id = auth()->user()->id;
-            $Invoice->total = $cardDetails;
-            $Invoice->sub_total = $cardDetails;
-            $Invoice->payment_method = 'payhere';
-            $Invoice->phone_number = 'null';
-            $Invoice->status = 'success';
-            $Invoice->discount_type = 'none';
-            $Invoice->discount_value = '0';
-            $Invoice->discount_value = '0';
-            $Invoice->save();
-            AddressDetails::where('id',$id)->update([
-                'invoice_id' => $Invoice->id
-            ]);
-            foreach ($getCartContent as $key => $music)
-            {
-                $productDetails = MusicProducts::where('id',$music->id)->first();
-                $arrayDetail = [
-                    'music_id' => $music->id,
-                    'selected_license' => $music->attributes->license_name,
-                    'price' => $music->price,
-                    'offer_available' => 'yes',
-                    'offered_price' => $music->price,
-                    'preview_link' => $music->attributes->preview_link,
-                    'download_link' => $productDetails->download_link,
-                    'user_id' => auth()->user()->id,
-                    'author_name' => $productDetails->author_name,
-                    'genres' => $productDetails->genres_id,
-                    'music_name' =>$music->name,
-                    'invoice_id' =>$Invoice->id
-                ];
-                DB::table('invoice_items')->insert($arrayDetail);
+        if($decodeOuts->message == 'SUCCESS'){
+            $cardDetails = Cart::getTotal();
+            $getCartContent = Cart::getContent();
+            DB::beginTransaction();
+            try {
+                $music_output = [];
+                $Invoice = new Invoice;
+                $Invoice->user_id = auth()->user()->id;
+                $Invoice->total = $cardDetails;
+                $Invoice->sub_total = $cardDetails;
+                $Invoice->payment_method = 'payhere';
+                $Invoice->phone_number = 'null';
+                $Invoice->status = 'success';
+                $Invoice->discount_type = 'none';
+                $Invoice->discount_value = '0';
+                $Invoice->discount_value = '0';
+                $Invoice->save();
+                AddressDetails::where('id',$id)->update([
+                    'invoice_id' => $Invoice->id
+                ]);
+                foreach ($getCartContent as $key => $music)
+                {
+                    $productDetails = MusicProducts::where('id',$music->id)->first();
+                    $arrayDetail = [
+                        'music_id' => $music->id,
+                        'selected_license' => $music->attributes->license_name,
+                        'price' => $music->price,
+                        'offer_available' => 'yes',
+                        'offered_price' => $music->price,
+                        'preview_link' => $music->attributes->preview_link,
+                        'download_link' => $productDetails->download_link,
+                        'user_id' => auth()->user()->id,
+                        'author_name' => $productDetails->author_name,
+                        'genres' => $productDetails->genres_id,
+                        'music_name' =>$music->name,
+                        'invoice_id' =>$Invoice->id
+                    ];
+                    DB::table('invoice_items')->insert($arrayDetail);
+                }
+                DB::commit();
+            } catch (\Exception $e) {
+                DB::rollback();
             }
-            DB::commit();
-        } catch (\Exception $e) {
-            DB::rollback();
-        }
-        Cart::clear();
+            Cart::clear();
 //        Mail::to(auth()->user()->email)->send(new OrderCompleteMail($Invoice->id));
-        Mail::to(auth()->user()->email)->send(new ClientInvoiceMail($Invoice->id));
-        return redirect()->route('frontend.user.my_cart')->with('message', 'message|Record updated.');
+            Mail::to(auth()->user()->email)->send(new ClientInvoiceMail($Invoice->id));
+            return redirect()->route('frontend.user.my_cart')->with('message', 'message|Record updated.');
+        }else{
+            return back();
+        }
+
+
     }
 
 
