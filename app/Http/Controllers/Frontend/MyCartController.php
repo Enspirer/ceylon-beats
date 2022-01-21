@@ -86,6 +86,26 @@ class MyCartController extends Controller
     public function checkout_finish($id)
     {
 
+        $headers = [
+            'user_secret' => '$2a$10$oICbDB.OG5Zt4Cx9fnPZ6.EK/MiAqe0dsn0UFV3c16LbB6TwWmE3i',
+            'Content-Type' => 'application/json',
+        ];
+
+        $GetOrder = [
+            'merchantRID' => $id,
+
+        ];
+
+        $client = new client();
+        $res = $client->put('https://app.global.marx.lk/api/v2/ipg/orders', [
+            'headers' => $headers,
+            'json' => $GetOrder,
+        ]);
+
+
+        $decodeOuts = json_decode($res->getBody()->getContents());
+        dd($decodeOuts);
+
 
         $cardDetails = Cart::getTotal();
         $getCartContent = Cart::getContent();
