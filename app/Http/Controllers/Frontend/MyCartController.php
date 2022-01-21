@@ -44,7 +44,7 @@ class MyCartController extends Controller
                 'merchantRID' => $order_id,
                 'amount' => number_format($request->amount,2),
                 'validTimeLimit' => '5',
-                'returnUrl' => 'https://ceylonbeats.com/checkout/'.$newaddress->id,
+                'returnUrl' => 'https://ceylonbeats.com/checkout/'.$newaddress->id.'/'.$order_id,
                 'customerMail' => $request->email,
                 'customerMobile' => $request->phone,
                 'mode' => 'WEB',
@@ -83,7 +83,7 @@ class MyCartController extends Controller
         return view('frontend.error_report.purchase_error');
     }
 
-    public function checkout_finish($id)
+    public function checkout_finish($id,$order_id)
     {
 
         $headers = [
@@ -97,7 +97,7 @@ class MyCartController extends Controller
         ];
 
         $client = new client();
-        $res = $client->put('https://app.global.marx.lk/api/v2/ipg/orders/'.$id, [
+        $res = $client->put('https://app.global.marx.lk/api/v2/ipg/orders/'.$order_id, [
             'headers' => $headers,
             'json' => $GetOrder,
         ]);

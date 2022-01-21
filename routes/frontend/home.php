@@ -44,7 +44,7 @@ Route::group(['middleware' => ['auth', 'password_expires']], function () {
         Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
         Route::get('my_cart', [MyCartController::class, 'index'])->name('my_cart');
         Route::post('CheckOutFunc', [MyCartController::class, 'CheckOutFunc'])->name('check_out_func');
-        Route::get('checkout/{id}',[MyCartController::class, 'checkout_finish'])->name('checkout_finish');
+        Route::get('checkout/{id}/{order_id}',[MyCartController::class, 'checkout_finish'])->name('checkout_finish');
         Route::get('dashboard', [MyCartController::class, 'index'])->name('my_cart');
         Route::get('purchase_history', [PurchaseHistoryController::class, 'index'])->name('purchase_history');
 
