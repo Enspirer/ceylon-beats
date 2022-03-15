@@ -33,8 +33,8 @@
                 </div>
                 <div class="menu-item col-md-3">
                    <a href="{{url('/')}}" class="d-contain">
-                       <img class="default-logo" style="z-index: 12" src="{{url('/ceylon_beats_theme/assets/image/Group 57@2x.png')}}" alt="">
-                    <img class="sticky-logo d-none" src="{{url('/ceylon_beats_theme/assets/image/Group 57@2x.png')}}" alt="">
+                       <img class="default-logo" style="z-index: 12" src="{{url('/ceylon_beats_theme/assets/image/logo.png')}}" alt="">
+                        <img class="sticky-logo d-none" src="{{url('/ceylon_beats_theme/assets/image/logo.png')}}" alt="">
                    </a>
                 </div>
                 <div class="menu-item col-md-2">
@@ -53,11 +53,11 @@
         <div class="menu-mob-logo-center d-none col-8">
           <img
           class="default-logo"
-          src="{{url('/ceylon_beats_theme/assets/image/Group 57@2x.png')}}"
+          src="{{url('/ceylon_beats_theme/assets/image/logo.png')}}"
           alt=""/>
         <img
         class="sticky-logo d-none"
-        src="{{url('/ceylon_beats_theme/assets/image/Group 57@2x.png')}}"
+        src="{{url('/ceylon_beats_theme/assets/image/logo.png')}}"
         alt=""/>
         </div>
 

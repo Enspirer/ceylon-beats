@@ -5,7 +5,7 @@
         <div class="container">
             <div class="col-md-6">
                 <h1 data-animscroll="fade-up" data-animscroll-delay="100">
-                    Ceylon Beatz
+                    Cross Tunes Global
                 </h1>
                 <p data-animscroll="fade-up" data-animscroll-delay="200">
                 We are a purposeful endeavour by the brilliant minds of J &amp; S Studio; a

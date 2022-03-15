@@ -536,14 +536,14 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 .navbar-top .container .menu-mob-logo-center .default-logo {
   position: absolute;
   z-index: 2;
-  width: 130px;
-  top: -15px;
+  width: 150px;
+  top: 18px;
 }
 
 .navbar-top .container .menu-mob-logo-center .sticky-logo {
   position: absolute;
-  width: 60px;
-  top: -10px;
+  width: 80px;
+  top: 0px;
 }
 
 @media (max-width: 1290px) {
@@ -588,15 +588,15 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 .navbar-top .container .menu .row .menu-item .default-logo {
   position: absolute;
   width: 150px;
-  top: -20px;
+  top: 18px;
   margin-left: -15px;
   z-index: 9999;
 }
 
 .navbar-top .container .menu .row .menu-item .sticky-logo {
   position: absolute;
-  width: 60px;
-  top: -20px;
+  width: 80px;
+  top: 0px;
 }
 
 @media (max-width: 1290px) {

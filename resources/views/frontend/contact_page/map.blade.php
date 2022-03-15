@@ -29,25 +29,25 @@
             />
         </div>
         <div class="contact-details" data-animscroll="fade-up" data-animscroll-delay="100">
-            <h1 data-animscroll="fade-up" data-animscroll-delay="100">Ceylon Beatz</h1>
-            <p data-animscroll="fade-up" data-animscroll-delay="200">A beat with Ceylon touch</p>
+            <h1 data-animscroll="fade-up" data-animscroll-delay="100" style="margin-top: 12px; text-align: center; font: normal normal bold 28px/59px Poppins; letter-spacing: 0px; color: #141414;">Cross Tunes Global</h1>
+            <!-- <p data-animscroll="fade-up" data-animscroll-delay="200">A beat with Ceylon touch</p> -->
             <div class="details">
                 <div class="details-item" data-animscroll="fade-up" data-animscroll-delay="300">
-                    <div class="row">
+                    <div class="row px-1">
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <p>387/C, Kalalgoda, Pannipitiya</p>
+                        <p style="margin-top: -24px;" >G. Male#39; Square 505A, Buruzu Magu 2002, K. Male, Maldives</p>
                     </div>
                 </div>
-                <div class="details-item" data-animscroll="fade-up" data-animscroll-delay="500">
+                <div class="details-item mt-3" data-animscroll="fade-up" data-animscroll-delay="500">
                     <div class="row">
                         <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <p>jnsstuiolk@gmail.com</p>
+                        <p  style="font: normal normal normal 11px/27px Poppins; margin-top: -2px;">crosscountryentertainment.ltd@gmail.com</p>
                     </div>
                 </div>
-                <div class="details-item" data-animscroll="fade-up" data-animscroll-delay="600">
+                <div class="details-item mt-4" data-animscroll="fade-up" data-animscroll-delay="600">
                     <div class="row">
                         <i class="fa fa-globe" aria-hidden="true"></i>
-                        <p>www.jnsstudios.com</p>
+                        <p  style="margin-top: -4px;">www.crosstunesglobal.com</p>
                     </div>
                 </div>
             </div>
@@ -55,47 +55,47 @@
     </div>
 </section>
 <section id="contact-details-mob">
-      <h1>Ceylon Beats</h1>
-      <p>A beat with Ceylon touch</p>
+      <h1>Cross Tunes Global</h1>
+      <!-- <p>A beat with Ceylon touch</p> -->
       <div class="row m-0">
         <div class="col-6">
           <div class="row">
             <i class="fa fa-map-marker" aria-hidden="true"></i>
-            <p>387/C, Kalalgoda, Pannipitiya</p>
+            <p>G. Male#39; Square 505A, Buruzu Magu 2002, K. Male, Maldives</p>
           </div>
         </div>
         <div class="col-6">
           <div class="row">
             <i class="fa fa-envelope" aria-hidden="true"></i>
-            <p>jandsstudioslk@gmail.com</p>
+            <p>crosscountryentertainment.ltd@gmail.com</p>
           </div>
           <div class="row">
             <i class="fa fa-globe" aria-hidden="true"></i>
-            <p>www.jnsstudios.com</p>
+            <p>www.crosstunesglobal.com</p>
           </div>
         </div>
       </div>
     </section>
 
     <section id="contact-details-mob-sm">
-      <h1>Ceylon Beats</h1>
-      <p>A beat with Ceylon touch</p>
+      <h1>Cross Tunes Global</h1>
+      <!-- <p>A beat with Ceylon touch</p> -->
       <div class="row m-0">
      
           <div class="row">
             <i class="fa fa-map-marker" aria-hidden="true"></i>
-            <p>387/C, Kalalgoda, Pannipitiya</p>
+            <p>G. Male#39; Square 505A, Buruzu Magu 2002, K. Male, Maldives</p>
           </div>
 
    
    
           <div class="row">
             <i class="fa fa-envelope" aria-hidden="true"></i>
-            <p>jandsstudioslk@gmail.com</p>
+            <p>crosscountryentertainment.ltd@gmail.com</p>
           </div>
           <div class="row">
             <i class="fa fa-globe" aria-hidden="true"></i>
-            <p>www.jnsstudios.com</p>
+            <p>www.crosstunesglobal.com</p>
           </div>
 
       </div>
