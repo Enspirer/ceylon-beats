@@ -44,7 +44,7 @@
                         </div>
                     </div>
                     <div class="right-side-body col-md-7 animscroll-init animscroll-animate" data-animscroll="fade-left">
-                        <h1>Welcome to Ceylon Beatz,</h1>
+                        <h1>Welcome to Cross Tunes Global,</h1>
                         <p>Get access to thousands of <br> beats instantly</p>
                         <div class="row">
                             <div class="image col-sm-3 col-6 col-md-3 animscroll-init animscroll-animate" data-animscroll="fade-up" data-animscroll-delay="100">

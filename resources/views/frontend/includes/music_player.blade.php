@@ -31,7 +31,7 @@
                         </button>
                         <div class="name">
                             <h1 id="player_item_name">Ready for This</h1>
-                            <p id="player_author_name">CeylonBeatz</p>
+                            <p id="player_author_name">CrossTunesGlobal</p>
                         </div>
                     </div>
                 </div>

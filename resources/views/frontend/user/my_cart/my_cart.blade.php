@@ -16,7 +16,7 @@
                             <div style="text-align: center;padding-top: 25%;">
                                 <div class="" style="text-align: center;color:white;">
                                     <h3>Your purchase successfully completed.</h3>
-                                    <p>Thank you for choosing Ceylon Beatz - The world's premium Beatz collection</p>
+                                    <p>Thank you for choosing Cross Tunes Global - The world's premium Beatz collection</p>
                                     <a href="" class="btn btn-primary" style="background-color: #ffcb1d">Check Purchase History</a>
                                 </div>
                             </div>

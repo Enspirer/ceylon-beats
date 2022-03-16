@@ -1,9 +1,9 @@
 <footer class="app-footer">
     <div>
         <strong>@lang('labels.general.copyright') &copy; {{ date('Y') }}
-            <a href="http://ceylonbeatz.com/">
+            <a href="http://crosstunesglobal.com/">
 {{--                @lang('strings.backend.general.boilerplate_link')--}}
-                Ceylon Beatz
+                Cross Tunes Global
             </a>
         </strong> @lang('strings.backend.general.all_rights_reserved')
     </div>

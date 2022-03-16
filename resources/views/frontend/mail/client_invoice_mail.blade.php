@@ -70,7 +70,7 @@ Codepen: https://codepen.io/supah/
                                             <td style="font-size: 12px; color: #5b5b5b; font-family: 'Open Sans', sans-serif; line-height: 18px; vertical-align: top; text-align: left;">
                                                 <p style="font-size: 20px;text-align: center;">Successful payment of USD {{number_format($invoice_details->total,2)}} for order reference #{{$invoice_details->id}}.<br></p>
                                                 <br>
-                                                <p style="font-size: 20px;text-align: center;">Please log in to www.ceylonbeatz.com to.</p>
+                                                <p style="font-size: 20px;text-align: center;">Please log in to http://crosstunesglobal.com to.</p>
                                             </td>
                                         </tr>
                                         </tbody>
@@ -80,13 +80,13 @@ Codepen: https://codepen.io/supah/
                                         <tbody>
                                         <tr>
                                             <td>
-                                                <p> By making this payment to CeylonBeatz you agreed <br>
+                                                <p> By making this payment to CrossTunesGlobal you agreed <br>
                                                     that the Payment is non-transferable, non-refundable and non-revocable. to the Online Payment Terms and Conditions listed at <a style="color: blue; font-weight: 500" href="{{route('frontend.privacy_policy')}}">Terms and Conditions</a>  <br>
-                                                    to the facility Terms and Conditions listed at www.ceylonbeatz.com If you need any further assistance please feel free to email us at jnsstuiolk@gmail.com. Please do not reply to this mail.<br>
+                                                    to the facility Terms and Conditions listed at http://crosstunesglobal.com If you need any further assistance please feel free to email us at jnsstuiolk@gmail.com. Please do not reply to this mail.<br>
 
-                                                    <br>Once again, Welcome to CeylonBeatz. We hope you enjoy your fitness journey with us.<br>
+                                                    <br>Once again, Welcome to CrossTunesGlobal. We hope you enjoy your fitness journey with us.<br>
                                                     Thank you! <br><br>
-                                                    Team CeylonBeatz</p>
+                                                    Team CrossTunesGlobal</p>
                                             </td>
                                         </tr>
                                         </tbody>
@@ -96,7 +96,7 @@ Codepen: https://codepen.io/supah/
                                         <tbody>
                                         <tr>
                                             <td style="font-size: 12px; color: #5b5b5b; font-family: 'Open Sans', sans-serif; line-height: 18px; vertical-align: top; text-align: left;">
-                                                <p style="font-size: 20px;text-align: center;">Please contact us for any support you may need. info@ceylonbeatz.com<br></p>
+                                                <p style="font-size: 20px;text-align: center;">Please contact us for any support you may need. crosscountryentertainment.ltd@gmail.com<br></p>
                                                 <br>
                                             </td>
                                         </tr>

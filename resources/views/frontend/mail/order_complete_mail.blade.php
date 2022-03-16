@@ -12,7 +12,7 @@
     <base target="_blank"></head>  	    <body class="bodymail" onkeyup="try{javascript:parent.kp(event);}catch(ex){}" onunload="try{parent.opacity('','bdel', 1, 0, 0);}catch(ex){}" data-new-gr-c-s-check-loaded="14.1005.0" data-gr-ext-installed="">
 <div>
     <!--[if lte IE 6]><style type="text/css"><style type="text/css">.topfixe{position:absolute;top:expression(documentElement.scrollTop+body.scrollTop);}</style><![endif]--><div class="topfixe" id="mailhaut"><div class="f16" style="overflow:hidden;text-overflow:ellipsis;font-weight:bold; white-space:nowrap;margin:8px 5px 0px 5px;">Order Complete Mail</div>
-        <div class="" style="overflow:hidden;text-overflow:ellipsis; white-space:nowrap;margin:2px 5px 0px 5px;"><b>From: </b>Ceylon Beatz &lt;info@ceylonbeatz.com&gt;</div>
+        <div class="" style="overflow:hidden;text-overflow:ellipsis; white-space:nowrap;margin:2px 5px 0px 5px;"><b>From: </b>Cross Tunes Global &lt;crosscountryentertainment.ltd@gmail.com&gt;</div>
 
         <div class="noprint" style="float:right;"><span class="envlbl nw">Encoding:</span>&nbsp;<select onchange="parent.affmenc(this.value);" name="charset" id="charset"><option value="auto">-Detect automatically-</option><option value="windows-1256">Arabic</option><option value="windows-1257">Baltic</option><option value="gb2312">Chinese (simplified)</option><option value="big5">Chinese (traditional)</option><option value="windows-1251">Cyrillic</option><option value="windows-1253">Greek</option><option value="windows-1255">Hebrew</option><option value="iso-2022-jp">Japanese</option><option value="euc-kr">Korean</option><option value="koi8-r">Russian</option><option value="tis-620">Thai</option><option value="windows-1254">Turkish</option><option value="koi8-u">Ukrainian</option><option value="us-ascii">English</option><option value="windows-1250">European (Central)</option><option value="windows-1252">European (West)</option><option value="iso-8859-3">European (South)</option><option value="iso-8859-4">European (North)</option><option value="utf-8" selected="selected">worldwide (utf-8)</option></select></div>
         <div class="" style="overflow:hidden;text-overflow:ellipsis; white-space:nowrap;margin:0px 5px 0px 5px;"><b>Date:</b>&nbsp;2021-04-12 15:56</div>
@@ -30,22 +30,22 @@
                                         <table border="0" cellpadding="0" cellspacing="0" style="border-collapse:separate;width:100%;"><tbody><tr><td style="font-family:sans-serif;font-size:14px;vertical-align:top;">
                                         <span class="preheader" style="height:0;width:0;">
                                             </span>
-                                                    <p style="font-size:20px;">Successful payment of USD {{number_format($invoice_details->total,2)}} for order reference #{{$invoice_details->id}}.<br> Please log in to www.ceylonbeatz.com to.</p>
+                                                    <p style="font-size:20px;">Successful payment of USD {{number_format($invoice_details->total,2)}} for order reference #{{$invoice_details->id}}.<br> Please log in to http://crosstunesglobal.com to.</p>
 
                                                     <div style="text-align: left">
-                                                        <p>By making this payment to CeylonBeatz you agreed</p>
+                                                        <p>By making this payment to CrossTunesGlobal you agreed</p>
 
                                                         <p>that the Payment is non-transferable, non-refundable and non-revocable.
                                                             to the Online Payment Terms and Conditions listed at www.mpg.seylan.lk/images/2020/ceylonbeatz.pdf </p>
 
-                                                        <p> to the facility Terms and Conditions listed at www.ceylonbeatz.com
+                                                        <p> to the facility Terms and Conditions listed at http://crosstunesglobal.com
                                                             If you need any further assistance please feel free to email us at   jnsstuiolk@gmail.com. Please do not reply to this mail.</p>
 
-                                                        <p> Once again, Welcome to CeylonBeatz. We hope you enjoy your fitness journey with us.<p>
+                                                        <p> Once again, Welcome to CrossTunesGlobal. We hope you enjoy your fitness journey with us.<p>
 
                                                         <p>Thank you!</p>
 
-                                                        <p> Team CeylonBeatz </p>
+                                                        <p> Team CrossTunesGlobal </p>
                                                     </div>
 
 
@@ -63,7 +63,7 @@
                                                             Visit
                                                         </div>
                                                     </table>
-                                                    <p style="font-size:20px;">Please contact us for any support you may need. info@ceylonbeatz.com</p>
+                                                    <p style="font-size:20px;">Please contact us for any support you may need. crosscountryentertainment.ltd@gmail.com</p>
                                                 </td>
                                             </tr>
                                             </tbody>
@@ -71,7 +71,7 @@
                                     </td>
                                 </tr></tbody></table><div class="footer" style="clear:both;margin-top:10px;text-align:center;width:100%;">
                                 <table border="0" cellpadding="0" cellspacing="0" style="border-collapse:separate;width:100%;"><tbody><tr><td class="content-block" style="font-family:sans-serif;vertical-align:top;padding-bottom:10px;padding-top:10px;font-size:12px;color:#999999;text-align:center;">
-                                            <span class="apple-link" style="color:#999999;font-size:12px;text-align:center;">Ceylon Beatz</span>
+                                            <span class="apple-link" style="color:#999999;font-size:12px;text-align:center;">Cross Tunes Global</span>
                                         </td>
                                     </tr></tbody></table></div>
 
