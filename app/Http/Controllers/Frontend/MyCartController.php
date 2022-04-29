@@ -41,7 +41,7 @@ class MyCartController extends Controller
 
             $json = [
                 "currency" => "MVR",
-                "amount" => number_format($request->amount,2), // 10.00 MVR
+                "amount" => $request->amount, // 10.00 MVR
                 "redirectUrl" => route('frontend.user.checkout_finish',[$newaddress->id,$order_id]), // Optional redirect after payment completion
             ];
             $transaction = $client->transactions->create($json);
