@@ -176,7 +176,7 @@
 
     <h1 data-animscroll="fade-up">PARTNERS</h1>
 
-    <div class="container bottom_border">
+    <div class="container">
         <div class="row">
             <div class="col-md-3">
                 <div style="background-image: url('{{url('logo/1.png')}}');height: 100px;background-repeat: no-repeat;background-position: center;filter: invert(1);background-size: contain;"></div>
@@ -212,78 +212,6 @@
                 <div style="background-image: url('{{url('logo/8.png')}}');height: 100px;background-repeat: no-repeat;background-position: center;background-size: contain;"></div>
 
             </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-4 col-md col-sm-4 col-12 col" data-animscroll="fade-up">
-                <img style="width: 200px; margin-top:50px;" src="{{url('/ceylon_beats_theme/assets/image/logo.png')}}" alt="">               
-            </div>
-
-            <div class="col-sm-4 col-md col-6 col" data-animscroll="fade-up">
-                <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
-                <!--headin5_amrc-->
-                <ul class="footer_ul_amrc">
-                    <li><a href="{{route('frontend.explorer',['genres','author_name','duration','price','blues'])}}">Blues</a></li>
-                    <li><a href="{{route('frontend.explorer',['genres','author_name','duration','price','classic'])}}">Classic</a></li>
-                    <li><a href="{{route('frontend.explorer',['genres','author_name','duration','price','indian'])}}">Indian</a></li>
-                    <li><a href="{{route('frontend.explorer',['genres','author_name','duration','price','rap'])}}">Rap</a></li>
-                    <li><a href="{{route('frontend.explorer',['genres','author_name','duration','price','rock'])}}">Rock</a></li>
-                </ul>
-            </div>
-
-            <div class="col-sm-4 col-md col-6 col" data-animscroll="fade-up">
-                <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
-                <ul class="footer_ul_amrc">
-                    <li>
-                        <a href="{{url('/')}}">Home</a>
-                    </li>
-                    <li>
-                        <a href="{{route('frontend.about_us')}}" >About</a>
-                    </li>
-                    <li>
-                        <a href="{{route('frontend.explorer',['genres','author_name','duration','price','music_name'])}}">Music</a>
-                    </li>
-                    <li>
-                        <a href="{{route('frontend.contact')}}">Contact</a>
-                    </li>
-                    <li>
-                        <a href="{{route('frontend.privacy_policy')}}">Refund Policy</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col-sm-4 col-md col-12 col" data-animscroll="fade-up">
-                <h5 class="headin5_amrc col_white_amrc pt2">Follow us</h5>
-                <ul class="footer_ul2_amrc">
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-twitter fleft padding-right"></i>
-                        </a>
-                        <p style="color: #b5b5b5;">
-                            Lorem Ipsum is simply dummy text of the printing...
-                            <a href="#">https://www.lipsum.com/</a>
-                        </p>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-twitter fleft padding-right"></i>
-                        </a>
-                        <p style="color: #b5b5b5;">
-                            Lorem Ipsum is simply dummy text of the printing...
-                            <a href="#">https://www.lipsum.com/</a>
-                        </p>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-twitter fleft padding-right"></i>
-                        </a>
-                        <p style="color: #b5b5b5;">
-                            Lorem Ipsum is simply dummy text of the printing...
-                            <a href="#">https://www.lipsum.com/</a>
-                        </p>
-                    </li>
-                </ul>
-            </div><br><br><br><br>
         </div>
     </div>
 </section>

@@ -1,559 +1,713 @@
 @media (max-width: 768px) {
-  .cur-lan {
-    display: none !important;
-  }
-  .mob-user-ic {
-    display: block !important;
-  }
-  .curency img {
-    display: none;
-  }
-  #head-section .mask .search h1 {
-    margin: auto;
-    max-width: 480px;
-    font-size: 40px;
-  }
-  #head-section .mask .search .wrapper {
-    padding-top: 30px;
-    max-width: 480px;
-    margin: auto;
-  }
-  #head-section .mask .search .wrapper i {
-    top: 40px;
-    left: 30px;
-  }
-  #head-section .mask .search .wrapper .search {
-    width: 70%;
-  }
-  #head-section .mask .music .swiper-button {
-    display: none;
-  }
-  .middle-container img {
-    width: 95% !important;
-  }
-  #diffrence .right-video {
-    padding: 20px;
-  }
-  #diffrence .right-video img {
-    margin-top: 0px !important;
-  }
-  #about-section .hero-image h1 {
-    line-height: 1 !important;
-  }
-  #about-section .hero-image p {
-    margin-top: 20px;
-  }
-  #about-section .bottum-content-all {
-    padding: 0 !important;
-  }
-  #about-section .bottum-content-all .white-container .container-top .row {
-    margin: 0 !important;
-  }
-  #about-section .bottum-content-all .white-container .container-top .row h3 {
-    font-size: 20px !important;
-    line-height: 1 !important;
-    margin: 0 0 0 10px !important;
-  }
-  #about-section .bottum-content-all .white-container .container-top .row h2 {
-    font-size: 30px;
-    margin: 0 !important;
-    line-height: 1 !important;
-  }
-  #about-section .bottum-content-all .white-container .container-top .row p {
-    margin: 0 !important;
-    line-height: 1.3 !important;
-    padding-top: 10px;
-  }
-  #about-section .bottum-content-all .white-container .container-bottom .row {
-    margin: 0;
-  }
-  #about-section .bottum-content-all .white-container .container-bottom .row h3 {
-    font-size: 20px !important;
-    line-height: 1 !important;
-    margin: 0 !important;
-  }
-  #about-section .bottum-content-all .white-container .container-bottom .row p {
-    margin: 0 !important;
-    line-height: 1.3 !important;
-    padding: 5px 0 20px 0 !important;
-  }
-  #about-section .team-members .row {
-    margin: 0 -25px !important;
-  }
-  #about-section .team-members .row img {
-    width: 155px !important;
-    margin: 0 4px !important;
-  }
-  #explore-music .row-mob-filter {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-  }
-  #explore-music .left-filter {
-    display: none;
-  }
-  #explore-music .right-result {
-    width: 100% !important;
-    padding: 10px !important;
-  }
-  #explore-music .right-result .curency {
-    display: none;
-  }
-  #explore-music .right-result .search-bar {
-    width: 100%;
-  }
-  #explore-music .right-result .list-item .fa-play {
-    width: 69px !important;
-    height: 69px !important;
-    padding: 13px !important;
-  }
-  #explore-music .right-result .list-item .text-group-one {
-    margin-top: 35px;
-    margin-left: 20px;
-  }
-  #explore-music .right-result .list-item .text-group-one h6 {
-    font-size: 14px !important;
-    line-height: 1;
-    margin: 0;
-  }
-  #explore-music .right-result .list-item .text-group-one p {
-    font-size: 12px !important;
-  }
-  #explore-music .right-result .list-item #text-group-two {
-    display: none;
-  }
-  #explore-music .right-result .list-item .text-group-three {
-    margin-top: 35px;
-    margin-left: 10px;
-  }
-  #explore-music .right-result .list-item .text-group-three i {
-    font-size: 14px !important;
-  }
-  #explore-music .right-result .list-item .text-group-three .cart-mob {
-    display: block !important;
-  }
-  #explore-music .right-result .list-item #text-group-four {
-    display: none;
-  }
-  #explore-music .right-result .top-row {
-    padding-bottom: 30px !important;
-  }
-  #explore-music .right-result .card-content-mob .fa {
-    font-size: 20px;
-  }
-  #contact-section .head-map .top-layer {
-    display: none !important;
-  }
-  #contact-section .head-map .image-layers {
-    display: none !important;
-  }
-  #contact-section .head-map .contact-details {
-    display: none;
-  }
-  #contact-details-mob {
-    display: block !important;
-  }
-  .contact-form-section img {
-    width: 100%;
-  }
-  .contact-form-section h2 {
-    font-size: 30px;
-    margin: 0;
-  }
-  .contact-form-section h1 {
-    font-size: 44px;
-  }
-  .contact-form-section .form {
-    padding: 0;
-  }
+    .cur-lan {
+        display: none !important;
+    }
+
+    .mob-user-ic {
+        display: block !important;
+    }
+
+    .curency img {
+        display: none;
+    }
+
+    #head-section .mask .search h1 {
+        margin: auto;
+        max-width: 480px;
+        font-size: 40px;
+    }
+
+    #head-section .mask .search .wrapper {
+        padding-top: 30px;
+        max-width: 480px;
+        margin: auto;
+    }
+
+    #head-section .mask .search .wrapper i {
+        top: 40px;
+        left: 30px;
+    }
+
+    #head-section .mask .search .wrapper .search {
+        width: 70%;
+    }
+
+    #head-section .mask .music .swiper-button {
+        display: none;
+    }
+
+    .middle-container img {
+        width: 95% !important;
+    }
+
+    #diffrence .right-video {
+        padding: 20px;
+    }
+
+    #diffrence .right-video img {
+        margin-top: 0px !important;
+    }
+
+    #about-section .hero-image h1 {
+        line-height: 1 !important;
+    }
+
+    #about-section .hero-image p {
+        margin-top: 20px;
+    }
+
+    #about-section .bottum-content-all {
+        padding: 0 !important;
+    }
+
+    #about-section .bottum-content-all .white-container .container-top .row {
+        margin: 0 !important;
+    }
+
+    #about-section .bottum-content-all .white-container .container-top .row h3 {
+        font-size: 20px !important;
+        line-height: 1 !important;
+        margin: 0 0 0 10px !important;
+    }
+
+    #about-section .bottum-content-all .white-container .container-top .row h2 {
+        font-size: 30px;
+        margin: 0 !important;
+        line-height: 1 !important;
+    }
+
+    #about-section .bottum-content-all .white-container .container-top .row p {
+        margin: 0 !important;
+        line-height: 1.3 !important;
+        padding-top: 10px;
+    }
+
+    #about-section .bottum-content-all .white-container .container-bottom .row {
+        margin: 0;
+    }
+
+    #about-section .bottum-content-all .white-container .container-bottom .row h3 {
+        font-size: 20px !important;
+        line-height: 1 !important;
+        margin: 0 !important;
+    }
+
+    #about-section .bottum-content-all .white-container .container-bottom .row p {
+        margin: 0 !important;
+        line-height: 1.3 !important;
+        padding: 5px 0 20px 0 !important;
+    }
+
+    #about-section .team-members .row {
+        margin: 0 -25px !important;
+    }
+
+    #about-section .team-members .row img {
+        width: 155px !important;
+        margin: 0 4px !important;
+    }
+
+    #explore-music .row-mob-filter {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+    }
+
+    #explore-music .left-filter {
+        display: none;
+    }
+
+    #explore-music .right-result {
+        width: 100% !important;
+        padding: 10px !important;
+    }
+
+    #explore-music .right-result .curency {
+        display: none;
+    }
+
+    #explore-music .right-result .search-bar {
+        width: 100%;
+    }
+
+    #explore-music .right-result .list-item .fa-play {
+        width: 69px !important;
+        height: 69px !important;
+        padding: 13px !important;
+    }
+
+    #explore-music .right-result .list-item .text-group-one {
+        margin-top: 35px;
+        margin-left: 20px;
+    }
+
+    #explore-music .right-result .list-item .text-group-one h6 {
+        font-size: 14px !important;
+        line-height: 1;
+        margin: 0;
+    }
+
+    #explore-music .right-result .list-item .text-group-one p {
+        font-size: 12px !important;
+    }
+
+    #explore-music .right-result .list-item #text-group-two {
+        display: none;
+    }
+
+    #explore-music .right-result .list-item .text-group-three {
+        margin-top: 35px;
+        margin-left: 10px;
+    }
+
+    #explore-music .right-result .list-item .text-group-three i {
+        font-size: 14px !important;
+    }
+
+    #explore-music .right-result .list-item .text-group-three .cart-mob {
+        display: block !important;
+    }
+
+    #explore-music .right-result .list-item #text-group-four {
+        display: none;
+    }
+
+    #explore-music .right-result .top-row {
+        padding-bottom: 30px !important;
+    }
+
+    #explore-music .right-result .card-content-mob .fa {
+        font-size: 20px;
+    }
+
+    #contact-section .head-map .top-layer {
+        display: none !important;
+    }
+
+    #contact-section .head-map .image-layers {
+        display: none !important;
+    }
+
+    #contact-section .head-map .contact-details {
+        display: none;
+    }
+
+    #contact-details-mob {
+        display: block !important;
+    }
+
+    .contact-form-section img {
+        width: 100%;
+    }
+
+    .contact-form-section h2 {
+        font-size: 30px;
+        margin: 0;
+    }
+
+    .contact-form-section h1 {
+        font-size: 44px;
+    }
+
+    .contact-form-section .form {
+        padding: 0;
+    }
+
+    .footer .inner-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
 @media (max-width: 480px) {
-  #head-section .mask .search {
-    padding-top: 100px;
-  }
-  #head-section .mask .search h1 {
-    margin: auto;
-    max-width: 320px;
-    font-size: 26px;
-  }
-  #head-section .mask .search .wrapper {
-    padding-top: 20px;
-    max-width: 480px;
-    margin: auto;
-  }
-  #head-section .mask .search .wrapper i {
-    display: none;
-  }
-  #head-section .mask .search .wrapper .search {
-    height: 30px;
-    width: 60%;
-    padding: 0 10px;
-  }
-  #head-section .mask .search .wrapper .submit {
-    width: auto;
-    padding: 0 10px;
-    height: 30px;
-  }
-  #head-section .mask .music {
-    margin: 120px 0px 100px 0px;
-  }
-  #head-section .mask .music .swiper-button {
-    display: none;
-  }
-  #head-section .mask .music h1 {
-    line-height: 1 !important;
-    font-size: 30px !important;
-  }
-  #head-section .mask .music .text-new-releases h1 {
-    font-size: 30px;
-  }
-  #head-section .mask .music .new-release-container {
-    margin: 20px !important;
-  }
-  #diffrence .left-text {
-    padding: 20px;
-  }
-  #diffrence .left-text h2 {
-    font-size: 28px !important;
-    line-height: 1 !important;
-  }
-  #diffrence .left-text h1 {
-    font-size: 32px !important;
-  }
-  #diffrence .left-text p {
-    font-size: 12px !important;
-  }
-  #diffrence .left-text a {
-    font-size: 12px !important;
-    line-height: 1 !important;
-  }
-  #diffrence .right-video {
-    padding: 20px;
-  }
-  #diffrence .right-video img {
-    margin-top: 0px !important;
-  }
-  #popular-search h1 {
-    line-height: 1 !important;
-    font-size: 32px !important;
-  }
-  #popular-search .middle-container {
-    margin: 0 !important;
-  }
-  #popular-search .middle-container img {
-    width: 100% !important;
-  }
-  #popular-search .middle-container .right-icon {
-    padding: 40px;
-  }
-  #popular-search .middle-container .right-icon p {
-    font-size: 14px !important;
-  }
-  #popular-search .middle-container .right-icon .row-btn-home-bottum {
-    margin-top: 10px !important;
-  }
-  #popular-search .middle-container .right-icon .row-btn-home-bottum a {
-    width: 100%;
-    text-align: center;
-  }
-  #popular-search h1 {
-    margin-top: 40px !important;
-  }
-  #about-section .hero-image h1 {
-    font-size: 30px !important;
-    line-height: 1 !important;
-  }
-  #about-section .hero-image p {
-    font-size: 12px !important;
-    margin-top: 20px;
-    line-height: 1.2 !important;
-  }
-  #about-section .hero-image .hero-image {
-    height: 400px;
-  }
-  #about-section .hero-image .top-black {
-    height: 400px;
-  }
-  #about-section .bottum-content-all {
-    padding: 0 !important;
-  }
-  #about-section .bottum-content-all .white-container {
-    padding: 20px 0 !important;
-  }
-  #about-section .bottum-content-all .white-container .container-top .row {
-    margin: 0 !important;
-  }
-  #about-section .bottum-content-all .white-container .container-top .row h3 {
-    font-size: 20px !important;
-    line-height: 1 !important;
-    margin: 20px 0 0 0px !important;
-  }
-  #about-section .bottum-content-all .white-container .container-top .row h2 {
-    font-size: 30px;
-    margin: 0 !important;
-    line-height: 1 !important;
-  }
-  #about-section .bottum-content-all .white-container .container-top .row p {
-    font-size: 12px;
-    margin: 0 !important;
-    line-height: 1.3 !important;
-    padding-top: 10px;
-  }
-  #about-section .bottum-content-all .white-container .container-bottom .row {
-    margin: 0;
-  }
-  #about-section .bottum-content-all .white-container .container-bottom .row h3 {
-    font-size: 20px !important;
-    line-height: 1 !important;
-    margin: 0 !important;
-  }
-  #about-section .bottum-content-all .white-container .container-bottom .row p {
-    font-size: 12px;
-    margin: 0 !important;
-    line-height: 1.3 !important;
-    padding: 5px 0 20px 0 !important;
-  }
-  #about-section .our-team {
-    padding: 30px 0 !important;
-  }
-  #about-section .our-team .details-container {
-    margin-top: 140px !important;
-  }
-  #about-section .our-team .details-container .full-image-placeholder {
-    height: 400px !important;
-  }
-  #about-section .our-team .details-container .placeholder-content {
-    top: 110px !important;
-    left: 10px !important;
-  }
-  #about-section .our-team .details-container .placeholder-content h1 {
-    font-size: 25px !important;
-  }
-  #about-section .our-team .details-container .placeholder-content h4 {
-    font-size: 16px !important;
-  }
-  #about-section .our-team .details-container .placeholder-content p {
-    padding: 0 10px 0 0 !important;
-    margin-top: 15px !important;
-    font-size: 12px !important;
-    line-height: 1.3 !important;
-  }
-  #about-section .team-members .row {
-    margin: 0 -25px !important;
-  }
-  #about-section .team-members .row img {
-    width: 95px !important;
-    margin: 0 4px !important;
-  }
-  #about-section #equipments h1 {
-    line-height: 1 !important;
-  }
-  #explore-music .row-mob-filter {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-  }
-  #explore-music .left-filter {
-    display: none;
-  }
-  #explore-music .right-result {
-    width: 100% !important;
-    padding: 10px !important;
-  }
-  #explore-music .right-result .curency {
-    display: none;
-  }
-  #explore-music .right-result .search-bar {
-    width: 100%;
-  }
-  #explore-music .right-result .list-item .fa-play {
-    width: 69px !important;
-    height: 69px !important;
-    padding: 13px !important;
-  }
-  #explore-music .right-result .list-item .text-group-one {
-    margin-top: 35px;
-    margin-left: 20px;
-  }
-  #explore-music .right-result .list-item .text-group-one h6 {
-    font-size: 14px !important;
-    line-height: 1;
-    margin: 0;
-  }
-  #explore-music .right-result .list-item .text-group-one p {
-    font-size: 12px !important;
-  }
-  #explore-music .right-result .list-item #text-group-two {
-    display: none;
-  }
-  #explore-music .right-result .list-item .text-group-three {
-    margin-top: 35px;
-    margin-left: 10px;
-  }
-  #explore-music .right-result .list-item .text-group-three i {
-    font-size: 14px !important;
-  }
-  #explore-music .right-result .list-item .text-group-three .cart-mob {
-    display: block !important;
-  }
-  #explore-music .right-result .list-item #text-group-four {
-    display: none;
-  }
-  #explore-music .right-result .top-row {
-    padding-bottom: 30px !important;
-  }
-  #contact-section .head-map .top-layer {
-    display: none !important;
-  }
-  #contact-section .head-map .image-layers {
-    display: none !important;
-  }
-  #contact-section .head-map .contact-details {
-    display: none;
-  }
-  #contact-details-mob {
-    display: none !important;
-  }
-  #contact-details-mob-sm {
-    display: block !important;
-  }
-  .contact-form-section img {
-    width: 100%;
-    margin-top: 20px;
-  }
-  .contact-form-section h2 {
-    font-size: 24px;
-    margin: 0;
-    line-height: 1;
-  }
-  .contact-form-section h1 {
-    font-size: 34px;
-    margin-top: 10px;
-  }
-  .contact-form-section p {
-    font-size: 12px;
-    line-height: 1;
-    margin-bottom: 20px;
-  }
-  .contact-form-section .form {
-    padding: 0;
-  }
-  #login-section {
-    padding: 0;
-  }
-  #login-section h1 {
-    font-size: 22px !important;
-    margin: 0 !important;
-    line-height: 1 !important;
-  }
-  #login-section p {
-    font-size: 18px !important;
-    margin: 10px 0 0 0 !important;
-    line-height: 1 !important;
-  }
-  #login-section img {
-    margin: 15px 0;
-  }
-  #login-section .bottumText p {
-    font-size: 12px !important;
-  }
+    #head-section .mask .search {
+        padding-top: 100px;
+    }
+
+    #head-section .mask .search h1 {
+        margin: auto;
+        max-width: 320px;
+        font-size: 26px;
+    }
+
+    #head-section .mask .search .wrapper {
+        padding-top: 20px;
+        max-width: 480px;
+        margin: auto;
+    }
+
+    #head-section .mask .search .wrapper i {
+        display: none;
+    }
+
+    #head-section .mask .search .wrapper .search {
+        height: 30px;
+        width: 60%;
+        padding: 0 10px;
+    }
+
+    #head-section .mask .search .wrapper .submit {
+        width: auto;
+        padding: 0 10px;
+        height: 30px;
+    }
+
+    #head-section .mask .music {
+        margin: 120px 0px 100px 0px;
+    }
+
+    #head-section .mask .music .swiper-button {
+        display: none;
+    }
+
+    #head-section .mask .music h1 {
+        line-height: 1 !important;
+        font-size: 30px !important;
+    }
+
+    #head-section .mask .music .text-new-releases h1 {
+        font-size: 30px;
+    }
+
+    #head-section .mask .music .new-release-container {
+        margin: 20px !important;
+    }
+
+    #diffrence .left-text {
+        padding: 20px;
+    }
+
+    #diffrence .left-text h2 {
+        font-size: 28px !important;
+        line-height: 1 !important;
+    }
+
+    #diffrence .left-text h1 {
+        font-size: 32px !important;
+    }
+
+    #diffrence .left-text p {
+        font-size: 12px !important;
+    }
+
+    #diffrence .left-text a {
+        font-size: 12px !important;
+        line-height: 1 !important;
+    }
+
+    #diffrence .right-video {
+        padding: 20px;
+    }
+
+    #diffrence .right-video img {
+        margin-top: 0px !important;
+    }
+
+    #popular-search h1 {
+        line-height: 1 !important;
+        font-size: 32px !important;
+    }
+
+    #popular-search .middle-container {
+        margin: 0 !important;
+    }
+
+    #popular-search .middle-container img {
+        width: 100% !important;
+    }
+
+    #popular-search .middle-container .right-icon {
+        padding: 40px;
+    }
+
+    #popular-search .middle-container .right-icon p {
+        font-size: 14px !important;
+    }
+
+    #popular-search .middle-container .right-icon .row-btn-home-bottum {
+        margin-top: 10px !important;
+    }
+
+    #popular-search .middle-container .right-icon .row-btn-home-bottum a {
+        width: 100%;
+        text-align: center;
+    }
+
+    #popular-search h1 {
+        margin-top: 40px !important;
+    }
+
+    #about-section .hero-image h1 {
+        font-size: 30px !important;
+        line-height: 1 !important;
+    }
+
+    #about-section .hero-image p {
+        font-size: 12px !important;
+        margin-top: 20px;
+        line-height: 1.2 !important;
+    }
+
+    #about-section .hero-image .hero-image {
+        height: 400px;
+    }
+
+    #about-section .hero-image .top-black {
+        height: 400px;
+    }
+
+    #about-section .bottum-content-all {
+        padding: 0 !important;
+    }
+
+    #about-section .bottum-content-all .white-container {
+        padding: 20px 0 !important;
+    }
+
+    #about-section .bottum-content-all .white-container .container-top .row {
+        margin: 0 !important;
+    }
+
+    #about-section .bottum-content-all .white-container .container-top .row h3 {
+        font-size: 20px !important;
+        line-height: 1 !important;
+        margin: 20px 0 0 0px !important;
+    }
+
+    #about-section .bottum-content-all .white-container .container-top .row h2 {
+        font-size: 30px;
+        margin: 0 !important;
+        line-height: 1 !important;
+    }
+
+    #about-section .bottum-content-all .white-container .container-top .row p {
+        font-size: 12px;
+        margin: 0 !important;
+        line-height: 1.3 !important;
+        padding-top: 10px;
+    }
+
+    #about-section .bottum-content-all .white-container .container-bottom .row {
+        margin: 0;
+    }
+
+    #about-section .bottum-content-all .white-container .container-bottom .row h3 {
+        font-size: 20px !important;
+        line-height: 1 !important;
+        margin: 0 !important;
+    }
+
+    #about-section .bottum-content-all .white-container .container-bottom .row p {
+        font-size: 12px;
+        margin: 0 !important;
+        line-height: 1.3 !important;
+        padding: 5px 0 20px 0 !important;
+    }
+
+    #about-section .our-team {
+        padding: 30px 0 !important;
+    }
+
+    #about-section .our-team .details-container {
+        margin-top: 140px !important;
+    }
+
+    #about-section .our-team .details-container .full-image-placeholder {
+        height: 400px !important;
+    }
+
+    #about-section .our-team .details-container .placeholder-content {
+        top: 110px !important;
+        left: 10px !important;
+    }
+
+    #about-section .our-team .details-container .placeholder-content h1 {
+        font-size: 25px !important;
+    }
+
+    #about-section .our-team .details-container .placeholder-content h4 {
+        font-size: 16px !important;
+    }
+
+    #about-section .our-team .details-container .placeholder-content p {
+        padding: 0 10px 0 0 !important;
+        margin-top: 15px !important;
+        font-size: 12px !important;
+        line-height: 1.3 !important;
+    }
+
+    #about-section .team-members .row {
+        margin: 0 -25px !important;
+    }
+
+    #about-section .team-members .row img {
+        width: 95px !important;
+        margin: 0 4px !important;
+    }
+
+    #about-section #equipments h1 {
+        line-height: 1 !important;
+    }
+
+    #explore-music .row-mob-filter {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+    }
+
+    #explore-music .left-filter {
+        display: none;
+    }
+
+    #explore-music .right-result {
+        width: 100% !important;
+        padding: 10px !important;
+    }
+
+    #explore-music .right-result .curency {
+        display: none;
+    }
+
+    #explore-music .right-result .search-bar {
+        width: 100%;
+    }
+
+    #explore-music .right-result .list-item .fa-play {
+        width: 69px !important;
+        height: 69px !important;
+        padding: 13px !important;
+    }
+
+    #explore-music .right-result .list-item .text-group-one {
+        margin-top: 35px;
+        margin-left: 20px;
+    }
+
+    #explore-music .right-result .list-item .text-group-one h6 {
+        font-size: 14px !important;
+        line-height: 1;
+        margin: 0;
+    }
+
+    #explore-music .right-result .list-item .text-group-one p {
+        font-size: 12px !important;
+    }
+
+    #explore-music .right-result .list-item #text-group-two {
+        display: none;
+    }
+
+    #explore-music .right-result .list-item .text-group-three {
+        margin-top: 35px;
+        margin-left: 10px;
+    }
+
+    #explore-music .right-result .list-item .text-group-three i {
+        font-size: 14px !important;
+    }
+
+    #explore-music .right-result .list-item .text-group-three .cart-mob {
+        display: block !important;
+    }
+
+    #explore-music .right-result .list-item #text-group-four {
+        display: none;
+    }
+
+    #explore-music .right-result .top-row {
+        padding-bottom: 30px !important;
+    }
+
+    #contact-section .head-map .top-layer {
+        display: none !important;
+    }
+
+    #contact-section .head-map .image-layers {
+        display: none !important;
+    }
+
+    #contact-section .head-map .contact-details {
+        display: none;
+    }
+
+    #contact-details-mob {
+        display: none !important;
+    }
+
+    #contact-details-mob-sm {
+        display: block !important;
+    }
+
+    .contact-form-section img {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .contact-form-section h2 {
+        font-size: 24px;
+        margin: 0;
+        line-height: 1;
+    }
+
+    .contact-form-section h1 {
+        font-size: 34px;
+        margin-top: 10px;
+    }
+
+    .contact-form-section p {
+        font-size: 12px;
+        line-height: 1;
+        margin-bottom: 20px;
+    }
+
+    .contact-form-section .form {
+        padding: 0;
+    }
+
+    #login-section {
+        padding: 0;
+    }
+
+    #login-section h1 {
+        font-size: 22px !important;
+        margin: 0 !important;
+        line-height: 1 !important;
+    }
+
+    #login-section p {
+        font-size: 18px !important;
+        margin: 10px 0 0 0 !important;
+        line-height: 1 !important;
+    }
+
+    #login-section img {
+        margin: 15px 0;
+    }
+
+    #login-section .bottumText p {
+        font-size: 12px !important;
+    }
 }
 
 @media (max-width: 1024px) {
-  #about-section .hero-image h1 {
-    line-height: 1 !important;
-  }
-  #about-section .hero-image p {
-    margin-top: 20px;
-  }
-  #about-section .bottum-content-all {
-    padding: 0 !important;
-  }
-  #about-section .bottum-content-all .white-container .container-top .row {
-    margin: 0 !important;
-  }
-  #about-section .bottum-content-all .white-container .container-top .row h3 {
-    font-size: 20px !important;
-    line-height: 1 !important;
-    margin: 0 0 0 10px !important;
-  }
-  #about-section .bottum-content-all .white-container .container-top .row h2 {
-    font-size: 30px;
-    margin: 0 !important;
-    line-height: 1 !important;
-  }
-  #about-section .bottum-content-all .white-container .container-top .row p {
-    margin: 0 !important;
-    line-height: 1.3 !important;
-    padding-top: 10px;
-  }
-  #about-section .bottum-content-all .white-container .container-bottom .row {
-    margin: 0;
-  }
-  #about-section .bottum-content-all .white-container .container-bottom .row h3 {
-    font-size: 20px !important;
-    line-height: 1 !important;
-    margin: 0 !important;
-  }
-  #about-section .bottum-content-all .white-container .container-bottom .row p {
-    margin: 0 !important;
-    line-height: 1.3 !important;
-    padding: 5px 0 20px 0 !important;
-  }
-  #about-section .team-members .row {
-    margin: 0 !important;
-  }
-  #contact-section .head-map .top-layer {
-    display: none !important;
-  }
-  #contact-section .head-map .image-layers {
-    display: none !important;
-  }
-  #contact-section .head-map .contact-details {
-    display: none;
-  }
-  #contact-details-mob {
-    display: block;
-  }
+    #about-section .hero-image h1 {
+        line-height: 1 !important;
+    }
+
+    #about-section .hero-image p {
+        margin-top: 20px;
+    }
+
+    #about-section .bottum-content-all {
+        padding: 0 !important;
+    }
+
+    #about-section .bottum-content-all .white-container .container-top .row {
+        margin: 0 !important;
+    }
+
+    #about-section .bottum-content-all .white-container .container-top .row h3 {
+        font-size: 20px !important;
+        line-height: 1 !important;
+        margin: 0 0 0 10px !important;
+    }
+
+    #about-section .bottum-content-all .white-container .container-top .row h2 {
+        font-size: 30px;
+        margin: 0 !important;
+        line-height: 1 !important;
+    }
+
+    #about-section .bottum-content-all .white-container .container-top .row p {
+        margin: 0 !important;
+        line-height: 1.3 !important;
+        padding-top: 10px;
+    }
+
+    #about-section .bottum-content-all .white-container .container-bottom .row {
+        margin: 0;
+    }
+
+    #about-section .bottum-content-all .white-container .container-bottom .row h3 {
+        font-size: 20px !important;
+        line-height: 1 !important;
+        margin: 0 !important;
+    }
+
+    #about-section .bottum-content-all .white-container .container-bottom .row p {
+        margin: 0 !important;
+        line-height: 1.3 !important;
+        padding: 5px 0 20px 0 !important;
+    }
+
+    #about-section .team-members .row {
+        margin: 0 !important;
+    }
+
+    #contact-section .head-map .top-layer {
+        display: none !important;
+    }
+
+    #contact-section .head-map .image-layers {
+        display: none !important;
+    }
+
+    #contact-section .head-map .contact-details {
+        display: none;
+    }
+
+    #contact-details-mob {
+        display: block;
+    }
 }
 
 @media (max-width: 1310px) {
-  #explore-music .row-mob-filter {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-  }
-  #explore-music .left-filter {
-    display: none;
-  }
-  #explore-music .right-result {
-    width: 100% !important;
-    padding: 10px !important;
-  }
-  #explore-music .right-result .curency {
-    display: none;
-  }
-  #explore-music .right-result .search-bar {
-    width: 100%;
-  }
-  #explore-music .right-result .list-item #text-group-two {
-    display: none;
-  }
-  #explore-music .right-result .top-row {
-    padding-bottom: 30px !important;
-  }
-  #contact-section .head-map .top-layer {
-    display: none !important;
-  }
-  #contact-section .head-map .image-layers {
-    display: none !important;
-  }
-  #contact-section .head-map .contact-details {
-    display: none;
-  }
-  #contact-details-mob {
-    display: block;
-  }
+    #explore-music .row-mob-filter {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+    }
+
+    #explore-music .left-filter {
+        display: none;
+    }
+
+    #explore-music .right-result {
+        width: 100% !important;
+        padding: 10px !important;
+    }
+
+    #explore-music .right-result .curency {
+        display: none;
+    }
+
+    #explore-music .right-result .search-bar {
+        width: 100%;
+    }
+
+    #explore-music .right-result .list-item #text-group-two {
+        display: none;
+    }
+
+    #explore-music .right-result .top-row {
+        padding-bottom: 30px !important;
+    }
+
+    #contact-section .head-map .top-layer {
+        display: none !important;
+    }
+
+    #contact-section .head-map .image-layers {
+        display: none !important;
+    }
+
+    #contact-section .head-map .contact-details {
+        display: none;
+    }
+
+    #contact-details-mob {
+        display: block;
+    }
 }
+
 /*# sourceMappingURL=media.css.map */

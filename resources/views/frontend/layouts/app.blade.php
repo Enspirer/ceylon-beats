@@ -223,37 +223,115 @@
         <!-- <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fa fa-chevron-up"
           aria-hidden="true"></i></i></a> -->
 
-        <footer class="footer" style="padding-bottom: 220px">
+        <footer class="footer">
 
 
 
             <div class="container">
-                <ul class="foote_bottom_ul_amrc">
-                </ul>
+                <!-- <ul class="foote_bottom_ul_amrc">
+                </ul> -->
                 <!--foote_bottom_ul_amrc ends here-->
 
-                <ul class="social_footer_ul">
-                    <li>
-                        <a href="">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                </ul>
+                <div class="row footer-row">
+                    <div class="col-sm-4 col-md col-sm-4 col-12 col" data-animscroll="fade-up">
+                        <img style="width: 200px; margin-top:50px;" src="{{url('/ceylon_beats_theme/assets/image/logo.png')}}" alt="">               
+                    </div>
+
+                    <div class="col-sm-4 col-md col-6 col" data-animscroll="fade-up">
+                        <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+                        <!--headin5_amrc-->
+                        <ul class="footer_ul_amrc">
+                            <li><a href="{{route('frontend.explorer',['genres','author_name','duration','price','blues'])}}">Blues</a></li>
+                            <li><a href="{{route('frontend.explorer',['genres','author_name','duration','price','classic'])}}">Classic</a></li>
+                            <li><a href="{{route('frontend.explorer',['genres','author_name','duration','price','indian'])}}">Indian</a></li>
+                            <li><a href="{{route('frontend.explorer',['genres','author_name','duration','price','rap'])}}">Rap</a></li>
+                            <li><a href="{{route('frontend.explorer',['genres','author_name','duration','price','rock'])}}">Rock</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-4 col-md col-6 col" data-animscroll="fade-up">
+                        <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+                        <ul class="footer_ul_amrc">
+                            <li>
+                                <a href="{{url('/')}}">Home</a>
+                            </li>
+                            <li>
+                                <a href="{{route('frontend.about_us')}}" >About</a>
+                            </li>
+                            <li>
+                                <a href="{{route('frontend.explorer',['genres','author_name','duration','price','music_name'])}}">Music</a>
+                            </li>
+                            <li>
+                                <a href="{{route('frontend.contact')}}">Contact</a>
+                            </li>
+                            <li>
+                                <a href="{{route('frontend.privacy_policy')}}">Refund Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-4 col-md col-12 col" data-animscroll="fade-up">
+                        <h5 class="headin5_amrc col_white_amrc pt2">Follow us</h5>
+                        <ul class="footer_ul2_amrc">
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-twitter fleft padding-right"></i>
+                                </a>
+                                <p style="color: #b5b5b5;">
+                                    Lorem Ipsum is simply dummy text of the printing...
+                                    <a href="#">https://www.lipsum.com/</a>
+                                </p>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-twitter fleft padding-right"></i>
+                                </a>
+                                <p style="color: #b5b5b5;">
+                                    Lorem Ipsum is simply dummy text of the printing...
+                                    <a href="#">https://www.lipsum.com/</a>
+                                </p>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-twitter fleft padding-right"></i>
+                                </a>
+                                <p style="color: #b5b5b5;">
+                                    Lorem Ipsum is simply dummy text of the printing...
+                                    <a href="#">https://www.lipsum.com/</a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="inner-wrapper">
+                    <ul class="social_footer_ul">
+                        <li>
+                            <a href="">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="image-block">
+                        <img src="{{url('ceylon_beats_theme/assets/payment-gateway.png')}}" alt="">
+                    </div>
+                </div>
             </div>
         </footer>
 
