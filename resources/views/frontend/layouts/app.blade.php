@@ -28,6 +28,9 @@
     <link rel="stylesheet" href="{{url('ceylon_beats_theme/styles/css/media.css')}}" />
     <link rel="stylesheet" href="{{url('ceylon_beats_theme/styles/css/tailwind.css')}}" />
 
+    <!-- Recaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
     @if(is_mobile(request()->header('user-agent')) != true)
         <link rel="stylesheet" href="{{url('ceylon_beats_theme/plugin/AnimTrap/css/animtrap.css')}}" />
     @endif
