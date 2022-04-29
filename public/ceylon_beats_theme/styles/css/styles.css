@@ -2542,6 +2542,7 @@ footer p {
     width: calc(100% - 396px);
     margin-top: 30px;
     padding: 0 60px 50px 24px;
+    min-height: calc(100vh - 500px);
 }
 
 #explore-music .mask .right-result .container .top-row {
