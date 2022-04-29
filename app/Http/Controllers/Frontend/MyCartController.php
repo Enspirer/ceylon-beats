@@ -17,6 +17,7 @@ use GuzzleHttp\Client;
 use Http;
 use BMLConnect\Client as BMLClient;
 
+
 class MyCartController extends Controller
 {
     public function index()
@@ -26,8 +27,6 @@ class MyCartController extends Controller
 
     public function CheckOutFunc(Request $request)
     {
-
-
 
         if($request['g-recaptcha-response']){
             $newaddress = new AddressDetails;
@@ -42,7 +41,7 @@ class MyCartController extends Controller
 
             $json = [
                 "currency" => "MVR",
-                "amount" => 300.00, // 10.00 MVR
+                "amount" => number_format($request->amount,2), // 10.00 MVR
                 "redirectUrl" => route('frontend.user.checkout_finish',[$newaddress->id,$order_id]), // Optional redirect after payment completion
             ];
             $transaction = $client->transactions->create($json);
