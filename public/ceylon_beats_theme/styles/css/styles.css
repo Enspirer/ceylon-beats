@@ -1225,17 +1225,11 @@ section {
     display: block;
 }
 
-.footer .inner-wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 100px 0;
-}
-
-.footer .inner-wrapper .image-block img {
-    width: 100%;
-    max-width: 800px;
+.copyright {
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    padding: 30px 0;
 }
 
 .pt2 {
@@ -1325,25 +1319,27 @@ footer p {
 }
 
 .social_footer_ul {
-    display: table;
-    list-style-type: none;
-}
-
-.social_footer_ul li {
-    margin: 15px 10px;
-    float: left;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
 }
 
 .social_footer_ul li a {
     color: #ccc;
     border: 1px solid #ccc;
-    padding: 8px;
     border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .social_footer_ul li i {
-    width: 20px;
-    height: 20px;
     text-align: center;
 }
 

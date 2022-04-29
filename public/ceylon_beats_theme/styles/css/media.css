@@ -212,11 +212,6 @@
     .contact-form-section .form {
         padding: 0;
     }
-
-    .footer .inner-wrapper {
-        flex-direction: column;
-        gap: 20px;
-    }
 }
 
 @media (max-width: 480px) {

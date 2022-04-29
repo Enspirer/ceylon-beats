@@ -275,7 +275,7 @@
 
                     <div class="col-sm-4 col-md col-12 col" data-animscroll="fade-up">
                         <h5 class="headin5_amrc col_white_amrc pt2">Follow us</h5>
-                        <ul class="footer_ul2_amrc">
+                        <!-- <ul class="footer_ul2_amrc">
                             <li>
                                 <a href="#">
                                     <i class="fab fa-twitter fleft padding-right"></i>
@@ -302,39 +302,37 @@
                                     Lorem Ipsum is simply dummy text of the printing...
                                     <a href="#">https://www.lipsum.com/</a>
                                 </p>
+                            </li>
+                        </ul> -->
+                        <ul class="social_footer_ul">
+                            <li>
+                                <a href="">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
                             </li>
                         </ul>
+                        <div class="image-block">
+                            <img src="{{url('ceylon_beats_theme/assets/payment-gateway.png')}}" alt="">
+                        </div>
                     </div>
                 </div>
 
-                <div class="inner-wrapper">
-                    <ul class="social_footer_ul">
-                        <li>
-                            <a href="">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </li>
-                    </ul>
-
-                    <div class="image-block">
-                        <img src="{{url('ceylon_beats_theme/assets/payment-gateway.png')}}" alt="">
-                    </div>
-                </div>
+                <div class="copyright">&copy; Copyright {{date('Y')}}. Cross Tunes Global. All Rights Reserved</div>
             </div>
         </footer>
 
