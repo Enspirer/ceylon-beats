@@ -1,15 +1,8 @@
 <section id="contact-section">
     <div class="head-map">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7922.3904475415775!2d79.94226651107789!3d6.867194643979506!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc024813ff438d257!2sJ%20%26%20S%20Studios!5e0!3m2!1sen!2slk!4v1613461846632!5m2!1sen!2slk"
-            width="100%"
-            height="560px"
-            frameborder="0"
-            style="border: 0"
-            allowfullscreen=""
-            aria-hidden="false"
-            tabindex="0"
-        ></iframe>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.2448212719346!2d73.50623841532604!3d4.1722122471735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b3f7e568e595285%3A0x46aa644161cf9c9!2sBuruzu%20Magu%2C%20Mal%C3%A9%2C%20Maldives!5e0!3m2!1sen!2slk!4v1651223100016!5m2!1sen!2slk" width="100%" height="560px" frameborder="0" tabindex="0" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          
         <div class="top-layer"></div>
         <div class="image-layers">
             <img

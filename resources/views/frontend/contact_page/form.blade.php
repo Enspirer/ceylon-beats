@@ -69,7 +69,14 @@
                                 </label>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-view-all"  data-animscroll="fade-up">Submit a Request</button>
+                        <div class="form-group" data-animscroll="fade-up">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="g-recaptcha" data-callback="checked" data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR" ></div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-view-all"  data-animscroll="fade-up" disabled>Submit a Request</button>
                     </form>
                 </div>
             </div>
