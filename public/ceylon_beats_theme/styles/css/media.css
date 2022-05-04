@@ -212,6 +212,14 @@
     .contact-form-section .form {
         padding: 0;
     }
+
+    .message-section {
+        margin: 5rem 0 0;
+    }
+
+    .message-section .image-block {
+        margin-bottom: 60px;
+    }
 }
 
 @media (max-width: 480px) {

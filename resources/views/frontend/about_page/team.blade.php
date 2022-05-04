@@ -1,3 +1,22 @@
+<div class="message-section">
+    <div class="container">
+        <div class="row g-0">
+            <div class="col-md-5">
+                <div class="image-block" data-animscroll="fade-up">
+                    <img src="{{url('ceylon_beats_theme/assets/image/placeholder.png')}}" alt="">
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="content-block" data-animscroll="fade-left">
+                    <div class="subtitle">Message</div>
+                    <div class="title">from the CEO</div>
+                    <div class="text">Profoundly Passionate, Conditioned, Expert Sri Lankan Musicians creating the Sounds of the World. The International Music Industry has always shown a gap of contribution by the underrated Sri Lankan Musicians. </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="our-team">
     <div class="container">
         <h1 data-animscroll="fade-up">Our Team</h1>
