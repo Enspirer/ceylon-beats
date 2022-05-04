@@ -19,7 +19,7 @@
 
 <div class="our-team">
     <div class="container">
-        <h1 data-animscroll="fade-up">Our Team</h1>
+        <h1 data-animscroll="fade-up">Studio Team</h1>
 
         <div class="details-container">
             <div class="full-image-placeholder" data-animscroll="fade-up">

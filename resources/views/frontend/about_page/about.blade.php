@@ -9,7 +9,7 @@
                 />
             </div>
             <div class="col-md-6">
-                <h3 data-animscroll="fade-up">About</h3>
+                <h3 data-animscroll="fade-up">International Collaborations</h3>
                 <h2 data-animscroll="fade-up">J&S Studios</h2>
                 <p data-animscroll="fade-up">
                     A collective collaboration of beloved musicians in Ceylon,
