@@ -10,7 +10,9 @@
                 <div class="content-block" data-animscroll="fade-left">
                     <div class="subtitle">Message</div>
                     <div class="title">from the CEO</div>
-                    <div class="text">Profoundly Passionate, Conditioned, Expert Sri Lankan Musicians creating the Sounds of the World. The International Music Industry has always shown a gap of contribution by the underrated Sri Lankan Musicians. </div>
+                    <p class="text">A young enthusiastic musician from the beautiful Islands of Maldives making an entrance to the world market.</p>
+                    <p class="text">Mixing both enterprorial skills, taste and talent of music to provide a more accessible platform to own copy right music to content creators across the world.</p>
+                    <p class="text">With collaborating leading composers and studio facilities in Asia, Iuzaaz has obtained access to renowned brands of  instruments and skills.</p>
                 </div>
             </div>
         </div>
