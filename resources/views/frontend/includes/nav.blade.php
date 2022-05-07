@@ -61,7 +61,7 @@
         alt=""/>
         </div>
 
-        <div class="col-md-2 d-none menu-mob col-2">
+        <div class="col-md-1 d-none menu-mob col-1">
           <input type="checkbox" id="overlay-input" />
           <label for="overlay-input" id="overlay-button"><span></span></label>
           <div id="overlay">

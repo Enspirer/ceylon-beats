@@ -336,6 +336,12 @@ section {
     display: contents;
 }
 
+.pagination {
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
 .pagination .page-item {
     margin: 0 5px !important;
 }
@@ -1827,6 +1833,10 @@ footer p {
     letter-spacing: 0px;
     margin-left: 30px;
     color: #1d1d1d;
+}
+
+#popular-search .customize .middle-container .right-icon svg {
+    width: 100%;
 }
 
 #popular-search .customize .middle-container .right-icon .row-btn-home-bottum h1 {
