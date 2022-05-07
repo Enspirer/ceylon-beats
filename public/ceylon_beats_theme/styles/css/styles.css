@@ -1836,7 +1836,7 @@ footer p {
 }
 
 #popular-search .customize .middle-container .right-icon svg {
-    width: 100%;
+    width: 50px;
 }
 
 #popular-search .customize .middle-container .right-icon .row-btn-home-bottum h1 {
@@ -3469,8 +3469,7 @@ footer p {
 
 #contact-section .contact-details {
     position: absolute;
-    width: 337px;
-    height: 388px;
+    width: 450px;
     background: transparent linear-gradient(140deg, #ffffff 0%, #d2d2d2 100%) 0% 0% no-repeat padding-box;
     border-radius: 4px;
     -webkit-box-shadow: 4px 0px 62px -13px rgba(0, 0, 0, 0.91);
@@ -3480,10 +3479,11 @@ footer p {
 }
 
 #contact-section .contact-details h1 {
-    margin-top: 12px;
+    margin-top: 35px;
     text-align: center;
-    font: normal normal bold 33px/59px Poppins;
-    letter-spacing: 0px;
+    font-family: poppins;
+    font-weight: 700;
+    font-size: 28px;
     color: #141414;
 }
 
@@ -3497,8 +3497,7 @@ footer p {
 }
 
 #contact-section .contact-details .details {
-    padding-left: 33px;
-    padding-top: 33px;
+    margin: 30px 25px 45px;
 }
 
 #contact-section .contact-details .details .details-item {
@@ -3507,19 +3506,29 @@ footer p {
 
 #contact-section .contact-details .details .details-item .row {
     margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 25px;
 }
 
 #contact-section .contact-details .details .details-item .row i {
     font-size: 21px;
     color: #141414;
+    position: relative;
+    top: 5px;
+    width: 25px;
+
 }
 
 #contact-section .contact-details .details .details-item .row p {
-    font: normal normal normal 14px/27px Poppins;
+    font-family: Poppins;
+    font-size: 14px;
+    text-align: left;
     letter-spacing: 0px;
     color: #141414;
     margin: 0;
-    margin-left: 22px;
 }
 
 #contact-section:hover .top-layer {
@@ -3560,6 +3569,7 @@ footer p {
 
 #contact-details-mob .row {
     margin: 0;
+    flex-wrap: nowrap;
 }
 
 #contact-details-mob .row i {
@@ -3603,6 +3613,11 @@ footer p {
 
 #contact-details-mob-sm .row {
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    gap: 5px;
 }
 
 #contact-details-mob-sm .row i {
@@ -3634,10 +3649,11 @@ footer p {
 
 .contact-form-section h1 {
     text-align: left;
-    font: normal normal bold 55px/113px Poppins;
+    font-family: Poppins;
+    font-weight: 700;
+    line-height: 1;
     letter-spacing: 0px;
-    color: #ffffff;
-    line-height: 0.41;
+    color: #fff;
 }
 
 .contact-form-section p {
@@ -4068,6 +4084,7 @@ footer p {
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
+    overflow: hidden;
 }
 
 #about-section .bottum-content-all #equipments .container .swiper-slide {

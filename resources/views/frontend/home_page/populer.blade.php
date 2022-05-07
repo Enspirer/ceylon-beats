@@ -140,7 +140,7 @@
                 </div>
                 <div class="right-icon col-md-6">
                     <div class="item" data-animscroll="fade-up">
-                        <div class="row align-items-center gap-3 my-3">
+                        <div class="row align-items-center gap-4 my-3">
                             <i class="col-2 m-0 p-0"><svg xmlns="http://www.w3.org/2000/svg" width="60.16"
                                     height="73.177" viewBox="0 0 111.16 123.177">
                                     <g id="Icon_feather-shopping-bag" data-name="Icon feather-shopping-bag"
@@ -162,7 +162,7 @@
                         </div>
                     </div>
                     <div class="item" data-animscroll="fade-up">
-                        <div class="row align-items-center gap-3 my-3">
+                        <div class="row align-items-center gap-4 my-3">
                             <i class="col-2 m-0 p-0">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     width="60" height="60" viewBox="0 0 109 109">
@@ -174,7 +174,7 @@
                         </div>
                     </div>
                     <div class="item" data-animscroll="fade-up">
-                        <div class="row align-items-center gap-3 my-3">
+                        <div class="row align-items-center gap-4 my-3">
                             <i class="col-2 m-0 p-0"><svg xmlns="http://www.w3.org/2000/svg" width="62.389"
                                     height="62.387" viewBox="0 0 82.389 82.387">
                                     <path id="Path_97" data-name="Path 97"

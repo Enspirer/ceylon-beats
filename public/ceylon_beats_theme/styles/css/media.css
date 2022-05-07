@@ -662,6 +662,10 @@
     #contact-details-mob {
         display: block;
     }
+
+    .contact-form-section img {
+        width: 100%;
+    }
 }
 
 @media (max-width: 1310px) {
