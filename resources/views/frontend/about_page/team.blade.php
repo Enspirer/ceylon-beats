@@ -3,7 +3,7 @@
         <div class="row g-0">
             <div class="col-md-5">
                 <div class="image-block" data-animscroll="fade-up">
-                    <img src="{{url('ceylon_beats_theme/assets/image/placeholder.png')}}" alt="">
+                    <img src="{{url('ceylon_beats_theme/assets/ceo.jpg')}}" alt="">
                 </div>
             </div>
             <div class="col-md-7">
