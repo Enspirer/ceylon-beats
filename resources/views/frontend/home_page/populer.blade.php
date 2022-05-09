@@ -204,15 +204,15 @@
         <div class="row g-0 mb-5">
             <div class="col partner-row">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div
-                            style="background-image: url('{{url('logo/1.png')}}');height: 100px;background-repeat: no-repeat;background-position: center;filter: invert(1);background-size: contain;">
+                            style="background-image: url('{{url('logo/js.png')}}');height: 150px;background-repeat: no-repeat;background-position: center;background-size: contain;">
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-2">
                         <div
-                            style="background-image: url('{{url('logo/2.png')}}');height: 100px;background-repeat: no-repeat;background-position: center;filter: invert(1);background-size: contain;">
-                        </div>
+                            style="background-image: url('{{url('logo/1.png')}}');height: 100px;background-repeat: no-repeat;background-position: center;filter: invert(1);background-size: contain;">
+                        </div>                        
                     </div>
                     <div class="col-md-3">
                         <div
@@ -225,9 +225,36 @@
                         </div>
                     </div>
                 </div>
+                <div class="row mt-5">
+                    <div class="col-md-2">
+                        <div
+                            style="background-image: url('{{url('logo/5.png')}}');height: 100px;background-repeat: no-repeat;background-position: center;filter: invert(1);background-size: contain;">
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div
+                            style="background-image: url('{{url('logo/6.png')}}');height: 100px;background-repeat: no-repeat;background-position: center;background-size: contain;">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div
+                            style="background-image: url('{{url('logo/7.png')}}');height: 100px;background-repeat: no-repeat;background-position: center;background-size: contain;">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div
+                            style="background-image: url('{{url('logo/8.png')}}');height: 100px;background-repeat: no-repeat;background-position: center;background-size: contain;">
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div
+                            style="background-image: url('{{url('logo/2.png')}}');height: 100px;background-repeat: no-repeat;background-position: center;filter: invert(1);background-size: contain;">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="partner-title">J And S studios </div>
+        <!-- <div class="partner-title">J And S studios </div>
         <div class="row g-0 mb-5">
             <div class="col partner-row">
                 <div class="row">
@@ -253,6 +280,6 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </section>
