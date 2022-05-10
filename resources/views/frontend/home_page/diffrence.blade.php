@@ -3,9 +3,8 @@
         <div class="row">
             <div class="left-text col-md-6" data-animscroll="fade-right">
                 <!-- <h2>Feel</h2> -->
-                <h1>Srilankan</h1>
+                <h1> Feel The Difference</h1>
                 <p>
-                Feel The Difference<br><br>
                 Profoundly Passionate, Conditioned, Expert Asian Musicians creating the Sounds of the World. The International Music Industry has always shown a gap of contribution by the underrated Asian Musicians. We are set on bridging that gap through incredible music of all genres. From Incredible Guitar Solos to elegant drum fills, we are in the business of Providing Music for Everyone. We encourage, Asian Musicians to flourish in the Global Music Scene with paramount support and guidance.
 
                 </p>
