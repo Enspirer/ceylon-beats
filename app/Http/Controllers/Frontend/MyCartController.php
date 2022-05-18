@@ -36,24 +36,27 @@ class MyCartController extends Controller
             $newaddress->save();
             $order_id = rand();
 
-            $client = new BMLClient('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjdjODUzYzk3LTZjOWUtNDRmZi04MmI2LWQ1MTk0NmZmNzViYyIsImNvbXBhbnlJZCI6IjYyMjA3Yzg0NzJhZjY5MDAwOTg2YzEyNiIsImlhdCI6MTY1MTIwMjc2MCwiZXhwIjo0ODA2ODc2MzYwfQ.wSdyimYuYUIjFHmyWCPWIZ6L62XhR4QcmO7coB2vk_w', '7c853c97-6c9e-44ff-82b6-d51946ff75bc','sandbox');
-
-
-            $requestAmount = $request->amount * 15.42;
-
-            $finalAmountwithCents = $requestAmount * 100;
+           try{
+               $client = new BMLClient('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImY3NmRmYTkzLTdhZWQtNDljZC1iNTg4LTczZWE5Yjk0MzkyYiIsImNvbXBhbnlJZCI6IjYyNjBjZmQ1OGI3MDEwMDAwOWJlNDExZiIsImlhdCI6MTY1MTAzOTc5MiwiZXhwIjo0ODA2NzEzMzkyfQ.OnAMFzbWTa32NIHI1-_tqVX50EjVIjXBZnb8yn8umzA', 'f76dfa93-7aed-49cd-b588-73ea9b94392b');
+               $requestAmount = $request->amount * 15.42;
+               $finalAmountwithCents = $requestAmount * 100;
 
 
 
-            //MVR Convertion
+               //MVR Convertion
 
-            $json = [
-                "currency" => "MVR",
-                "amount" => $finalAmountwithCents,
-                "redirectUrl" => route('frontend.user.checkout_finish',[$newaddress->id,$order_id]), // Optional redirect after payment completion
-            ];
-            $transaction = $client->transactions->create($json);
-            return redirect($transaction->url);
+               $json = [
+                   "currency" => "MVR",
+                   "amount" => $finalAmountwithCents,
+                   "redirectUrl" => route('frontend.user.checkout_finish',[$newaddress->id,$order_id]), // Optional redirect after payment completion
+               ];
+               $transaction = $client->transactions->create($json);
+               return redirect($transaction->url);
+
+           }catch (\Exception $exception){
+               return back();
+           }
+
         }else{
             return back();
         }
