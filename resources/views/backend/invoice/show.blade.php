@@ -264,8 +264,6 @@
                                             </div>
                                         </div>
 
-
-
                                         <div class="row my-2 align-items-center bgc-primary-l3 p-2">
                                             <div class="col-7 text-right">
                                                 Total Amount
@@ -274,6 +272,19 @@
                                                 <span class="text-150 text-success-d3 opacity-2">{{settings('currency')}} {{ number_format($invoice_details->total,2)}}</span>
                                             </div>
                                         </div>
+
+                                        <div class="row my-2">
+                                            <div class="col-7 text-right">
+                                                USD MVR Convert
+                                            </div>
+                                            <div class="col-5">
+                                                <span class="text-120 text-secondary-d1">{{settings('currency')}} {{number_format($invoice_details->total,2)}} X 15.47 = MVR {{number_format($invoice_details->total,2)  *15.47}}</span>
+                                            </div>
+                                        </div>
+
+
+
+
                                     </div>
                                 </div>
 

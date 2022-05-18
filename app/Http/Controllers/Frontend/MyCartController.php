@@ -27,7 +27,6 @@ class MyCartController extends Controller
 
     public function CheckOutFunc(Request $request)
     {
-
         if($request['g-recaptcha-response']){
             $newaddress = new AddressDetails;
             $newaddress->address = $request->address;
@@ -39,9 +38,18 @@ class MyCartController extends Controller
 
             $client = new BMLClient('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjdjODUzYzk3LTZjOWUtNDRmZi04MmI2LWQ1MTk0NmZmNzViYyIsImNvbXBhbnlJZCI6IjYyMjA3Yzg0NzJhZjY5MDAwOTg2YzEyNiIsImlhdCI6MTY1MTIwMjc2MCwiZXhwIjo0ODA2ODc2MzYwfQ.wSdyimYuYUIjFHmyWCPWIZ6L62XhR4QcmO7coB2vk_w', '7c853c97-6c9e-44ff-82b6-d51946ff75bc','sandbox');
 
+
+            $requestAmount = $request->amount * 15.42;
+
+            $finalAmountwithCents = $requestAmount * 100;
+
+
+
+            //MVR Convertion
+
             $json = [
                 "currency" => "MVR",
-                "amount" => number_format($request->amount,2), // 10.00 MVR
+                "amount" => $finalAmountwithCents,
                 "redirectUrl" => route('frontend.user.checkout_finish',[$newaddress->id,$order_id]), // Optional redirect after payment completion
             ];
             $transaction = $client->transactions->create($json);
